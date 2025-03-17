@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import styles from "@/styles/Footer.module.css"
+import Image from "next/image";
 
 const Footer = () => {
     return (
@@ -9,7 +10,9 @@ const Footer = () => {
                     <div className={`container text-center text-md-left ${styles.footer}`}>
                         <div className="row text-center text-md-left">
                             <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                                <h6 className="text-uppercase mb-4 font-weight-bold text-start"> ACE SCAN</h6>
+                                <h6 className="text-uppercase mb-4 font-weight-bold text-start">
+                                    <Image src="/images/logo.png" alt="Logo" width={300} height={60} />
+                                </h6>
                                 <p className="text-start">
                                     We give you everything you need to get started in digital dentistry for free — including an intraoral scanner.
                                 </p>
