@@ -1,0 +1,17 @@
+.footer {
+    border-radius: 20px;
+    background-color: #191922;
+}
+
+
+.copyright {
+    /* font-size: 0.95rem; */
+    margin-bottom: 0;
+    text-align: center;
+    color: #68ABA1;
+    text-decoration: none;
+  }
+  
+.copyright  {
+    font-weight: 700;
+  }
