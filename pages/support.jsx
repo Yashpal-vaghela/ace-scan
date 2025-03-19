@@ -11,31 +11,29 @@ const counters = [
 const support = () => {
 
     const videoRef = useRef(null);
-
-    useEffect(() => {
-        const video = videoRef.current;
-
-        if (!video) return;
-
-        // Ensure the video is muted (needed for Safari autoplay)
-        video.muted = true;
-
-        // Try to play the video
-        video.play().catch((error) => {
-            console.log("Autoplay blocked:", error);
-        });
-
-        // Add user interaction fallback for Safari
-        const enableAutoplay = () => {
-            video.play();
-            document.removeEventListener("click", enableAutoplay);
-        };
-        document.addEventListener("click", enableAutoplay);
-
-        return () => {
-            document.removeEventListener("click", enableAutoplay);
-        };
-    }, []);
+    
+        useEffect(() => {
+          if (typeof window !== "undefined" && videoRef.current) {
+            const player = new Plyr(videoRef.current, {
+              autoplay: true, // Ensures autoplay
+              muted: true, // Required for autoplay to work in modern browsers
+              loop: { active: true },
+            });
+      
+            // Handle autoplay restrictions
+            videoRef.current
+              .play()
+              .catch((error) => console.log("Autoplay blocked:", error));
+      
+            document.addEventListener("click", () => {
+              videoRef.current.play();
+            });
+      
+            return () => {
+              player.destroy();
+            };
+          }
+        }, []);
 
     const [counts, setCounts] = useState(counters.map(() => 0));
     const cardRefs = useRef([]);
