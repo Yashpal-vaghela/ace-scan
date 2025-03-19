@@ -1,40 +1,10 @@
-/* 
-.footer__grid {
-    height: 100px;
-    padding: 3.75rem 4.5rem 7.125rem 3.75rem;
-    display: grid;
-    grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
-    gap: 4.25rem;
-    background-color: black;
-}
-@media (min-width: 1200px) {
-    .footer_grid {
-        height: 100px;
-        padding: 3.75rem 4.5rem 7.125rem 3.75rem;
-        display: grid;
-        grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
-        gap: 4.25rem;
-        background-color: black;
-    }
-
-    .footer-content {
-        border-bottom: none;
-        border-right: 1px solid #fff;
-        margin-top: -3.75rem;
-        padding-top: 3.75rem;
-        margin-bottom: -7.125rem;
-        padding-bottom: 2.5rem;
-
-    } 
-}
-
-
-
-*/
 
 .footer_grid {
-    /* height: 100px; */
-    background-color: black;
+    
+    background-image: url('/images/bgfooter.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 12px;
 }
 
@@ -58,21 +28,26 @@
 
 .footer-nav {
     padding-top: 1.125rem;
+    padding: 1.125rem;
 }
+
 .nav-title {
     color: #fdfcfa;
     font-size: 1.1rem;
     margin-bottom: 20px;
 }
-.footer-nav ul{
+
+.footer-nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.footer-nav ul li{
+
+.footer-nav ul li {
     margin-bottom: 10px;
 }
-.footer-nav ul li a{
+
+.footer-nav ul li a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
     font-size: 1rem;
@@ -81,9 +56,11 @@
     white-space: normal;
     /* display: block; */
 }
-.footer-nav ul li a:hover{
+
+.footer-nav ul li a:hover {
     color: #3e9293;
 }
+
 .footer-desc {
     padding-top: 14px;
     color: rgba(255, 255, 255, 0.6);
@@ -97,19 +74,19 @@
     font-weight: bold;
     padding: 8px 12px;
     border-radius: 12px;
-  }
-  
-  .simplebtn:hover {
+}
+
+.simplebtn:hover {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.3);
-  }
+}
 
-  @media (max-width: 991px) {
+@media (max-width: 991px) {
     .footer-content {
         /* max-width: 400px; */
         padding: 20px;
     }
-  }
+}
 
 @media (min-width: 1200px) {
     .footer_grid {
@@ -123,8 +100,8 @@
         border-bottom: none;
         border-right: 1px solid rgba(255, 255, 255, 0.6);
         margin-top: -3.75rem;
-    padding-top: 3.75rem;
-    margin-bottom: -7.125rem;
-    padding-bottom: 2.5rem;
+        padding-top: 3.75rem;
+        margin-bottom: -7.125rem;
+        padding-bottom: 2.5rem;
     }
 }
