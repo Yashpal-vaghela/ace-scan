@@ -1,6 +1,7 @@
 import { useEffect, useState, React, useRef } from "react";
 import "../public/css/support.css";
 import Image from "next/image";
+import Testimonial from "@/component/Testimonial";
 
 const counters = [
     { finalCount: 100, duration: 1000, suffix: "%", noteAbove: "", noteBelow: "Customer Satisfaction" },
@@ -9,35 +10,58 @@ const counters = [
 ];
 
 const support = () => {
-
     const videoRef = useRef(null);
-    
-        useEffect(() => {
-          if (typeof window !== "undefined" && videoRef.current) {
-            const player = new Plyr(videoRef.current, {
-              autoplay: true, // Ensures autoplay
-              muted: true, // Required for autoplay to work in modern browsers
-              loop: { active: true },
-            });
-      
-            // Handle autoplay restrictions
-            videoRef.current
-              .play()
-              .catch((error) => console.log("Autoplay blocked:", error));
-      
-            document.addEventListener("click", () => {
-              videoRef.current.play();
-            });
-      
-            return () => {
-              player.destroy();
-            };
-          }
-        }, []);
-
     const [counts, setCounts] = useState(counters.map(() => 0));
     const cardRefs = useRef([]);
+    const faqData = [
+        {
+          number: "1",
+          title: "Incoming Orders",
+          description:
+            "We ensure that all incoming orders are carefully inspected to ensure that they meet our high standards before they enter the construction phase.",
+        },
+        {
+          number: "2",
+          title: "Design and Construction",
+          description:
+            "Throughout the design and construction phases, our skilled technicians use only the finest materials and cutting-edge equipment to create custom lab work that is tailored to your specific requirements.",
+        },
+        {
+          number: "3",
+          title: "Quality Control",
+          description:
+            "Quality is at the heart of everything we do. Rest assured that you can rely on us to provide you with dependable and superior dental laboratory services.",
+        },
+        {
+          number: "4",
+          title: "Returns",
+          description:
+            "At ACE Advance Digital Lab, we recognize the importance of timely deliveries and hassle-free returns. Rely on us for all your dental lab work requirements.",
+        },
+      ];
 
+    useEffect(() => {
+        if (typeof window !== "undefined" && videoRef.current) {
+          const player = new Plyr(videoRef.current, {
+            autoplay: true, // Ensures autoplay
+            muted: true, // Required for autoplay to work in modern browsers
+            loop: { active: true },
+          });
+    
+          // Handle autoplay restrictions
+          videoRef.current
+            .play()
+            .catch((error) => console.log("Autoplay blocked:", error));
+    
+          document.addEventListener("click", () => {
+            videoRef.current.play();
+          });
+    
+          return () => {
+            player.destroy();
+          };
+        }
+    }, []);
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry, index) => {
@@ -62,14 +86,14 @@ const support = () => {
 
     return (
         <div>
-            <section className="why_ACE py-4 " style={{ marginBottom: "3.4rem", marginTop: "80px" }}>
+            <section className="why_ACE py-4 " style={{ marginBottom: "2.4rem", marginTop: "0px" }}>
                 <div className="container mt-4 ">
 
                     <h2 className="heading1 text-center">Why ACE Digital Dental Laboratry</h2>
 
                     <div className="row g-4">
 
-                        <div className="col-12 col-lg-6 col-md-6 p-4">
+                        <div className="col-12 col-lg-6 col-md-6 p-4 p-md-2">
                             <div className="card shadow-sm border-0 shadow-none">
                                 <div className="accordion user-select-none" id="faqAccordion">
 
@@ -185,32 +209,7 @@ const support = () => {
                     <div className="row g-4">
                         <div className="col-12 col-lg-6 col-md-6 p-4 text-start">
                             <ul className="timeline list-unstyled">
-                                {[
-                                    {
-                                        number: "1",
-                                        title: "Incoming Orders",
-                                        description:
-                                            "We ensure that all incoming orders are carefully inspected to ensure that they meet our high standards before they enter the construction phase.",
-                                    },
-                                    {
-                                        number: "2",
-                                        title: "Design and Construction",
-                                        description:
-                                            "Throughout the design and construction phases, our skilled technicians use only the finest materials and cutting-edge equipment to create custom lab work that is tailored to your specific requirements.",
-                                    },
-                                    {
-                                        number: "3",
-                                        title: "Quality Control",
-                                        description:
-                                            "Quality is at the heart of everything we do. Rest assured that you can rely on us to provide you with dependable and superior dental laboratory services.",
-                                    },
-                                    {
-                                        number: "4",
-                                        title: "Returns",
-                                        description:
-                                            "At ACE Advance Digital Lab, we recognize the importance of timely deliveries and hassle-free returns. Rely on us for all your dental lab work requirements.",
-                                    },
-                                ].map((step, index) => (
+                                {faqData.map((step, index) => (
                                     <li key={index} className="d-flex align-items-start position-relative mb-4">
                                         {/* Numbered Icon */}
                                         <div className="timeline-icon d-flex align-items-center justify-content-center">
@@ -264,8 +263,8 @@ const support = () => {
                     <div className="simplebtn">Start New Project</div>
                 </div>
             </section>
-
-            <section className="testmonial" style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem", }}>
+            <Testimonial></Testimonial>
+            {/* <section className="testmonial" style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem", }}>
                 <div className="container mt-4 mb-4 text-center">
                     <div className="gradientBG">
                         Testimoial
@@ -287,13 +286,12 @@ const support = () => {
                     </div>
 
                 </div>
-            </section>
+            </section> */}
 
-            <section className="ADDL-numbers " style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem", }}>
+            <section className="ADDL-numbers" style={{ paddingBottom: "3.4rem", paddingTop: "1.4rem", }}>
                 <div className="container text-center addl_numbers" style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem", }}>
                     <h2 className="heading2 text-center text-white"> ADDL in numbers </h2>
                     <div className="row innere_adl_numbers g-4 ">
-
                         {counters.map(({ suffix, noteAbove, noteBelow }, index) => (
                             <div key={index} className="col-sm-12 col-md-12 col-lg-4">
                                 <div ref={(el) => (cardRefs.current[index] = el)} className="counter-card">

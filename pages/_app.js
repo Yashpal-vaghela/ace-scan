@@ -1,22 +1,20 @@
 import "@/styles/globals.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "@/component/header";
 import Footer from "@/component/footer";
-import { useRouter } from "next/router";
+import { Router, useRouter } from "next/router";
 import { useEffect, useState } from "react";
+// import NProgress from 'nprogress'; 
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
-
   const [state, setstate] = useState(false);
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", "light");
+    // import('bootstrap/dist/js/bootstrap.bundle.min.js');
+    // Router.events.off('routeChangeStart', () => NProgress.start());
+    // Router.events.off('routeChangeComplete', () => NProgress.done());
+    // Router.events.off('routeChangeError', () => NProgress.done());
   }, []);
-
-  useEffect(() => {
-    import('bootstrap/dist/js/bootstrap.bundle.min.js');
-  }, []);
-
   return (
     <>
       {state ? (
