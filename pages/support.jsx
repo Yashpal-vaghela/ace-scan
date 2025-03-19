@@ -10,58 +10,61 @@ const counters = [
 ];
 
 const support = () => {
-    const videoRef = useRef(null);
+
     const [counts, setCounts] = useState(counters.map(() => 0));
     const cardRefs = useRef([]);
     const faqData = [
         {
-          number: "1",
-          title: "Incoming Orders",
-          description:
-            "We ensure that all incoming orders are carefully inspected to ensure that they meet our high standards before they enter the construction phase.",
+            number: "1",
+            title: "Incoming Orders",
+            description:
+                "We ensure that all incoming orders are carefully inspected to ensure that they meet our high standards before they enter the construction phase.",
         },
         {
-          number: "2",
-          title: "Design and Construction",
-          description:
-            "Throughout the design and construction phases, our skilled technicians use only the finest materials and cutting-edge equipment to create custom lab work that is tailored to your specific requirements.",
+            number: "2",
+            title: "Design and Construction",
+            description:
+                "Throughout the design and construction phases, our skilled technicians use only the finest materials and cutting-edge equipment to create custom lab work that is tailored to your specific requirements.",
         },
         {
-          number: "3",
-          title: "Quality Control",
-          description:
-            "Quality is at the heart of everything we do. Rest assured that you can rely on us to provide you with dependable and superior dental laboratory services.",
+            number: "3",
+            title: "Quality Control",
+            description:
+                "Quality is at the heart of everything we do. Rest assured that you can rely on us to provide you with dependable and superior dental laboratory services.",
         },
         {
-          number: "4",
-          title: "Returns",
-          description:
-            "At ACE Advance Digital Lab, we recognize the importance of timely deliveries and hassle-free returns. Rely on us for all your dental lab work requirements.",
+            number: "4",
+            title: "Returns",
+            description:
+                "At ACE Advance Digital Lab, we recognize the importance of timely deliveries and hassle-free returns. Rely on us for all your dental lab work requirements.",
         },
-      ];
+    ];
+
+    const videoRef = useRef(null);
 
     useEffect(() => {
         if (typeof window !== "undefined" && videoRef.current) {
-          const player = new Plyr(videoRef.current, {
-            autoplay: true, // Ensures autoplay
-            muted: true, // Required for autoplay to work in modern browsers
-            loop: { active: true },
-          });
-    
-          // Handle autoplay restrictions
-          videoRef.current
-            .play()
-            .catch((error) => console.log("Autoplay blocked:", error));
-    
-          document.addEventListener("click", () => {
-            videoRef.current.play();
-          });
-    
-          return () => {
-            player.destroy();
-          };
+            const player = new Plyr(videoRef.current, {
+                autoplay: true, // Ensures autoplay
+                muted: true, // Required for autoplay to work in modern browsers
+                loop: { active: true },
+            });
+
+            // Handle autoplay restrictions
+            videoRef.current
+                .play()
+                .catch((error) => console.log("Autoplay blocked:", error));
+
+            document.addEventListener("click", () => {
+                videoRef.current.play();
+            });
+
+            return () => {
+                player.destroy();
+            };
         }
     }, []);
+
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry, index) => {
@@ -86,14 +89,14 @@ const support = () => {
 
     return (
         <div>
-            <section className="why_ACE py-4 " style={{ marginBottom: "2.4rem", marginTop: "0px" }}>
+            <section className="why_ACE py-4 " style={{ marginBottom: "3.4rem", marginTop: "80px" }}>
                 <div className="container mt-4 ">
 
                     <h2 className="heading1 text-center">Why ACE Digital Dental Laboratry</h2>
 
                     <div className="row g-4">
 
-                        <div className="col-12 col-lg-6 col-md-6 p-4 p-md-2">
+                        <div className="col-12 col-lg-6 col-md-6 p-4">
                             <div className="card shadow-sm border-0 shadow-none">
                                 <div className="accordion user-select-none" id="faqAccordion">
 
@@ -101,13 +104,13 @@ const support = () => {
                                         <div class="accordion-item border-0">
                                             <h2 class="accordion-header" id="headingOne">
                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                    Innovative materials and technology.
+                                                    ADDL’s Fast and Reliable Turnaround Times: What Sets Us Apart
                                                     <i class="far fa-chevron-down ms-auto" style={{ color: "#7e7c78" }}></i>
                                                 </button>
                                             </h2>
                                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                                                 <div class="accordion-body ">
-                                                    At ACE Advance Digital Lab, our goal is to remain at the forefront of dental technology.We constantly invest in the latest digital innovations, CAD/CAM design software, the latest milling and 3D printing machines and cutting-edge modern materials. This enables us to create restorations with exceptional precision and aesthetics.
+                                                    ADDL (Advanced Dental Design Laboratories) is dedicated to fast, reliable turnaround times without compromising quality. Using advanced technology and efficient workflows, we deliver products quickly.. Our skilled team ensures high-quality craftsmanship while meeting tight deadlines, making us a trusted partner for dental professionals.
                                                 </div>
                                             </div>
                                         </div>
@@ -117,13 +120,13 @@ const support = () => {
                                         <div class="accordion-item border-0">
                                             <h2 class="accordion-header" id="headingTwo">
                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                    Exceptional quality at advantageous prices.
+                                                    ADDL is the Future
                                                     <i class="far fa-chevron-down ms-auto" style={{ color: "#7e7c78" }}></i>
                                                 </button>
                                             </h2>
                                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
                                                 <div class="accordion-body">
-                                                    ACE Advance Digital Lab offers reliable and consistent service coupled with great value for money, thanks to its network of affiliated, long-established European dental labs.
+                                                    Switching to a digital lab like ADDL offers faster turnaround, higher accuracy, and cost savings compared to traditional labs. Digital technologies like CAD/CAM and 3D printing reduce errors, improve precision, and shorten production times, leading to better patient satisfaction and fewer adjustments. Digital labs also lower costs by minimizing material waste and labor, making them more efficient for dental practices and patients alike.
                                                 </div>
                                             </div>
                                         </div>
@@ -133,13 +136,13 @@ const support = () => {
                                         <div class="accordion-item border-0">
                                             <h2 class="accordion-header" id="headingThree">
                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                    Dental lab work of the highest standards.
+                                                    Sustainability and Eco-Friendliness at ADDL
                                                     <i class="far fa-chevron-down ms-auto" style={{ color: "#7e7c78" }}></i>
                                                 </button>
                                             </h2>
                                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                                                 <div class="accordion-body ">
-                                                    To ensure that our dental restorations meet the latest EU standards, we partner only with labs which are certified under ISO 9001:2015. Our team of skilled technicians, with many years of experience, use their artistry to create lab work of exceptional quality. At our facilities, we exclusively use certified, high-quality materials from reputable manufacturers. To ensure a truly passive fit and high accuracy, all of our work is thoroughly inspected under a microscope.
+                                                    ADDL is committed to sustainability by using  sustainable materials  and reducing waste through digital technologies like CAD/CAM and 3D printing. These methods minimize material waste and improve efficiency, while we also prioritize biodegradable and recyclable materials. ADDL’s eco-friendly practices reflect our dedication to a greener future for the dental industry.
                                                 </div>
                                             </div>
                                         </div>
@@ -149,13 +152,13 @@ const support = () => {
                                         <div class="accordion-item border-0">
                                             <h2 class="accordion-header" id="headingFour">
                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                                                    5 years guarantee on all work.
+                                                    ADDL: Precision & Excellence in Dental Lab Solutions
                                                     <i class="far fa-chevron-down ms-auto" style={{ color: "#7e7c78" }}></i>
                                                 </button>
                                             </h2>
                                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
                                                 <div class="accordion-body ">
-                                                    We provide a full 5-year guarantee and a material and quality certificate with all of our work. This means that in the unlikely event that anything goes wrong, we will take full responsibility.
+                                                    ADDL is committed to delivering dental lab work of the highest standards. Utilizing advanced digital technology and expert craftsmanship, we ensure that each product is precisely engineered and manufactured to meet the strictest quality requirements. Whether crowns, bridges, dentures, or other restorations, our focus on accuracy and consistency guarantees reliable, top-quality results trusted by dental professionals.
                                                 </div>
                                             </div>
                                         </div>
@@ -165,17 +168,16 @@ const support = () => {
                                         <div class="accordion-item border-0">
                                             <h2 class="accordion-header" id="headingFive">
                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-                                                    Free professional clinical advice any time you may need it.
+                                                    Easy online ordering and seamless communication with your lab.
                                                     <i class="far fa-chevron-down ms-auto" style={{ color: "#7e7c78" }}></i>
                                                 </button>
                                             </h2>
                                             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
                                                 <div class="accordion-body ">
-                                                    We understand that some of your cases may present challenges in terms of planning and executing. To assist you with this, ACE Advance Digital Lab has assembled a board of highly experienced Clinical Dental Advisors with extensive expertise in both clinical and technological aspects of dentistry. They are always available to provide free, friendly and helpful guidance whenever you need it.
+                                                    Addl offers an effortless online ordering system that ensures a smooth and efficient process for all your dental needs. With our user-friendly website, you can place orders quickly and easily, saving your time and effort. Additionally, our seamless communication system allows you to stay connected with our lab at all times, ensuring that you receive timely updates, support, and high-quality service. Whether you're a dental professional or a patient, Addl makes your experience simple and hassle-free.
                                                 </div>
                                             </div>
                                         </div>
-
 
                                     </div>
                                 </div>
@@ -246,7 +248,7 @@ const support = () => {
                 </div>
             </section>
 
-            <section className="lets-walk-togeather  " >
+            <section className="lets-walk-togeather" >
                 <video autoPlay loop muted playsInline className="h-full w-full background-video" id="player">
                     <source src="/images/masterpiece.webm" type="video/webm" />
                     <source src="/images/masterpiece.mp4" type="video/mp4" />
@@ -288,25 +290,82 @@ const support = () => {
                 </div>
             </section> */}
 
-            <section className="ADDL-numbers" style={{ paddingBottom: "3.4rem", paddingTop: "1.4rem", }}>
-                <div className="container text-center addl_numbers" style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem", }}>
-                    <h2 className="heading2 text-center text-white"> ADDL in numbers </h2>
-                    <div className="row innere_adl_numbers g-4 ">
-                        {counters.map(({ suffix, noteAbove, noteBelow }, index) => (
-                            <div key={index} className="col-sm-12 col-md-12 col-lg-4">
-                                <div ref={(el) => (cardRefs.current[index] = el)} className="counter-card">
-                                    <div className="Abovetext">{noteAbove}</div> {/* Added noteAbove here */}
-                                    <div className="social-proof__value">
-                                        <div className="social-proof__count">{counts[index]}</div>
-                                        <span className="suffixcounter">{suffix}</span>
+            <section className="ADDL-numbers " style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem", }}>
+                <div className="container text-center " >
+                    <div className="addl_numbers" style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem", }}>
+                        <h2 className="heading2 text-center text-white"> ADDL in numbers </h2>
+                        <div className="row innere_adl_numbers g-4 ">
+
+                            {counters.map(({ suffix, noteAbove, noteBelow }, index) => (
+                                <div key={index} className="col-sm-12 col-md-12 col-lg-4">
+                                    <div ref={(el) => (cardRefs.current[index] = el)} className="counter-card">
+                                        <div className="Abovetext">{noteAbove}</div> {/* Added noteAbove here */}
+                                        <div className="social-proof__value">
+                                            <div className="social-proof__count">{counts[index]}</div>
+                                            <span className="suffixcounter">{suffix}</span>
+                                        </div>
+                                        <div className="belowtext">{noteBelow}</div> {/* Added noteBelow here */}
                                     </div>
-                                    <div className="belowtext">{noteBelow}</div> {/* Added noteBelow here */}
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
+
                 </div>
             </section>
+
+            <section className="pricing-plans " style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem", }}>
+                <div className="container text-center position-relative">
+                    <h2 className="heading1 text-center"> Our Most Premium Product</h2>
+                    <div className="row g-4 ">
+                        <div className="col-12 col-lg-4 col-md-6 product-row">
+                            <Image
+                                src="/images/cad.png"
+                                alt="Example Image"
+                                width={266}
+                                height={400}
+                                className=""
+                            />
+                            <span className="product-row-label">E-max CAD</span>
+                        </div>
+                        <div className="col-12 col-lg-4 col-md-6 img-middil product-row" >
+                            <Image
+                                src="/images/zirconiacrown.png"
+                                alt="Example Image"
+                                width={266}
+                                height={400}
+                                className=""
+                            />
+                            <span className="product-row-label">Crown & Bridges</span>
+                        </div>
+                        <div className="col-12 col-lg-4 col-md-6 product-row">
+                            <Image
+                                src="/images/zirconiaimplant.png"
+                                alt="Example Image"
+                                width={266}
+                                height={400}
+                                className=""
+                            />
+                            <span className="product-row-label">Implant</span>
+                        </div>
+                    </div>
+                    <Image
+                        src="/images/pvector1.svg"
+                        alt="Example Image"
+                        width={300}
+                        height={450}
+                        className="pvector1"
+                    />
+                    <Image
+                        src="/images/pvector2.svg"
+                        alt="Example Image"
+                        width={300}
+                        height={450}
+                        className="pvector2"
+                    />
+                </div>
+            </section>
+
 
 
         </div>

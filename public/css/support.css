@@ -415,3 +415,62 @@
     margin-top: 1.5rem !important;
   }
 }
+
+
+/* Pricing plan */
+
+.img-middil {
+  padding-top: 80px;
+}
+
+.pvector1 {
+  position: absolute;
+  top: -9%;
+  left: -6%;
+}
+
+.pvector2 {
+  position: absolute;
+  bottom: 0%;
+  right: -8%;
+  z-index: -1;
+}
+
+@media (max-width: 775px) {
+  .img-middil {
+    padding-top: 0px;
+  }
+  .pvector1 {
+    position: absolute;
+    top: -5%;
+    left: -6%;
+  }
+  
+}
+
+@media (max-width: 575px) {
+
+  .pvector1 {
+    position: absolute;
+    top: -2%;
+    left: -6%;
+  }
+  
+}
+
+.product-row-label {
+  font-weight: 700;
+  font-size: 1.35rem;
+  text-align: center;
+  white-space: normal;
+  padding-top: 1.25rem;
+}
+
+.product-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
