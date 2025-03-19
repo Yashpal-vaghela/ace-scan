@@ -21,9 +21,30 @@ const Footer = () => {
                         </din>
                         <div className="footer-nav">
                             <div className="row g-4">
-                                <div className="col-12 col-lg-4 col-md-6 "> ABCED ERFFFFDDKDJFNF </div>
-                                <div className="col-12 col-lg-4 col-md-6 "> ABCED ERFFFFDDKDJFNF </div>
-                                <div className="col-12 col-lg-4 col-md-6 "> ABCED ERFFFFDDKDJFNF </div>
+                                <div className="col-12 col-lg-4 col-md-6 ">
+                                    <h5 className="nav-title">Product & Service</h5>
+                                    <ul>
+                                        <li><a href="/#">Digital Flow</a></li>
+                                        <li><a href="/#">CAD/CAM</a></li>
+                                        <li><a href="/#">Implant</a></li>
+                                        <li><a href="/#">Crown & Bridges</a></li>
+                                    </ul> 
+                                </div>
+                                <div className="col-12 col-lg-4 col-md-6 ">
+                                    <h5 className="nav-title">Contact & Support</h5>  
+                                    <ul>
+                                        <li><a href="/#">Contact</a></li>
+                                        <li><a href="/#">Support</a></li>
+                                        <li><a href="/#">Privacy Policy</a></li>
+                                    </ul>
+                                </div>
+                                <div className="col-12 col-lg-4 col-md-6 "> 
+                                    <h5 className="nav-title">Get In Touch</h5>
+                                    <ul>
+                                        <li><a href="tel:+15513800385">+1 551-380-0385</a></li>
+                                        <li><a href="mailto:hr@acedigitaldentallaboratory.com">hr@acedigitaldentallaboratory.com</a></li>
+                                    </ul>
+                                </div>
 
                             </div>
                         </div>

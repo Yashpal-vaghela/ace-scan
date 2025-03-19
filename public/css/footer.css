@@ -59,7 +59,31 @@
 .footer-nav {
     padding-top: 1.125rem;
 }
-
+.nav-title {
+    color: #fdfcfa;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+.footer-nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-nav ul li{
+    margin-bottom: 10px;
+}
+.footer-nav ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+    word-break: break-word;
+    white-space: normal;
+    /* display: block; */
+}
+.footer-nav ul li a:hover{
+    color: #3e9293;
+}
 .footer-desc {
     padding-top: 14px;
     color: rgba(255, 255, 255, 0.6);
