@@ -6,8 +6,8 @@
     position: relative;
 }
 .about-img1{
-    width: 60% !important;
-    height:70% !important;
+    width: 80% !important;
+    height:95% !important;
 }
 .About-section .row .col-xl-5{
     position: relative;
@@ -554,6 +554,7 @@
     background-color: #26ad99;
     border: none;
     font-weight: bold;
+    height: 45px;
 }
 
 .btn_submit:hover {

@@ -15,8 +15,8 @@ const contactUs = () => {
     return (
         <section className="contactForm" style={{ marginTop: '80px' }}>
             <div className="container mt-5 ">
-                <div className="row ">
-                    <div className="col-md-6 col-lg-5">
+                <div className="row justify-content-center align-items-center">
+                    <div className="col-md-6 col-lg-5 p-4 ">
                         <form onSubmit={handleSubmit(onSubmit)} >
                             <div className="mb-3">
                                 {/* <label className="form-label">Full Name</label> */}
