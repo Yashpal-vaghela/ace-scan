@@ -56,7 +56,7 @@ const Footer = () => {
                     <div className="col-12 d-flex justify-content-between align-items-center gap-5">
                         <div>logo</div>
                         <div className="bg-white"><p >
-                            &copy; 2025 <span><Link href="https://advancedentalexport.com/" className={`${styles.copyright}`}>Advance Dental Export</Link></span>. All Rights Reserved
+                            &copy; 2025 <span><Link href="https://advancedentalexport.com/" className="copyright">Advance Dental Export</Link></span>. All Rights Reserved
                         </p></div>
                     </div>
                 </div>

@@ -60,28 +60,57 @@ export default function Home() {
             <span className="lqd-vbg-loader"></span>
             <div
               className="inline-YTPlayer"
-              style={{ position: 'relative', maxWidth: '100%' }}
+              style={{ position: "relative", maxWidth: "100%" }}
             >
               <div
                 className="lqd-vbg-video mb_YTPlayer isMuted"
                 data-video-bg="true"
                 data-youtube-options='{"videoURL":"https://www.youtube.com/embed/Fv4YYSRsRUg"}'
                 id="YTP_1742270005228"
-                style={{ position: 'relative', paddingBottom: '56.25%', overflow: 'hidden', height: '0px' }}
+                style={{
+                  position: "relative",
+                  paddingBottom: "56.25%",
+                  overflow: "hidden",
+                  height: "0px",
+                }}
               >
                 <div
                   id="wrapper_YTP_1742270005228"
                   className="mbYTP_wrapper"
-                  style={{ position: 'absolute', zIndex: 0, minWidth: '100%', minHeight: '100%', left: '0px', top: '0px', overflow: 'hidden', opacity: 1, backgroundImage: 'none', transitionDuration: '1000ms' }}
+                  style={{
+                    position: "absolute",
+                    zIndex: 0,
+                    minWidth: "100%",
+                    minHeight: "100%",
+                    left: "0px",
+                    top: "0px",
+                    overflow: "hidden",
+                    opacity: 1,
+                    backgroundImage: "none",
+                    transitionDuration: "1000ms",
+                  }}
                 >
                   <iframe
                     id="iframe_YTP_1742270005228"
                     className="playerBox"
-                    style={{ position: "absolute", zIndex: 0, width: '2024px', height: '1138.2px', top: '0px', left: '0px', overflow: 'hidden', opacity: 1, userSelect: 'none', marginTop: '-106.706px', marginLeft: '-379px', maxWidth: 'initial' }}
+                    style={{
+                      position: "absolute",
+                      zIndex: 0,
+                      width: "2024px",
+                      height: "1138.2px",
+                      top: "0px",
+                      left: "0px",
+                      overflow: "hidden",
+                      opacity: 1,
+                      userSelect: "none",
+                      marginTop: "-106.706px",
+                      marginLeft: "-379px",
+                      maxWidth: "initial",
+                    }}
                     frameBorder="0"
-                    allowfullscreen=""
+                    allowFullScreen=""
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
+                    referrerPolicy="strict-origin-when-cross-origin"
                     title="c1"
                     width="640"
                     height="360"
@@ -90,10 +119,17 @@ export default function Home() {
                   ></iframe>
                   <div
                     className="YTPOverlay"
-                    style={{ position: 'absolute', top: '0px', left: '0px', width: '100%', height: '100%', cursor: 'pointer' }}
+                    style={{
+                      position: "absolute",
+                      top: "0px",
+                      left: "0px",
+                      width: "100%",
+                      height: "100%",
+                      cursor: "pointer",
+                    }}
                   ></div>
                 </div>
-                <div className="inlinePlayButton" style={{ display: 'none' }}>
+                <div className="inlinePlayButton" style={{ display: "none" }}>
                   P
                 </div>
               </div>
@@ -136,15 +172,17 @@ export default function Home() {
               ></Image>
             </div>
             <div className="col-11 col-xl-7 col-md-5 col-lg-6 ">
-              <div className="text-left" >
-                <div className="gradientBG mt-5">
-                  Dental Technicians
-                </div>
+              <div className="text-left">
+                <div className="gradientBG mt-5">Dental Technicians</div>
                 <h2>
                   ADDL sets the{" "}
-                  <span className="highlight-text1 fw-bold">standard for excellence</span>
+                  <span className="highlight-text1 fw-bold">
+                    standard for excellence
+                  </span>
                   , providing precision-crafted dental restorations with{" "}
-                  <span className="highlight-text2 fw-bold">uncompromising quality</span>
+                  <span className="highlight-text2 fw-bold">
+                    uncompromising quality
+                  </span>
                   —because every smile deserves perfection.
                 </h2>
               </div>
@@ -155,15 +193,29 @@ export default function Home() {
               ></img> */}
               <div className="d-flex justify-content-center w-75 mt-4 gap-1">
                 <div className="about-img-wrapper">
-                  <Image src="/images/about-icon11.png" className="img-fluid " width={60} height={60}></Image>
+                  <Image
+                    src="/images/about-icon11.png"
+                    className="img-fluid "
+                    width={60}
+                    height={60}
+                    alt=" "
+                  ></Image>
                   {/* <img
                     src="images/about-icon11.png"
                     className="img-fluid w-75"
                   ></img> */}
-                  <p style={{ color: "#7243A8" }}>Dental <br /> Technicians</p>
+                  <p style={{ color: "#7243A8" }}>
+                    Dental <br /> Technicians
+                  </p>
                 </div>
                 <div className="about-img-wrapper">
-                  <Image src="/images/about-icon22.png" className="img-fluid" width={60} height={60} alt="about-icon2"></Image>
+                  <Image
+                    src="/images/about-icon22.png"
+                    className="img-fluid"
+                    width={60}
+                    height={60}
+                    alt="about-icon2"
+                  ></Image>
                   {/* <img
                     src="images/about-icon22.png"
                     className="img-fluid w-75"
@@ -183,18 +235,18 @@ export default function Home() {
       <section className="feature-section">
         <div className="container">
           <div className="row align-items-center justify-content-center">
-            <div
-              className="col-11 col-xl-4 col-lg-5"
-            >
-              <div className="text-left" >
+            <div className="col-11 col-xl-4 col-lg-5">
+              <div className="text-left">
                 <h2>
-                  <span className="highlight-text2 fw-bold">Optimize efficiency and streamline</span> {""}
+                  <span className="highlight-text2 fw-bold">
+                    Optimize efficiency and streamline
+                  </span>{" "}
+                  {""}
                   your workflow with a full spectrum of premium dental lab
                   solutions—all from a single trusted partner.
                 </h2>
               </div>
               <div className="feature-box-left text-left">
-
                 <p>
                   ADDL delivers precision, innovation, and reliability in every
                   restoration, ensuring superior results for your practice.
@@ -240,11 +292,8 @@ export default function Home() {
                 
               );
             })} */}
-            <div className="col-lg-3 col-md-6 col-12 d-flex  " >
-
+            <div className="col-lg-3 col-md-6 col-12 d-flex  ">
               <div className="intro__item c1">
-                
-
                 {/* <div className="intro__item-img my-3 my-sm-4">
                   <Image
                     src="/images/pro-3.png"
@@ -254,18 +303,20 @@ export default function Home() {
                   ></Image>
                 </div> */}
                 <h2 className="intro__item-title my-2 my-sm-3">
-                Professional expert clinical advice
+                  Professional expert clinical advice
                 </h2>
-                <p className="intro__item-desc">Our Clinical Advisors provide personalized guidance with extensive clinical and lab expertise. They help you select the best materials and designs for complex cases, ensuring optimal results. Wherever you are, they're just a call away.</p>
+                <p className="intro__item-desc">
+                  Our Clinical Advisors provide personalized guidance with
+                  extensive clinical and lab expertise. They help you select the
+                  best materials and designs for complex cases, ensuring optimal
+                  results. Wherever you are, they're just a call away.
+                </p>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 col-12 d-flex  " >
-
+            <div className="col-lg-3 col-md-6 col-12 d-flex  ">
               <div className="intro__item c2">
                 {/* Black Overlay */}
-                <div
-                  className="ov"
-                ></div>
+                <div className="ov"></div>
 
                 <div className="intro__item-img my-3 my-sm-4">
                   <Image
@@ -276,18 +327,20 @@ export default function Home() {
                   ></Image>
                 </div>
                 <h2 className="intro__item-title my-2 my-sm-3">
-                Fast turnaround times
+                  Fast turnaround times
                 </h2>
-                <p className="intro__item-desc">At Cerameus, your satisfaction is our priority! We deliver top-quality results with fast turnaround times, ensuring excellence is always achieved effortlessly. We believe great results should be both quick and seamless for you.</p>
+                <p className="intro__item-desc">
+                  At Cerameus, your satisfaction is our priority! We deliver
+                  top-quality results with fast turnaround times, ensuring
+                  excellence is always achieved effortlessly. We believe great
+                  results should be both quick and seamless for you.
+                </p>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 col-12 d-flex  " >
-
+            <div className="col-lg-3 col-md-6 col-12 d-flex  ">
               <div className="intro__item c3">
                 {/* Black Overlay */}
-                <div
-                  className="ov"
-                ></div>
+                <div className="ov"></div>
 
                 <div className="intro__item-img my-3 my-sm-4">
                   <Image
@@ -298,19 +351,19 @@ export default function Home() {
                   ></Image>
                 </div>
                 <h2 className="intro__item-title my-2 my-sm-3">
-                Certification
+                  Certification
                 </h2>
-                <p className="intro__item-desc">All our lab work is designed and completed in Europe, adhering to the highest industry standards. We are ISO and FDA certified, ensuring exceptional quality and compliance. Each product is CE-marked for material excellence.</p>
+                <p className="intro__item-desc">
+                  All our lab work is designed and completed in Europe, adhering
+                  to the highest industry standards. We are ISO and FDA
+                  certified, ensuring exceptional quality and compliance. Each
+                  product is CE-marked for material excellence.
+                </p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-12 d-flex  ">
-
               <div className="intro__item c4">
-                
-                <div
-                  className="ov"
-                ></div>
-
+                <div className="ov"></div>
                 <div className="intro__item-img my-3 my-sm-4">
                   <Image
                     src="/images/cost-2.png"
@@ -320,9 +373,14 @@ export default function Home() {
                   ></Image>
                 </div>
                 <h2 className="intro__item-title my-2 my-sm-3">
-                Reduced costs
+                  Reduced costs
                 </h2>
-                <p className="intro__item-desc">At ADDL, we focus on providing exceptional quality with cost-effective solutions, enhancing your clinical efficiency while maintaining excellence. Our goal is to optimize your outcomes without compromising on performance or value.</p>
+                <p className="intro__item-desc">
+                  At ADDL, we focus on providing exceptional quality with
+                  cost-effective solutions, enhancing your clinical efficiency
+                  while maintaining excellence. Our goal is to optimize your
+                  outcomes without compromising on performance or value.
+                </p>
               </div>
             </div>
           </div>
@@ -332,12 +390,12 @@ export default function Home() {
       <section className="process-section">
         <div className="container">
           <div className="row align-items-center justify-content-center">
-            <div className="col-10 order-1 order-sm-0 col-lg-3">
+            <div className="col-10 order-1 order-sm-0 col-lg-3 col-sm-3">
               <h1 className="process-img">01</h1>
               {/* <Image src="/images/01.png" className="img-fluid process-img" width={150} height={150}></Image> */}
             </div>
             <div className="col-10 order-2 order-lg-0 col-sm-8">
-              <h2 className="process-title">Expert Consultation & Advisory</h2>
+              <h2 className="process-title ">Expert Consultation & Advisory</h2>
               <p className="process-subtitle">
                 Our team of experienced professionals is dedicated to providing
                 expert guidance on our extensive range of materials, products,
@@ -348,10 +406,10 @@ export default function Home() {
               </p>
             </div>
             <div className="col-10 order-4 order-lg-0 col-sm-8">
-              <h2 className="process-title text-sm-end">
+              <h2 className="process-title text-sm-start text-lg-end">
                 Tailored Customization
               </h2>
-              <p className="process-subtitle text-sm-end">
+              <p className="process-subtitle text-sm-start text-lg-end">
                 We understand that every patient is unique, which is why we
                 offer fully customized dental solutions designed to meet the
                 precise needs of each case. Our commitment to precision and
@@ -361,7 +419,7 @@ export default function Home() {
             </div>
             <div className="col-10 order-3 order-lg-0 col-sm-3">
               {/* images2 */}
-              <h1 className="process-img text-sm-end">02</h1>
+              <h1 className="process-img text-sm-start text-lg-end">02</h1>
               {/* <Image src="/images/02.png" className="img-fluid ms-auto d-block" width={150} height={150}></Image> */}
             </div>
             <div className="col-10 col-sm-3 order-lg-0 order-5">
@@ -381,10 +439,10 @@ export default function Home() {
               </p>
             </div>
             <div className="col-10 col-sm-8 order-lg-0 order-8">
-              <h2 className="process-title text-sm-end">
+              <h2 className="process-title text-sm-start text-lg-end">
                 Rapid Turnaround Times
               </h2>
-              <p className="process-subtitle text-sm-end">
+              <p className="process-subtitle text-sm-start text-lg-end">
                 We recognize the importance of efficiency in patient care, which
                 is why we prioritize fast and reliable turnaround times for all
                 our products. Our streamlined processes and advanced technology
@@ -393,7 +451,7 @@ export default function Home() {
               </p>
             </div>
             <div className="col-10 col-sm-3 order-lg-0 order-7">
-              <h1 className="process-img text-sm-end">04</h1>
+              <h1 className="process-img text-sm-start text-lg-end">04</h1>
               {/* <Image src="/images/04.png" className="img-fluid ms-auto d-block" width={150} height={150}></Image> */}
             </div>
             <div className="col-10 col-sm-3 order-lg-0 order-9">

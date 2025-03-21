@@ -10,7 +10,6 @@ const counters = [
 ];
 
 const support = () => {
-
     const [counts, setCounts] = useState(counters.map(() => 0));
     const cardRefs = useRef([]);
     const faqData = [
@@ -100,16 +99,16 @@ const support = () => {
                             <div className="card shadow-sm border-0 shadow-none">
                                 <div className="accordion user-select-none" id="faqAccordion">
 
-                                    <div class="accordion text-left" id="faqAccordion">
-                                        <div class="accordion-item border-0">
-                                            <h2 class="accordion-header" id="headingOne">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <div className="accordion text-left" id="faqAccordion">
+                                        <div className="accordion-item border-0">
+                                            <h2 className="accordion-header" id="headingOne">
+                                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                                     ADDL’s Fast and Reliable Turnaround Times: What Sets Us Apart
-                                                    <i class="far fa-chevron-down ms-auto" style={{ color: "#7e7c78" }}></i>
+                                                    <i className="far fa-chevron-down ms-auto" style={{ color: "#7e7c78" }}></i>
                                                 </button>
                                             </h2>
-                                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-                                                <div class="accordion-body ">
+                                            <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                                <div className="accordion-body ">
                                                     ADDL (Advanced Dental Design Laboratories) is dedicated to fast, reliable turnaround times without compromising quality. Using advanced technology and efficient workflows, we deliver products quickly.. Our skilled team ensures high-quality craftsmanship while meeting tight deadlines, making us a trusted partner for dental professionals.
                                                 </div>
                                             </div>
@@ -117,15 +116,15 @@ const support = () => {
 
                                         <hr className="m-0 custom-hr" />
 
-                                        <div class="accordion-item border-0">
-                                            <h2 class="accordion-header" id="headingTwo">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <div className="accordion-item border-0">
+                                            <h2 className="accordion-header" id="headingTwo">
+                                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                                     ADDL is the Future
-                                                    <i class="far fa-chevron-down ms-auto" style={{ color: "#7e7c78" }}></i>
+                                                    <i className="far fa-chevron-down ms-auto" style={{ color: "#7e7c78" }}></i>
                                                 </button>
                                             </h2>
-                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-                                                <div class="accordion-body">
+                                            <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                                <div className="accordion-body">
                                                     Switching to a digital lab like ADDL offers faster turnaround, higher accuracy, and cost savings compared to traditional labs. Digital technologies like CAD/CAM and 3D printing reduce errors, improve precision, and shorten production times, leading to better patient satisfaction and fewer adjustments. Digital labs also lower costs by minimizing material waste and labor, making them more efficient for dental practices and patients alike.
                                                 </div>
                                             </div>
@@ -133,15 +132,15 @@ const support = () => {
 
                                         <hr className="m-0 custom-hr" />
 
-                                        <div class="accordion-item border-0">
-                                            <h2 class="accordion-header" id="headingThree">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <div className="accordion-item border-0">
+                                            <h2 className="accordion-header" id="headingThree">
+                                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                                     Sustainability and Eco-Friendliness at ADDL
-                                                    <i class="far fa-chevron-down ms-auto" style={{ color: "#7e7c78" }}></i>
+                                                    <i className="far fa-chevron-down ms-auto" style={{ color: "#7e7c78" }}></i>
                                                 </button>
                                             </h2>
-                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-                                                <div class="accordion-body ">
+                                            <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                                <div className="accordion-body ">
                                                     ADDL is committed to sustainability by using  sustainable materials  and reducing waste through digital technologies like CAD/CAM and 3D printing. These methods minimize material waste and improve efficiency, while we also prioritize biodegradable and recyclable materials. ADDL’s eco-friendly practices reflect our dedication to a greener future for the dental industry.
                                                 </div>
                                             </div>
@@ -149,15 +148,15 @@ const support = () => {
 
                                         <hr className="m-0 custom-hr" />
 
-                                        <div class="accordion-item border-0">
-                                            <h2 class="accordion-header" id="headingFour">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                        <div className="accordion-item border-0">
+                                            <h2 className="accordion-header" id="headingFour">
+                                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
                                                     ADDL: Precision & Excellence in Dental Lab Solutions
-                                                    <i class="far fa-chevron-down ms-auto" style={{ color: "#7e7c78" }}></i>
+                                                    <i className="far fa-chevron-down ms-auto" style={{ color: "#7e7c78" }}></i>
                                                 </button>
                                             </h2>
-                                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
-                                                <div class="accordion-body ">
+                                            <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                                <div className="accordion-body ">
                                                     ADDL is committed to delivering dental lab work of the highest standards. Utilizing advanced digital technology and expert craftsmanship, we ensure that each product is precisely engineered and manufactured to meet the strictest quality requirements. Whether crowns, bridges, dentures, or other restorations, our focus on accuracy and consistency guarantees reliable, top-quality results trusted by dental professionals.
                                                 </div>
                                             </div>
@@ -165,15 +164,15 @@ const support = () => {
 
                                         <hr className="m-0 custom-hr" />
 
-                                        <div class="accordion-item border-0">
-                                            <h2 class="accordion-header" id="headingFive">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                        <div className="accordion-item border-0">
+                                            <h2 className="accordion-header" id="headingFive">
+                                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
                                                     Easy online ordering and seamless communication with your lab.
-                                                    <i class="far fa-chevron-down ms-auto" style={{ color: "#7e7c78" }}></i>
+                                                    <i className="far fa-chevron-down ms-auto" style={{ color: "#7e7c78" }}></i>
                                                 </button>
                                             </h2>
-                                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
-                                                <div class="accordion-body ">
+                                            <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                                <div className="accordion-body ">
                                                     Addl offers an effortless online ordering system that ensures a smooth and efficient process for all your dental needs. With our user-friendly website, you can place orders quickly and easily, saving your time and effort. Additionally, our seamless communication system allows you to stay connected with our lab at all times, ensuring that you receive timely updates, support, and high-quality service. Whether you're a dental professional or a patient, Addl makes your experience simple and hassle-free.
                                                 </div>
                                             </div>
@@ -185,7 +184,7 @@ const support = () => {
                         </div>
 
                         <div className="col-12 col-lg-6 col-md-6 ">
-                            <div class="card shadow-none border-0 d-flex justify-content-center align-items-center h-100">
+                            <div className="card shadow-none border-0 d-flex justify-content-center align-items-center h-100">
                                 <Image
                                     src="/images/whyi1.png"
                                     alt="Example Image"
@@ -234,7 +233,7 @@ const support = () => {
 
                         <div className="col-12 col-lg-6 col-md-6 ">
 
-                            <div class="card shadow-none border-0 d-flex justify-content-center align-items-center h-100 bg-transparent">
+                            <div className="card shadow-none border-0 d-flex justify-content-center align-items-center h-100 bg-transparent">
                                 <Image
                                     src="/images/timeline1.png"
                                     alt="Example Image"
@@ -314,7 +313,7 @@ const support = () => {
                 </div>
             </section>
 
-            <section className="pricing-plans " style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem", }}>
+            <section className="pricing-plans" style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem", }}>
                 <div className="container text-center position-relative">
                     <h2 className="heading1 text-center"> Our Most Premium Product</h2>
                     <div className="row g-4 ">
@@ -365,9 +364,6 @@ const support = () => {
                     />
                 </div>
             </section>
-
-
-
         </div>
     )
 }

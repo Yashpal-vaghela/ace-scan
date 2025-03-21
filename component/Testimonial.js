@@ -86,7 +86,7 @@ const Testimonial = () =>{
         className="mySwiper">
             {TestimonialData?.map((item,index)=>{
                 return(
-                    <SwiperSlide>
+                    <SwiperSlide key={index}>
                         <div
                             className="col-9 col-md-12 col-lg-12  testimonial_card"
                             style={{ marginTop: "50px",marginBottom:'38px' }}
@@ -118,3 +118,5 @@ const Testimonial = () =>{
 }
 
 export default Testimonial;
+
+

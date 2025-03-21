@@ -1,6 +1,5 @@
 
 .footer_grid {
-    
     background-image: url('/images/bgfooter.png');
     background-size: cover;
     background-position: center;
@@ -80,7 +79,14 @@
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.3);
 }
-
+.copyright {
+    /* font-size: 0.95rem; */
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+    color: #68ABA1;
+    text-decoration: none;
+}
 @media (max-width: 991px) {
     .footer-content {
         /* max-width: 400px; */
