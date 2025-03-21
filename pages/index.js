@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 // import styles from "@/styles/Style.module.css";
 import "../public/css/contact.css";
+import "../public/css/styles.css";
 import Support from "./support";
 
 const geistSans = Geist({
@@ -22,14 +23,14 @@ export default function Home() {
       img: "/images/pro-3.png",
       title: "Professional expert clinical advice",
       subtitle:
-        "Our expert Clinical Advisors are always here to support you with personalized guidance. With deep clinical and lab expertise, they help you choose the best materials and designs for even the toughest cases, ensuring optimal results. No matter where you are, they’re just a call away.",
+        "Our Clinical Advisors provide personalized guidance with extensive clinical and lab expertise. They help you select the best materials and designs for complex cases, ensuring optimal results. Wherever you are, they're just a call away.",
     },
     {
       id: 2,
       img: "/images/clock8.png",
       title: "Fast turnaround times",
       subtitle:
-        "At Cerameus, your satisfaction comes first! We ensure top-quality results with quick turnaround times — because excellence should always be effortless.",
+        "At Cerameus, your satisfaction is our priority! We deliver top-quality results with fast turnaround times, ensuring excellence is always achieved effortlessly. We believe great results should be both quick and seamless for you.",
     },
     {
       id: 3,
@@ -43,7 +44,7 @@ export default function Home() {
       img: "/images/cost-2.png",
       title: "Reduced costs",
       subtitle:
-        " At ADDL, we are committed to delivering exceptional quality with cost-effective solutions, helping you optimize clinical efficiency without compromising excellence.",
+        " At ADDL, we focus on providing exceptional quality with cost-effective solutions, enhancing your clinical efficiency while maintaining excellence. Our goal is to optimize your outcomes without compromising on performance or value.",
     },
   ];
   return (
@@ -52,31 +53,31 @@ export default function Home() {
       <div className="container">
       </div>
     </section> */}
- 
+
       <section className="p-0 parallax overlap-height">
         <div className="lqd-vbg-wrap">
           <div className="lqd-vbg-inner">
             <span className="lqd-vbg-loader"></span>
             <div
               className="inline-YTPlayer"
-              style={{position:'relative',maxWidth:'100%'}}
+              style={{ position: 'relative', maxWidth: '100%' }}
             >
               <div
                 className="lqd-vbg-video mb_YTPlayer isMuted"
                 data-video-bg="true"
                 data-youtube-options='{"videoURL":"https://www.youtube.com/embed/Fv4YYSRsRUg"}'
                 id="YTP_1742270005228"
-                style={{position:'relative',paddingBottom:'56.25%',overflow:'hidden',height:'0px'}}
+                style={{ position: 'relative', paddingBottom: '56.25%', overflow: 'hidden', height: '0px' }}
               >
                 <div
                   id="wrapper_YTP_1742270005228"
                   className="mbYTP_wrapper"
-                  style={{ position:'absolute', zIndex:0, minWidth:'100%', minHeight:'100%', left:'0px', top:'0px', overflow:'hidden', opacity:1, backgroundImage:'none', transitionDuration:'1000ms' }}
+                  style={{ position: 'absolute', zIndex: 0, minWidth: '100%', minHeight: '100%', left: '0px', top: '0px', overflow: 'hidden', opacity: 1, backgroundImage: 'none', transitionDuration: '1000ms' }}
                 >
                   <iframe
                     id="iframe_YTP_1742270005228"
                     className="playerBox"
-                    style={{position:"absolute",zIndex:0,width:'2024px',height:'1138.2px',top:'0px',left:'0px',overflow:'hidden',opacity:1,userSelect:'none',marginTop:'-106.706px',marginLeft:'-379px',maxWidth:'initial'}}
+                    style={{ position: "absolute", zIndex: 0, width: '2024px', height: '1138.2px', top: '0px', left: '0px', overflow: 'hidden', opacity: 1, userSelect: 'none', marginTop: '-106.706px', marginLeft: '-379px', maxWidth: 'initial' }}
                     frameBorder="0"
                     allowfullscreen=""
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -89,10 +90,10 @@ export default function Home() {
                   ></iframe>
                   <div
                     className="YTPOverlay"
-                    style={{position:'absolute',top:'0px',left:'0px',width:'100%',height:'100%',cursor:'pointer'}}
+                    style={{ position: 'absolute', top: '0px', left: '0px', width: '100%', height: '100%', cursor: 'pointer' }}
                   ></div>
                 </div>
-                <div className="inlinePlayButton"  style={{display:'none'}}>
+                <div className="inlinePlayButton" style={{ display: 'none' }}>
                   P
                 </div>
               </div>
@@ -103,7 +104,7 @@ export default function Home() {
         <div className="container position-relative">
           <div
             className="row full-screen md-landscape-h-600px"
-            style={{height:"600px"}}
+            style={{ height: "600px" }}
           >
             <div className="col-12 col-xl-5 col-lg-6 col-md-7 col-sm-10 d-flex flex-column justify-content-center">
               <h2 className="alt-font text-white line-height-65px font-weight-500 letter-spacing-minus-1px margin-65px-bottom sm-line-height-50px sm-margin-25px-bottom">
@@ -125,62 +126,44 @@ export default function Home() {
       <section className="About-section pt-5">
         <div className="container py-5">
           <div className="row justify-content-center">
-            <div className="col-11 col-xl-5 col-md-7 col-lg-6">
+            <div className="col-11 col-xl-5 col-md-7 col-lg-6 mt-5">
               <Image
-                src="/images/about-img.png"
+                src="/images/ManuBansal1.jpg"
                 className="img-fluid about-img1"
-                width={100}
+                width={200}
                 height={100}
-                alt="about-img"
+                alt=" "
               ></Image>
-              <Image
-                src="/images/about-img1.png"
-                className="img-fluid about-img2"
-                width={100}
-                height={100}
-                alt="about-img1"
-              ></Image>
-              <Image src="/images/about-img5.png" alt="about-icon1"  className="img-fluid about-img5" width={100} height={100}></Image>
-              {/* <img
-                src="images/about-img5.png"
-                className="img-fluid about-img5"
-              ></img> */}
-              <Image src="/images/about-icon3.png" className="img-fluid about-icon1" width={110} height={110} alt="about-icon3"></Image>
-              {/* <img
-                src="images/about-icon3.png"
-                className="img-fluid about-icon1"
-              ></img> */}
-              <Image src="/images/textRing.png" className="img-fluid text-ring" width={110} height={110} alt="text-ring"></Image>
-              {/* <img
-                src="images/textRing.png"
-                className="img-fluid text-ring"
-              ></img> */}
             </div>
-            <div className="col-11 col-xl-7 col-md-5 col-lg-6">
-              <h2 className="text-title about-title heading2 ">Dental Technicians</h2>
-              <h3 className="text-subtitle heading1 about-subtitle">
-                ADDL sets the{" "}
-                <span className="highlight-text1">standard for excellence</span>
-                , providing precision-crafted dental restorations with{" "}
-                <span className="highlight-text2">uncompromising quality</span>
-                —because every smile deserves perfection.
-              </h3>
-              <Image src="/images/about-img4.png" className="img-fluid about-img3" width={100} height={100} alt="about-img3"></Image>
+            <div className="col-11 col-xl-7 col-md-5 col-lg-6 ">
+              <div className="text-left" >
+                <div className="gradientBG mt-5">
+                  Dental Technicians
+                </div>
+                <h2>
+                  ADDL sets the{" "}
+                  <span className="highlight-text1 fw-bold">standard for excellence</span>
+                  , providing precision-crafted dental restorations with{" "}
+                  <span className="highlight-text2 fw-bold">uncompromising quality</span>
+                  —because every smile deserves perfection.
+                </h2>
+              </div>
+              {/* <Image src="/images/about-img4.png" className="img-fluid about-img3" width={100} height={100} alt="about-img3"></Image> */}
               {/* <img
                 src="images/about-img4.png"
                 className="img-fluid about-img3"
               ></img> */}
-              <div className="d-flex gap-5 justify-content-center w-75 mt-4">
+              <div className="d-flex justify-content-center w-75 mt-4 gap-1">
                 <div className="about-img-wrapper">
-                  <Image src="/images/about-icon11.png" className="img-fluid w-75" width={75} height={75}></Image>
+                  <Image src="/images/about-icon11.png" className="img-fluid " width={60} height={60}></Image>
                   {/* <img
                     src="images/about-icon11.png"
                     className="img-fluid w-75"
                   ></img> */}
-                  <p style={{ color: "#7243A8" }}>Dental Technicians</p>
+                  <p style={{ color: "#7243A8" }}>Dental <br /> Technicians</p>
                 </div>
                 <div className="about-img-wrapper">
-                  <Image src="/images/about-icon22.png"  className="img-fluid w-75" width={75} height={75} alt="about-icon2"></Image>
+                  <Image src="/images/about-icon22.png" className="img-fluid" width={60} height={60} alt="about-icon2"></Image>
                   {/* <img
                     src="images/about-icon22.png"
                     className="img-fluid w-75"
@@ -191,9 +174,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-12">
+            {/* <div className="col-12">
               <button className="btn btn-readmore  mt-5 mb-4">Read More</button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -203,14 +186,15 @@ export default function Home() {
             <div
               className="col-11 col-xl-4 col-lg-5"
             >
-              <div className="feature-box-left">
-                <h2 className="title-small heading1 feature-box-title mb-3">
-                  <span className="highlight-text2">
-                    Optimize efficiency and streamline
-                  </span>{" "}
+              <div className="text-left" >
+                <h2>
+                  <span className="highlight-text2 fw-bold">Optimize efficiency and streamline</span> {""}
                   your workflow with a full spectrum of premium dental lab
                   solutions—all from a single trusted partner.
                 </h2>
+              </div>
+              <div className="feature-box-left text-left">
+
                 <p>
                   ADDL delivers precision, innovation, and reliability in every
                   restoration, ensuring superior results for your practice.
@@ -250,27 +234,97 @@ export default function Home() {
       <section className="services-section">
         <div className="container">
           <h2 className="services-title mb-3">Cerameus at a glance</h2>
-          <div className="row services_grid">
-            {servicesData?.map((data, index) => {
+          <div className="row services_grid g-4">
+            {/* {servicesData?.map((data, index) => {
               return (
-                <div className="col-lg-3 col-md-6 col-12 d-flex" key={index}>
-                  <div className="intro__item">
-                    <div className="intro__item-img my-3 my-sm-4">
-                      <Image
-                        src={data?.img}
-                        alt="icon-img"
-                        width={60}
-                        height={60}
-                      ></Image>
-                    </div>
-                    <h2 className="intro__item-title my-2 my-sm-3">
-                      {data.title}
-                    </h2>
-                    <p className="intro__item-desc">{data.subtitle}</p>
-                  </div>
-                </div>
+                
               );
-            })}
+            })} */}
+            <div className="col-lg-3 col-md-6 col-12 d-flex  " >
+
+              <div className="intro__item c1">
+                
+
+                {/* <div className="intro__item-img my-3 my-sm-4">
+                  <Image
+                    src="/images/pro-3.png"
+                    alt="icon-img"
+                    width={60}
+                    height={60}
+                  ></Image>
+                </div> */}
+                <h2 className="intro__item-title my-2 my-sm-3">
+                Professional expert clinical advice
+                </h2>
+                <p className="intro__item-desc">Our Clinical Advisors provide personalized guidance with extensive clinical and lab expertise. They help you select the best materials and designs for complex cases, ensuring optimal results. Wherever you are, they're just a call away.</p>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-12 d-flex  " >
+
+              <div className="intro__item c2">
+                {/* Black Overlay */}
+                <div
+                  className="ov"
+                ></div>
+
+                <div className="intro__item-img my-3 my-sm-4">
+                  <Image
+                    src="/images/clock8.png"
+                    alt="icon-img"
+                    width={60}
+                    height={60}
+                  ></Image>
+                </div>
+                <h2 className="intro__item-title my-2 my-sm-3">
+                Fast turnaround times
+                </h2>
+                <p className="intro__item-desc">At Cerameus, your satisfaction is our priority! We deliver top-quality results with fast turnaround times, ensuring excellence is always achieved effortlessly. We believe great results should be both quick and seamless for you.</p>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-12 d-flex  " >
+
+              <div className="intro__item c3">
+                {/* Black Overlay */}
+                <div
+                  className="ov"
+                ></div>
+
+                <div className="intro__item-img my-3 my-sm-4">
+                  <Image
+                    src="/images/q-6.png"
+                    alt="icon-img"
+                    width={60}
+                    height={60}
+                  ></Image>
+                </div>
+                <h2 className="intro__item-title my-2 my-sm-3">
+                Certification
+                </h2>
+                <p className="intro__item-desc">All our lab work is designed and completed in Europe, adhering to the highest industry standards. We are ISO and FDA certified, ensuring exceptional quality and compliance. Each product is CE-marked for material excellence.</p>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-12 d-flex  ">
+
+              <div className="intro__item c4">
+                
+                <div
+                  className="ov"
+                ></div>
+
+                <div className="intro__item-img my-3 my-sm-4">
+                  <Image
+                    src="/images/cost-2.png"
+                    alt="icon-img"
+                    width={60}
+                    height={60}
+                  ></Image>
+                </div>
+                <h2 className="intro__item-title my-2 my-sm-3">
+                Reduced costs
+                </h2>
+                <p className="intro__item-desc">At ADDL, we focus on providing exceptional quality with cost-effective solutions, enhancing your clinical efficiency while maintaining excellence. Our goal is to optimize your outcomes without compromising on performance or value.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
