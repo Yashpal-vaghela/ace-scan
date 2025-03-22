@@ -4,7 +4,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 // import styles from "@/styles/Style.module.css";
 import "../public/css/contact.css";
 import "../public/css/styles.css";
+import "../public/css/Home.css";
 import Support from "./support";
+import Home1 from "@/component/Home1";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,11 +51,6 @@ export default function Home() {
   ];
   return (
     <>
-      {/* <section className="hero-section">
-      <div className="container">
-      </div>
-    </section> */}
-
       <section className="p-0 parallax overlap-height">
         <div className="lqd-vbg-wrap">
           <div className="lqd-vbg-inner">
@@ -176,11 +173,11 @@ export default function Home() {
                 <div className="gradientBG mt-5">Dental Technicians</div>
                 <h2>
                   ADDL sets the{" "}
-                  <span className="highlight-text1 fw-bold">
+                  <span className="highlight-text1 ">
                     standard for excellence
                   </span>
                   , providing precision-crafted dental restorations with{" "}
-                  <span className="highlight-text2 fw-bold">
+                  <span className="highlight-text2 ">
                     uncompromising quality
                   </span>
                   —because every smile deserves perfection.
@@ -200,10 +197,6 @@ export default function Home() {
                     height={60}
                     alt=" "
                   ></Image>
-                  {/* <img
-                    src="images/about-icon11.png"
-                    className="img-fluid w-75"
-                  ></img> */}
                   <p style={{ color: "#7243A8" }}>
                     Dental <br /> Technicians
                   </p>
@@ -216,10 +209,6 @@ export default function Home() {
                     height={60}
                     alt="about-icon2"
                   ></Image>
-                  {/* <img
-                    src="images/about-icon22.png"
-                    className="img-fluid w-75"
-                  ></img> */}
                   <p style={{ color: "#68ABA1" }}>
                     The Highest Quality Products.
                   </p>
@@ -386,13 +375,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Support></Support>
+      <Home1></Home1>
+      {/* <Support></Support> */}
       <section className="process-section">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-10 order-1 order-sm-0 col-lg-3 col-sm-3">
               <h1 className="process-img">01</h1>
-              {/* <Image src="/images/01.png" className="img-fluid process-img" width={150} height={150}></Image> */}
             </div>
             <div className="col-10 order-2 order-lg-0 col-sm-8">
               <h2 className="process-title ">Expert Consultation & Advisory</h2>
@@ -420,11 +409,9 @@ export default function Home() {
             <div className="col-10 order-3 order-lg-0 col-sm-3">
               {/* images2 */}
               <h1 className="process-img text-sm-start text-lg-end">02</h1>
-              {/* <Image src="/images/02.png" className="img-fluid ms-auto d-block" width={150} height={150}></Image> */}
             </div>
             <div className="col-10 col-sm-3 order-lg-0 order-5">
               <h1 className="process-img">03</h1>
-              {/* <Image src="/images/03.png" className="img-fluid" width={150} height={150}></Image> */}
             </div>
             <div className="col-10 col-sm-8 order-lg-0 order-6">
               <h2 className="process-title">Expert Clinical Guidance</h2>
@@ -452,11 +439,9 @@ export default function Home() {
             </div>
             <div className="col-10 col-sm-3 order-lg-0 order-7">
               <h1 className="process-img text-sm-start text-lg-end">04</h1>
-              {/* <Image src="/images/04.png" className="img-fluid ms-auto d-block" width={150} height={150}></Image> */}
             </div>
             <div className="col-10 col-sm-3 order-lg-0 order-9">
               <h1 className="process-img">05</h1>
-              {/* <Image src="/images/05.png" className="img-fluid" width={150} height={150}></Image> */}
             </div>
             <div className="col-10 col-sm-8 order-lg-0 order-10">
               <h2 className="process-title">
