@@ -78,9 +78,7 @@ const About = () => {
                 <div className="certification-section">
                     <div className="container">
                         <div className="certification-overlay">
-
                             <div className="certification-content text-start col-12">
-
                                 Our partnership exclusively involves FDA-verified dental labs that offer exceptional quality and value.
                                 This ensures that you receive restorations that meet the latest industry standards while maintaining superior precision and reliability.
 
@@ -91,7 +89,7 @@ const About = () => {
             </section>
             <section className="about-map">
                 <div className="container">
-                    <div className="about-container d-flex align-items-center">
+                    <div className="d-flex align-items-center">
                         <div className="about-content d-flex justify-content-center align-items-center">
                             <div className="about-images">
                                 <Image

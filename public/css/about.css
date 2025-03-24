@@ -5,21 +5,24 @@
   justify-content: center;
   align-items: center;
   /* min-height: 100vh; */
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
   padding: 50px 0px;
 }
 
-.trusted-dental-lab {
+/* .trusted-dental-lab {
   background-color: #f8f9fa;
-}
+} */
 
 .about-map {
-  background-color: #f9f9f9;
+  background-color: rgba(0, 0, 0, 0.12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
 }
 .about-content {
   display: flex;
   align-items: start;
-  
   gap: 40px;
 }
 
@@ -110,8 +113,8 @@
   display: flex;
   align-items: center;
   justify-content: start;
-  min-height: 650px;
-  bottom: 30px;
+  min-height: 550px;
+  /* bottom: 30px; */
 }
 
 .certification-section::before {
