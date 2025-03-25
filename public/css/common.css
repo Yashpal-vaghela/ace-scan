@@ -21,3 +21,29 @@
         margin-top: 20px;
     }
 }
+
+
+
+.double-heading {
+    font-size: 2.5rem;
+    line-height: 1.55;
+    z-index: 3;
+}
+@media(max-width:991px){
+    .double-heading{
+        font-size: 2rem;
+    }
+}
+@media(max-width:768px){
+    .double-heading{
+       width: 100% !important;
+       margin-top: 60px !important; 
+       font-size: 1.9rem;
+     }
+}
+@media(max-width:576px){
+    .double-heading{
+        font-size: 1.7rem;
+        margin-top: 10px;
+    }
+}
