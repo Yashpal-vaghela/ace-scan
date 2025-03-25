@@ -8,7 +8,7 @@ const Header = () => {
             <nav className="navbar navbar-expand-lg fixed-top  bg-white custom-navbar" style={{ height: "80px" }}>
                 <div className="container d-flex justify-content-end ">
                     <Link className="navbar-brand me-auto" href="/">
-                        <Image src="/images/logo.png" alt="Logo" width={200} height={40} />
+                        <Image src="/images/ACE-logo.png" alt="Logo" width={150} height={40} />
                     </Link>
 
                     <div className="offcanvas offcanvas-between" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
