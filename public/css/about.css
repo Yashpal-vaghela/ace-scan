@@ -163,7 +163,7 @@
     align-items: center;
     justify-content: center;
     min-height: 200px;
-    bottom: 30px;
+    /* bottom: 30px; */
   }
 
 }
@@ -252,10 +252,10 @@
     font-size: 1.8rem;
   }
 
-  p {
+  /* p {
     font-size: 0.95rem;
     text-align: left;
-  }
+  } */
 
   .image-bottom {
     width: 35% !important;
@@ -276,7 +276,7 @@
 
   .image-top,
   .image-bottom {
-    width: 90%;
+    width: 85% !important;
   }
 
   .about-text {
@@ -284,9 +284,9 @@
   }
 
   .image-bottom {
-    width: 45% !important;
+    width: 58% !important;
   height: 45% !important;
-  right: 30px;
+  right: 0px;
   bottom: 15px;
   }
 }
@@ -470,6 +470,100 @@
 @media (max-width: 991px) {
   .about-content0 {
     width:100%;
+  }
+  .about-text h2{
+    width: 80% !important;
+    font-size: 2rem;
+  }
+}
+@media(max-width:768px){
+ .about-container .about-text h2{
+    width: 100% !important;
+    margin-top: 60px !important; 
+    font-size: 1.9rem;
+  }
+}
+
+@media(max-width:576px){
+  .about-text h2{
+    font-size: 1.7rem;
+    margin-top: 20px;
+    width: 100% !important;
+  }
+  .about-content{
+    margin-top: 10px !important;
+    width: 100% !important;
+    padding: 0px 12px;
+  }
+  .custom-image-radius{
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 0px 12px;
+    /* margin-right: 10px; */
+  }
+  .custom-image-radius-left{
+    padding: 0px 12px;
+  }
+  .working-with-the-best{
+    padding-bottom: 20px;
+  }
+  .working-with-the-best .about-text{
+    margin-top: 0px;
+  }
+  .working-with-the-best .about-content{
+    padding: 0px;
+  }
+  .working-with-the-best .row .col-lg-6,.trusted-dental-lab .row .col-lg-6{
+    padding: 0px 24px;
+  }
+  .about-video video,.video-overlay{
+    width: 100%;
+    left: 0%;
+  }
+  .about-container{
+    margin-top:95px;
+    margin-bottom: 30px;
+    padding: 0px;
+  }
+  .about-container .about-text{
+    padding: 0px;
+  }
+  .about-images{
+    width: 100%;
+    /* margin-top: 15px; */
+    width: 95%;
+    margin: 15px auto 0px;
+  }
+  .about-text{
+    max-width: 100%;
+    margin-top: 50px;
+  }
+  .about-text p{
+    margin-top: 10px;
+  }
+  .about-map{
+    padding: 35px 0px;
+  }
+  .about-map .about-text{
+    margin-top: 30px;
+    padding: 0px 12px;
+  }
+  .about-content0{
+    padding: 0px;
+  }
+  .certification-section{
+    padding: 0 2.5%;
+  }
+  .boss-work .about-text,.boss-work .about-content{
+    margin-top: 0px;
+    padding: 0px;
+  }
+  .standard-work .about-text{
+    margin-top: 10px;
+    width: 100% !important;
+  }
+  .card-wop{
+    padding: 0px 12px;
   }
 }
 @media(min-width:1400px){

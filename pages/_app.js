@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import "../public/css/common.css";
 import Header from "@/component/header";
 import Footer from "@/component/footer";
 import { Router, useRouter } from "next/router";

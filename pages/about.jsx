@@ -93,7 +93,7 @@ const About = () => {
       <section className="about-map">
         <div className="container">
           <div className="row d-flex align-items-center">
-            <div className="col-7">
+            <div className="col-sm-7 col-12">
               <div className="about-images">
                 <Image
                   src="/images/USA-map.png"
@@ -104,7 +104,7 @@ const About = () => {
                 />
               </div>
             </div>
-            <div className="col-5">
+            <div className="col-sm-5 col-12">
               <div className="about-text">
                 <h2 className="main-heading-with-double-color">
                   Delivering Excellence In{" "}
@@ -283,7 +283,7 @@ const About = () => {
                 className="img-fluid w-95 h-95 object-fit-cover custom-image-radius"
               />
             </div>
-            <div className="col-lg-6 pe-0 align-items-stretch order-lg-2 order-3 mb-5">
+            <div className="col-lg-6 pe-sm-0 align-items-stretch order-lg-2 order-3 mb-5">
               <Image
                 src="/images/exellence.jpg"
                 alt="New Shared Image"
