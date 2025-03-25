@@ -68,7 +68,7 @@
 .simplebtn {
     margin-top: 14px;
     display: inline-block;
-    background-color: #3e9293;
+    background-color: #015e8a;
     color: white;
     font-weight: bold;
     padding: 8px 12px;
@@ -84,7 +84,7 @@
     font-weight: 700;
     margin-bottom: 0;
     text-align: center;
-    color: #68ABA1;
+    color: #015e8a;
     text-decoration: none;
 }
 @media (max-width: 991px) {

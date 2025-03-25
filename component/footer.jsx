@@ -51,11 +51,11 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-            <div className="container mt-4">
+            <div className="container mt-4 pb-4">
                 <div className="row justify-content-center align-items-center text-center">
                     <div className="col-12 d-flex justify-content-between align-items-center gap-5">
                         <Link className="navbar-brand me-auto" href="/">
-                            <Image src="/images/ADDL.png" alt="Logo" width={50} height={50} />
+                            <Image src="/images/ACE-logo.png" alt="Logo" width={150} height={50} />
                         </Link>
                         <div className="bg-white"><p >
                             &copy; 2025 <span><Link href="https://advancedentalexport.com/" className="copyright">Advance Dental Export</Link></span>. All Rights Reserved

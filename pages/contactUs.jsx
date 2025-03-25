@@ -57,7 +57,7 @@ const contactUs = () => {
                 <img src="/images/email-icon.svg" className=" slider-icon"></img>
                 <div className="slider-cardbody">
                   <p className="mb-0 slider-card-heading">Email:</p>
-                  <p>hr@acedigitaldentallaboratory.com</p>
+                  <p style={{wordBreak: "break-word"}}>hr@acedigitaldentallaboratory.com</p>
                 </div>
                 </div>
                 <div className="sidebar-cards">

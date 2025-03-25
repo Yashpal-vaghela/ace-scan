@@ -1,0 +1,10 @@
+
+.nav-link.active {
+    font-weight: bold;
+    color: #015e8a !important; 
+}
+
+.navbar {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background: white;
+}
