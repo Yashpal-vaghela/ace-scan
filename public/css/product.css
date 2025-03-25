@@ -299,3 +299,201 @@
     padding-bottom: 40px 0px;
   }
 }
+
+/*================================ Crown-Bridge start ====================*/
+.video-section-crown{
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+.video-crop-crown{
+  width: 90%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 20px;
+  position: absolute;
+  top: -200px;
+}
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 102, 255, 0.4);
+  z-index: 1;
+}
+.implant-card-section{
+  padding: 50px 0;
+  background-color: white;
+}
+.implant-card{
+  background: #fdfcfa;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
+  border: 1px solid #eceae6;
+}
+.implant-card:hover {
+  transform: translateY(-5px);
+}
+.implant-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+/*================================ Crown-Bridge end ====================*/
+/* ================================================================ start Implants =============================================== */
+.product-before-after {
+  background-color: rgba(0,102,153,0.2);
+  margin-bottom: 20px;
+  width: 100%;
+  /* height: 500px; */
+  
+}
+
+/* .for-rlative {
+  position: relative;
+} */
+.product-before-after-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.round-images {
+  /* padding-left: 20px; */
+  /* display: none; */
+}
+
+.for-rlative {
+  position: relative;
+}
+
+
+.product-before-after-heading {
+  position: absolute;
+  width: 70%;
+  text-align: right;
+  right: 0%;
+  top: 6%;
+  font-size: 18px;
+}
+
+.product-before-after-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  padding-bottom: 30px;
+  text-align: right;
+  /* font-size: 18px; */
+}
+
+.before-after-contains {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .double-heading {
+    display: none;
+  }
+  .before-after-contains {
+    display: block;
+  }
+
+  .heading_outer {
+    display: none;
+  }
+
+  .product-before-after-content {
+    padding-top: 100px;
+    text-align: center;
+    position: relative;
+  }
+
+  .product-before-after-heading {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    right: 0%;
+    top: 8%;
+  }
+
+  .before-after-contains{
+    font-size: 22px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 775px) {
+
+  .double-heading {
+    display: none;
+  }
+  .before-after-contains {
+    display: block;
+  }
+
+  .product-before-after-content {
+    padding-top: 100px;
+    text-align: center;
+    position: relative;
+  }
+
+  .product-before-after-heading {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    right: 0%;
+    top: 5%;
+  }
+
+  .before-after-contains{
+    font-size: 22px;
+    font-weight: 500;
+    
+  }
+}
+
+@media (max-width: 575px) {
+
+  .double-heading {
+    display: none;
+  }
+
+  .before-after-contains {
+    display: block;
+  }
+  .product-before-after-content {
+    padding-top: 110px;
+    text-align: center;
+    position: relative;
+  }
+
+  .product-before-after-heading {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    right: 0%;
+    top: 8%;
+  }
+
+  .before-after-contains{
+    font-size: 18px;
+    font-weight: 500;
+    
+  }
+}
+
+
+/* ================================================================ end Implants =============================================== */
