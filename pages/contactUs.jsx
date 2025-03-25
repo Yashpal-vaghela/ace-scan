@@ -22,46 +22,31 @@ const contactUs = () => {
   return (
     <React.Fragment>
       <Breadcrumbs></Breadcrumbs>
-
       <section
         className="conatct-form-wrapper position-relative"
         style={{ paddingTop: "120px", paddingBottom: "30px" }}
       >
-        <div className="container position-relative">
-          <div
-            style={{
-              backgroundColor: "rgba(0, 0, 0, 0)",
-              height: "100%",
-              width: "100%",
-              opacity: 1,
-            }}
-          >
-            <div
-              style={{
-                flex: "none",
-                inset: 0,
-                position: "absolute",
-                zIndex: -1,
-                top: "-20%",
-                left: "-4%",
-                opacity: 1,
-              }}
-            >
-              <div
-                style={{
-                  width: "30%",
-                  height: "35%",
-                  backgroundColor: "transparent",
-                  backgroundImage:
-                    "radial-gradient(rgba(0, 94, 138,0.7) 1.5px, transparent 1px),radial-gradient(rgba(0, 94, 138,0.7) 1px, rgba(35, 84, 84, 0) 1px)",
-                  backgroundPosition: "0px 0px,20px 20px",
-                  backgroundSize: "40px 40px",
-                  borderRadius: "0px",
-                }}
-              ></div>
+      {/* <div className="dots-vector-contain">
+        <div style={{display:'contents'}}>
+          <div className="dots-content">
+            <div className="dots-container">
+              <div className="dots-vector-container">
+                <div className="dots-vector"></div>
+              </div>
+              <div className="dots-wid"></div>
             </div>
           </div>
-
+        </div>
+      </div> */}
+        <div className="container position-relative">
+          
+          <div className="dots-vector-contain">
+            <div className="dots-content">
+              <div className="dots-vector"></div>
+              <div className="dots-wid"></div>
+            </div>
+          </div>
+     
           <div className="row position-relative">
             <div className="col-lg-6 col-6">
               <img src="/images/contact-img1.png" className="img-fluid"></img>
@@ -211,6 +196,19 @@ const contactUs = () => {
                 </div> */}
         </div>
       </section>
+      <div className="dots-vector-contain">
+        <div style={{display:'contents'}}>
+          <div className="dots-content">
+            <div className="dots-container">
+              <div className="dots-vector-container">
+                <div className="dots-vector"></div>
+              </div>
+              <div className="dots-wid"></div>
+            </div>
+          </div>
+        </div>
+      </div> 
+     
     </React.Fragment>
   );
 };
@@ -247,7 +245,6 @@ export default contactUs;
       </div>
     </section> */
 }
-
 {
   /* <div className="col-lg-8 col-8">
                 <h2>Contact Us </h2>

@@ -108,6 +108,51 @@
 .addl-content h5{
   font-weight: 600;
 }
+.support-content .support-team-title{
+  font-size: 32px;
+  color: #005e8a;
+  font-weight: 600;
+  line-height: 1.55;
+  width: 60%;
+  margin-left: auto;
+  margin-right: 15%;
+  margin-top: 50px;
+}
+.support-team-description{
+  padding: 10px 5px 5px 25px;
+  line-height: 1.8;
+  font-weight: 480;
+  text-align: center;
+  font-size: 14px;
+}
+.btn-getInTouch,
+.btn-getInTouch:focus,
+.btn-getInTouch:hover{
+  background-color: #005e8a;
+  padding: 8px 15px;
+  color: #fff;
+  font-size: 14px;
+}
+.btn-getInTouch:hover{
+  border: 2px solid #005e8a;
+  background-color: transparent;
+  color: #005e8a;
+  padding: 7px 12px;
+  font-weight: 700;
+}
+.support-team-img{
+  right: 5%;
+  position: relative;
+  z-index: 1;
+  border-start-start-radius: 70px;
+}
+.support-team-img1{
+  left: 5%;
+  position: relative;
+  top: -22%;
+  z-index: -1;
+  border-end-end-radius: 40px;
+}
 @media(min-width:992px){
   .first-section .row{
     /* margin-left:30%; */
@@ -117,5 +162,183 @@
     width: 45% !important;
     padding-left: 0px !important;
     padding-right: 0px !important;
+  }
+}
+
+
+/* responsive css */
+@media(max-width:1200px){
+  .support-content .support-team-title{
+    margin-left:auto;
+    margin-right:16%;
+    width:56%;
+    font-size: 30px;
+  }
+  .support-team-img{
+    right: 3%;
+  }
+  .support-team-img1{
+    left: 4%;
+    top: -18%;
+  }
+  .support-team-description{
+    padding: 10px 5px 5px 10px;
+  }
+
+  /* experience section */
+  .experience-main-content-wrapper h1{
+    font-size: 110px;
+    margin-top: 20.5%;
+  }
+  .experience-main-content-wrapper h2{
+    font-size: 18px;
+  }
+  .experience-main-content-wrapper p{
+    font-size: 15px;
+  }
+  .addl-content{
+    padding: 15px 12px;
+    width:50%;
+    right: -22%;
+  }
+  .addl-content h5{
+    font-size: 20px;
+  }
+  .addl-content ul {
+    padding-left: 1rem !important;
+    margin-bottom: 2.3rem !important;
+}
+}
+@media(max-width:991px){
+  .support-content .support-team-title{
+    width: 76%;
+    font-size: 26px;
+    margin-right: 2.5%;
+    margin-top: 40px;
+  }
+  .support-team-img{
+    right: 3%;
+  }
+  .support-team-img1{
+    left: 4%;
+    top: -18%;
+  }
+  .support-team-description{
+    font-size: 12px;
+    line-height: 1.7;
+    padding: 10px 0px 5px 10px;
+  }
+  .experience-main-content-wrapper h1{
+    font-size: 130px;
+    margin-top: -8%;
+    line-height: 1.1;
+  }
+  .experience-section-main-content h2{
+    width: 55%;
+  }
+  .experience-main-content-wrapper p{
+    line-height: 1.6;
+    font-size: 14px;
+  }
+  .experience-main-content-wrapper{
+    display: block !important;
+  }
+  .experience-vector{
+    top:20%
+  }
+  .addl-content{
+    bottom: 8%;
+    padding: 15px 10px;
+  }
+  .addl-content span{
+    font-size: 14px;
+  }
+}
+
+@media(max-width:768px){
+  .support-content .support-team-title {
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  .support-team-img {
+    right: 5%;
+    border-start-start-radius: 40px;
+  }
+  .support-team-img1{
+    width: 100%;
+    top: 65%;
+    left:8%;
+    border-end-end-radius: 20px;
+  }
+  /* .support-team-img1 {
+    left: 70%;
+    top: -35%;
+    width: 43%;
+    z-index: 1;
+  } */
+  .support-team-description{
+    font-size: 14px;
+    padding: 135px 0px 5px 10px;
+  }
+  /* experience section */
+  .experience-vector {
+    top: 10%;
+  }
+  /* .experience-section-main-content h1{
+    float: left;
+  } */
+  .experience-main-content-wrapper h1{
+    font-size: 100px;
+  }
+  .experience-section-main-content h2{
+    width:67%;
+  }
+  .experience-section-main-content .d-block h2{
+    width: 65%;
+    font-size: 16px;
+    margin-right: -5px;
+  }
+  /* .experience-main-content-wrapper .d-block{
+    float: left;
+  } */
+  .experience-main-content-wrapper{
+    display: block !important;
+  }
+ .experience-section-main-content{
+    display: flex !important;
+    align-items: center;
+  }
+  .experience-section .d-md-none{
+    font-size: 14px;
+    line-height: 1.75;
+  }
+}
+@media(max-width:576px){
+  .support-content .support-team-title{
+    font-size: 20px;
+  }
+  .support-team-img{
+    right: 17%;
+    max-width: 112%;
+    border-start-start-radius: 25px;
+  }
+  .support-team-img1{
+    left: 9.5%;
+    top: 45%;
+    max-width: 112%;
+    border-end-end-radius: 20px;
+  }
+  .support-team-description{
+    padding: 70px 0px 5px 10px;
+  }
+  .col-7{
+    width: 55% !important;
+  }
+  .col-5{
+    width: 45% !important;
   }
 }
