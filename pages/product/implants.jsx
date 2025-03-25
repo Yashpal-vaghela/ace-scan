@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import "../public/css/product.css";
-import "../public/css/common.css";
+import React, { useEffect, useRef } from "react";
+import "../../public/css/product.css";
 
 const Implants = () => {
     const videoRefP = useRef(null);
