@@ -910,7 +910,7 @@
     z-index:0;
 } */
 .contact-form1{
-    background-color: #005e8a;
+    /* background-color: #005e8a; */
     height: 100%;
 }
 .contact-form1 .form{
@@ -933,18 +933,7 @@
     /* position: absolute;
     z-index: 1; */
 }
-/* .contact-video-img-wrapper .bg-img{
-    content: '';
-    background-color: rgb(38, 173, 153,0.6);
-    position: absolute;
-    padding: 0px !important;
-    max-width:100%;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    z-index:1;
-    position: relative;
-} */
+
 .icon-img{
     background-color: #26ad99;
     padding: 10px 10px;
@@ -1093,104 +1082,85 @@
     opacity: 1;
 }
 
-/* dots vector element */
-/* .dots-vector-contain{
-    align-items: center;
-    background-color: #fff;
+
+.new-form {
+    border: 2px solid #d7d7d7  !important;
+    border-radius: 8px !important;
+}
+
+.con-left {
+    background: linear-gradient(135deg, #00478a, #00818a);
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    margin: 8px;
+    position: relative;
+    padding: 24px;
     display: flex;
-    flex: none;
+    align-items: center;
+    justify-content: center ;
     flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 48px;
-    height: min-content;
-    justify-content: center;
-    overflow: hidden;
-    padding: 204px 48px 0;
-    position: relative;
+}
+
+.overlays-form {
+    height: 100%;
     width: 100%;
-}
-.dots-content{
-    flex: none;
-    inset: 0;
     position: absolute;
-    opacity: 1;
-    will-change: transform;
-    transform: none;
+    background-color: rgb(0, 0, 0,0.25);
+    border-radius: 12px;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
 }
-.dots-container{
-    align-items: center;
+
+.sidebar-heading {
+    z-index: 4;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.sidebar-cards {
+    background-color: rgba(255,255,255, 0.4);
+    height: 100px;
+    width: 100%;
+    border-radius: 12px;
+    margin: 0px 20px;
+    margin-bottom: 18px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 10px;
-    justify-content: center;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0);
-    height: 100%;
-    width: 100%;
-    opacity: 1;
+    align-items: center;
+    justify-content: start ;
+    padding: 12px;
+    cursor: pointer;
 }
-.dots-vector-container{
-    inset: 0;
-    position: absolute;
-    z-index: 1;
-    opacity: 1;
-    top: -20%;
-    left: -4%;
-}
-.dots-vector{    
-    width: 100%;
-    height: 100%;
-    background-color: #0000;
-    background-image: radial-gradient(rgba(0,94,138,1) 1.2px, transparent 1.7px), radial-gradient(rgba(0,94,138,1) 1.054px, rgba(35,84,84,0) 1px);
-    background-position: 0 0, 20px 20px;
-    background-size: 40px 40px;
-    border-radius: 0;
-}
-.dots-wid{
-    flex: none;
-    inset: 0;
-    overflow: hidden;
-    position: absolute;
-    z-index: 1;
-    background: linear-gradient(150deg, #fff0 1.70596%, #fff 70.2707%);
-    opacity: 1;
-} */
 
+.slider-icon {
+    height: 50px;
+    width: 50px;
+    z-index: 10;
+}
 
+.slider-cardbody {
+    color: white;
+    z-index: 10;
+    padding-top: 15px;
+    padding-left: 10px;
+    
+}
 
-/* .dots-vector-contain{
-    background-color: rgba(0,0,0,0);
-    height: 100%;
-    width: 100%;
-    opacity: 1;
+.slider-card-heading {
+    font-weight: bold;
 }
-.dots-content{
-    flex: none;
-    inset: 0;
-    position: absolute;
-    z-index: -1;
-    top: -26%;
-    left: -5.3%;
-    opacity: 1;
+
+.form-btn {
+    background: linear-gradient(135deg, #00478a, #00818a);
+    border: none;
+    border-radius: 10px;
+    padding: 9px 50px;
 }
-.dots-vector{
-    width: 100%;
-    height: 35%;
-    background-color: transparent;
-    background-image: radial-gradient(rgba(0,94,138,0.7) 1.5px,transparent 1.8px),radial-gradient(rgba(0,94,138,0.7) 1px,rgba(35,84,84,0) 1.1px);
-    background-position: 0px 0px,20px 20px;
-    background-size: 40px 40px;
-    border-radius: 0px;
+
+.main-contact-title {
+    text-align: center;
+    margin-bottom: 24px !important;
 }
-.dots-wid{
-    flex: none;
-    inset: 0;
-    overflow: hidden;
-    position:absolute;
-    background: linear-gradient(150deg,#fff0 1.70596%,#fff 40.2707%);
-    z-index: 1;
-    opacity: 1;
-} */
