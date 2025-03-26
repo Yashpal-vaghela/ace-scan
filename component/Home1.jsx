@@ -4,6 +4,7 @@ import Testimonial from "./Testimonial";
 // import "../public/css/contact.css";
 import "../public/css/Home.css";
 import Image from "next/image";
+import "../public/css/about.css";
 
 const Home1 = () => {
   const counters = [
@@ -123,11 +124,13 @@ const Home1 = () => {
           </h2>
 
           <div className="row g-4">
+
+            <img src="/images/e.svg" alt="" className="earth-vec" />
             <div className="col-12 col-lg-6 col-md-6 p-4">
-              <div className="card shadow-sm border-0 shadow-none">
-                <div className="accordion user-select-none" id="faqAccordion">
-                  <div className="accordion text-left" id="faqAccordion">
-                    <div className="accordion-item border-0">
+              <div className="card shadow-sm border-0 shadow-none ">
+                <div className="accordion user-select-none bg-transparent" id="faqAccordion">
+                  <div className="accordion text-left " id="faqAccordion">
+                    <div className="accordion-item border-0 ">
                       <h2 className="accordion-header" id="headingOne">
                         <button
                           className="accordion-button collapsed"
@@ -324,7 +327,7 @@ const Home1 = () => {
             </div>
 
             <div className="col-12 col-lg-6 col-md-6 ">
-              <div className="card shadow-none border-0 d-flex justify-content-center align-items-center h-100">
+              <div className="card shadow-none border-0 d-flex justify-content-center align-items-center h-100 bg-transparent">
                 <Image
                   src="/images/whyi1.png"
                   alt="Example Image"
@@ -341,8 +344,15 @@ const Home1 = () => {
         className="submitting_order  "
         style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem" }}
       >
+        <Image
+                  src="/images/linevec.svg"
+                  alt="Example Image"
+                  width={300}
+                  height={200}
+                  className="line-vec"
+                />
         <div className="container mt-4 text-center">
-          <div className="gradientBG">Truly easy sendings</div>
+          <div className="hero-subheading">Truly easy sendings</div>
           <h2 className="heading1 text-center">
             {" "}
             <b>Free up your clinical time</b> <br />
@@ -456,10 +466,11 @@ const Home1 = () => {
         style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem" }}
       >
         <div className="container text-center ">
+          
           <div
             className="addl_numbers"
-            style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem" }}
-          >
+            style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem" }}>
+            
             <h2 className="heading2 text-center text-white">
               {" "}
               ADDL in numbers{" "}
@@ -493,7 +504,7 @@ const Home1 = () => {
         <div className="container text-center position-relative">
           <h2 className="heading1 text-center"> Our Most Premium Product</h2>
           <div className="row g-4 ">
-            <div className="col-12 col-lg-4 col-md-6 product-row">
+            <div className="col-12 col-lg-4 col-md-6 product-row position-relative">
               <Image
                 src="/images/cad.png"
                 alt="Example Image"
@@ -525,14 +536,14 @@ const Home1 = () => {
             </div>
           </div>
           <Image
-            src="/images/pvector1.svg"
+            src="/images/dot.png"
             alt="Example Image"
             width={300}
             height={450}
             className="pvector1"
           />
           <Image
-            src="/images/pvector2.svg"
+            src="/images/dot.png"
             alt="Example Image"
             width={300}
             height={450}

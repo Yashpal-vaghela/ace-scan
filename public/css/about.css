@@ -234,7 +234,7 @@
 
   .about-images {
     margin-top: 50px;
-    width: 60%;
+    width: 100%;
     height: 70%;
     align-items: center;
   }
@@ -459,6 +459,10 @@
 }
 .highlight-text2{
   color:#00818a;
+}
+
+.img-box {
+  background-color: rgba(1, 94, 138, 0.3);
 }
 
 .about-content0 {

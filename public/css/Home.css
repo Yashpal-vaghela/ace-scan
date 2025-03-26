@@ -77,7 +77,8 @@
   
   /* Gradient background button */
   .gradientBG {
-    background: linear-gradient(to right, #50448f,   #8840b6);
+    /* background: linear-gradient(to right, #50448f,   #8840b6); */
+    background-color: rgba(255,255,255,0.2);
     /* background: linear-gradient(to right, #3e9293, #52a684, #8840b6); */
     display: inline-block;
     color: white;
@@ -113,7 +114,7 @@
   
   .simplebtn {
     display: inline-block;
-    background-color: #3e9293;
+    background-color: #00478a;
     color: white;
     font-weight: bold;
     padding: 8px 12px;
@@ -143,20 +144,39 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../vectorbg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.4;
+    /* background-image: url('../vectorbg.png'); */
+    /* background-image: url('../linevec.svg'); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* opacity: 0.4; */
     /* Adjust opacity (0.1 to 1) */
     z-index: -1;
     /* Keeps it behind the content */
   }
-  
+
+  .line-vec {
+    width: 100% !important;
+    height: 100%;
+    position: absolute;
+    top: 20%;
+  }
+
+  .why_ACE {
+    position: relative;
+  }
+
+  .earth-vec {
+    width: 100% !important;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    right: -10%;
+  }
   
   .timeline-icon {
     padding: 10px 16px;
-    background-color: #000;
+    background: linear-gradient(135deg, #00478a, #00818a);
     border: 2px solid #fff;
     color: #fff;
     border-radius: 15px;
@@ -260,7 +280,7 @@
   .mySwiper .swiper-button-next,.mySwiper .swiper-button-prev{
     width: 22px !important;
     height: 22px !important;
-    background-color:#3e9293;
+    background-color:#00478a;
     padding: 15px 15px;
     border-radius: 50%;
     color: #fff !important;
@@ -277,7 +297,7 @@
     bottom: 4px !important;
   } 
   .swiper-pagination-bullet-active{
-    background: #3e9293 !important;
+    background: #00478a !important;
   }
   /* .swiper-pagination-bullet{
     z-index: 1;
@@ -321,7 +341,7 @@
   
   .star-rating {
     /* color: #a7a6a1; */
-    color: #3e9293;
+    color: #00478a;
     font-size: 18px;
     margin-bottom: 0px;
   }
@@ -332,24 +352,44 @@
   
   
   /* Conters in ADDL */
-  
-  .addl_numbers{
-    /* background: linear-gradient(to right, #3e9293, #52a684, #8840b6); */
-    background: linear-gradient(135deg, #BE58CF, #460066);
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  .addl_numbers {
+    /* Ensure parent is positioned relative */
+    position: relative;
+    background: linear-gradient(135deg, #00478a, #00818a);
     border-radius: 12px;
+    padding: 3.4rem 0;
+    overflow: hidden; 
   }
+  
+  .addl_numbers::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); 
+    border-radius: 12px; 
+    z-index: 1;
+  }
+  
+  .addl_numbers > * {
+    position: relative;
+    z-index: 2; 
+  }
+  
+  
+
+  .overlays-form {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(0, 0, 0,0.3);
+    border-radius: 12px;
+    top: 0%;
+    left: 0%;
+    z-index: 9999;
+}
   
   .innere_adl_numbers{
     max-width: 750px;
@@ -392,7 +432,7 @@
   }
   
   .suffixcounter{
-    color: #3e9293;
+    color: #00478a;
     font-size: 23px;
     font-weight: 800;
     margin-left: 5px;
@@ -466,7 +506,7 @@
   
   .pvector2 {
     position: absolute;
-    bottom: 0%;
+    bottom: -3%;
     right: -8%;
     z-index: -1;
   }
