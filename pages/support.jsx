@@ -10,14 +10,17 @@ const support = () => {
         className="first-section"
         style={{ paddingTop: "120px", paddingBottom: "40px" }}
       >
-        <div className="container position-relative" style={{paddingTop:'12px'}}>
-          <div className="row gap-3 justify-content-lg-start position-relative">
-            <div className="dots-vector-contain">
+        <div className="black-overlays">
+
+        </div>
+        <div className="container " style={{paddingTop:'20px'}}>
+          <div className="row gap-3 justify-content-lg-start ">
+            {/* <div className="dots-vector-contain">
               <div className="dots-content" style={{top:"-20%"}}>
                   <div className="dots-vector"></div>
                   <div className="dots-wid" style={{background: "linear-gradient(150deg, #fff0 1.70596%, #fff 55.2707%)"}}></div>
               </div>
-            </div>
+            </div> */}
             {/* <Image
               src="/images/vector-img6.png"
               className="img-fluid vector-img1"
@@ -25,38 +28,40 @@ const support = () => {
               height={100}
               alt="vector-img1"
             ></Image> */}
-            <div className="col-lg-5">
+            <div className="col-lg-5 d-flex flex-column justify-content-end">
               <div className="support1-wrapper">
                 <h2>{`ADDL Support Team Is Always There For You, Whenever You Need Us.`}</h2>
-                <p>{`At ADDL, we believe in quality production, digital technology,and an efficient workflow. That's why our support team is always available to assist you whether it's about your order, product inquiries, pricing, or any business-related questions. We are here whenever you need us.`}</p>
+                
               </div>
             </div>
             <div className="col-5">
-              <div className="d-block support1_2_wrapper">
-                <div className="support1_2_img">
+              <div className="d-block text-end image-support-card">
+                {/* <div className="support-img-card">
                   <Image
-                    src="/images/33.jpg"
-                    className="img-fluid mb-3"
+                    src="/images/support-img1.png"
+                    className="img-fluid "
                     width={500}
                     height={240}
                     alt="support-img"
                   ></Image>
-                </div>
-                <Image
+                </div> */}
+                {/* <Image
                   src="/images/vector-img8.png"
                   className="img-fluid vector-img2"
                   width={500}
                   height={240}
                   alt="vector-img2"
-                ></Image>
-                <div className="support1_2_img">
+                ></Image> */}
+                <p>{`At ADDL, we believe in quality production, digital technology,and an efficient workflow. That's why our support team is always available to assist you whether it's about your order, product inquiries, pricing, or any business-related questions. We are here whenever you need us.`}</p>
+                <div className="support-img-card">
                   <Image
-                    src="/images/support-img5.png"
-                    className="img-fluid"
-                    width={100}
-                    height={100}
+                    src="/images/sup1.jpg"
+                    className="img-fluid support-inner-image"
+                    width={250}
+                    height={500}
                     alt="support-img5"
                   ></Image>
+                  <div className=" mb-0 fw-bold text-center mt-2 " style={{color: "#005e8a"}}>ACE Digital Dental Lab.</div>
                 </div>
               </div>
             </div>
