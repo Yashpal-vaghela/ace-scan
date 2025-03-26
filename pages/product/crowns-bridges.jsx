@@ -33,7 +33,7 @@ const CrownsBridges = () => {
                     <div className="row d-flex justify-content-center align-items-center">
                         <div className="col-12 col-lg-6 col-md-6">
                             <div className="product-text p-3">
-                                <h2 className="double-heading">We blend <span className="highlight-text">Skilled Craftsmanship </span>with <span className="highlight-text">artistic precision </span>to create restorations that look and feel natural.
+                                <h2 className="double-heading">We Blend <span className="highlight-text">Craftsmanship </span>with <span className="highlight-text">Artistic Precision </span>in Restorations.
                                 </h2>
                                 <p>
                                      We combine skilled craftsmanship with digital artistry to create dental restorations 
@@ -47,11 +47,11 @@ const CrownsBridges = () => {
                         <div className="col-12 col-lg-6 col-md-6">
                             <div className="video-section-crown">
                                 <video autoPlay loop muted playsInline id="player" className="video-crop-crowm">
-                                    <source src="/videos/C&B-Intro.mp4" type="video/mp4" />
+                                    <source src="/videos/crown.mp4" type="video/mp4" />
                                     <source src="/videos/ADVANCE-DENTAL-EXPORT.webm" type="video/webm" />
                                     Your browser does not support the video tag.
                                 </video>
-                                <div className="video-overlay"></div>
+                                {/* <div className="video-overlay"></div> */}
                             </div>
                         </div>
                     </div>
@@ -76,39 +76,67 @@ const CrownsBridges = () => {
             <section className="implant-card-section">
                 <div className="container">
                     <div className="row">
-                        <div className="col-12 col-md-6 col-lg-4">
+                        <div className="col-12 col-md-4">
                             <div className="implant-card">
-                                <h2> Aesthetic porcelain </h2>
-                                <p>
-                                    Our PFM (Porcelain-Fused-to-Metal) crowns and bridges combine strength and aesthetics, enhanced by cutting-edge digital technology. Using advanced CAD/CAM software and precision milling techniques, we create restorations with exceptional fit and natural appearance. This fusion of digital design and traditional materials ensures long-lasting, functional, and highly aesthetic results.
-                                </p>
-                                <div className="implant-image">
-                                    <img src="/images/PFM.png" alt="Implant Full Mouth" />
+                            <img src="/images/card-bg.png" className="card-bg"/>
+                                <div className="implant-card-header">
+                                    <h2> Aesthetic porcelain </h2>
+                                </div>
+                                <div className="implant-image-container">
+                                    <img src="/images/PFM-POST.png" alt="Implant Full Mouth" />
+                                </div>
+                                <div className="implant-card-body">
+                                    <p>
+                                        Our PFM (Porcelain-Fused-to-Metal) crowns and bridges combine strength and aesthetics, enhanced by cutting-edge digital technology. Using advanced CAD/CAM software and precision milling techniques, we create restorations with exceptional fit and natural appearance. This fusion of digital design and traditional materials ensures long-lasting, functional, and highly aesthetic results.
+                                    </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="col-12 col-md-6 col-lg-4">
+                        <div className="col-12 col-md-4">
                             <div className="implant-card">
-                                <h2>Zirconia crowns</h2>
-                                <p>
-                                At ADDL, we specialize in high-quality zirconia crowns and bridges, offering exceptional strength and aesthetics. Our advanced digital CAD/CAM workflow and precision milling ensure a perfect fit and natural look. State-of-the-art digital sintering techniques create durable, lifelike restorations with unmatched accuracy and longevity.
-                                </p>
-                                <div className="implant-image">
-                                    <img src="/images/zirconia.png" alt="Advanced CAD/CAM" />
+                                <img src="/images/card-bg.png" className="card-bg"/>
+                                <div className="implant-card-header">
+                                    <h2>Zirconia crowns</h2>
+                                </div>
+                                <div className="implant-image-container">
+                                    <img src="/images/zir-conia.jpg" alt="Advanced CAD/CAM" />
+                                </div>
+                                <div className="implant-card-body">
+                                    <p>
+                                        At ADDL, we specialize in high-quality zirconia crowns and bridges, providing exceptional strength and aesthetics. Our advanced digital CAD/CAM workflow and precision milling guarantee a perfect fit and natural look. Using state-of-the-art digital sintering techniques, we create durable, lifelike restorations with unmatched accuracy, longevity, and reliability.
+                                    </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="col-12 col-md-6 col-lg-4">
+                        <div className="col-12 col-md-4">
                             <div className="implant-card">
-                                <h2>Layered zirconia crowns</h2>
-                                <p>
-                                 Our layered zirconia crowns and bridges combine strength with natural aesthetics, thanks to advanced digital workflows and CAD/CAM technology. Precision layering ensures lifelike shading and a perfect fit, creating durable, biocompatible restorations ideal for single crowns, bridges, and implants.
-                                </p>
-                                <div className="implant-image">
-                                    <img src="/images/natural-aesthetics.png" alt="Natural Aesthetics" />
+                                <img src="/images/card-bg.png" className="card-bg"/>
+                                <div className="implant-card-header">
+                                    <h2>Layered zirconia crowns</h2>
                                 </div>
+                                <div className="implant-image-container">
+                                    <img src="/images/" alt="Natural Aesthetics" />
+                                </div>
+                                <p>
+                                    Our layered zirconia crowns and bridges combine strength with natural aesthetics, thanks to advanced digital workflows and CAD/CAM technology. Precision layering ensures lifelike shading and a perfect fit, creating durable, biocompatible restorations ideal for single crowns, bridges, and implants.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col-12 col-md-6">
+                            <div className="implant-card">
+                                <img src="/images/card-bg.png" className="card-bg"/>
+                            <div className="implant-card-header">
+                                <h2>PMMA Temporaries</h2>
+                            </div>
+                            <div className="implant-image-container">
+                                <img src="/images/pmma-new.png" alt="Natural Aesthetics" />
+                            </div>
+                                <p>
+                                     PMMA temporary crowns and bridges are crafted using advanced digital design for a precise fit and natural look. They offer strength, comfort, and esthetics, allowing patients to confidently preview their final smile. Ideal for both short-term and long-term use.
+                                </p>
+                                
                             </div>
                         </div>
                     </div>

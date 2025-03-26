@@ -62,7 +62,7 @@ const Implants = () => {
                     <div className="row d-flex justify-content-center align-items-center">
                         <div className="col-12 col-lg-6 col-md-6">
                             <div className="product-text p-3">
-                                <h2 className="double-heading">We combine skilled craftsmanship with artistic precision to create restorations that are both natural in appearance and feel.</h2>
+                                <h2 className="double-heading">We Weave <span className="highlight-text">Precision</span> and Craftsmanship into Perfect <span className="highlight-text">Implant Restorations.</span></h2>
                                 <p>
                                     We combine skilled craftsmanship with digital artistry to create dental restorations that are not only functional but also natural in appearance and feel, ensuring a seamless blend with your smile. For crowns and bridges, we use advanced digital tools and premium materials to craft durable, aesthetically pleasing solutions. These restorations restore both form and function, providing patients with a beautiful, comfortable smile that lasts for years.
                                 </p>
