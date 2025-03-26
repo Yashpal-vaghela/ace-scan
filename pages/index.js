@@ -5,6 +5,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../public/css/contact.css";
 import "../public/css/styles.css";
 import "../public/css/Home.css";
+import "../public/css/common.css";
 import Support from "./support";
 import Home1 from "@/component/Home1";
 
@@ -170,8 +171,8 @@ export default function Home() {
             </div>
             <div className="col-11 col-xl-7 col-md-5 col-lg-6 ">
               <div className="text-left">
-                <div className="gradientBG mt-5">Dental Technicians</div>
-                <h2>
+                <div className="hero-subheading mt-5">Dental Technicians</div>
+                <h2 className="double-heading">
                   ADDL sets the{" "}
                   <span className="highlight-text1 ">
                     standard for excellence
@@ -188,30 +189,32 @@ export default function Home() {
                 src="images/about-img4.png"
                 className="img-fluid about-img3"
               ></img> */}
-              <div className="d-flex justify-content-center w-75 mt-4 gap-1">
-                <div className="about-img-wrapper">
+              <div className="d-flex justify-content-center  mt-4 gap-3">
+                <div className=" col-6 ">
                   <Image
                     src="/images/about-icon11.png"
-                    className="img-fluid "
-                    width={60}
-                    height={60}
+                    className="img-box mb-4"
+                    width={45}
+                    height={45}
                     alt=" "
                   ></Image>
-                  <p style={{ color: "#7243A8" }}>
-                    Dental <br /> Technicians
+                  <p className="fw-bold mb-2" style={{ color: "#00478a" }}>
+                    Dental Technicians
                   </p>
+                  <p className="hero-txt">Countless smiles enhanced by our skilled dental technicians. Trust our expertise for flawless results!</p>
                 </div>
-                <div className="about-img-wrapper">
+                <div className="col-6">
                   <Image
                     src="/images/about-icon22.png"
-                    className="img-fluid"
-                    width={60}
-                    height={60}
+                    className="img-box mb-4"
+                    width={45}
+                    height={45}
                     alt="about-icon2"
                   ></Image>
-                  <p style={{ color: "#68ABA1" }}>
+                  <p className="fw-bold mb-2" style={{ color: "#00818a" }}>
                     The Highest Quality Products.
                   </p>
+                  <p className="hero-txt">With years of excellence  our professional team delivering top-quality dental care.</p>
                 </div>
               </div>
             </div>
@@ -377,8 +380,69 @@ export default function Home() {
       </section>
       <Home1></Home1>
       {/* <Support></Support> */}
-      <section className="process-section">
+      <section className="trusted-dental-lab">
+
         <div className="container">
+          <div className="row about-container">
+            <div className="col-12 col-md-6 col-lg-6">
+              <div className="images-home-section">
+                <div className="image-top text-center">
+                  <Image
+                    src="/images/about-ace.jpg"
+                    alt="about"
+                    width={310}
+                    height={200}
+                    className="img-fluid"
+                  />
+                </div>
+                <div className="image-bottom">
+                  <Image
+                    src="/images/dental-ace.jpg"
+                    alt="about1"
+                    width={300}
+                    height={200}
+                    className="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-6 col-lg-6">
+              <div className="about-text">
+                <div className="hero-subheading">Smile-Saving Support </div>
+                <h2 className="main-heading-with-double-color mt-0" style={{ width: "69%" }}>
+                  <span className="highlight-text2">Comprehensive Support</span> for Your Dental Lab Needs
+                </h2>
+                <p >
+                  We are committed to delivering outstanding post-purchase care, offering five key solutions to
+                  enhance your experience and meet all your dental lab requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    <div className="container">
+    <div className="row  d-flex flex-row justify-content-center align-items-center">
+              <div className="col-12 col-lg-6">
+                <div className="hero-subheading">Smile-Saving Support</div>
+                <div className="step_heading">Our After-Sales Services for Your Dental Lab Needs</div>
+              </div>
+              <div className="col-12 col-lg-6">
+                  <div className="w-40">
+                  We are committed to providing exceptional after-sale services to meet all your dental lab needs. We offer five ways to ensure you receive the best possible experience with our products:
+                  </div>
+                
+              </div>
+          </div>
+    </div>
+      
+      <section className="process-section">
+        
+        <div className="container">
+          
+          
           <div className="row align-items-center justify-content-center">
             <div className="col-10 order-1 order-sm-0 col-lg-3 col-sm-3">
               <h1 className="process-img">01</h1>

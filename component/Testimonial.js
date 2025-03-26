@@ -50,7 +50,7 @@ const Testimonial = () =>{
     >
    
       <div className="container mt-4 mb-4 text-center">
-        <div className="gradientBG">Testimoial</div>
+        <div className="hero-subheading">Testimoial</div>
         <h2 className="heading1 text-center">
           Smiling Words from Satisfied Customers
         </h2>

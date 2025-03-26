@@ -93,7 +93,7 @@ const About = () => {
       <section className="about-map">
         <div className="container">
           <div className="row d-flex align-items-center">
-            <div className="col-sm-7 col-12">
+            <div className="col-md-7 col-12">
               <div className="about-images">
                 <Image
                   src="/images/USA-map.png"
@@ -104,7 +104,7 @@ const About = () => {
                 />
               </div>
             </div>
-            <div className="col-sm-5 col-12">
+            <div className="col-md-5 col-12">
               <div className="about-text">
                 <h2 className="main-heading-with-double-color">
                   Delivering Excellence In{" "}
