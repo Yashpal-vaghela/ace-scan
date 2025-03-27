@@ -40,12 +40,12 @@ const contactUs = () => {
       </div> */}
         <div className="container position-relative ">
 
-          <div className="dots-vector-contain">
+          {/* <div className="dots-vector-contain">
             <div className="dots-content">
               <div className="dots-vector"></div>
               <div className="dots-wid"></div>
             </div>
-          </div>
+          </div> */}
           <h3 className="mb-4 main-contact-title">How Can We Help?</h3>
 
           <div className="row position-relative">
