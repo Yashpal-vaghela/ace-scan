@@ -85,7 +85,7 @@ const CrownsBridges = () => {
                                 <div className="implant-image-container">
                                     <img src="/images/PFM-POST.png" alt="Implant Full Mouth" />
                                 </div>
-                                <div className="implant-card-body">
+                                <div className="implant-card-body p-2 text-justify">
                                     <p>
                                         Our PFM (Porcelain-Fused-to-Metal) crowns and bridges combine strength and aesthetics, enhanced by cutting-edge digital technology. Using advanced CAD/CAM software and precision milling techniques, we create restorations with exceptional fit and natural appearance. This fusion of digital design and traditional materials ensures long-lasting, functional, and highly aesthetic results.
                                     </p>
@@ -102,7 +102,7 @@ const CrownsBridges = () => {
                                 <div className="implant-image-container">
                                     <img src="/images/zir-conia.jpg" alt="Advanced CAD/CAM" />
                                 </div>
-                                <div className="implant-card-body">
+                                <div className="implant-card-body p-2 text-justify">
                                     <p>
                                         At ADDL, we specialize in high-quality zirconia crowns and bridges, providing exceptional strength and aesthetics. Our advanced digital CAD/CAM workflow and precision milling guarantee a perfect fit and natural look. Using state-of-the-art digital sintering techniques, we create durable, lifelike restorations with unmatched accuracy, longevity, and reliability.
                                     </p>
@@ -117,25 +117,31 @@ const CrownsBridges = () => {
                                     <h2>Layered zirconia crowns</h2>
                                 </div>
                                 <div className="implant-image-container">
-                                    <img src="/images/" alt="Natural Aesthetics" />
+                                    <img src="/images/lzc.png" alt="Natural Aesthetics" />
                                 </div>
+                                <div className="implant-card-body p-2 text-justify">
                                 <p>
                                     Our layered zirconia crowns and bridges combine strength with natural aesthetics, thanks to advanced digital workflows and CAD/CAM technology. Precision layering ensures lifelike shading and a perfect fit, creating durable, biocompatible restorations ideal for single crowns, bridges, and implants.
                                 </p>
+                                </div>
+                                
                             </div>
                         </div>
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-md-4">
                             <div className="implant-card">
                                 <img src="/images/card-bg.png" className="card-bg"/>
                             <div className="implant-card-header">
                                 <h2>PMMA Temporaries</h2>
                             </div>
                             <div className="implant-image-container">
-                                <img src="/images/pmma-new.png" alt="Natural Aesthetics" />
+                                <img src="/images/PMMA.png" alt="Natural Aesthetics" />
                             </div>
-                                <p>
+                            <div className="implant-card-body p-2 text-justify">
+                            <p>
                                      PMMA temporary crowns and bridges are crafted using advanced digital design for a precise fit and natural look. They offer strength, comfort, and esthetics, allowing patients to confidently preview their final smile. Ideal for both short-term and long-term use.
                                 </p>
+                            </div>
+                                
                                 
                             </div>
                         </div>

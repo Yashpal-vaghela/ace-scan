@@ -9,6 +9,7 @@ import "../public/css/common.css";
 import Support from "./support";
 import Home1 from "@/component/Home1";
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -50,6 +51,8 @@ export default function Home() {
         " At ADDL, we focus on providing exceptional quality with cost-effective solutions, enhancing your clinical efficiency while maintaining excellence. Our goal is to optimize your outcomes without compromising on performance or value.",
     },
   ];
+
+ 
   return (
     <>
       <section className="p-0 parallax overlap-height">
@@ -275,25 +278,16 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+  
       <section className="services-section">
-        <div className="container">
+        <div className="container ">
           <h2 className="services-title mb-3">Cerameus at a glance</h2>
-          <div className="row services_grid g-4">
-            {/* {servicesData?.map((data, index) => {
-              return (
-                
-              );
-            })} */}
-            <div className="col-lg-3 col-md-6 col-12 d-flex  ">
+          <div className=" services_grid g-4 card-container ">
+            
+            <div className="col-lg-6 col-md-6 col-12   ">
               <div className="intro__item c1">
-                {/* <div className="intro__item-img my-3 my-sm-4">
-                  <Image
-                    src="/images/pro-3.png"
-                    alt="icon-img"
-                    width={60}
-                    height={60}
-                  ></Image>
-                </div> */}
+                
                 <h2 className="intro__item-title my-2 my-sm-3">
                   Professional expert clinical advice
                 </h2>
@@ -304,20 +298,12 @@ export default function Home() {
                   results. Wherever you are, they're just a call away.
                 </p>
               </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-12 d-flex  ">
+
               <div className="intro__item c2">
-                {/* Black Overlay */}
+               
                 <div className="ov"></div>
 
-                <div className="intro__item-img my-3 my-sm-4">
-                  <Image
-                    src="/images/clock8.png"
-                    alt="icon-img"
-                    width={60}
-                    height={60}
-                  ></Image>
-                </div>
+                
                 <h2 className="intro__item-title my-2 my-sm-3">
                   Fast turnaround times
                 </h2>
@@ -328,20 +314,12 @@ export default function Home() {
                   results should be both quick and seamless for you.
                 </p>
               </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-12 d-flex  ">
+
               <div className="intro__item c3">
-                {/* Black Overlay */}
+               
                 <div className="ov"></div>
 
-                <div className="intro__item-img my-3 my-sm-4">
-                  <Image
-                    src="/images/q-6.png"
-                    alt="icon-img"
-                    width={60}
-                    height={60}
-                  ></Image>
-                </div>
+                
                 <h2 className="intro__item-title my-2 my-sm-3">
                   Certification
                 </h2>
@@ -352,18 +330,10 @@ export default function Home() {
                   product is CE-marked for material excellence.
                 </p>
               </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-12 d-flex  ">
+
               <div className="intro__item c4">
                 <div className="ov"></div>
-                <div className="intro__item-img my-3 my-sm-4">
-                  <Image
-                    src="/images/cost-2.png"
-                    alt="icon-img"
-                    width={60}
-                    height={60}
-                  ></Image>
-                </div>
+                
                 <h2 className="intro__item-title my-2 my-sm-3">
                   Reduced costs
                 </h2>
