@@ -32,7 +32,7 @@ const CrownsBridges = () => {
             <section className="DW-home" >
                 <div className="container">
                     <div className="row d-flex justify-content-center align-items-center">
-                        <div className="col-12 col-lg-6 col-md-6">
+                        <div className="col-12 col-lg-6 col-md-6 order-1 order-lg-0 order-md-0">
                             <div className="product-text p-3">
                                 <h2 className="double-heading">We Blend <span className="highlight-text">Craftsmanship </span>with <span className="highlight-text">Artistic Precision </span>in Restorations.
                                 </h2>
@@ -45,7 +45,7 @@ const CrownsBridges = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-12 col-lg-6 col-md-6">
+                        <div className="col-12 col-lg-6 col-md-6 order-0 order-lg-1 order-md-1">
                             <div className="video-section">
                                 <video autoPlay loop muted playsInline id="player" className="video-crop-cad">
                                     <source src="/videos/crown.mp4" type="video/mp4" />
