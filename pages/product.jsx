@@ -75,8 +75,9 @@ const Product = () => {
                             </div>
                         </div>
                         <div className="col-12 col-lg-6 col-md-6">
-                            <div className="video-section">
-                                <video autoPlay loop muted playsInline id="player" className="video-crop">
+                            <div className="video-se
+                            ction">
+                                <video autoPlay loop muted playsInline id="player" className="video-crop-cad">
                                     <source src="/videos/ADVANCE-DENTAL-EXPORT.mp4" type="video/mp4" />
                                     <source src="/videos/ADVANCE-DENTAL-EXPORT.webm" type="video/webm" />
                                     Your browser does not support the video tag.

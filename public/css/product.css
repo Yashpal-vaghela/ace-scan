@@ -8,8 +8,7 @@
 }
 
 .DW-home {
-  margin-top: 80px;
-  padding: 50px 0px;
+  padding-top: 80px;
 }
 
 .product-text {
@@ -47,13 +46,28 @@
   position: absolute;
   top: -200px;
 }
+.video-crop-cad{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  position: absolute;
+  top: 20px;
+  border-radius: 20px;
+}
 
-/* .video-section video {
-    width: 300px;
-    height: 300px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  } */
+@media (max-width: 575px) {
+
+  .video-section {
+    width: 100%;
+    height: 400px;
+  }
+
+  .video-crop-cad{
+    width: 100%;
+    /* height: 40px; */
+  }
+}
+
 .order-process-container {
   display: flex;
   align-items: center;
@@ -231,8 +245,7 @@
 
 @media (max-width: 991px) {
   .DW-home {
-    margin-top: 40px;
-    padding: 40px 0px;
+    padding-top: 70px;
   }
   .steps { 
     margin-bottom: 50px;
@@ -248,8 +261,7 @@
   }
 
   .DW-home {
-    margin-top: 0px;
-    padding: 40px 0px;
+    padding-top: 80px;
   }
 
   .product-text {
@@ -275,8 +287,7 @@
   }
 
   .DW-home {
-    margin-top: 0px;
-    padding: 10px 0px;
+    padding-top: 100px;
   }
 
 
@@ -293,7 +304,9 @@
     width: 100%;
  
   }
-
+  .order-process-text h2{
+    display: block;
+  }
   .steps { 
     margin-bottom: 30px;
     padding-bottom: 40px 0px;
@@ -345,6 +358,7 @@
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
+  height: 590px;
 }
 
 .card-bg {
@@ -395,6 +409,7 @@
   background-color: rgba(255,255,255,0.5);
   border-radius: 8px;
   position: relative;
+  padding: 20px;
 }
 .implant-card-body p {
   font-size: 15px;
@@ -402,6 +417,8 @@
   line-height: 1.9;
   margin-bottom: 20px;
   z-index: 2;
+  text-align: justify;
+  padding: 20px !important;
 }
 
 
@@ -432,13 +449,21 @@
 
 .product-before-after-heading {
   position: absolute;
-  width: 70%;
   text-align: right;
   right: 0%;
   top: 6%;
-  font-size: 18px;
 }
-
+.product-before-after-heading h2 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.product-before-after-heading h3{
+  position: absolute;
+  width: 50%;
+  text-align: right;
+  right: 0%;
+  font-size: 2.3rem;
+}
 .product-before-after-content {
   position: relative;
   display: flex;
@@ -455,9 +480,6 @@
 }
 
 @media (max-width: 991px) {
-  .double-heading {
-    display: none;
-  }
   .before-after-contains {
     display: block;
   }
@@ -479,21 +501,20 @@
     right: 0%;
     top: 8%;
   }
-
-  .before-after-contains{
-    font-size: 22px;
-    font-weight: 500;
+  .product-before-after-heading1{
+    display: block;
+  }
+  .product-before-after-heading1 h2{
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .product-before-after-heading1 h3{
+    font-size: 2rem;
+    line-height: 1.4;
   }
 }
 
 @media (max-width: 775px) {
-
-  .double-heading {
-    display: none;
-  }
-  .before-after-contains {
-    display: block;
-  }
 
   .product-before-after-content {
     padding-top: 100px;
@@ -509,26 +530,26 @@
     top: 5%;
   }
 
-  .before-after-contains{
-    font-size: 22px;
-    font-weight: 500;
-    
+  .product-before-after-heading1 h2{
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .product-before-after-heading1 h3{
+    font-size: 1.6rem;
   }
 }
 
 @media (max-width: 575px) {
-
-  .double-heading {
-    display: none;
-  }
 
   .before-after-contains {
     display: block;
   }
   .product-before-after-content {
     padding-top: 110px;
-    text-align: center;
+    text-align: left;
     position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .product-before-after-heading {
@@ -539,10 +560,14 @@
     top: 8%;
   }
 
-  .before-after-contains{
-    font-size: 18px;
-    font-weight: 500;
-    
+  .product-before-after-heading1 h2{
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+  }
+  .product-before-after-heading1 h3{
+    font-size: 1.2rem;
+    text-align: left;
   }
 }
 

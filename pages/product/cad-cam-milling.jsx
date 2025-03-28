@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import React, { useEffect, useRef } from "react";
 import "../../public/css/product.css";
 
 const CadCamMilling = () => {
@@ -62,22 +61,19 @@ const CadCamMilling = () => {
                     <div className="row d-flex justify-content-center align-items-center">
                         <div className="col-12 col-lg-6 col-md-6">
                             <div className="product-text p-3">
-                                <h2 className="double-heading">Seamless <span className="highlight-text">Digital Interaction</span></h2>
+                                <h2 className="double-heading">Revolutionizing Restorations with <span className="highlight-text">CAD/CAM Precision.</span></h2>
                                 <p>
-                                    The transition to a fully digital workflow in dentistry is rapidly advancing,
-                                    with intraoral scanners revolutionizing modern dental practices. While traditionally
-                                    catering to a conventional audience, ADDL is at the forefront of digital innovation,
-                                    enhancing efficiency and precision in every restoration. Digital impressions ensure
-                                    greater accuracy, speed, and patient comfort while optimizing workflow reliability.
-                                    Our investment in cutting-edge technology guarantees superior results and exceptional
-                                    client satisfaction.
+                                    We are passionate about digital dentistry, continually investing in the latest CAD/CAM and scanning systems to stay at the .
+                                    forefront of innovation. By incorporating cutting-edge technology into our practice, we enhance precision, improve patient outcomes,
+                                    and streamline workflows. Our commitment to excellence ensures that our patients receive the highest quality care, and we continue to embrace 
+                                    advancements in digital tools that make dental procedures more efficient and effective.
                                 </p>
                             </div>
                         </div>
                         <div className="col-12 col-lg-6 col-md-6">
                             <div className="video-section">
-                                <video autoPlay loop muted playsInline id="player" className="video-crop">
-                                    <source src="/videos/ADVANCE-DENTAL-EXPORT.mp4" type="video/mp4" />
+                                <video autoPlay loop muted playsInline id="player" className="video-crop-cad">
+                                    <source src="/videos/cad-cam.mp4" type="video/mp4" />
                                     <source src="/videos/ADVANCE-DENTAL-EXPORT.webm" type="video/webm" />
                                     Your browser does not support the video tag.
                                 </video>
@@ -86,73 +82,6 @@ const CadCamMilling = () => {
                     </div>
                 </div>
             </section>
-
-            <section className="steps" >
-                <div className="container">
-                    {/* <div className="order-process-content"> */}
-                    <div className="row p-2">
-                        <div className="col-12 col-lg-6 col-md-6">
-                            <div className="order-process-text">
-                                <h2 className="double-heading">Free up your clinical time</h2>
-                                <p>Submitting your orders to ADDL is hassle-free.</p>
-                            </div>
-                        </div>
-                        <div className="col-12 col-lg-6 col-md-6">
-                            <div className="order-process-details">
-                                <p>
-                                    Simply press on the “Place an Order” button located at the top right of our website,
-                                    and fill in the necessary fields. We offer a complementary courier collection service
-                                    for your convenience.
-                                </p>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                    <div className="row" style={{ paddingTop: "20px" }}>
-                        <div className="col-12 col-lg-3 col-md-6">
-                            <div className="step m-2" data-bg="/images/cardbg.jpg">
-                                <h3>01</h3>
-                                <p>Incoming Orders</p>
-                                <div className="overlay">
-                                    <span>We ensure that all incoming orders are carefully inspected to ensure that they meet our high standards before they enter the construction phase.</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-12 col-lg-3 col-md-6">
-                            <div className="step m-2" data-bg="/images/cardbg.jpg">
-                                <h3>02</h3>
-                                <p>Design and Construction</p>
-                                <div className="overlay">
-                                    <span>Throughout the design and construction phases, our skilled technicians use only the finest materials and cutting-edge equipment to create custom lab work that is tailored to your specific requirements</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-12 col-lg-3 col-md-6">
-                            <div className="step m-2">
-                                <h3>03</h3>
-                                <p>Quality Control</p>
-                                <div className="overlay">
-                                    <span>Quality is at the heart of everything we do. Rest assured that you can rely on us to provide you with dependable and superior dental laboratory services.</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-12 col-lg-3 col-md-6">
-                            <div className="step m-2">
-                                <h3>04</h3>
-                                <p>Returns</p>
-                                <div className="overlay">
-                                    <span>At ADDL, we recognize the importance of timely deliveries and hassle-free returns. Rely on us for all your dental lab work requirements.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
             <section className="quality-section">
                 <video autoPlay loop muted playsInline id="player" className="background-video" >
                     <source src="/videos/veneer.mp4" type="video/mp4" />

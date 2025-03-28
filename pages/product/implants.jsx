@@ -70,7 +70,7 @@ const Implants = () => {
                         </div>
                         <div className="col-12 col-lg-6 col-md-6">
                             <div className="video-section">
-                                <video autoPlay loop muted playsInline id="player" className="video-crop">
+                                <video autoPlay loop muted playsInline id="player" className="video-crop-cad">
                                     <source src="/videos/Implant.mp4" type="video/mp4" />
                                     <source src="/videos/ADVANCE-DENTAL-EXPORT.webm" type="video/webm" />
                                     Your browser does not support the video tag.
@@ -84,9 +84,10 @@ const Implants = () => {
             <section className="product-before-after">
                 <div className="container">
                     <div className="row for-rlative">
-                       
-                    <div className="product-before-after-heading">
-                        <h2 className="heading_outer ">Renew Your Teeth, Renew Your Confidence Transforming Lives with the Benefits of Dental Implants.</h2>
+
+                        <div className="product-before-after-heading">
+                            <h2 className="heading_outer">Renew Your Teeth, Renew Your Confidence.</h2>
+                            <h3 className="heading_outer">Transforming Lives with the Benefits of Dental Implants.</h3>
                         </div>
                         <div className="col-12 col-lg-8 ">
                             <div className="product-before-after-images">
@@ -98,23 +99,60 @@ const Implants = () => {
                                     className="img-fluid round-images"
                                 />
                             </div>
-                           
+
                         </div>
 
                         <div className="col-12 col-lg-4 ">
-                            
                             <div className="product-before-after-content ">
-
-                            <div className="product-before-after-heading">
-                        <h2 className="before-after-contains">Renew Your Teeth, Renew Your Confidence Transforming Lives with the Benefits of Dental Implants.</h2>
-                        </div>
-                            We prioritize your comfort and satisfaction, offering tailored solutions that meet your unique needs. With our use of the latest technology and premium materials, we provide restorations that look and feel natural, ensuring a perfect fit and long-lasting results. Our experienced team is dedicated to guiding you through every step of the process, helping you enjoy the full benefits of dental implants—restored functionality, a beautiful smile, and renewed confidence. 
+                                <div className="product-before-after-heading1">
+                                    <h2 className="before-after-contains">Renew Your Teeth, Renew Your Confidence</h2>
+                                    <h3 className="before-after-contains">Transforming Lives with the Benefits of Dental Implants</h3>
+                                </div>
+                                We prioritize your comfort and satisfaction, offering tailored solutions that meet your unique needs. With our use of the latest technology and premium materials, we provide restorations that look and feel natural, ensuring a perfect fit and long-lasting results. Our experienced team is dedicated to guiding you through every step of the process, helping you enjoy the full benefits of dental implants—restored functionality, a beautiful smile, and renewed confidence.
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <section className="implant-card-section">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12 col-md-6">
+                            <div className="implant-card">
+                                <img src="/images/card-bg.png" className="card-bg" />
+                                <div className="implant-card-header">
+                                    <h2> Implant full arch </h2>
+                                </div>
+                                <div className="implant-image-container">
+                                    <img src="/images/full-arch.png" alt="Implant Full Mouth" />
+                                </div>
+                                <div className="implant-card-body p-2 text-justify">
+                                    <p>
+                                    Our expertly crafted implant full arch solutions provide a stable, permanent restoration for patients with extensive tooth loss. Digitally designed for precision and comfort, they offer a natural look and feel. At ADDL, we tailor each restoration to meet individual needs.
+                                    </p>
+                                </div> 
+                            </div>
+                        </div>
 
+                        <div className="col-12 col-md-6">
+                            <div className="implant-card">
+                                <img src="/images/card-bg.png" className="card-bg" />
+                                <div className="implant-card-header">
+                                    <h2>Implant screw retained </h2>
+                                </div>
+                                <div className="implant-image-container">
+                                    <img src="/images/screw-rentained.png" alt="Advanced CAD/CAM" />
+                                </div>
+                                <div className="implant-card-body p-2 text-justify">
+                                    <p>
+                                        Our precisely crafted implant screw-retained restorations provide stability and aesthetics. Designed for a secure fit, they ensure patient comfort and long-term performance. At ADDL, we offer tailored solutions to meet each patient's unique dental needs with precision and care.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <section className="quality-section">
                 <video autoPlay loop muted playsInline id="player" className="background-video" >
@@ -125,7 +163,7 @@ const Implants = () => {
                 <div className="container d-flex justify-content-center align-items-center " >
                     <div className="quality-content ">
 
-                    We embrace even the most challenging implant cases with personalized care and advanced technology, ensuring the best results for each patient. Throughout the process, we keep our patients informed and comfortable, helping them regain function and confidence with natural-looking implants. We believe in providing not just lasting solutions, but a positive experience that enhances well-being. In the end, our expertise and commitment to care deliver a life-changing outcome for every patient. <br />
+                        We embrace even the most challenging implant cases with personalized care and advanced technology, ensuring the best results for each patient. Throughout the process, we keep our patients informed and comfortable, helping them regain function and confidence with natural-looking implants. We believe in providing not just lasting solutions, but a positive experience that enhances well-being. In the end, our expertise and commitment to care deliver a life-changing outcome for every patient. <br />
 
                         <a href="#" class="btn">Get In Touch</a>
                     </div>
