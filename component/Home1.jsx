@@ -493,11 +493,11 @@ const Home1 = () => {
                     ref={(el) => (cardRefs.current[index] = el)}
                     className="counter-card"
                   >
-                    <div className="Abovetext">{noteAbove}</div>{" "}
+                    <div className="Abovetext text-white">{noteAbove}</div>{" "}
                     {/* Added noteAbove here */}
                     <div className="social-proof__value">
-                      <div className="social-proof__count">{counts[index]}</div>
-                      <span className="suffixcounter">{suffix}</span>
+                      <div className="social-proof__count text-white">{counts[index]}</div>
+                      <span className="suffixcounter text-white">{suffix}</span>
                     </div>
                     <div className="belowtext">{noteBelow}</div>{" "}
                     {/* Added noteBelow here */}
