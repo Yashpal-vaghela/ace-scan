@@ -59,8 +59,8 @@ const Implants = () => {
         <>
             <section className="DW-home" >
                 <div className="container">
-                    <div className="row d-flex justify-content-center align-items-center">
-                        <div className="col-12 col-lg-6 col-md-6">
+                    <div className="row d-flex justify-content-center align-items-center ">
+                        <div className="col-12 col-lg-6 col-md-6 order-1 order-lg-0 order-md-0">
                             <div className="product-text p-3">
                                 <h2 className="double-heading">We Weave <span className="highlight-text">Precision</span> and Craftsmanship into Perfect <span className="highlight-text">Implant Restorations.</span></h2>
                                 <p>
@@ -68,7 +68,7 @@ const Implants = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-12 col-lg-6 col-md-6">
+                        <div className="col-12 col-lg-6 col-md-6 order-0 order-lg-1 order-md-1">
                             <div className="video-section">
                                 <video autoPlay loop muted playsInline id="player" className="video-crop-cad">
                                     <source src="/videos/Implant.mp4" type="video/mp4" />
