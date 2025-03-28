@@ -75,7 +75,7 @@ const Header = () => {
                         <li className="nav-item dropdown">
                         <Link
                             className="nav-link mx-lg-2  dropdown-toggle d-flex align-items-center"
-                            onClick={handleOffcanvas}
+                            // onClick={handleOffcanvas}
                             data-bs-toggle="dropdown"
                             id="navbarDropdown"
                             aria-current="page"

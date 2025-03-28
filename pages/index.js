@@ -1,14 +1,11 @@
-// import Head from "next/head";
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
-// import styles from "@/styles/Style.module.css";
 import "../public/css/contact.css";
 import "../public/css/styles.css";
 import "../public/css/Home.css";
 import "../public/css/common.css";
-import Support from "./support";
 import Home1 from "@/component/Home1";
-
+// import Common from "@/component/Common";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -52,7 +49,6 @@ export default function Home() {
     },
   ];
 
- 
   return (
     <>
       <section className="p-0 parallax overlap-height">
@@ -160,15 +156,15 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="About-section pt-5">
-        <div className="container py-5">
+      <section className="About-section">
+        <div className="container">
           <div className="row justify-content-center">
-            <div className="col-11 col-xl-5 col-md-7 col-lg-6 mt-5">
+            <div className="col-11 col-xl-5 col-md-7 col-lg-6 mt-5 d-flex justify-content-center align-items-center">
               <Image
                 src="/images/ManuBansal1.jpg"
                 className="img-fluid about-img1"
                 width={200}
-                height={100}
+                height={300}
                 alt=" "
               ></Image>
             </div>
@@ -192,8 +188,8 @@ export default function Home() {
                 src="images/about-img4.png"
                 className="img-fluid about-img3"
               ></img> */}
-              <div className="d-flex justify-content-center  mt-4 gap-3">
-                <div className=" col-6 ">
+              <div className="row  mt-4 g-3">
+                <div className="col-12 col-md-6 col-lg-6">
                   <Image
                     src="/images/about-icon11.png"
                     className="img-box mb-4"
@@ -206,7 +202,7 @@ export default function Home() {
                   </p>
                   <p className="hero-txt">Countless smiles enhanced by our skilled dental technicians. Trust our expertise for flawless results!</p>
                 </div>
-                <div className="col-6">
+                <div className="col-12 col-md-6 col-lg-6">
                   <Image
                     src="/images/about-icon22.png"
                     className="img-box mb-4"
@@ -230,10 +226,10 @@ export default function Home() {
       <section className="feature-section">
         <div className="container">
           <div className="row align-items-center justify-content-center">
-            <div className="col-11 col-xl-4 col-lg-5">
+            <div className="col-11 col-xl-4 col-lg-5 order-1 order-lg-0">
               <div className="text-left">
                 <h2>
-                  <span className="highlight-text2 fw-bold">
+                  <span className="highlight-text2 fw-bold pt-4">
                     Optimize efficiency and streamline
                   </span>{" "}
                   {""}
@@ -241,7 +237,7 @@ export default function Home() {
                   solutions—all from a single trusted partner.
                 </h2>
               </div>
-              <div className="feature-box-left text-left">
+              <div className="feature-box-left text-left order-0 order-lg-1">
                 <p>
                   ADDL delivers precision, innovation, and reliability in every
                   restoration, ensuring superior results for your practice.
@@ -272,6 +268,7 @@ export default function Home() {
                   }}
                   title="Cerameus | Dental Laboratory Services"
                   data-ready="true"
+                  className="hero-video mb-4"
                 ></iframe>
               </div>
             </div>
@@ -281,11 +278,13 @@ export default function Home() {
 
   
       <section className="services-section">
-        <div className="container ">
+        <div className="container">
           <h2 className="services-title mb-3">Cerameus at a glance</h2>
-          <div className=" services_grid g-4 card-container ">
-            
-            <div className="col-lg-6 col-md-6 col-12   ">
+          <div className=" services_grid g-4 card-container row position-relative">
+            <div className="col-lg-6 col-md-6 position-sticky top-0">
+              <h2>Content title</h2>
+            </div>
+            <div className="col-lg-6 col-md-6 col-12 position-relative">
               <div className="intro__item c1">
                 
                 <h2 className="intro__item-title my-2 my-sm-3">
@@ -348,9 +347,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* <Common></Common> */}
       <Home1></Home1>
+   
       {/* <Support></Support> */}
-      <section className="trusted-dental-lab">
+      {/* <section className="trusted-dental-lab">
 
         <div className="container">
           <div className="row about-container">
@@ -392,14 +393,14 @@ export default function Home() {
           </div>
         </div>
         
-      </section>
+      </section> */}
     <div className="container">
     <div className="row  d-flex flex-row justify-content-center align-items-center">
-              <div className="col-12 col-lg-6">
+              <div className="col-12 col-lg-6 ss-header">
                 <div className="hero-subheading">Smile-Saving Support</div>
                 <div className="step_heading">Our After-Sales Services for Your Dental Lab Needs</div>
               </div>
-              <div className="col-12 col-lg-6">
+              <div className="col-12 col-lg-6 ss-header">
                   <div className="w-40">
                   We are committed to providing exceptional after-sale services to meet all your dental lab needs. We offer five ways to ensure you receive the best possible experience with our products:
                   </div>
