@@ -199,7 +199,7 @@
 }
 @media(max-width:768px){
     .about-img1 {
-        width: 62% !important;
+        width: 82% !important;
         height: 90% !important;
     }
     .about-img2 {
@@ -230,7 +230,7 @@
         width:35%;
     }
     .About-section .row .col-xl-7{
-        padding-top: 160px;
+        /* padding-top: 160px; */
     }
     /* .about-img5{
         top:41%;
@@ -268,7 +268,7 @@
         padding: 0px 8px;
     }
     .About-section .row .col-xl-7{
-        padding-top: 150px;
+        /* padding-top: 150px; */
     }
     .btn-readmore{
         left:0%;
@@ -282,11 +282,20 @@
     letter-spacing: 0.5px;
     line-height: 1.5;
 }
-/* .feature-section .col-xl-4, */
+
+.feature-section {
+    padding: 70px 30px;
+}
+
 .feature-section .col-xl-7{
     padding-left: 25px;
     padding-right: 25px;
 }
+
+.hero-video {
+    margin-bottom: 40px;
+}
+
 @media(max-width:576px){
      /* feature section css */
      .feature-section{
@@ -503,6 +512,14 @@
 .order-10{
     order:10
 }
+
+
+.step_heading {
+    font-size: 30px;
+    font-weight: 600;
+    width: 80%;
+}
+
 @media(max-width:991px){
     .process-img{
         font-size: 110px;
@@ -524,6 +541,14 @@
     .process-section .row{
         gap:1rem;
     }
+
+    .ss-header {
+        text-align: center ;
+    }
+    .step_heading {
+        width: 100%;
+        font-size: 25px;
+    }
 }
 @media(max-width:576px){
     .process-section .row{
@@ -534,11 +559,6 @@
     }
 }
 
-.step_heading {
-    font-size: 30px;
-    font-weight: 600;
-    width: 80%;
-}
 
 
 /* --------------------- HERO SECTION --------------------- */

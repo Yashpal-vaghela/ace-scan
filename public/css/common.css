@@ -37,7 +37,7 @@
 @media(max-width:768px){
     .double-heading{
        width: 100% !important;
-       margin-top: 60px !important; 
+       margin-top: 20px !important; 
        font-size: 1.9rem;
      }
 }

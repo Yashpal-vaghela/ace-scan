@@ -86,37 +86,51 @@ const Home1 = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry, index) => {
-          if (entry.isIntersecting) startCounter(index);
+        entries.forEach((entry) => {
+          const index = cardRefs.current.indexOf(entry.target);
+          if (entry.isIntersecting && index !== -1) {
+            startCounter(index);
+            observer.unobserve(entry.target); // Stop observing once animated
+          }
         });
       },
       { threshold: 0.5 }
     );
-
-    cardRefs.current.forEach((card) => observer.observe(card));
+  
+    cardRefs.current.forEach((card) => {
+      if (card) observer.observe(card);
+    });
+  
     return () => observer.disconnect();
   }, []);
+  
 
   const startCounter = (index) => {
-    let start = 0,
-      { finalCount, duration } = counters[index];
+    let start = 0;
+    const { finalCount, duration } = counters[index];
     const step = finalCount / (duration / 50);
-
-    const interval = setInterval(() => {
+  
+    const animate = () => {
       start += step;
-      setCounts((prev) =>
-        prev.map((c, i) =>
-          i === index ? Math.min(Math.round(start), finalCount) : c
-        )
-      );
-      if (start >= finalCount) clearInterval(interval);
-    }, 50);
+      setCounts((prev) => {
+        const newCounts = [...prev];
+        newCounts[index] = Math.min(Math.round(start), finalCount);
+        return newCounts;
+      });
+  
+      if (start < finalCount) {
+        requestAnimationFrame(animate);
+      }
+    };
+  
+    requestAnimationFrame(animate);
   };
+  
   return (
     <>
       <section
         className="why_ACE py-4 "
-        style={{ marginBottom: "3.4rem", marginTop: "80px" }}
+        style={{ marginBottom: "2rem", marginTop: "80px" }}
       >
         <div className="container mt-4 ">
           <h2 className="heading1 text-center">
@@ -126,7 +140,7 @@ const Home1 = () => {
           <div className="row g-4">
 
             <img src="/images/e.svg" alt="" className="earth-vec" />
-            <div className="col-12 col-lg-6 col-md-6 p-4">
+            <div className="col-12 col-lg-6  p-4">
               <div className="card shadow-sm border-0 shadow-none ">
                 <div className="accordion user-select-none bg-transparent" id="faqAccordion">
                   <div className="accordion text-left " id="faqAccordion">
@@ -326,14 +340,14 @@ const Home1 = () => {
               </div>
             </div>
 
-            <div className="col-12 col-lg-6 col-md-6 ">
+            <div className="col-12 col-lg-6  ">
               <div className="card shadow-none border-0 d-flex justify-content-center align-items-center h-100 bg-transparent">
                 <Image
                   src="/images/whyi1.png"
                   alt="Example Image"
                   width={300}
                   height={200}
-                  className=" custom-acc-image"
+                  className=" custom-acc-image timelineimg"
                 />
               </div>
             </div>
@@ -342,7 +356,7 @@ const Home1 = () => {
       </section>
       <section
         className="submitting_order  "
-        style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem" }}
+        style={{ paddingBottom: "2rem", paddingTop: "0rem" }}
       >
         <Image
                   src="/images/linevec.svg"
@@ -397,7 +411,7 @@ const Home1 = () => {
                   alt="Example Image"
                   width={400}
                   height={550}
-                  className=" custom-acc-image"
+                  className=" custom-acc-image timelineimg"
                 />
               </div>
             </div>
@@ -461,10 +475,7 @@ const Home1 = () => {
                 </div>
             </section> */}
 
-      <section
-        className="ADDL-numbers "
-        style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem" }}
-      >
+      <section className="ADDL-numbers "  style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem" }} >
         <div className="container text-center ">
           
           <div

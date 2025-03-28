@@ -177,8 +177,8 @@ const About = () => {
                 perfect fit and exceptional quality.
               </div>
             </div>
-            <div className="col-12 col-lg-6">
-              <div className="about-content">
+            <div className="col-12 col-lg-6 d-flex flex-column">
+              <div className="about-content col-12 order-2 order-sm-2 order-lg-0">
                 <p >
                   At ADDL, we collaborate with a team of certified, highly
                   skilled, and experienced dental technicians who have undergone
@@ -190,7 +190,7 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="about-video">
+              <div className="about-video col-12 order-0 order-lg-2 order-sm-0">
                 <video
                   autoPlay
                   loop
@@ -203,7 +203,7 @@ const About = () => {
                   <source src="/videos/fmr.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
-                <div className="video-overlay"></div>
+                <div className="video-overlay1"></div>
               </div>
             </div>
           </div>
