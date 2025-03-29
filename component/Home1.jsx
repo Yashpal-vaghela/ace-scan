@@ -122,14 +122,14 @@ const Home1 = () => {
         requestAnimationFrame(animate);
       }
     };
-  
+
     requestAnimationFrame(animate);
   };
   
   return (
     <>
       <section
-        className="why_ACE py-4 "
+        className="why_ACE py-4"
         style={{ marginBottom: "2rem", marginTop: "80px" }}
       >
         <div className="container mt-4 ">
@@ -138,7 +138,6 @@ const Home1 = () => {
           </h2>
 
           <div className="row g-4">
-
             <img src="/images/e.svg" alt="" className="earth-vec" />
             <div className="col-12 col-lg-6  p-4">
               <div className="card shadow-sm border-0 shadow-none ">
@@ -156,10 +155,6 @@ const Home1 = () => {
                         >
                           ADDL’s Fast and Reliable Turnaround Times: What Sets
                           Us Apart
-                          <i
-                            className="far fa-chevron-down ms-auto"
-                            style={{ color: "#7e7c78" }}
-                          ></i>
                         </button>
                       </h2>
                       <div
@@ -193,10 +188,6 @@ const Home1 = () => {
                           aria-controls="collapseTwo"
                         >
                           ADDL is the Future
-                          <i
-                            className="far fa-chevron-down ms-auto"
-                            style={{ color: "#7e7c78" }}
-                          ></i>
                         </button>
                       </h2>
                       <div
@@ -232,10 +223,6 @@ const Home1 = () => {
                           aria-controls="collapseThree"
                         >
                           Sustainability and Eco-Friendliness at ADDL
-                          <i
-                            className="far fa-chevron-down ms-auto"
-                            style={{ color: "#7e7c78" }}
-                          ></i>
                         </button>
                       </h2>
                       <div
@@ -270,10 +257,6 @@ const Home1 = () => {
                           aria-controls="collapseThree"
                         >
                           ADDL: Precision & Excellence in Dental Lab Solutions
-                          <i
-                            className="far fa-chevron-down ms-auto"
-                            style={{ color: "#7e7c78" }}
-                          ></i>
                         </button>
                       </h2>
                       <div
@@ -309,10 +292,7 @@ const Home1 = () => {
                         >
                           Easy online ordering and seamless communication with
                           your lab.
-                          <i
-                            className="far fa-chevron-down ms-auto"
-                            style={{ color: "#7e7c78" }}
-                          ></i>
+                          
                         </button>
                       </h2>
                       <div
