@@ -3,8 +3,6 @@ import { useForm } from "react-hook-form";
 import React, { useState } from "react";
 import "../public/css/contact.css";
 import "../public/css/styles.css";
-import Link from "next/link";
-import Image from "next/image";
 import Breadcrumbs from "@/component/Breadcrumbs";
 
 const contactUs = () => {
@@ -14,10 +12,35 @@ const contactUs = () => {
     formState: { errors },
   } = useForm();
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("");
 
-  const onSubmit = (data) => {
-    console.log("Form Data:", data);
-    setSubmitted(true);
+
+  const onSubmit = async(data) => {
+    setLoading(true);
+    setMessage("");
+    try {
+      const response = await fetch("/api/sendMail", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+      console.log("Response:", result);
+
+      if (response.ok) {
+        setMessage("Email sent successfully!");
+        setSubmitted(true);
+      } else {
+        setMessage(result.error || "Failed to send email. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+      setMessage("An error occurred. Please try again.");
+    }
+
+    setLoading(false); 
   };
   return (
     <React.Fragment>
@@ -26,28 +49,8 @@ const contactUs = () => {
         className="conatct-form-wrapper position-relative"
         style={{ paddingTop: "80px", paddingBottom: "30px" }}
       >
-        {/* <div className="dots-vector-contain">
-        <div style={{display:'contents'}}>
-          <div className="dots-content">
-            <div className="dots-container">
-              <div className="dots-vector-container">
-                <div className="dots-vector"></div>
-              </div>
-              <div className="dots-wid"></div>
-            </div>
-          </div>
-        </div>
-      </div> */}
         <div className="container position-relative ">
-
-          {/* <div className="dots-vector-contain">
-            <div className="dots-content">
-              <div className="dots-vector"></div>
-              <div className="dots-wid"></div>
-            </div>
-          </div> */}
           <h3 className="mb-4 main-contact-title">How Can We Help?</h3>
-
           <div className="row position-relative">
             <div className="col-lg-4 col-12 ">
               <div className="con-left">
@@ -80,93 +83,60 @@ const contactUs = () => {
             </div>
             <div className="col-lg-8 col-12 p-0 contact-form1-wrapper">
               <div className="contact-form1">
-                <form className="form row p-4">
-                  {/* <h2>Contact Us </h2>
-                  <h3>How Can We Help?</h3> */}
+                <form className="form row p-4" onSubmit={handleSubmit(onSubmit)}>
                   <div className="col-12 mb-4">
                     <label className="fw-bold pn-2" >Name</label>
                     <input
                       type="text"
+                      {...register("name", { required: "Name is required" })}
                       className="form-control new-form"
                       placeholder="Enter you Name"
                     ></input>
+                    {errors.name && <p className="error">{errors.name.message}</p>}
                   </div>
 
                   <div className="col-6 mb-4">
                     <label className="fw-bold pn-2" >Contact No.</label>
                     <input
-                      type="text"
+                      type="number"
+                      {...register("contact", { required: "Contact number is required" })}
                       className="form-control new-form"
                       placeholder="Enter your mobile number"
                     ></input>
+                    {errors.contact && <p className="error">{errors.contact.message}</p>}
                   </div>
                   <div className="col-6 mb-4">
                     <label className="fw-bold pn-2" >Email</label>
                     <input
-                      type="text"
+                      type="email"
+                      {...register("email", { required: "Email is required" })}
                       className="form-control new-form"
                       placeholder="Enter your email"
                     ></input>
+                    {errors.email && <p className="error">{errors.email.message}</p>}
                   </div>
                   <div className="col-12 mb-4">
                     <label className="fw-bold pn-2" >Message</label>
                     <textarea
+                      {...register("message", { required: "Message is required" })}
                       className="form-control new-form"
                       rows="4"
                       placeholder="Your message (optional)"
                     ></textarea>
+                    {errors.message && <p className="error">{errors.message.message}</p>}
                   </div>
-                  <div className="">
-                    <button className="form-btn ">
-                      Submit
+                  <div>
+                    <button className="form-btn" type="submit" disabled={loading}>
+                      {loading ? "Sending..." : "Submit"}
                     </button>
                   </div>
                 </form>
+                {message && <p className="mt-3">{message}</p>} 
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* <section>
-        <div className="container">
-          <div className="card-section1 row gap-4 justify-content-center mb-5 mt-5">
-            <div className="card-1 col-3">
-              <img src="/images/email-icon.svg" className="img-fluid"></img>
-              <div className="d-block">
-                <h2 className="contact-details-title">How can we help?</h2>
-        
-                <Link href="#" className="text-center">
-                  Send us an email
-                </Link>
-              </div>
-            </div>
-            <div className="card-1 col-3">
-              <img src="/images/call.svg" className="img-fluid"></img>
-              <div className="d-block">
-                <h2 className="contact-details-title">
-                  Feel free to get in touch?
-                </h2>
-                
-                <Link href="#" className="text-center">
-                  Give us a call toady
-                </Link>
-              </div>
-            </div>
-            <div className="card-1 col-3">
-              <img src="/images/address.svg" className="img-fluid"></img>
-              <div className="d-block">
-                <h2 className="contact-details-title">
-                  Feel free to get in touch?
-                </h2>
-               
-                <Link href="#" className="text-center">
-                  Give us a call toady
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
       <section className="contact-video-img-wrapper mb-5 position-relative">
         <div className="container d-flex m-auto justify-content-center">
           <iframe
@@ -181,35 +151,6 @@ const contactUs = () => {
             allowFullscreen=""
             loading="lazy"
           ></iframe>
-
-
-          {/* <img
-            src="/images/contact-us-videoimg.png"
-            className="img-fluid bg-img"
-          ></img> */}
-          {/* <div className="card-section row gap-4 justify-content-center">
-                    <div className="card-1 col-3">
-                        <img src="/images/email-icon.svg" className="img-fluid"></img>
-                        <div className="d-block">
-                            <h2 className="contact-details-title">How can we help?</h2>
-                            <p className="contact-details-description">A member of our team will respond within 48hours.</p>
-                        </div>
-                    </div>
-                    <div className="card-1 col-3">
-                        <img src="/images/call.svg" className="img-fluid"></img>
-                        <div className="d-block">
-                            <h2 className="contact-details-title">Feel free to get in touch?</h2>
-                            <p className="contact-details-description">A member of our team will be happy to connect with you.</p>
-                        </div>
-                    </div>
-                    <div className="card-1 col-3">
-                        <img src="/images/address.svg" className="img-fluid"></img>
-                        <div className="d-block">
-                            <h2 className="contact-details-title">Feel free to get in touch?</h2>
-                            <p className="contact-details-description">A member of our team will be happy to connect with you.</p>
-                        </div>
-                    </div>
-                </div> */}
         </div>
       </section>
       <div className="dots-vector-contain">
@@ -230,93 +171,3 @@ const contactUs = () => {
 };
 
 export default contactUs;
-{
-  /* <section
-  className="contact-form-wrapper"
-  style={{ paddingTop: "120px", paddingBottom: "30px" }}
-3
-  <div className="container">
-    <h2>Contact Us ____</h2>
-    <h3>How Can We Help?</h3>
-  </div>
-</section>; */
-}
-{
-  /* <section className="contact-before-after-img">
-      <div className="container">
-          <div className="row mb-4">
-            <div className="col-3 ">
-              <img src="/images/33.jpg" className="img-fluid"></img>
-            </div>
-            <div className="col-3">
-              <img src="/images/33.jpg" className="img-fluid"></img>
-            </div>
-            <div className="col-3">
-              <img src="/images/33.jpg" className="img-fluid"></img>
-            </div>
-            <div className="col-3">
-              <img src="/images/33.jpg" className="img-fluid"></img>
-            </div>
-          </div>
-      </div>
-    </section> */
-}
-{
-  /* <div className="col-lg-8 col-8">
-                <h2>Contact Us </h2>
-                <h3>How Can We Help?</h3>
-                <form className="form row mt-4">
-                    <div className="col-12 mb-3">
-                    <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Enter you Name"
-                    ></input>
-                    </div>
-                    <div className="col-6 mb-3">
-                    <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Enter your mobile number"
-                    ></input>
-                    </div>
-                    <div className="col-6 mb-3">
-                    <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Enter your email"
-                    ></input>
-                    </div>
-                    <div className="col-12 mb-3">
-                    <textarea
-                        className="form-control"
-                        rows="4"
-                        placeholder="Your message (optional)"
-                    ></textarea>
-                    </div>
-                    <div className="col-12">
-                    <button className="btn btn-submit w-25">Submit Button</button>
-                    </div>
-                </form>
-                </div>
-                <div className="col-lg-4 col-4">
-                <div className="our-sletters">
-                    <div className="our-sletters-wrapper">
-                    <h2>Our Newsletters</h2>
-                    <p>
-                        {" "}
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Maxime facilis neque odit est at! Odit animi illo sed
-                        impedit aspernatur accusantium expedita officiis, esse
-                        consequuntur numquam quis, voluptatibus non earum!
-                    </p>
-                    <input
-                        type="email"
-                        className="form-control mb-3"
-                        placeholder="Email"
-                    ></input>
-                    <button className="btn btn-submit">Submit Button</button>
-                    </div>
-                </div>
-                </div> */
-}
