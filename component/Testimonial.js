@@ -46,14 +46,14 @@ const Testimonial = () =>{
     return(
     <section
       className="testmonial"
-      style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem" }}
-    >
+      style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem" }}>
    
       <div className="container mt-4 mb-4 text-center">
         <div className="hero-subheading">Testimoial</div>
         <h2 className="heading1 text-center">
           Smiling Words from Satisfied Customers
         </h2>
+        
         <Swiper 
         ref={swiperRef} 
         slidesPerView={1}
@@ -79,11 +79,16 @@ const Testimonial = () =>{
               spaceBetween: 50,
             },
             991: {
-              slidesPerView: 3,
+              slidesPerView: 2,
               spaceBetween: 50,
             },
+            1080: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
           }}
-        className="mySwiper">
+         className="mySwiper">
+          
             {TestimonialData?.map((item,index)=>{
                 return(
                     <SwiperSlide key={index}>
@@ -111,6 +116,7 @@ const Testimonial = () =>{
                 )
             })}
       </Swiper>
+      
    
       </div>
     </section>

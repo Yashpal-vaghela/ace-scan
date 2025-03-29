@@ -1,19 +1,32 @@
 import React from "react";
 import Link from "next/link";
+import "../public/css/error.css";
+import Image from "next/image";
 
-const ErrorPage = () =>{
-    return(
-        <div id="notfound">
-        <div className="notfound" style={{ height: "50vh" }}>
-          <div className="notfound-404">
-            <h1>404</h1>
+const ErrorPage = () => {
+  return (
+    <div id="notfound">
+      <div className="notfound" style={{ paddingTop: "80px" }}>
+        <div className="container text-center" style={{ paddingTop: "2rem", paddingBottom: "2rem" }}>
+          <div className=" fzf-block">
+            <p className="numberfour left">4</p>
+            <img
+              src="/images/teeth.png"
+              alt="about"
+              className="img-fluid teethimage"
+            />
+            <p className="numberfour right">4</p>
           </div>
-          <h2> we are sorry, page not found!</h2>
-          {/* <p>The page ypu are looking for might  have been removed </p> */}
-          <Link href="/">Back to Homepage</Link>
+
+          <p className="oops">OOPS!!</p>
+
+          <p className="texts">Nothing found here, but no worries, <br /> We can fix it!</p>
+          <Link href="/" className="simplebtn errorbtn">Backs Home</Link>
         </div>
+
       </div>
-    )
+    </div>
+  )
 }
 
 export default ErrorPage;

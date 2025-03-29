@@ -276,7 +276,7 @@ const About = () => {
             </div>
             <div className="col-lg-6  align-items-stretch order-md-1 order-1">
               <Image
-                src="/images/E1.jpg"
+                src="/images/abBefore.png"
                 alt="New Shared Image"
                 width={550}
                 height={600}
@@ -285,7 +285,7 @@ const About = () => {
             </div>
             <div className="col-lg-6 pe-sm-0 align-items-stretch order-lg-2 order-3 mb-5">
               <Image
-                src="/images/exellence.jpg"
+                src="/images/abAfter.png"
                 alt="New Shared Image"
                 width={550}
                 height={600}

@@ -97,7 +97,7 @@ const Header = () => {
                             </li>
                             <li onClick={handleOffcanvas1}>
                             <Link
-                                href="/product/cad-cam-milling"
+                                href="/product/cad-cam"
                                 className="dropdown-item"
                             >
                                 CAD / CAM milling

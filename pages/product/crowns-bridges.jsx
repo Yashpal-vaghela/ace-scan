@@ -95,7 +95,7 @@ const CrownsBridges = () => {
             <section className="implant-card-section">
                 <div className="container">
                     <div className="row">
-                        <div className="col-12 col-md-4">
+                        <div className="col-12 col-md-6 col-lg-4">
                             <div className="implant-card">
                                 <img src="/images/card-bg.png" className="card-bg" />
                                 <div className="implant-card-header">
@@ -112,7 +112,7 @@ const CrownsBridges = () => {
                             </div>
                         </div>
 
-                        <div className="col-12 col-md-4">
+                        <div className="col-12 col-md-6 col-lg-4">
                             <div className="implant-card">
                                 <img src="/images/card-bg.png" className="card-bg" />
                                 <div className="implant-card-header">
@@ -129,7 +129,7 @@ const CrownsBridges = () => {
                             </div>
                         </div>
 
-                        <div className="col-12 col-md-4">
+                        <div className="col-12 col-md-6 col-lg-4">
                             <div className="implant-card">
                                 <img src="/images/card-bg.png" className="card-bg" />
                                 <div className="implant-card-header">
@@ -146,7 +146,7 @@ const CrownsBridges = () => {
 
                             </div>
                         </div>
-                        <div className="col-12 col-md-4">
+                        <div className="col-12 col-md-6 col-lg-4">
                             <div className="implant-card">
                                 <img src="/images/card-bg.png" className="card-bg" />
                                 <div className="implant-card-header">

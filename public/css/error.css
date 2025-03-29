@@ -1,0 +1,138 @@
+.fzf-block {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+}
+
+.numberfour {
+    position: absolute;
+    margin: 0;  
+    font-size: 18rem ;
+    font-weight: 700;
+    color: #005e8a;
+}
+
+.left {
+    left: 32%;
+    top: 2%;
+}
+
+.right {
+    right: 33%;
+    top: 2%;
+}
+
+.teethimage {
+    /* padding: 150px; */
+    position: relative;
+    animation: floatImage 2s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+
+.oops {
+    padding-top: 20px;
+    font-size: 20px;
+    color: #808080;
+    font-weight: 500;
+}
+
+.texts {
+    text-align: center;
+    align-content: center;
+    font-size: 16px;
+    color: #808080;
+    font-weight: 600;
+}
+
+.errorbtn:hover {
+    background-color: #005e8a;
+}
+
+
+@media (max-width: 1300px) {
+    .fzf-block {
+        height: 270px;
+    }
+
+    .numberfour {
+        font-size: 15rem ;
+    }
+
+    .left {
+        left: 30%;
+        top: 5%;
+    }
+    
+    .right {
+        right: 30%;
+        top: 5%;
+    }
+}
+
+@media (max-width: 991px) {
+    .fzf-block {
+        height: 250px;
+    }
+
+    .numberfour {
+        font-size: 15rem ;
+    }
+
+    .left {
+        left: 22%;
+        top: 5%;
+    }
+    
+    .right {
+        right: 22%;
+        top: 5%;
+    }
+}
+
+@media (max-width: 775px) {
+    .fzf-block {
+        height: 190px;
+    }
+
+    .numberfour {
+        font-size: 12rem ;
+    }
+
+    .left {
+        left: 22%;
+        top: 5%;
+    }
+    
+    .right {
+        right: 22%;
+        top: 5%;
+    }
+}
+
+@media (max-width: 575px) {
+    .fzf-block {
+        height: 160px;
+    }
+
+    .numberfour {
+        font-size: 10rem ;
+    }
+
+    .left {
+        left: 12%;
+        top: 7%;
+    }
+    
+    .right {
+        right: 12%;
+        top: 7%;
+    }
+}

@@ -1,5 +1,5 @@
 .about-container {
-  margin-top: 80px;
+  padding-top: 80px;
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
@@ -97,15 +97,13 @@
   line-height: 1.8;
 }
 .custom-image-radius-left {
-  border-top-left-radius: 80px;
-  border-bottom-right-radius: 80px;
+  border-radius: 10px;
   overflow: hidden;
   margin-left: auto; 
   display: flex;
 }
 .custom-image-radius {
-  border-top-left-radius: 80px;
-  border-bottom-right-radius: 80px;
+  border-radius: 10px;
   overflow: hidden; 
   margin-top: 100px;
   /* margin-right: 20px; */
@@ -503,11 +501,11 @@
   .custom-image-radius{
     margin-left: 0px;
     margin-top: 0px;
-    padding: 0px 12px;
+    padding: 5px;
     /* margin-right: 10px; */
   }
   .custom-image-radius-left{
-    padding: 0px 12px;
+    padding: 5px;
   }
   .working-with-the-best{
     padding-bottom: 20px;

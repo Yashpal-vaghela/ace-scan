@@ -583,3 +583,22 @@
     margin-top: 60px;
   }
  }
+
+
+
+
+.swiper {
+  /* overflow: visible !important; */
+  /* position: relative !important; */
+  padding: 40px !important;
+}
+
+.mySwiper .swiper-button-next {
+  /* position: absolute !important; */
+  right: 0% !important;
+  /* top: 0%; */
+}
+
+.mySwiper .swiper-button-prev {
+  left: 0% !important;
+}
