@@ -251,17 +251,20 @@ const About = () => {
         </div>
       </section>
 
+     
+
       <section className="standard-work">
         <div className="container ">
-          <div className="row align-items-stretch">
-            <div className="col-lg-6  d-flex flex-column justify-content-center h-90 order-md-0 order-0">
-              <div className="about-text" style={{width:"85%"}}>
-                <h2 className="main-heading-with-double-color">
+        <h2 className="main-heading-with-double-color text-center">
                   Committed to the Highest{" "}
                   <span className="highlight-text1">
                     Standards of Excellence
                   </span>
                 </h2>
+          <div className="row align-items-stretch">
+            <div className="col-lg-6  d-flex flex-column justify-content-end h-90 order-md-0 order-0 pb-3">
+              <div className="about-text" style={{width:"85%"}}>
+                
                 <p className="mb-4">
                   At ADDL, we uphold the highest industry standards by offering
                   a comprehensive range of dental lab solutions, from single

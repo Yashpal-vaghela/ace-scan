@@ -141,15 +141,16 @@ export default function Home() {
           >
             <div className="col-12 col-xl-5 col-lg-6 col-md-7 col-sm-10 d-flex flex-column justify-content-center">
               <h2 className="alt-font text-white line-height-65px font-weight-500 letter-spacing-minus-1px margin-65px-bottom sm-line-height-50px sm-margin-25px-bottom">
-                Dental lab work{" "}
-                <span className="text-gradient-light-purple-light-orange font-weight-600 d-inline-block">
-                  at its finest!
+               
+                <span className="text-gradient-light-purple-light-orange font-weight-900 d-inline-block">
+                Unparalleled Quality
                 </span>
+                {" "} in dental lab solutions!
               </h2>
               <div className="alt-font text-large font-weight-500 text-uppercase letter-spacing-2px d-flex">
                 <span className="flex-shrink-0 w-40px h-1px bg-white opacity-6 align-self-center margin-25px-right"></span>
                 <span className="flex-grow-1 text-white opacity-6">
-                  Our only mission is to help you deliver happy smiles.
+                Our only vision is to put endless smiles on every Face
                 </span>
               </div>
             </div>
@@ -172,7 +173,8 @@ export default function Home() {
               <div className="text-left">
                 <div className="hero-subheading mt-5">Dental Technicians</div>
                 <h2 className="double-heading">
-                  ADDL sets the{" "}
+                At ADDL, We Believe Crafting Perfect Smiles with <span className="highlight-text1 ">Digital Precision</span>  and <span className="highlight-text2 ">Flawless Integrity</span> 
+                  {/* ADDL sets the{" "}
                   <span className="highlight-text1 ">
                     standard for excellence
                   </span>
@@ -180,7 +182,7 @@ export default function Home() {
                   <span className="highlight-text2 ">
                     uncompromising quality
                   </span>
-                  —because every smile deserves perfection.
+                  —because every smile deserves perfection. */}
                 </h2>
               </div>
               {/* <Image src="/images/about-img4.png" className="img-fluid about-img3" width={100} height={100} alt="about-img3"></Image> */}
@@ -228,17 +230,19 @@ export default function Home() {
           <div className="row align-items-center justify-content-center">
             <div className="col-11 col-xl-4 col-lg-5 order-1 order-lg-0">
               <div className="text-left">
-                <h2>
-                  <span className="highlight-text2 fw-bold pt-4">
+                <h2 className="pt-4">
+
+                Optimize Your Workflow with <span className="highlight-text1 ">Innovative, Advanced and Premium </span>  Dental Lab Solutions
+                  {/* <span className="highlight-text2 fw-bold pt-4">
                     Optimize efficiency and streamline
                   </span>{" "}
                   {""}
                   your workflow with a full spectrum of premium dental lab
-                  solutions—all from a single trusted partner.
+                  solutions—all from a single trusted partner. */}
                 </h2>
               </div>
               <div className="feature-box-left text-left order-0 order-lg-1">
-                <p>
+                <p className="pt-2">
                   ADDL delivers precision, innovation, and reliability in every
                   restoration, ensuring superior results for your practice.
                 </p>
@@ -276,20 +280,24 @@ export default function Home() {
         </div>
       </section>
 
-  
+
       <section className="services-section">
         <div className="container">
-          <h2 className="services-title mb-3">Cerameus at a glance</h2>
+          <h2 className="services-title mb-3">ADDL at a glance</h2>
           <div className=" services_grid g-4 card-container row position-relative">
-            <div className="col-lg-6 col-md-6 position-sticky top-0">
-              <h2>Content title</h2>
-            </div>
-            <div className="col-lg-6 col-md-6 col-12 position-relative">
-              <div className="intro__item c1">
-                
+            <div className="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+              <div className="intro__item">
+              <Image
+                src="/images/Ce.png"
+                className="img-fluid "
+                width={40}
+                height={50}
+                alt=" "
+              ></Image>
                 <h2 className="intro__item-title my-2 my-sm-3">
                   Professional expert clinical advice
                 </h2>
+                <div className="line"></div>
                 <p className="intro__item-desc">
                   Our Clinical Advisors provide personalized guidance with
                   extensive clinical and lab expertise. They help you select the
@@ -297,15 +305,23 @@ export default function Home() {
                   results. Wherever you are, they're just a call away.
                 </p>
               </div>
+            </div>
+            <div className="col-12 col-lg-6">
+              <div className="intro__item">
 
-              <div className="intro__item c2">
-               
-                <div className="ov"></div>
+              <Image
+                src="/images/Ft.png"
+                className="img-fluid "
+                width={40}
+                height={50}
+                alt=" "
+              ></Image>
 
-                
+
                 <h2 className="intro__item-title my-2 my-sm-3">
                   Fast turnaround times
                 </h2>
+                <div className="line"></div>
                 <p className="intro__item-desc">
                   At Cerameus, your satisfaction is our priority! We deliver
                   top-quality results with fast turnaround times, ensuring
@@ -313,15 +329,23 @@ export default function Home() {
                   results should be both quick and seamless for you.
                 </p>
               </div>
+            </div>
+            <div className="col-12 col-lg-6">
+              <div className="intro__item">
 
-              <div className="intro__item c3">
-               
-                <div className="ov"></div>
+              <Image
+                src="/images/Pe.png"
+                className="img-fluid "
+                width={40}
+                height={50}
+                alt=" "
+              ></Image>
 
-                
+
                 <h2 className="intro__item-title my-2 my-sm-3">
                   Certification
                 </h2>
+                <div className="line"></div>
                 <p className="intro__item-desc">
                   All our lab work is designed and completed in Europe, adhering
                   to the highest industry standards. We are ISO and FDA
@@ -329,13 +353,22 @@ export default function Home() {
                   product is CE-marked for material excellence.
                 </p>
               </div>
+            </div>
 
-              <div className="intro__item c4">
-                <div className="ov"></div>
-                
+            <div className="col-12 col-lg-6">
+              <div className="intro__item">
+              <Image
+                src="/images/Rc.png"
+                className="img-fluid "
+                width={40}
+                height={50}
+                alt=" "
+              ></Image>
+
                 <h2 className="intro__item-title my-2 my-sm-3">
                   Reduced costs
                 </h2>
+                <p className="line"></p>
                 <p className="intro__item-desc">
                   At ADDL, we focus on providing exceptional quality with
                   cost-effective solutions, enhancing your clinical efficiency
@@ -349,7 +382,7 @@ export default function Home() {
       </section>
       {/* <Common></Common> */}
       <Home1></Home1>
-   
+
       {/* <Support></Support> */}
       {/* <section className="trusted-dental-lab">
 
@@ -394,26 +427,26 @@ export default function Home() {
         </div>
         
       </section> */}
-    <div className="container">
-    <div className="row  d-flex flex-row justify-content-center align-items-center">
-              <div className="col-12 col-lg-6 ss-header">
-                <div className="hero-subheading">Smile-Saving Support</div>
-                <div className="step_heading">Our After-Sales Services for Your Dental Lab Needs</div>
-              </div>
-              <div className="col-12 col-lg-6 ss-header">
-                  <div className="w-40">
-                  We are committed to providing exceptional after-sale services to meet all your dental lab needs. We offer five ways to ensure you receive the best possible experience with our products:
-                  </div>
-                
-              </div>
+      <div className="container">
+        <div className="row  d-flex flex-row justify-content-center align-items-center">
+          <div className="col-12 col-lg-6 ss-header">
+            <div className="hero-subheading">Smile-Saving Support</div>
+            <div className="step_heading">Our After-Sales Services for Your Dental Lab Needs</div>
           </div>
-    </div>
-      
+          <div className="col-12 col-lg-6 ss-header">
+            <div className="w-40">
+              We are committed to providing exceptional after-sale services to meet all your dental lab needs. We offer five ways to ensure you receive the best possible experience with our products:
+            </div>
+
+          </div>
+        </div>
+      </div>
+
       <section className="process-section">
-        
+
         <div className="container">
-          
-          
+
+
           <div className="row align-items-center justify-content-center">
             <div className="col-10 order-1 order-sm-0 col-lg-3 col-sm-3">
               <h1 className="process-img">01</h1>
