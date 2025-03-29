@@ -94,7 +94,7 @@ const Testimonial = () =>{
                     <SwiperSlide key={index}>
                         <div
                             className="col-9 col-md-12 col-lg-12  testimonial_card"
-                            style={{ marginTop: "50px",marginBottom:'38px' }}
+                            style={{ marginTop: "0px",marginBottom:'38px' }}
                         >
                         <Image
                             src="/images/quotegrey.svg"

@@ -591,7 +591,7 @@
 .swiper {
   /* overflow: visible !important; */
   /* position: relative !important; */
-  padding: 40px !important;
+  padding: 20px 40px !important;
 }
 
 .mySwiper .swiper-button-next {
@@ -602,4 +602,15 @@
 
 .mySwiper .swiper-button-prev {
   left: 0% !important;
+}
+
+.numberborder {
+  font-size: 80px;
+  font-weight: bold;
+  color: transparent !important;
+  -webkit-text-stroke: 4px #005e8a;
+}
+
+.txt-black {
+  color: #000 !important;
 }

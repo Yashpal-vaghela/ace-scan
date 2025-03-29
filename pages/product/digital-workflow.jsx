@@ -62,9 +62,9 @@ const DigitalWorkflow = () => {
 
                     <div className="row" style={{ paddingTop: "20px" }}>
                         <div className="col-12 col-lg-3 col-md-6 p-1">
-                            <div className="step ">
+                            <div className="step c1 ">
                                 <div className="fulloverlay"></div>
-                                <div className="card-body-content card2">
+                                <div className="card-body-content card1">
                                     <h3>01</h3>
                                     <p className="card-hed">Incoming Orders</p>
                                     
@@ -74,10 +74,10 @@ const DigitalWorkflow = () => {
                             </div>
                         </div>
 
-                        <div className="col-12 col-lg-3 col-md-6 p-1">
-                            <div className="step " >
+                        <div className="col-12 col-lg-3 col-md-6 p-1 ">
+                            <div className="step c2 " >
                                 <div className="fulloverlay"></div>
-                                <div className="card-body-content">
+                                <div className="card-body-content card2">
                                     <h3>02</h3>
                                     <p className="card-hed">Design and Construction</p>
                                     <div className="card-txt">Throughout the design and construction phases, our skilled technicians use only the finest materials and cutting-edge equipment to create custom lab work that is tailored to your specific requirements</div>
@@ -86,7 +86,7 @@ const DigitalWorkflow = () => {
                             </div>
                         </div>
                         <div className="col-12 col-lg-3 col-md-6 p-1">
-                            <div className="step  ">
+                            <div className="step c3 ">
                                 <div className="fulloverlay"></div>
                                 <div className="card-body-content card3">
                                     <h3>03</h3>
@@ -98,9 +98,9 @@ const DigitalWorkflow = () => {
                             </div>
                         </div>
                         <div className="col-12 col-lg-3 col-md-6 p-1">
-                            <div className="step  ">
+                            <div className="step c4 ">
                                 <div className="fulloverlay"></div>
-                                <div className="card-body-content card2">
+                                <div className="card-body-content card4">
                                     <h3>04</h3>
                                     <p className="card-hed">Returns</p>
                                     

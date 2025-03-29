@@ -323,10 +323,10 @@ const Home1 = () => {
             <div className="col-12 col-lg-6  ">
               <div className="card shadow-none border-0 d-flex justify-content-center align-items-center h-100 bg-transparent">
                 <Image
-                  src="/images/whyi1.png"
+                  src="/images/f3.png"
                   alt="Example Image"
                   width={300}
-                  height={200}
+                  height={430}
                   className=" custom-acc-image timelineimg"
                 />
               </div>

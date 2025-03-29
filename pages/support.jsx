@@ -81,11 +81,11 @@ const support = () => {
           <div className="row align-items-center mb-5 justify-content-center">
             <div className="col-lg-7 col-md-7 col-sm-12 col-12 ">
               <div className="experience-section-main-content">
-                <h2>Deep-Rooted Tradition</h2>
+                <h2 className="txt-black">Deep-Rooted Tradition</h2>
                 <div className="d-flex experience-main-content-wrapper gap-4 gap-md-2  justify-content-between">
                   <div className="d-block">
-                    <h1 className="mb-0">14+</h1>
-                    <h2>Years experience.</h2>
+                    <h1 className="mb-0 numberborder" >14+</h1>
+                    <h2 className="txt-black">Years experience.</h2>
                   </div>
                   <p className="d-none d-sm-none d-md-block">
                     Our support team brings a wealth of experience and expertise

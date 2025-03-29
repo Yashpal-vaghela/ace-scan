@@ -253,19 +253,21 @@ const About = () => {
 
      
 
-      <section className="standard-work">
-        <div className="container ">
-        <h2 className="main-heading-with-double-color text-center">
+      <section className="standard-work pt-5">
+      <Image src="/images/linevec.svg" className="d-none d-md-block ab-vector1 img-fluid" width={1772} height={827}></Image>
+        <div className="container text-center">
+          
+        <h2 className="main-heading-with-double-color text-center w-100">
                   Committed to the Highest{" "}
                   <span className="highlight-text1">
                     Standards of Excellence
                   </span>
                 </h2>
-          <div className="row align-items-stretch">
-            <div className="col-lg-6  d-flex flex-column justify-content-end h-90 order-md-0 order-0 pb-3">
-              <div className="about-text" style={{width:"85%"}}>
+          <div className="row align-items-stretch position-relative">
+            <div className="col-lg-6  d-flex flex-column justify-content-center h-90 order-md-0 order-0 pb-3">
+              <div className="about-text" style={{width:"100%"}}>
                 
-                <p className="mb-4">
+                <p className="" style={{marginTop: "60px"}}>
                   At ADDL, we uphold the highest industry standards by offering
                   a comprehensive range of dental lab solutions, from single
                   crowns to complex restorations. Crafted in FDA-verified and

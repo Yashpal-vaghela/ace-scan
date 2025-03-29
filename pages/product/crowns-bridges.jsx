@@ -1,6 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import "../../public/css/product.css";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "../../public/css/Home.css";
+import "../../public/css/support.css";
+
 
 const CrownsBridges = () => {
     const videoRefP = useRef(null);
@@ -26,12 +34,42 @@ const CrownsBridges = () => {
             }
         }
     }, []);
+    const swiperRef = useRef(null);
+
+    const productCard = [
+        {
+            id: 1,
+            title: "Aesthetic porcelain",
+            img: "/images/PFM-POST.png",
+            discription: "Our PFM (Porcelain-Fused-to-Metal) crowns and bridges combine strength and aesthetics, enhanced by cutting-edge digital technology. Using advanced CAD/CAM software and precision milling techniques, we create restorations with exceptional fit and natural appearance. This fusion of digital design and traditional materials ensures long-lasting, functional, and highly aesthetic results."
+        },
+        {
+            id: 2,
+            title: "Zirconia crowns",
+            img: "/images/zir-conia.jpg",
+            discription: "At ADDL, we specialize in high-quality zirconia crowns and bridges, providing exceptional strength and aesthetics. Our advanced digital CAD/CAM workflow and precision milling guarantee a perfect fit and natural look. Using state-of-the-art digital sintering techniques, we create durable, lifelike restorations with unmatched accuracy, longevity, and reliability."
+        },
+        {
+            id: 3,
+            title: "Layered zirconia crowns",
+            img: "/images/lzc.png",
+            discription: "Our layered zirconia crowns and bridges combine strength with natural aesthetics, thanks to advanced digital workflows and CAD/CAM technology. Precision layering ensures lifelike shading and a perfect fit, creating durable, biocompatible restorations ideal for single crowns, bridges, and implants."
+        },
+        {
+            id: 4,
+            title: "PMMA Temporaries",
+            img: "/images/PMMA.png",
+            discription: "PMMA temporary crowns and bridges are crafted using advanced digital design for a precise fit and natural look. They offer strength, comfort, and esthetics, allowing patients to confidently preview their final smile. Ideal for both short-term and long-term use."
+        }
+    ]
 
     return (
         <>
             <section className="DW-home" >
                 <div className="container">
                     <div className="row d-flex justify-content-center align-items-center">
+
+
                         <div className="col-12 col-lg-6 col-md-6 order-1 order-lg-0 order-md-0">
                             <div className="product-text p-3">
                                 <h2 className="double-heading">We Blend <span className="highlight-text">Craftsmanship </span>with <span className="highlight-text">Artistic Precision </span>in Restorations.
@@ -94,8 +132,69 @@ const CrownsBridges = () => {
             </section>
             <section className="implant-card-section">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-12 col-md-6 col-lg-4">
+                    {/* <div className="row"> */}
+                        <Swiper ref={swiperRef}
+                            slidesPerView={1}
+                            spaceBetween={50}
+                            centeredSlides={true}
+                            autoplay={{
+                                delay: 3000,
+                                disableOnInteraction: false,
+                            }}
+                            loop={true}
+                            pagination={{
+                                clickable: true,
+                            }}
+                            navigation={true}
+                            modules={[Autoplay, Pagination, Navigation]}
+                            breakpoints={{
+                                576: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 60,
+                                },
+                                768: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 50,
+                                },
+                                991: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 50,
+                                },
+                                1080: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 50,
+                                },
+                            }}
+                            className="product-card-swiper"
+                        >
+                            {
+                                productCard?.map((item, index) => {
+                                    return (
+                                        <SwiperSlide key={index}>
+                                            <div className="col-12 col-md-6 col-lg-12">
+                                                <div className="implant-card">
+                                                    <img src="/images/card-bg.png" className="card-bg" />
+                                                    <div className="implant-card-header">
+                                                        <h2> {item?.title} </h2>
+                                                    </div>
+                                                    <div className="implant-image-container">
+                                                        <Image src={item?.img} alt="product-card-img" width={467} height={197}></Image>
+                                                        {/* <img src="/images/PFM-POST.png" alt="Implant Full Mouth" /> */}
+                                                    </div>
+                                                    <div className="implant-card-body p-2 text-justify">
+                                                        <p>
+                                                            {item?.discription}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </SwiperSlide>
+                                    )
+                                })
+                            }
+
+                        </Swiper>
+                        {/* <div className="col-12 col-md-6 col-lg-4">
                             <div className="implant-card">
                                 <img src="/images/card-bg.png" className="card-bg" />
                                 <div className="implant-card-header">
@@ -163,14 +262,13 @@ const CrownsBridges = () => {
 
 
                             </div>
-                        </div>
-                    </div>
+                        </div> */}
+                    {/* </div> */}
                 </div>
             </section>
             <section className="quality-section">
                 <video autoPlay loop muted playsInline id="player" className="background-video" >
-                    <source src="/videos/veneer.mp4" type="video/mp4" />
-                    <source src="/videos/veneer.webm" type="video/webm" />
+                <source src="/videos/crown-bg.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <div className="container d-flex justify-content-center align-items-center " >
