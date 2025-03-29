@@ -117,8 +117,8 @@ const Implants = () => {
             <section className="implant-card-section">
                 <div className="container">
                     <div className="row">
-                        <div className="col-12 col-md-6">
-                            <div className="implant-card">
+                        <div className="col-12 col-md-6 d-flex justify-content-center">
+                            <div className="implant-card imcards">
                                 <img src="/images/card-bg.png" className="card-bg" />
                                 <div className="implant-card-header">
                                     <h2> Implant full arch </h2>
@@ -134,8 +134,8 @@ const Implants = () => {
                             </div>
                         </div>
 
-                        <div className="col-12 col-md-6">
-                            <div className="implant-card">
+                        <div className="col-12 col-md-6 d-flex justify-content-center">
+                            <div className="implant-card imcards">
                                 <img src="/images/card-bg.png" className="card-bg" />
                                 <div className="implant-card-header">
                                     <h2>Implant screw retained </h2>
