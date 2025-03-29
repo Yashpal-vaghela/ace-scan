@@ -124,7 +124,7 @@ const Implants = () => {
                                     <h2> Implant full arch </h2>
                                 </div>
                                 <div className="implant-image-container">
-                                    <img src="/images/full-arch.png" alt="Implant Full Mouth" />
+                                    <img src="/images/fullarch-implant.png" alt="Implant Full Mouth" />
                                 </div>
                                 <div className="implant-card-body p-2 text-justify">
                                     <p>
@@ -141,7 +141,7 @@ const Implants = () => {
                                     <h2>Implant screw retained </h2>
                                 </div>
                                 <div className="implant-image-container">
-                                    <img src="/images/screw-rentained.png" alt="Advanced CAD/CAM" />
+                                    <img src="/images/screw-retained-implant.png" alt="Advanced CAD/CAM" />
                                 </div>
                                 <div className="implant-card-body p-2 text-justify">
                                     <p>
@@ -156,10 +156,10 @@ const Implants = () => {
 
             <section className="quality-section">
                 <video autoPlay loop muted playsInline id="player" className="background-video" >
-                    <source src="/videos/veneer.mp4" type="video/mp4" />
-                    <source src="/videos/veneer.webm" type="video/webm" />
+                    <source src="/videos/ADE12.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
+                <div className="bg-overlay"></div>
                 <div className="container d-flex justify-content-center align-items-center " >
                     <div className="quality-content ">
 

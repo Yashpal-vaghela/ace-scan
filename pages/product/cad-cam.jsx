@@ -84,8 +84,7 @@ const CadCamMilling = () => {
             </section>
             <section className="quality-section">
                 <video autoPlay loop muted playsInline id="player" className="background-video" >
-                    <source src="/videos/veneer.mp4" type="video/mp4" />
-                    <source src="/videos/veneer.webm" type="video/webm" />
+                    <source src="/videos/cad-cam-bg.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <div className="container d-flex justify-content-center align-items-center " >
