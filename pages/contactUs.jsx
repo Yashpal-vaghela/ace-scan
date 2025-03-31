@@ -47,7 +47,121 @@ const contactUs = () => {
   };  
   return (
     <React.Fragment>
-      <Breadcrumbs></Breadcrumbs>
+      {/* <Breadcrumbs></Breadcrumbs> */}
+      <section className="p-0 parallax overlap-height">
+        <div className="lqd-vbg-wrap">
+          <div className="lqd-vbg-inner">
+            <span className="lqd-vbg-loader"></span>
+            <div
+              className="inline-YTPlayer"
+              style={{ position: "relative", maxWidth: "100%" }}
+            >
+              <div
+                className="lqd-vbg-video mb_YTPlayer isMuted"
+                data-video-bg="true"
+                data-youtube-options='{"videoURL":"https://www.youtube.com/embed/Fv4YYSRsRUg"}'
+                id="YTP_1742270005228"
+                style={{
+                  position: "relative",
+                  // paddingBottom: "34.25%",
+                  // paddingTop:"20%",
+                  overflow: "hidden",
+                  height: "0px",
+                }}
+              >
+                <div
+                  id="wrapper_YTP_1742270005228"
+                  className="mbYTP_wrapper"
+                  style={{
+                    position: "absolute",
+                    zIndex: 0,
+                    minWidth: "100%",
+                    minHeight: "100%",
+                    left: "0px",
+                    top: "0px",
+                    overflow: "hidden",
+                    opacity: 1,
+                    backgroundImage: "none",
+                    transitionDuration: "1000ms",
+                  }}
+                >
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="h-full w-full background-video background-video1"
+                    id="player"
+                  >
+                    <source src="https://ace-dental.s3.ap-south-1.amazonaws.com/ADVANCE+DENTAL+EXPORT.webm" type="video/webm" />
+                    <source src="https://ace-dental.s3.ap-south-1.amazonaws.com/DMLS+Printing.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  {/* <iframe
+                    id="iframe_YTP_1742270005228"
+                    className="playerBox"
+                    style={{
+                      position: "absolute",
+                      zIndex: 0,
+                      width: "2024px",
+                      height: "1138.2px",
+                      top: "0px",
+                      left: "0px",
+                      overflow: "hidden",
+                      opacity: 1,
+                      userSelect: "none",
+                      marginTop: "-106.706px",
+                      marginLeft: "-379px",
+                      maxWidth: "initial",
+                    }}
+                    frameBorder="0"
+                    allowFullScreen=""
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    title="c1"
+                    width="640"
+                    height="360"
+                    src="https://ace-dental.s3.ap-south-1.amazonaws.com/ADVANCE+DENTAL+EXPORT.mp4"
+                    unselectable="on"
+                  ></iframe> */}
+                  <div
+                    className="YTPOverlay"
+                    style={{
+                      position: "absolute",
+                      top: "0px",
+                      left: "0px",
+                      width: "100%",
+                      height: "100%",
+                      cursor: "pointer",
+                    }}
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="opacity-full bg-gradient-fast-blue-purple"></div>
+        <div className="container position-relative">
+          <div
+            className="row full-screen md-landscape-h-600px"
+            style={{ height: "600px" }}
+          >
+            <div className="col-12 col-xl-5 col-lg-6 col-md-7 col-sm-10 d-flex flex-column justify-content-center">
+              <h2 className="alt-font text-white line-height-65px font-weight-500 letter-spacing-minus-1px margin-65px-bottom sm-line-height-50px sm-margin-25px-bottom">
+                <span className="text-gradient-light-purple-light-orange font-weight-900 d-inline-block">
+                 Contact US
+                </span>{" "}
+              </h2>
+              <div className="alt-font text-large font-weight-500 text-uppercase letter-spacing-2px d-flex">
+                <span className="flex-shrink-0 w-40px h-1px bg-white opacity-6 align-self-center margin-25px-right"></span>
+                <span className="flex-grow-1 text-white opacity-6">
+                  Our only vision is to put endless smiles on every Face
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section
         className="conatct-form-wrapper position-relative"
         style={{ paddingTop: "80px", paddingBottom: "30px" }}

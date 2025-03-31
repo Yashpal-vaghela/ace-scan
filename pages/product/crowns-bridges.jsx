@@ -99,14 +99,11 @@ const CrownsBridges = () => {
                 <div className="container">
                     <div className="row for-rlative">
 
-                        <div className="product-before-after-heading">
-                            <h2 className="heading_outer">Bridging Gaps, Crown­ing Confidence! </h2>
-                            <h3 className="heading_outer">Crafting Realistic, High-Quality Crowns and Bridges with Premium Materials</h3>
-                        </div>
-                        <div className="col-12 col-lg-8 ">
+                      
+                        <div className="col-12 col-lg-6 ">
                             <div className="product-before-after-images">
                                 <Image
-                                    src="/images/cmb.png"
+                                    src="/images/crgallery.png"
                                     alt="about"
                                     width={550}
                                     height={400}
@@ -116,13 +113,13 @@ const CrownsBridges = () => {
 
                         </div>
 
-                        <div className="col-12 col-lg-4 ">
+                        <div className="col-12 col-lg-6 ">
 
-                            <div className="product-before-after-content ">
+                            <div className="product-before-after-content d-flex flex-column  justify-content-center">
 
-                                <div className="product-before-after-heading1">
-                                    <h2 className="before-after-contains">Bridging Gaps, Crown­ing Confidence!</h2>
-                                    <h3 className="before-after-contains">Crafting Realistic, High-Quality Crowns and Bridges with Premium Materials</h3>
+                                <div className="product-before-after-heading1 d-flex flex-column  justify-content-center">
+                                    <h2 className="before-after-contains subhead">Bridging Gaps, Crown­ing Confidence!</h2>
+                                    <h3 className="before-after-contains mb-5">Crafting Realistic, High-Quality Crowns and Bridges with Premium Materials</h3>
                                 </div>
                                 We specialize in crafting custom crowns and bridges that combine durability with aesthetic appeal, ensuring a natural and seamless fit. Utilizing advanced technology and high-quality materials, we deliver restorations designed to enhance both function and appearance. Our expert team provides comprehensive guidance throughout the process, offering you a solution that restores your smile’s beauty and functionality, while delivering long-lasting results for optimal comfort and confidence.
                             </div>
