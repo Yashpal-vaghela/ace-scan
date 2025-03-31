@@ -4,37 +4,49 @@ import Header from "@/component/header";
 import Footer from "@/component/footer";
 import { Router, useRouter } from "next/router";
 import { useEffect, useState } from "react";
-// import NProgress from 'nprogress'; 
+// import NProgress from 'nprogress';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
   const [state, setstate] = useState(false);
+  // const [loader, setloader] = useState(false);
+
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", "light");
+    // router.events.on("routeChangeStart", (url) => {
+    //   setloader(true);
+    // });
+    // router.events.on("routeChangeComplete", (url) => {
+    //   setloader(false);
+    // });
+    // router.events.on("routeChangeError", (url) => {
+    //   setloader(false);
+    // });
     // import('bootstrap/dist/js/bootstrap.bundle.min.js');
-    // Router.events.off('routeChangeStart', () => NProgress.start());
-    // Router.events.off('routeChangeComplete', () => NProgress.done());
-    // Router.events.off('routeChangeError', () => NProgress.done());
+    // Router.events.off("routeChangeStart", () => NProgress.start());
+    // Router.events.off("routeChangeComplete", () => NProgress.done());
+    // Router.events.off("routeChangeError", () => NProgress.done());
+    AOS.init();
   }, []);
   return (
     <>
-      {state ? (
-        <> site under deployment</>
-      ) : (
-        <>
-          {router.pathname == "/" ? (
-            <>
-              <Header />
-            </>
+        {state ? (
+            <> site under deployment</>
           ) : (
             <>
               <Header />
+              <Component {...pageProps} />
+              {/* <Footer /> */}
             </>
           )}
-          <Component {...pageProps} />
-          <Footer />
+      {/* {loader ? (
+        <>loader</>
+      ) : (
+        <>
         </>
-      )}
+      )} */}
     </>
   );
 }

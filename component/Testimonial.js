@@ -45,12 +45,13 @@ const Testimonial = () =>{
 
     return(
     <section
-      className="testmonial"
-      style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem" }}>
+      className="testmonial space-section"
+    //   style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem" }}
+    >
    
-      <div className="container mt-4 mb-4 text-center">
+      <div className="container mt-4 mb-0 text-center">
         <div className="hero-subheading">Testimoial</div>
-        <h2 className="heading1 text-center">
+        <h2 className="heading1 mb-2 text-center">
           Smiling Words from Satisfied Customers
         </h2>
         

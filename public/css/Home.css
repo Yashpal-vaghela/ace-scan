@@ -1,8 +1,8 @@
 /* Accordation */
 
-.container {
+/* .container {
     overflow: visible !important;
-  }
+  } */
   
   
   .accordion-button:focus,
@@ -32,20 +32,23 @@
     transition: transform 0.3s ease-in-out;
   }
   
-  .custom-hr {
+  /* .custom-hr {
     border: 1px solid rgba(126, 124, 120, 0.2);
     opacity: 1;
     margin: 0 16px;
-  }
+  } */
   
-  .accordion-body {
+  /* .accordion-body {
     color: #7e7c78;
-  }
+  } */
   
-  .custom-acc-image {
+  /* .custom-acc-image {
     object-fit: cover;
     border-radius: 12px;
-  }
+    position:relative;
+    animation: fadeUp 2s ease forwards;
+  } */
+
   
   
   /* Headinng  */
@@ -82,38 +85,34 @@
 }
 
   /* Gradient background button */
-  .gradientBG {
-    /* background: linear-gradient(to right, #50448f,   #8840b6); */
+  /* .gradientBG {
     background-color: rgba(255,255,255,0.2);
-    /* background: linear-gradient(to right, #3e9293, #52a684, #8840b6); */
     display: inline-block;
     color: white;
     font-weight: bold;
     padding: 6px 10px;
     border-radius: 8px;
     margin-bottom: 15px;
-  }
-  .gradientBG2 {
+  } */
+  /* .gradientBG2 {
     background: linear-gradient(to right, #2e829d,#3e9293,  #50448f);
-    /* background: linear-gradient(to right, #3e9293, #52a684, #8840b6); */
     display: inline-block;
     color: white;
     font-weight: bold;
     padding: 6px 10px;
     border-radius: 8px;
     margin-bottom: 15px;
-  }
+  } */
   
-  .gradientBG1 {
+  /* .gradientBG1 {
     background: linear-gradient(to right, #2e829d, #3e9293, #52a684, #8840b6, #50448f);
-    /* background: linear-gradient(to right, #3e9293, #52a684, #8840b6); */
     display: inline-block;
     color: white;
     font-weight: bold;
     padding: 6px 10px;
     border-radius: 8px;
     margin-bottom: 15px;
-  }
+  } */
   
   
   /* simple button */
@@ -134,32 +133,23 @@
   
   /*submitting_order & Timeline */
   
-  .submitting_order {
+  /* .submitting_order {
     position: relative;
-    /* Required for ::before positioning */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 1;
-  }
+  } */
   
-  .submitting_order::before {
+  /* .submitting_order::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* background-image: url('../vectorbg.png'); */
-    /* background-image: url('../linevec.svg'); */
-    /* background-size: cover; */
-    /* background-position: center; */
-    /* background-repeat: no-repeat; */
-    /* opacity: 0.4; */
-    /* Adjust opacity (0.1 to 1) */
     z-index: -1;
-    /* Keeps it behind the content */
-  }
+  } */
 
   .line-vec {
     width: 100% !important;

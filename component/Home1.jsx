@@ -1,4 +1,4 @@
-import {  useEffect, useState, React, useRef } from "react";
+import { useEffect, useState, React, useRef } from "react";
 import Testimonial from "./Testimonial";
 // import "../public/css/support.css";
 // import "../public/css/contact.css";
@@ -96,20 +96,19 @@ const Home1 = () => {
       },
       { threshold: 0.5 }
     );
-  
+
     cardRefs.current.forEach((card) => {
       if (card) observer.observe(card);
     });
-  
+
     return () => observer.disconnect();
   }, []);
-  
 
   const startCounter = (index) => {
     let start = 0;
     const { finalCount, duration } = counters[index];
     const step = finalCount / (duration / 50);
-  
+
     const animate = () => {
       start += step;
       setCounts((prev) => {
@@ -117,7 +116,7 @@ const Home1 = () => {
         newCounts[index] = Math.min(Math.round(start), finalCount);
         return newCounts;
       });
-  
+
       if (start < finalCount) {
         requestAnimationFrame(animate);
       }
@@ -125,23 +124,54 @@ const Home1 = () => {
 
     requestAnimationFrame(animate);
   };
-  
+
+  const [cardImage, setcardImage] = useState([]);
+  const handleChangeImage = (e, cardName) => {
+    console.log("e", e, cardName);
+    const a = document.querySelector("#myExample");
+    const b = document.getElementsByClassName("custom-acc-image");
+    console.log("a",a,"b",b,"classList",a.classList)
+    if(a != null){
+      a.setAttribute("data-aos","fade-up")
+      // a.classList.add("aos-init aos-animate")
+      // b.forEach((i)=>{
+      //   console.log("i",i)
+      // })
+      // a.classList.add("aos-init aos-animate")
+    }
+    if (cardName === "card1") {
+      setcardImage({ imgUrl: "/images/f1.png" });
+    } else if (cardName === "card2") {
+      setcardImage({ imgUrl: "/images/f2.png" });
+    } else if (cardName === "card3") {
+      setcardImage({ imgUrl: "/images/f3.png" });
+    } else if (cardName === "card4") {
+      setcardImage({ imgUrl: "/images/f4.png" });
+    } else {
+      setcardImage({ imgUrl: "/images/f5.png" });
+    }
+  };
+
   return (
     <>
       <section
-        className="why_ACE py-4"
-        style={{ marginBottom: "2rem", marginTop: "80px" }}
+        className="why_ACE position-relative space-section"
+        // style={{ marginBottom: "2rem", marginTop: "80px" }}
       >
-        <div className="container mt-4 ">
-          <h2 className="heading1 text-center">
-            Why ACE Digital Dental Laboratry
+        <div className="container">
+          <h2 className="heading1 mt-1  text-center">
+            Why <b className="highlight-text1">ACE</b> Digital Dental Laboratry
           </h2>
 
           <div className="row g-4">
-            <img src="/images/e.svg" alt="" className="earth-vec" />
+            <Image src="/images/e.svg" alt="earth-vec" className="earth-vec" width={100} height={100}></Image>
+            {/* <img src="/images/e.svg" alt="" className="earth-vec" /> */}
             <div className="col-12 col-lg-6  p-4">
               <div className="card shadow-sm border-0 shadow-none ">
-                <div className="accordion user-select-none bg-transparent" id="faqAccordion">
+                <div
+                  className="accordion user-select-none bg-transparent"
+                  id="faqAccordion"
+                >
                   <div className="accordion text-left " id="faqAccordion">
                     <div className="accordion-item border-0 ">
                       <h2 className="accordion-header" id="headingOne">
@@ -152,6 +182,7 @@ const Home1 = () => {
                           data-bs-target="#collapseOne"
                           aria-expanded="false"
                           aria-controls="collapseOne"
+                          onClick={(e) => handleChangeImage(e, "card1")}
                         >
                           ADDL’s Fast and Reliable Turnaround Times: What Sets
                           Us Apart
@@ -186,6 +217,7 @@ const Home1 = () => {
                           data-bs-target="#collapseTwo"
                           aria-expanded="false"
                           aria-controls="collapseTwo"
+                          onClick={(e) => handleChangeImage(e, "card2")}
                         >
                           ADDL is the Future
                         </button>
@@ -221,6 +253,7 @@ const Home1 = () => {
                           data-bs-target="#collapseThree"
                           aria-expanded="false"
                           aria-controls="collapseThree"
+                          onClick={(e) => handleChangeImage(e, "card3")}
                         >
                           Sustainability and Eco-Friendliness at ADDL
                         </button>
@@ -254,7 +287,8 @@ const Home1 = () => {
                           data-bs-toggle="collapse"
                           data-bs-target="#collapseFour"
                           aria-expanded="false"
-                          aria-controls="collapseThree"
+                          aria-controls="collapseFour"
+                          onClick={(e) => handleChangeImage(e, "card4")}
                         >
                           ADDL: Precision & Excellence in Dental Lab Solutions
                         </button>
@@ -288,11 +322,11 @@ const Home1 = () => {
                           data-bs-toggle="collapse"
                           data-bs-target="#collapseFive"
                           aria-expanded="false"
-                          aria-controls="collapseThree"
+                          aria-controls="collapseFive"
+                          onClick={(e) => handleChangeImage(e, "card5")}
                         >
                           Easy online ordering and seamless communication with
                           your lab.
-                          
                         </button>
                       </h2>
                       <div
@@ -301,7 +335,7 @@ const Home1 = () => {
                         aria-labelledby="headingFive"
                         data-bs-parent="#faqAccordion"
                       >
-                        <div className="accordion-body ">
+                        <div className="accordion-body">
                           Addl offers an effortless online ordering system that
                           ensures a smooth and efficient process for all your
                           dental needs. With our user-friendly website, you can
@@ -321,31 +355,63 @@ const Home1 = () => {
             </div>
 
             <div className="col-12 col-lg-6  ">
-              <div className="card shadow-none border-0 d-flex justify-content-center align-items-center h-100 bg-transparent">
-                <Image
+              <div className="card shadow-none m-auto border-0 d-flex justify-content-center align-items-center h-100 w-50 bg-transparent">
+                {cardImage.length === 0 ? (
+                  <>
+                    {/* <img src="/images/f1.png" className="custom-acc-image timelineimg img-fluid" alt="Example Image"></img> */}
+                    <Image
+                      src="/images/f1.png"
+                      alt="Example Image"
+                      width={295}
+                      // width={300}
+                      // height={364}
+                      height={393}
+                      data-aos="fade-up"
+                      data-aos-delay="10"
+                      data-aos-duration="2000"
+                      id="myExample"
+                      className="aos-init aos-animate custom-acc-image timelineimg img-fluid"
+                    />
+                  </>
+                ) : (
+                  <>
+                    <Image
+                      src={cardImage?.imgUrl}
+                      alt="Example Image"
+                      width={273}
+                      height={364}
+                      data-aos="fade-up"
+                      data-aos-delay="10"
+                      data-aos-duration="2000"
+                      id="myExample"
+                      className="aos-init aos-animate custom-acc-image timelineimg img-fluid"
+                    />
+                  </>
+                )}
+                {/* <Image
                   src="/images/f3.png"
                   alt="Example Image"
                   width={300}
                   height={430}
                   className=" custom-acc-image timelineimg"
-                />
+                /> */}
               </div>
             </div>
           </div>
         </div>
       </section>
       <section
-        className="submitting_order  "
-        style={{ paddingBottom: "2rem", paddingTop: "0rem" }}
+        className="submitting_order space-section"
+        // style={{ paddingBottom: "2rem", paddingTop: "0rem" }}
       >
         <Image
-                  src="/images/linevec.svg"
-                  alt="Example Image"
-                  width={300}
-                  height={200}
-                  className="line-vec"
-                />
-        <div className="container mt-4 text-center">
+          src="/images/linevec.svg"
+          alt="Example Image"
+          width={300}
+          height={200}
+          className="line-vec"
+        />
+        <div className="container mt-5 text-center">
           <div className="hero-subheading">Truly easy sendings</div>
           <h2 className="heading1 text-center">
             {" "}
@@ -398,7 +464,7 @@ const Home1 = () => {
           </div>
         </div>
       </section>
-      <section className="lets-walk-togeather">
+      <section className="lets-walk-togeather" style={{margin:"40px 0px 0px"}}>
         <video
           autoPlay
           loop
@@ -407,15 +473,15 @@ const Home1 = () => {
           className="h-full w-full background-video"
           id="player"
         >
-          <source src="/images/masterpiece.webm" type="video/webm" />
-          <source src="/images/masterpiece.mp4" type="video/mp4" />
+          <source src="https://ace-dental.s3.ap-south-1.amazonaws.com/masterpiece.webm" type="video/webm" />
+          <source src="https://ace-dental.s3.ap-south-1.amazonaws.com/masterpiece.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
         <div className="video-overlay"></div>
         <div className="container mt-4 text-center">
           <div className="gradientBG mb-4">Let's work together</div>
-          <h2 className="heading2 text-center text-white">
+          <h2 className="heading1 mb-3  text-center text-white">
             {" "}
             <b>
               making every effort <br />a masterpiece of happiness
@@ -455,13 +521,15 @@ const Home1 = () => {
                 </div>
             </section> */}
 
-      <section className="ADDL-numbers "  style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem" }} >
+      <section
+        className="ADDL-numbers space-section"
+        // style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem" }}
+      >
         <div className="container text-center ">
-          
           <div
-            className="addl_numbers"
-            style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem" }}>
-            
+            className="addl_numbers space-section"
+            // style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem" }}
+          >
             <h2 className="heading2 text-center text-white">
               {" "}
               ADDL in numbers{" "}
@@ -476,7 +544,9 @@ const Home1 = () => {
                     <div className="Abovetext text-white">{noteAbove}</div>{" "}
                     {/* Added noteAbove here */}
                     <div className="social-proof__value">
-                      <div className="social-proof__count text-white">{counts[index]}</div>
+                      <div className="social-proof__count text-white">
+                        {counts[index]}
+                      </div>
                       <span className="suffixcounter text-white">{suffix}</span>
                     </div>
                     <div className="belowtext">{noteBelow}</div>{" "}
@@ -489,11 +559,11 @@ const Home1 = () => {
         </div>
       </section>
       <section
-        className="pricing-plans"
-        style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem" }}
+        className="pricing-plans space-section"
+        // style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem" }}
       >
         <div className="container text-center position-relative">
-          <h2 className="heading1 text-center"> Our Most Premium Product</h2>
+          <h2 className="heading1 mb-4 text-center"> Our Most Premium Product</h2>
           <div className="row g-4 ">
             <div className="col-12 col-lg-4 col-md-6 product-row position-relative">
               <Image
