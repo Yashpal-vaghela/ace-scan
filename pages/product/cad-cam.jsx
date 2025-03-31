@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "../../public/css/product.css";
+import Image from "next/image";
 
 const CadCamMilling = () => {
     const videoRefP = useRef(null);
@@ -98,7 +99,8 @@ const CadCamMilling = () => {
 
                         </div>
                         <div className="col-12 col-md-6 ">
-                            adad
+                            <Image src="/images/cad-cam.png" className="img-fluid" alt="cad-cam-image" width={546} height={399}></Image>
+                            {/* <img src="/images/cad-cam.png" className="img-fluid"></img> */}
                         </div>
                     </div>
                 </div>
