@@ -5,6 +5,7 @@ import Footer from "@/component/footer";
 import { Router, useRouter } from "next/router";
 import { useEffect, useState } from "react";
 // import NProgress from 'nprogress';
+import "../public/css/Home1.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -38,7 +39,7 @@ export default function App({ Component, pageProps }) {
             <>
               <Header />
               <Component {...pageProps} />
-              {/* <Footer /> */}
+              <Footer />
             </>
           )}
       {/* {loader ? (
