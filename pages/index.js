@@ -172,9 +172,9 @@ export default function Home() {
           <div className="row justify-content-center">
             <div className="col-11 col-xl-5 col-md-7 col-lg-6 mt-5 position-relative d-flex justify-content-center align-items-center">
               <Image
-                src="/images/section1.jpg"
+                src="/images/model1.jpg"
                 className="img-fluid about-img1"
-                width={100}
+                width={500}
                 height={100}
                 alt=" "
               ></Image>
@@ -382,7 +382,7 @@ export default function Home() {
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-10 order-1 order-sm-0 col-lg-3 col-sm-3">
-              <h1 className="process-img">01</h1>
+              <h1 className="process-img n1">01</h1>
             </div>
             <div className="col-10 order-2 order-lg-0 col-sm-8">
               <h2 className="process-title ">Expert Consultation & Advisory</h2>
@@ -409,10 +409,10 @@ export default function Home() {
             </div>
             <div className="col-10 order-3 order-lg-0 col-sm-3">
               {/* images2 */}
-              <h1 className="process-img text-sm-start text-lg-end">02</h1>
+              <h1 className="process-img text-sm-start text-lg-end n2">02</h1>
             </div>
             <div className="col-10 col-sm-3 order-lg-0 order-5">
-              <h1 className="process-img">03</h1>
+              <h1 className="process-img n3">03</h1>
             </div>
             <div className="col-10 col-sm-8 order-lg-0 order-6">
               <h2 className="process-title">Expert Clinical Guidance</h2>
@@ -439,10 +439,10 @@ export default function Home() {
               </p>
             </div>
             <div className="col-10 col-sm-3 order-lg-0 order-7">
-              <h1 className="process-img text-sm-start text-lg-end">04</h1>
+              <h1 className="process-img text-sm-start text-lg-end n4">04</h1>
             </div>
             <div className="col-10 col-sm-3 order-lg-0 order-9">
-              <h1 className="process-img">05</h1>
+              <h1 className="process-img n5 ">05</h1>
             </div>
             <div className="col-10 col-sm-8 order-lg-0 order-10">
               <h2 className="process-title">

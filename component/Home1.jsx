@@ -10,21 +10,21 @@ const Home1 = () => {
   const counters = [
     {
       finalCount: 100,
-      duration: 1000,
+      duration: 5000,
       suffix: "%",
       noteAbove: "",
       noteBelow: "Customer Satisfaction",
     },
     {
       finalCount: 1,
-      duration: 1000,
+      duration: 5000,
       suffix: "%",
       noteAbove: "less Than",
       noteBelow: "Remake",
     },
     {
       finalCount: 100,
-      duration: 1000,
+      duration: 5000,
       suffix: "%",
       noteAbove: "",
       noteBelow: "Digital Workflow",
@@ -453,7 +453,7 @@ const Home1 = () => {
             <div className="col-12 col-lg-6 col-md-6 ">
               <div className="card shadow-none border-0 d-flex justify-content-center align-items-center h-100 bg-transparent">
                 <Image
-                  src="/images/timeline1.png"
+                  src="/images/steps.png"
                   alt="Example Image"
                   width={400}
                   height={550}
@@ -567,30 +567,30 @@ const Home1 = () => {
           <div className="row g-4 ">
             <div className="col-12 col-lg-4 col-md-6 product-row position-relative">
               <Image
-                src="/images/cad.png"
+                src="/images/pro3.png"
                 alt="Example Image"
-                width={266}
-                height={400}
+                width={306}
+                height={190}
                 className=""
               />
               <span className="product-row-label">E-max CAD</span>
             </div>
             <div className="col-12 col-lg-4 col-md-6 img-middil product-row">
               <Image
-                src="/images/zirconiacrown.png"
+                src="/images/pro1.png"
                 alt="Example Image"
-                width={266}
-                height={400}
+                width={306}
+                height={190}
                 className=""
               />
               <span className="product-row-label">Crown & Bridges</span>
             </div>
             <div className="col-12 col-lg-4 col-md-6 product-row">
               <Image
-                src="/images/zirconiaimplant.png"
+                src="/images/pro2.png"
                 alt="Example Image"
-                width={266}
-                height={400}
+                width={306}
+                height={190}
                 className=""
               />
               <span className="product-row-label">Implant</span>

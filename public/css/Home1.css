@@ -132,9 +132,10 @@
 }
 /* ---------------------- About section --------------------- */
 .about-img1{
-    width: 50% !important;
+    width: 80% !important;
     height:100% !important;
     border-radius: 10px 10px 10px 10px;
+    /* padding: 50px; */
 }
 .about-icon1{
     position: absolute;
@@ -367,7 +368,7 @@
 }
 @media(max-width:576px){
     .background-video {
-        padding-top:93px;
+        padding-top: 34px;
     }
 }
 /* --------------------- Testimonial Section --------------------- */
@@ -547,6 +548,48 @@
     font-size: 150px;
     font-weight: 550;
 }
+/* 
+.n1 {
+    background: url('/images/33.jpg') no-repeat center; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 150px;
+    font-weight: 550;
+}
+
+.n2 {
+    background: url('/images/bosscrafted.JPG') no-repeat center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 150px;
+    font-weight: 550; 
+}
+
+.n3 {
+    background: url('/images/full-arch.png') no-repeat center; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 150px;
+    font-weight: 550;
+}
+
+.n4 {
+    background: url('/images/pro1.png') no-repeat center; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 170px;
+    font-weight: 550;
+}
+
+.n5 {
+    background: url('/images/pro2.png') no-repeat center; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 150px;
+    font-weight: 550;
+} */
+
+
 .process-title{
     font-size: 20px;
     font-weight: 700;
