@@ -1,24 +1,118 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect ,useState} from "react";
+import { useForm } from "react-hook-form";
 import styles from "@/styles/Footer.module.css"
 import "../public/css/footer.css"
 import Image from "next/image";
 
 const Footer = () => {
+
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+    } = useForm();
+
+      const [submitted, setSubmitted] = useState(false);
+      const [loading, setLoading] = useState(false);
+      const [message, setMessage] = useState("");
+
+    const onSubmit = async(data) => {
+        try {
+            setLoading(true);
+            setMessage("");
+
+            const response = await fetch("/api/sendMail", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data),
+              });
+
+            const result = await response.json();
+            console.log("Response:", result);
+
+            if (response.ok) {
+                setMessage("Email sent successfully!");
+                setSubmitted(true);
+              } else {
+                setMessage(result.error || "Failed to send email. Please try again.");
+              }
+        } catch (error) {
+            console.error("Error sending email:", error);
+            setMessage("An error occurred. Please try again.");
+        }
+        setLoading(false);
+
+    };
+
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            const checkbox = document.getElementById("offchat-menu");
+            if (checkbox) {
+                checkbox.checked = true;
+            }
+        }, 5000);
+
+        return () => clearTimeout(timer); // Cleanup function to prevent memory leaks
+    }, []);
+
     return (
         <React.Fragment>
+
+            <input className="chat-menu hidden" id="offchat-menu" type="checkbox" />
+            <div className="sticky-button" id="sticky-button">
+                <label for="offchat-menu">
+                    <i className="fa fa-solid fa-message chat-icon"></i>
+                    <i className="fa-solid fa-xmark close-icon"></i>
+                </label>
+            </div>
+            <div className="sticky-chat">
+                <div className="chat-content">
+                    <div className="chat-header">
+                        <div className="title">Please chat with our team <span>An admin will respond within a few minutes.</span>
+                        </div>
+                    </div>
+                    <div className="chat-text">
+                        <form className="form row " onSubmit={handleSubmit(onSubmit)} >
+                            <div class="mb-3 col-12">
+                                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                                <input
+                                    {...register("name", { required: "Name is required", minLength: { value: 3, message: "Name must be at least 3 characters" } })}
+                                    type="text" class="form-control custom-input" id="exampleFormControlInput1" placeholder="Enter Your Name" />
+                                {errors.name && <p className="error text-danger m-0">{errors.name.message}</p>}
+                            </div>
+
+                            <div class="mb-3 col-12">
+                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <input
+                                    {...register("email", {
+                                        required: "Email is required",
+                                        pattern: { value: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/, message: "Invalid email format" },
+                                    })}
+                                    type="email" class="form-control custom-input" id="exampleFormControlInput1" placeholder="name@example.com" />
+                                {errors.email && <p className="error text-danger">{errors.email.message}</p>}
+                            </div>
+
+                            <button class="mt-2 btn longbtn col-12" type="submit " disabled={loading}>
+                            {loading ? "Sending..." : "Submit"}
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
             <footer className="footer">
                 <div className="container">
                     <div className="footer_grid">
-                        <din className="footer-content">
+                        <div className="footer-content">
                             <div className="footer-title">
                                 We're shaping the future of digital dentistry.
                             </div>
                             <div className="footer-desc">
-                            Ace Digital Dental Laboratory pioneers innovation, precision, and artistry to set new standards in modern dentistry, delivering excellence in every restoration.
+                                Ace Digital Dental Laboratory pioneers innovation, precision, and artistry to set new standards in modern dentistry, delivering excellence in every restoration.
                             </div>
                             <div className="simplebtn">Get Started</div>
-                        </din>
+                        </div>
                         <div className="footer-nav">
                             <div className="row g-4">
                                 <div className="col-12 col-lg-4 col-md-6 ">
@@ -28,17 +122,17 @@ const Footer = () => {
                                         <li><a href="/#">CAD/CAM</a></li>
                                         <li><a href="/#">Implant</a></li>
                                         <li><a href="/#">Crown & Bridges</a></li>
-                                    </ul> 
+                                    </ul>
                                 </div>
                                 <div className="col-12 col-lg-4 col-md-6 ">
-                                    <h5 className="nav-title">Contact & Support</h5>  
+                                    <h5 className="nav-title">Contact & Support</h5>
                                     <ul>
                                         <li><a href="/#">Contact</a></li>
                                         <li><a href="/#">Support</a></li>
                                         <li><a href="/#">Privacy Policy</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-12 col-lg-4 col-md-6 "> 
+                                <div className="col-12 col-lg-4 col-md-6 ">
                                     <h5 className="nav-title">Get In Touch</h5>
                                     <ul>
                                         <li><a href="tel:+15513800385">+1 551-380-0385</a></li>
