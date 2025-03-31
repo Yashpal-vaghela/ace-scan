@@ -65,16 +65,16 @@ const CadCamMilling = () => {
                                 <p>
                                     We are passionate about digital dentistry, continually investing in the latest CAD/CAM and scanning systems to stay at the .
                                     forefront of innovation. By incorporating cutting-edge technology into our practice, we enhance precision, improve patient outcomes,
-                                    and streamline workflows. Our commitment to excellence ensures that our patients receive the highest quality care, and we continue to embrace 
+                                    and streamline workflows. Our commitment to excellence ensures that our patients receive the highest quality care, and we continue to embrace
                                     advancements in digital tools that make dental procedures more efficient and effective.
                                 </p>
                             </div>
                         </div>
                         <div className="col-12 col-lg-6 col-md-6 order-0 order-lg-1 order-md-1">
                             <div className="video-section">
-                                <video autoPlay loop muted playsInline id="player" className="video-crop-cad">
-                                    <source src="/videos/cad-cam.mp4" type="video/mp4" />
-                                    <source src="/videos/ADVANCE-DENTAL-EXPORT.webm" type="video/webm" />
+                                <video autoPlay loop muted playsInline id="player" className="video-crop-cad h-100">
+                                <source src="https://ace-dental.s3.ap-south-1.amazonaws.com/cad-cam.mp4" type="video/mp4" />
+                                <source src="https://ace-dental.s3.ap-south-1.amazonaws.com/cad-cam.webm" type="video/webm" />
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
@@ -82,6 +82,29 @@ const CadCamMilling = () => {
                     </div>
                 </div>
             </section>
+
+            <section className="cadcamintro">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12 col-md-6">
+                            <div className="cadcam-head">
+                                Seamless, natural-looking restorations designed for precision and beauty.
+                            </div>
+
+                            <p className="subtxtofabout">
+                                We’re constantly investing in advanced CAD/CAM technology to improve the precision and efficiency of our dental restorations. This not only allows professionals to achieve faster, more accurate results with a perfect fit, but also benefits patients by providing durable, natural-looking, and comfortable restorations that last longer and require fewer adjustments.
+                            </p>
+
+
+                        </div>
+                        <div className="col-12 col-md-6 ">
+                            adad
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
             <section className="quality-section">
                 <video autoPlay loop muted playsInline id="player" className="background-video" >
                     <source src="/videos/cad-cam-bg.mp4" type="video/mp4" />

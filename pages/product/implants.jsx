@@ -85,14 +85,14 @@ const Implants = () => {
                 <div className="container">
                     <div className="row for-rlative">
 
-                        <div className="product-before-after-heading">
-                            <h2 className="heading_outer">Renew Your Teeth, Renew Your Confidence.</h2>
-                            <h3 className="heading_outer">Transforming Lives with the Benefits of Dental Implants.</h3>
-                        </div>
-                        <div className="col-12 col-lg-8 ">
-                            <div className="product-before-after-images">
+                        {/* <div className="product-before-after-heading">
+                            <h2 className="heading_outer color-white">Renew Your Teeth, Renew Your Confidence.</h2>
+                            <h3 className="heading_outer color-white">Transforming Lives with the Benefits of Dental Implants.</h3>
+                        </div> */}
+                        <div className="col-12 col-lg-6 ">
+                            <div className="product-before-after-images ">
                                 <Image
-                                    src="/images/cmb.png"
+                                    src="/images/imgallery.png"
                                     alt="about"
                                     width={550}
                                     height={400}
@@ -102,11 +102,11 @@ const Implants = () => {
 
                         </div>
 
-                        <div className="col-12 col-lg-4 ">
-                            <div className="product-before-after-content ">
+                        <div className="col-12 col-lg-6  d-flex flex-column align-items-center justify-content-center text-center">
+                            <div className="product-before-after-content  d-flex flex-column  justify-content-center ">
                                 <div className="product-before-after-heading1">
-                                    <h2 className="before-after-contains">Renew Your Teeth, Renew Your Confidence</h2>
-                                    <h3 className="before-after-contains">Transforming Lives with the Benefits of Dental Implants</h3>
+                                    <h2 className="before-after-contains subhead ">Renew Your Teeth, Renew Your Confidence</h2>
+                                    <h3 className="before-after-contains mb-5">Transforming Lives with the Benefits of Dental Implants</h3>
                                 </div>
                                 We prioritize your comfort and satisfaction, offering tailored solutions that meet your unique needs. With our use of the latest technology and premium materials, we provide restorations that look and feel natural, ensuring a perfect fit and long-lasting results. Our experienced team is dedicated to guiding you through every step of the process, helping you enjoy the full benefits of dental implants—restored functionality, a beautiful smile, and renewed confidence.
                             </div>

@@ -26,9 +26,9 @@ const DigitalWorkflow = () => {
                         </div>
                         <div className="col-12 col-lg-6 col-md-6">
                             <div className="video-section">
-                                <video autoPlay loop muted playsInline id="player" className="video-crop-cad">
-                                    <source src="/videos/ADVANCE-DENTAL-EXPORT.mp4" type="video/mp4" />
-                                    <source src="/videos/ADVANCE-DENTAL-EXPORT.webm" type="video/webm" />
+                                <video autoPlay loop muted playsInline id="player" className="video-crop-cad h-100">
+                                    <source src="https://ace-dental.s3.ap-south-1.amazonaws.com/ADVANCE-DENTAL-EXPORT.mp4" type="video/mp4" />
+                                    <source src="https://ace-dental.s3.ap-south-1.amazonaws.com/ADVANCE-DENTAL-EXPORT.webm" type="video/webm" />
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
@@ -37,10 +37,10 @@ const DigitalWorkflow = () => {
                 </div>
             </section>
 
-            <section className="steps" >
+            <section className="steps mt-4" >
                 <div className="container">
                     {/* <div className="order-process-content"> */}
-                    <div className="row p-2">
+                    <div className="row p-2 mt-4">
                         <div className="col-12 col-lg-6 col-md-6">
                             <div className="order-process-text">
                                 <h2 className="double-heading">Free up your clinical time</h2>
@@ -138,3 +138,9 @@ const DigitalWorkflow = () => {
 }
 
 export default DigitalWorkflow;
+
+
+
+
+
+

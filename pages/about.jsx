@@ -214,9 +214,9 @@ const About = () => {
         <div className="container">
           <div className="about-section d-flex align-items-center">
             <div class="row" style={{ margin: "0px" }}>
-              <div class="col-lg-7  col-12  card-wop text-end position-relative">
+              <div class="col-lg-7  col-12  card-wop  position-relative d-flex justify-content-center text-aligns-center py-4">
                 <Image
-                  src="/images/a-boos.jpg"
+                  src="/images/Boss.JPG"
                   alt="Lab Technician Working"
                   width={800}
                   height={600}

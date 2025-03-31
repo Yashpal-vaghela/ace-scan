@@ -115,7 +115,7 @@ const support = () => {
             </div>
             <div className="col-lg-4 col-md-5 col-sm-12 col-12 order-1 order-md-0 position-relative">
               <Image className="img-fluid experience-vector1" src="/images/vector-img.png" width={2350} height={3155} alt="experience-vector"></Image>
-              <Image src="/images/experience-img.png" className="img-fluid" alt="experience-img" width={467} height={637}></Image>
+              <Image src="/images/inceh.jpg" className="img-fluid" alt="experience-img" width={467} height={637}></Image>
               <div className="addl-content">
                 <ul>
                   <li>ADDL</li>
@@ -136,7 +136,7 @@ const support = () => {
           <Image src="/images/vector-support4.png" className="d-block d-md-none support-vector1 img-fluid" width={279} height={678} alt="support-vector1"></Image>
           <div className="row justify-content-center">
             <div className="col-lg-5 col-md-6 col-10 order-2 order-md-0">
-              <Image src="/images/support-4.png" className="d-none d-md-block go-off-track-img img-fluid" alt="support-4" width={648} height={648}></Image>
+              <Image src="/images/support4.png" className="d-none d-md-block go-off-track-img img-fluid" alt="support-4" width={648} height={648}></Image>
             </div>
             <div className="col-lg-6 col-md-6 col-10 order-1 order-md-0">
               <h2>Did Something Go Off Track?</h2>
@@ -151,9 +151,9 @@ const support = () => {
                 efficient solutions that meet your expectations, all while
                 maintaining the highest quality standards.
               </p>
-              <Image src="/images/support-4.png" className="d-block d-md-none go-off-track-img img-fluid" width={648} height={648} alt="go-off-track-img"></Image>
+              <Image src="/images/support4.png" className="d-block d-md-none go-off-track-img img-fluid" width={648} height={648} alt="go-off-track-img"></Image>
               <div className="support-img-wrapper">
-                <Image src="/images/support-5.png" alt="support-5" className="support-img img-fluid" width={580} height={265}></Image>
+                <Image src="/images/support5.png" alt="support-5" className="support-img img-fluid" width={580} height={265}></Image>
               </div>
             </div>
           </div>
