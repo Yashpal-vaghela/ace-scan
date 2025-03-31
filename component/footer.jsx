@@ -11,6 +11,7 @@ const Footer = () => {
         register,
         handleSubmit,
         formState: { errors },
+        reset,
     } = useForm();
 
       const [submitted, setSubmitted] = useState(false);
@@ -25,7 +26,7 @@ const Footer = () => {
             const response = await fetch("/api/sendMail", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(data),
+                body: JSON.stringify({name: data.name, email: data.email}),
               });
 
             const result = await response.json();
@@ -34,6 +35,7 @@ const Footer = () => {
             if (response.ok) {
                 setMessage("Email sent successfully!");
                 setSubmitted(true);
+                reset();
               } else {
                 setMessage(result.error || "Failed to send email. Please try again.");
               }
@@ -46,16 +48,16 @@ const Footer = () => {
     };
 
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            const checkbox = document.getElementById("offchat-menu");
-            if (checkbox) {
-                checkbox.checked = true;
-            }
-        }, 5000);
+    // useEffect(() => {
+    //     const timer = setTimeout(() => {
+    //         const checkbox = document.getElementById("offchat-menu");
+    //         if (checkbox) {
+    //             checkbox.checked = true;
+    //         }
+    //     }, 5000);
 
-        return () => clearTimeout(timer); // Cleanup function to prevent memory leaks
-    }, []);
+    //     return () => clearTimeout(timer); 
+    // }, []);
 
     return (
         <React.Fragment>

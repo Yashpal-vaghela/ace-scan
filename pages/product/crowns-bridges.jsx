@@ -86,8 +86,8 @@ const CrownsBridges = () => {
                         <div className="col-12 col-lg-6 col-md-6 order-0 order-lg-1 order-md-1">
                             <div className="video-section">
                                 <video autoPlay loop muted playsInline id="player" className="video-crop-cad">
-                                    <source src="/videos/crown.mp4" type="video/mp4" />
-                                    <source src="/videos/ADVANCE-DENTAL-EXPORT.webm" type="video/webm" />
+                                    <source src="https://d1ytpjko2pk6h2.cloudfront.net/Crown.mp4" type="video/mp4" />
+                                    <source src="https://d1ytpjko2pk6h2.cloudfront.net/Crown.webm" type="video/webm" />
                                     Your browser does not support the video tag.
                                 </video>
                             </div>

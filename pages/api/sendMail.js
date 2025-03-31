@@ -15,13 +15,16 @@ try {
       pass: "ddjs qbnu ajzd nmjb", 
     },
   });
+    let emailText = `Name: ${name}\nEmail: ${email}`;
+    if (contact) emailText += `\nContact: ${contact}`;
+    if (message) emailText += `\nMessage: ${message}`;
 
-    const mailOptions ={
+    const mailOptions = {
         from: "vaghela9632@gmail.com",
         to: "aryanpatel01525@gmail.com",
         replyTo: email,
         subject: "New Contact Form Submission",
-        text: `Name: ${name}\nEmail: ${email}\nContact: ${contact}\nMessage: ${message}`,
+        text: emailText,
     };
 
     await transporter.sendMail(mailOptions);

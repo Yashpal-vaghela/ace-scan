@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import { useForm } from "react-hook-form";
 import React, { useState } from "react";
 import "../public/css/contact.css";
@@ -10,28 +10,31 @@ const contactUs = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset
   } = useForm();
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
 
 
-  const onSubmit = async(data) => {
+  const onSubmit = async (data) => {
     setLoading(true);
     setMessage("");
+  
     try {
       const response = await fetch("/api/sendMail", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-
+  
       const result = await response.json();
       console.log("Response:", result);
-
+  
       if (response.ok) {
         setMessage("Email sent successfully!");
         setSubmitted(true);
+        reset(); // Reset the form
       } else {
         setMessage(result.error || "Failed to send email. Please try again.");
       }
@@ -39,9 +42,9 @@ const contactUs = () => {
       console.error("Error sending email:", error);
       setMessage("An error occurred. Please try again.");
     }
-
-    setLoading(false); 
-  };
+  
+    setLoading(false);
+  };  
   return (
     <React.Fragment>
       <Breadcrumbs></Breadcrumbs>

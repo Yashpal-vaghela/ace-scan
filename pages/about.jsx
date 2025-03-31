@@ -199,8 +199,8 @@ const About = () => {
                   className="h-full w-full background-video"
                   id="player"
                 >
-                  <source src="/videos/masterpiece.webm" type="video/webm" />
-                  <source src="/videos/fmr.mp4" type="video/mp4" />
+                  <source src="https://d1ytpjko2pk6h2.cloudfront.net/Fmr.mp4" type="video/webm" />
+                  <source src="https://d1ytpjko2pk6h2.cloudfront.net/Fmr.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
                 <div className="video-overlay1"></div>
@@ -281,7 +281,7 @@ const About = () => {
             </div>
             <div className="col-lg-6  align-items-stretch order-md-1 order-1">
               <Image
-                src="/images/abBefore.png"
+                src="/images/abBefore.jpg"
                 alt="New Shared Image"
                 width={550}
                 height={600}
@@ -290,7 +290,7 @@ const About = () => {
             </div>
             <div className="col-lg-6 pe-sm-0 align-items-stretch order-lg-2 order-3 mb-5">
               <Image
-                src="/images/abAfter.png"
+                src="/images/abAfter.jpg"
                 alt="New Shared Image"
                 width={550}
                 height={600}
