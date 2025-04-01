@@ -13,24 +13,24 @@
     color: inherit !important;
   }
   
-  .accordion-button:not(.collapsed) {
+  /* .accordion-button:not(.collapsed) {
     background-color: transparent !important;
     box-shadow: none !important;
     color: inherit !important;
-  }
+  } */
   
-  .accordion-button {
+  /* .accordion-button {
     color: #7e7c78;
     font-size: 1.25rem;
     padding: 1.125rem 1rem;
     font-weight: 700;
     transition: transform 0.3s ease-in-out;
-  }
+  } */
   
-  .accordion-button:not(.collapsed) i {
+  /* .accordion-button:not(.collapsed) i {
     transform: rotate(180deg);
     transition: transform 0.3s ease-in-out;
-  }
+  } */
   
   /* .custom-hr {
     border: 1px solid rgba(126, 124, 120, 0.2);
@@ -53,7 +53,7 @@
   
   /* Headinng  */
   
-  .heading1 {
+  /* .heading1 {
     margin-bottom: 2rem;
     font-size: 2.5rem;
     font-weight: 500;
@@ -64,19 +64,18 @@
     font-size: 2rem;
     font-weight: 500;
   }
-  
+   */
   
   
   /* SubHeadinng  */
   
-  .subHeading1 {
+  /* .subHeading1 {
     margin-bottom: 3.4rem;
     font-size: 2.8rem;
     color: #003A30;
     font-size: 20px;
     font-weight: 400;
-  
-  }
+  } */
   
 @media (max-width: 775px) {
   .subHeading1 {
@@ -117,7 +116,7 @@
   
   /* simple button */
   
-  .simplebtn {
+  /* .simplebtn {
     display: inline-block;
     background-color: #00478a;
     color: white;
@@ -129,7 +128,7 @@
   .simplebtn:hover {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.3);
-  }
+  } */
   
   /*submitting_order & Timeline */
   
@@ -151,26 +150,26 @@
     z-index: -1;
   } */
 
-  .line-vec {
+  /* .line-vec {
     width: 100% !important;
     height: 100%;
     position: absolute;
     top: 20%;
-  }
+  } */
 
-  .why_ACE {
+  /* .why_ACE {
     position: relative;
-  }
+  } */
 
-  .earth-vec {
+  /* .earth-vec {
     width: 100% !important;
     height: 100%;
     position: absolute;
     top: 0%;
     right: -10%;
-  }
+  } */
   
-  .timeline-icon {
+  /* .timeline-icon {
     padding: 10px 16px;
     background: linear-gradient(135deg, #00478a, #00818a);
     border: 2px solid #fff;
@@ -198,8 +197,8 @@
     border: 2px solid #000;
     z-index: 999;
   }
-  
-  .timeline-line {
+   */
+  /* .timeline-line {
     position: absolute;
     width: 4px;
     background: #ccc;
@@ -211,34 +210,34 @@
   
   .timeline li:last-child .timeline-line {
     display: none;
-  }
+  } */
   
   
-  .timeline-heading {
+  /* .timeline-heading {
     margin-bottom: 10px;
     color: #000;
     font-weight: 500;
     font-size: 18px;
-  }
+  } */
   
-  .timeline-subheading {
+  /* .timeline-subheading {
     color: #545350;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
-  }
+  } */
   
   
   /* Work Togeather */
   
-  .lets-walk-togeather {
+  /* .lets-walk-togeather {
     position: relative;
     overflow: hidden;
     padding-bottom: 4rem;
     padding-top: 3.4rem;
-  }
+  } */
   
-  .background-video {
+  /* .background-video {
     position: absolute;
     top: 0;
     left: 0;
@@ -246,9 +245,9 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
-  }
+  } */
   
-  .video-overlay {
+  /* .video-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -257,7 +256,7 @@
     background: rgba(0, 0, 0, 0.75); 
     z-index: -1;
   }
-  
+   */
   .position-relative {
     position: relative;
     z-index: 2;

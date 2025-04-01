@@ -37,25 +37,25 @@ const Home1 = () => {
       number: "1",
       title: "Incoming Orders",
       description:
-        "We ensure that all incoming orders are carefully inspected to ensure that they meet our high standards before they enter the construction phase.",
+        "Each incoming order is carefully inspected to guarantee it meets our high standards before moving into the construction phase.",
     },
     {
       number: "2",
       title: "Design and Construction",
       description:
-        "Throughout the design and construction phases, our skilled technicians use only the finest materials and cutting-edge equipment to create custom lab work that is tailored to your specific requirements.",
+        "Throughout the design and construction phases, our skilled technicians utilize top-quality materials and advanced equipment to create custom lab solutions designed to meet your unique needs.",
     },
     {
       number: "3",
       title: "Quality Control",
       description:
-        "Quality is at the heart of everything we do. Rest assured that you can rely on us to provide you with dependable and superior dental laboratory services.",
+        "Quality is central to everything we do. You can trust us to deliver reliable and exceptional dental laboratory services.",
     },
     {
       number: "4",
       title: "Returns",
       description:
-        "At ACE Advance Digital Lab, we recognize the importance of timely deliveries and hassle-free returns. Rely on us for all your dental lab work requirements.",
+        "At ACE Advance Digital Lab, we understand the importance of on-time deliveries and easy returns. Count on us for all your dental lab work needs.",
     },
   ];
 
@@ -140,7 +140,7 @@ const Home1 = () => {
       // a.classList.add("aos-init aos-animate")
     }
     if (cardName === "card1") {
-      setcardImage({ imgUrl: "/images/f1.png" });
+      setcardImage({ imgUrl: "/images/f1111.png" });
     } else if (cardName === "card2") {
       setcardImage({ imgUrl: "/images/f2.png" });
     } else if (cardName === "card3") {
@@ -167,7 +167,7 @@ const Home1 = () => {
             <Image src="/images/e.svg" alt="earth-vec" className="earth-vec" width={100} height={100}></Image>
             {/* <img src="/images/e.svg" alt="" className="earth-vec" /> */}
             <div className="col-12 col-lg-6  p-4">
-              <div className="card shadow-sm border-0 shadow-none ">
+              <div className="card shadow-sm border-0" >
                 <div
                   className="accordion user-select-none bg-transparent"
                   id="faqAccordion"
@@ -360,7 +360,7 @@ const Home1 = () => {
                   <>
                     {/* <img src="/images/f1.png" className="custom-acc-image timelineimg img-fluid" alt="Example Image"></img> */}
                     <Image
-                      src="/images/f1.png"
+                      src="/images/f1111.png"
                       alt="Example Image"
                       width={295}
                       // width={300}
@@ -388,13 +388,6 @@ const Home1 = () => {
                     />
                   </>
                 )}
-                {/* <Image
-                  src="/images/f3.png"
-                  alt="Example Image"
-                  width={300}
-                  height={430}
-                  className=" custom-acc-image timelineimg"
-                /> */}
               </div>
             </div>
           </div>
@@ -402,7 +395,6 @@ const Home1 = () => {
       </section>
       <section
         className="submitting_order space-section"
-        // style={{ paddingBottom: "2rem", paddingTop: "0rem" }}
       >
         <Image
           src="/images/linevec.svg"
@@ -497,30 +489,6 @@ const Home1 = () => {
         </div>
       </section>
       <Testimonial></Testimonial>
-      {/* <section className="testmonial" style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem", }}>
-                <div className="container mt-4 mb-4 text-center">
-                    <div className="gradientBG">
-                        Testimoial
-                    </div>
-                    <h2 className="heading1 text-center">Smiling Words from Satisfied Customers</h2>
-                    <div className="col-12 col-md-6 col-lg-4  testimonial_card" style={{ marginTop: "2.4rem" }}>
-                        <Image
-                            src="/images/quotegrey.svg"
-                            alt="Example Image"
-                            width={70}
-                            height={70}
-                            className="custom_quote"
-                        />
-                        <h6 className="testnomial_text">“One of the best dental labs...!! The advanced lab provides excellent aesthetic, well contoured, precise fitting for all work whether its metal/pfm/all ceramic ya implant work!!“ </h6>
-                        <hr className="custom_hr" />
-                        <p className="drname"> Dr. Hardik Prajapati</p>
-                        <p className="star-rating">★ ★ ★ ★ ★</p>
-
-                    </div>
-
-                </div>
-            </section> */}
-
       <section
         className="ADDL-numbers space-section"
         // style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem" }}

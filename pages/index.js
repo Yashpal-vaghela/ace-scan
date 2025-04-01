@@ -3,8 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../public/css/contact.css";
 import "../public/css/styles.css";
 import "../public/css/Home.css";
-import "../public/css/common.css";
-import "../public/css/Home1.css";
+// import "../public/css/common.css";
+// import "../public/css/Home1.css";
 import Home1 from "@/component/Home1";
 // import Common from "@/component/Common";
 
@@ -172,7 +172,7 @@ export default function Home() {
           <div className="row justify-content-center">
             <div className="col-11 col-xl-5 col-md-7 col-lg-6 mt-5 position-relative d-flex justify-content-center align-items-center">
               <Image
-                src="/images/model1.jpg"
+                src="/images/section12.jpg"
                 className="img-fluid about-img1"
                 width={500}
                 height={100}

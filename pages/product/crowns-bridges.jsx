@@ -196,7 +196,7 @@ const CrownsBridges = () => {
                                                         {/* <img src="/images/PFM-POST.png" alt="Implant Full Mouth" /> */}
                                                     </div>
                                                     <div className="implant-card-body p-2 text-justify">
-                                                        <p>
+                                                        <p className="mb-0">
                                                             {item?.discription}
                                                         </p>
                                                     </div>
