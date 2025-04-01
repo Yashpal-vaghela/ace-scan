@@ -52,7 +52,7 @@ export default function Home() {
 
   return (
     <>
-    <title>ACE - Digital Dental Lab</title>
+    {/* <title>ACE - Digital Dental Lab</title> */}
       <section className="p-0 parallax overlap-height">
         <div className="lqd-vbg-wrap">
           <div className="lqd-vbg-inner">

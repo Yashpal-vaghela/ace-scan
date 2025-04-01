@@ -5,6 +5,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <title>ACE - Digital Dental Lab</title>
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
           rel="stylesheet"
@@ -28,6 +29,7 @@ export default function Document() {
         <link rel="icon" type="image/png" href="/images/fav-icon1.png" />
       </Head>
       <body>
+     
         <Main />
         <NextScript />
         <script
