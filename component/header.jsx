@@ -66,10 +66,10 @@ const Header = () => {
                     </div>
                     <div className="offcanvas-body justify-content-end">
                     <ul className="navbar-nav ml-auto mb-2 mb-lg-0 m-0">
-                        <li className="nav-item">
+                        <li className="nav-item" onClick={handleOffcanvas1}>
                             <Link href="/" className={`nav-link  mx-lg-2 ${router.pathname === "/" ? "active" : ""}`}>Home</Link>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item" onClick={handleOffcanvas1}>
                             <Link className={`nav-link  mx-lg-2 ${router.pathname === "/about" ? "active" : ""}`} href="/about">About US</Link>
                         </li>
                         <li className="nav-item dropdown">

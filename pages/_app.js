@@ -4,7 +4,6 @@ import Header from "@/component/header";
 import Footer from "@/component/footer";
 import { Router, useRouter } from "next/router";
 import { useEffect, useState } from "react";
-// import NProgress from 'nprogress';
 import "../public/css/Home1.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -15,7 +14,7 @@ export default function App({ Component, pageProps }) {
   // const [loader, setloader] = useState(false);
 
   useEffect(() => {
-    document.documentElement.setAttribute("data-theme", "light");
+    // document.documentElement.setAttribute("data-theme", "light");
     // router.events.on("routeChangeStart", (url) => {
     //   setloader(true);
     // });
@@ -25,10 +24,6 @@ export default function App({ Component, pageProps }) {
     // router.events.on("routeChangeError", (url) => {
     //   setloader(false);
     // });
-    // import('bootstrap/dist/js/bootstrap.bundle.min.js');
-    // Router.events.off("routeChangeStart", () => NProgress.start());
-    // Router.events.off("routeChangeComplete", () => NProgress.done());
-    // Router.events.off("routeChangeError", () => NProgress.done());
     AOS.init();
   }, []);
   return (

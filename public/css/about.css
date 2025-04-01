@@ -78,6 +78,10 @@
   margin-right: auto;
   padding: 0px 12px;
 }
+.about-text-p{
+  margin-top: 60px;
+}
+
 
 .about-text h2 {
   /* max-width: 400px; */
@@ -281,7 +285,9 @@
   .about-text {
     max-width: 90%;
   }
-
+  .about-text-p{
+    margin-top: 0px;
+  }
   .image-bottom {
     width: 58% !important;
   height: 45% !important;

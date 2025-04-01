@@ -44,8 +44,6 @@ const About = () => {
                 id="YTP_1742270005228"
                 style={{
                   position: "relative",
-                  // paddingBottom: "34.25%",
-                  // paddingTop:"20%",
                   overflow: "hidden",
                   height: "0px",
                 }}
@@ -117,7 +115,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="trusted-dental-lab">
+      <section className="trusted-dental-lab space-section">
         <div className="container">
           <div className="row about-container">
             <div className="col-12 col-md-6 col-lg-6">
@@ -198,7 +196,6 @@ const About = () => {
                   Delivering Excellence In{" "}
                   <span className="highlight-text1"> Across The USA </span>
                 </h2>
-                {/* <h2>Premier Dental Solutions, Delivered Across the USA</h2> */}
                 <p>
                   At ADDL, we provide dental professionals across the USA with
                   premium-quality products, ensuring precision, reliability, and
@@ -209,31 +206,6 @@ const About = () => {
                 </p>
               </div>
             </div>
-            {/* <div className="about-content d-flex justify-content-center align-items-center">
-              <div className="about-images">
-                <Image
-                  src="/images/USA-map.png"
-                  alt="about"
-                  width={550}
-                  height={400}
-                  className="img-fluid"
-                />
-              </div>
-              <div className="about-text">
-                <h2 className="main-heading-with-double-color">
-                  Delivering Excellence In{" "}
-                  <span className="highlight-text1"> Across The USA </span>
-                </h2>
-                <p>
-                  At ADDL, we provide dental professionals across the USA with
-                  premium-quality products, ensuring precision, reliability, and
-                  superior patient outcomes. Our efficient distribution network
-                  guarantees timely delivery nationwide, while our dedicated
-                  support team ensures a seamless experience from order to
-                  delivery.
-                </p>
-              </div>
-            </div> */}
           </div>
         </div>
       </section>
@@ -341,11 +313,11 @@ const About = () => {
 
      
 
-      <section className="standard-work pt-5">
+      <section className="standard-work pt-2 pt-sm-5">
       <Image src="/images/linevec.svg" className="d-none d-md-block ab-vector1 img-fluid" width={1772} height={827}></Image>
         <div className="container text-center">
           
-        <h2 className="main-heading-with-double-color text-center w-100">
+        <h2 className="main-heading-with-double-color text-start ps-2 text-sm-center w-100">
                   Committed to the Highest{" "}
                   <span className="highlight-text1">
                     Standards of Excellence
@@ -355,7 +327,7 @@ const About = () => {
             <div className="col-lg-6  d-flex flex-column justify-content-center h-90 order-md-0 order-0 pb-3">
               <div className="about-text" style={{width:"100%"}}>
                 
-                <p className="" style={{marginTop: "60px"}}>
+                <p className="about-text-p" >
                   At ADDL, we uphold the highest industry standards by offering
                   a comprehensive range of dental lab solutions, from single
                   crowns to complex restorations. Crafted in FDA-verified and
