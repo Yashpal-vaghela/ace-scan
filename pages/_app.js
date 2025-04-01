@@ -7,6 +7,17 @@ import "../public/css/Home1.css";
 import "../public/css/about.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "../public/css/headder.css";
+import "../public/css/footer.css";
+import "../public/css/error.css";
+import "../public/css/Home.css";
+import "../public/css/Home1.css";
+import "../public/css/about.css";
+import "../public/css/product.css";
+import "../public/css/support.css";
+import "../public/css/contact.css";
+import "../public/css/material.css";
+import "../public/css/privacypolicy.css";
 
 export default function App({ Component, pageProps }) {
   // const router = useRouter();
