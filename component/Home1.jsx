@@ -485,7 +485,9 @@ const Home1 = () => {
             heart.. Choosing a dental lab with exceptional artistry enhances
             patient satisfaction even further.
           </p>
-          <div className="simplebtn">Start New Project</div>
+          <div className="simplebtn">
+          <a href="/contactUs">Start New Project</a>
+          </div>
         </div>
       </section>
       <Testimonial></Testimonial>

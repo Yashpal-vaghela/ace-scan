@@ -143,7 +143,7 @@ const DigitalWorkflow = () => {
 
                         To ensure exceptional results, ADDL provides premium dental lab solutions that prioritize precision, craftsmanship, and advanced technology for superior dental restorations. <br />
 
-                        <a href="#" class="btn">Get In Touch</a>
+                        <a href="/ContactUs" class="btn">Get In Touch</a>
                     </div>
                 </div>
 

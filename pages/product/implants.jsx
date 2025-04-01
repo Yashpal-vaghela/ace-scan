@@ -184,7 +184,7 @@ const Implants = () => {
 
                         We embrace even the most challenging implant cases with personalized care and advanced technology, ensuring the best results for each patient. Throughout the process, we keep our patients informed and comfortable, helping them regain function and confidence with natural-looking implants. We believe in providing not just lasting solutions, but a positive experience that enhances well-being. In the end, our expertise and commitment to care deliver a life-changing outcome for every patient. <br />
 
-                        <a href="#" class="btn">Get In Touch</a>
+                        <a href="/contactUs" class="btn">Get In Touch</a>
                     </div>
                 </div>
 
