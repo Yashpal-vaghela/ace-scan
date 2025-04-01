@@ -134,7 +134,7 @@ const CadCamMilling = () => {
 
                         To ensure exceptional results, ADDL provides premium dental lab solutions that prioritize precision, craftsmanship, and advanced technology for superior dental restorations. <br />
 
-                        <a href="/cpntactUs" class="btn">Get In Touch</a>
+                        <a href="/contactUs" class="btn">Get In Touch</a>
                     </div>
                 </div>
 
