@@ -155,7 +155,7 @@ const contactUs = () => {
               <div className="alt-font text-large font-weight-500 text-uppercase letter-spacing-2px d-flex">
                 <span className="flex-shrink-0 w-40px h-1px bg-white opacity-6 align-self-center margin-25px-right"></span>
                 <span className="flex-grow-1 text-white opacity-6">
-                  Our only vision is to put endless smiles on every Face
+                for more info, contact us below.
                 </span>
               </div>
             </div>

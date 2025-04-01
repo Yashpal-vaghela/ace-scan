@@ -120,7 +120,7 @@ const CrownsBridges = () => {
                         <div className="col-12 col-lg-6 ">
                             <div className="product-before-after-images">
                                 <Image
-                                    src="/images/crgallery.png"
+                                    src="/images/crgallery.jpg"
                                     alt="about"
                                     width={550}
                                     height={400}

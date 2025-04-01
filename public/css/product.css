@@ -288,7 +288,7 @@
   max-width: 700px;
   border-radius: 20px;
   color: #f9f9f9;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
   position: relative;
   z-index: 2;
 }
@@ -711,9 +711,13 @@
 /* ================================================================ start Product=============================================== */
 .bradcrumb-product {
   background-image: url("../images/breadcrumb.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 350px;
   width: 100%;
 }
+
+
 
 .inner-bread {
   height: 100%;
@@ -755,6 +759,33 @@
   content: ">" !important;
   color: #fff; 
   padding: 0 8px;
+}
+
+@media (max-width: 575px) {
+  .bradcrumb-product {
+    height: 250px;
+    width: 100%;
+    background-position: centers;
+  }
+
+  .breadcrumbTitle{
+    font-size: 25px;
+    font-weight: 900;
+  }
+
+  .breadcrumbNav {
+ 
+    margin-bottom: 10px;
+    color: #00728a;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  .breadcrumbNav .active {
+    margin-bottom: 10px;
+  } 
+  
+  
 }
 /* ================================================================ end Product=============================================== */
 
