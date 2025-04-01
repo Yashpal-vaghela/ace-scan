@@ -182,7 +182,7 @@ const About = () => {
             <div className="col-md-7 col-12">
               <div className="about-images">
                 <Image
-                  src="/images/USA-map.png"
+                  src="/images/map.png"
                   alt="about"
                   width={550}
                   height={400}
