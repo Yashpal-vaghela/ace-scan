@@ -1,6 +1,6 @@
 import { React } from "react";
-import "../public/css/support.css";
-import "../public/css/styles.css";
+// import "../public/css/support.css";
+// import "../public/css/styles.css";
 import Image from "next/image";
 import Link from "next/link";
 

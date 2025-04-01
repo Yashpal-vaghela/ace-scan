@@ -1,5 +1,5 @@
 import { useEffect, useState, React, useRef } from "react";
-import "../public/css/about.css";
+// import "../public/css/about.css";
 import Image from "next/image";
 
 const About = () => {

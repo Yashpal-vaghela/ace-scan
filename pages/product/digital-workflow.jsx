@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import "../../public/css/product.css";
-import "../../public/css/common.css";
+// import "../../public/css/product.css";
+// import "../../public/css/common.css";
 
 const DigitalWorkflow = () => {
     const videoRefP = useRef(null);

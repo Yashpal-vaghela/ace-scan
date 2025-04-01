@@ -1,8 +1,7 @@
 import Link from "next/link";
 import React, { useEffect ,useState} from "react";
 import { useForm } from "react-hook-form";
-import styles from "@/styles/Footer.module.css"
-import "../public/css/footer.css"
+// import "../public/css/footer.css"
 import Image from "next/image";
 
 const Footer = () => {

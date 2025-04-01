@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import "../../public/css/product.css";
 import Image from "next/image";
 
 const Implants = () => {

@@ -1,10 +1,6 @@
 import { useEffect, useState, React, useRef } from "react";
 import Testimonial from "./Testimonial";
-// import "../public/css/support.css";
-// import "../public/css/contact.css";
-import "../public/css/Home.css";
 import Image from "next/image";
-import "../public/css/about.css";
 
 const Home1 = () => {
   const counters = [
@@ -127,18 +123,6 @@ const Home1 = () => {
 
   const [cardImage, setcardImage] = useState([]);
   const handleChangeImage = (e, cardName) => {
-    console.log("e", e, cardName);
-    const a = document.querySelector("#myExample");
-    const b = document.getElementsByClassName("custom-acc-image");
-    console.log("a",a,"b",b,"classList",a.classList)
-    if(a != null){
-      a.setAttribute("data-aos","fade-up")
-      // a.classList.add("aos-init aos-animate")
-      // b.forEach((i)=>{
-      //   console.log("i",i)
-      // })
-      // a.classList.add("aos-init aos-animate")
-    }
     if (cardName === "card1") {
       setcardImage({ imgUrl: "/images/f1111.png" });
     } else if (cardName === "card2") {
@@ -156,7 +140,6 @@ const Home1 = () => {
     <>
       <section
         className="why_ACE position-relative space-section"
-        // style={{ marginBottom: "2rem", marginTop: "80px" }}
       >
         <div className="container">
           <h2 className="heading1 mt-1  text-center">
@@ -165,7 +148,6 @@ const Home1 = () => {
 
           <div className="row g-4">
             <Image src="/images/e.svg" alt="earth-vec" className="earth-vec" width={100} height={100}></Image>
-            {/* <img src="/images/e.svg" alt="" className="earth-vec" /> */}
             <div className="col-12 col-lg-6  p-4">
               <div className="card shadow-sm border-0" >
                 <div

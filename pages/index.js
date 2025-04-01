@@ -1,54 +1,8 @@
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
-import "../public/css/contact.css";
-import "../public/css/styles.css";
-import "../public/css/Home.css";
-// import "../public/css/common.css";
-// import "../public/css/Home1.css";
 import Home1 from "@/component/Home1";
-// import Common from "@/component/Common";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export default function Home() {
-  const servicesData = [
-    {
-      id: 1,
-      img: "/images/pro-3.png",
-      title: "Professional expert clinical advice",
-      subtitle:
-        "Our Clinical Advisors provide personalized guidance with extensive clinical and lab expertise. They help you select the best materials and designs for complex cases, ensuring optimal results. Wherever you are, they're just a call away.",
-    },
-    {
-      id: 2,
-      img: "/images/clock8.png",
-      title: "Fast turnaround times",
-      subtitle:
-        "At Cerameus, your satisfaction is our priority! We deliver top-quality results with fast turnaround times, ensuring excellence is always achieved effortlessly. We believe great results should be both quick and seamless for you.",
-    },
-    {
-      id: 3,
-      img: "/images/q-6.png",
-      title: "Certification",
-      subtitle:
-        "All our lab work is designed and completed in Europe, adhering to the highest industry standards. We are ISO and FDA certified, ensuring exceptional quality and compliance. Each product is CE-marked for material excellence.",
-    },
-    {
-      id: 4,
-      img: "/images/cost-2.png",
-      title: "Reduced costs",
-      subtitle:
-        " At ADDL, we focus on providing exceptional quality with cost-effective solutions, enhancing your clinical efficiency while maintaining excellence. Our goal is to optimize your outcomes without compromising on performance or value.",
-    },
-  ];
 
   return (
     <>
@@ -68,8 +22,6 @@ export default function Home() {
                 id="YTP_1742270005228"
                 style={{
                   position: "relative",
-                  // paddingBottom: "34.25%",
-                  // paddingTop:"20%",
                   overflow: "hidden",
                   height: "0px",
                 }}
@@ -102,33 +54,6 @@ export default function Home() {
                     <source src="https://ace-dental.s3.ap-south-1.amazonaws.com/DMLS+Printing.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
-                  {/* <iframe
-                    id="iframe_YTP_1742270005228"
-                    className="playerBox"
-                    style={{
-                      position: "absolute",
-                      zIndex: 0,
-                      width: "2024px",
-                      height: "1138.2px",
-                      top: "0px",
-                      left: "0px",
-                      overflow: "hidden",
-                      opacity: 1,
-                      userSelect: "none",
-                      marginTop: "-106.706px",
-                      marginLeft: "-379px",
-                      maxWidth: "initial",
-                    }}
-                    frameBorder="0"
-                    allowFullScreen=""
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    title="c1"
-                    width="640"
-                    height="360"
-                    src="https://ace-dental.s3.ap-south-1.amazonaws.com/ADVANCE+DENTAL+EXPORT.mp4"
-                    unselectable="on"
-                  ></iframe> */}
                   <div
                     className="YTPOverlay"
                     style={{

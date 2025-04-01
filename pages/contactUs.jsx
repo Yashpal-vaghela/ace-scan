@@ -1,9 +1,6 @@
 // "use client";
 import { useForm } from "react-hook-form";
 import React, { useState } from "react";
-import "../public/css/contact.css";
-import "../public/css/styles.css";
-import Breadcrumbs from "@/component/Breadcrumbs";
 
 const contactUs = () => {
   const {
@@ -97,33 +94,6 @@ const contactUs = () => {
                     <source src="https://ace-dental.s3.ap-south-1.amazonaws.com/DMLS+Printing.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
-                  {/* <iframe
-                    id="iframe_YTP_1742270005228"
-                    className="playerBox"
-                    style={{
-                      position: "absolute",
-                      zIndex: 0,
-                      width: "2024px",
-                      height: "1138.2px",
-                      top: "0px",
-                      left: "0px",
-                      overflow: "hidden",
-                      opacity: 1,
-                      userSelect: "none",
-                      marginTop: "-106.706px",
-                      marginLeft: "-379px",
-                      maxWidth: "initial",
-                    }}
-                    frameBorder="0"
-                    allowFullScreen=""
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    title="c1"
-                    width="640"
-                    height="360"
-                    src="https://ace-dental.s3.ap-south-1.amazonaws.com/ADVANCE+DENTAL+EXPORT.mp4"
-                    unselectable="on"
-                  ></iframe> */}
                   <div
                     className="YTPOverlay"
                     style={{

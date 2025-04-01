@@ -1,14 +1,10 @@
 import React, { useEffect, useRef } from "react";
-import "../../public/css/product.css";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "../../public/css/Home.css";
-import "../../public/css/support.css";
-
 
 const CrownsBridges = () => {
     const videoRefP = useRef(null);

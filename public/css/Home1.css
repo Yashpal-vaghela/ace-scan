@@ -365,7 +365,7 @@
     padding-bottom: 4rem;
     padding-top: 3.4rem;
 }
-.background-video {
+.lets-walk-togeather .background-video {
     position: absolute;
     top: 0;
     left: 0;
@@ -374,7 +374,7 @@
     object-fit: cover;
     z-index: -1;
 }
-.video-overlay {
+.lets-walk-togeather .video-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -409,6 +409,9 @@
 @media(max-width:576px){
     .background-video {
         padding-top: 34px;
+    }
+    .lets-walk-togeather .background-video{
+        padding-top: 0px;
     }
 }
 /* --------------------- Testimonial Section --------------------- */

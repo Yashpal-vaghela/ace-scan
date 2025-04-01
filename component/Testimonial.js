@@ -2,7 +2,7 @@ import {useEffect,useState,useRef} from "react";
 import Image from "next/image";
 import {Swiper,SwiperSlide} from "swiper/react";
 import {Autoplay,Pagination,Navigation} from "swiper/modules"
-import "../public/css/support.css";
+// import "../public/css/support.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import "../public/css/error.css";
+
 import Image from "next/image";
 
 const ErrorPage = () => {
