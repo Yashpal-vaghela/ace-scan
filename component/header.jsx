@@ -124,9 +124,9 @@ const Header = () => {
                         <li className="nav-item" onClick={handleOffcanvas1}>
                             <Link className={`nav-link  mx-lg-2 ${router.pathname === "/support" ? "active" : ""}`} href="/support">Support</Link>
                         </li>
-                        <li className="nav-item" onClick={handleOffcanvas1}>
+                        {/* <li className="nav-item" onClick={handleOffcanvas1}>
                             <Link className={`nav-link  mx-lg-2 ${router.pathname === "/materials" ? "active" : ""}`} href="/materials">Materials</Link>
-                        </li>
+                        </li> */}
                         <li className="nav-item" onClick={handleOffcanvas1}>
                             <Link className={`nav-link  mx-lg-2 ${router.pathname === "/contactUs" ? "active" : ""}`} href="/contactUs">Contact US</Link>
                         </li>

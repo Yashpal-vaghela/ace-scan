@@ -5,7 +5,11 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>ACE - Digital Dental Lab</title>
+      <title>Ace Digital Dental Laboratory</title>
+        <meta
+          name="description"
+          content="Ace Digital Dental Laboratory specializes in advanced dentistry, delivering precision-driven, high-quality solutions with cutting-edge technology."
+        />
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
           rel="stylesheet"

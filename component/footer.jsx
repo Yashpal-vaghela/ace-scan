@@ -113,7 +113,9 @@ const Footer = () => {
                             <div className="footer-desc">
                                 Ace Digital Dental Laboratory pioneers innovation, precision, and artistry to set new standards in modern dentistry, delivering excellence in every restoration.
                             </div>
-                            <div className="simplebtn">Get Started</div>
+                            <div className="simplebtn">
+                                <a href="/contactUs">Get Started</a>
+                            </div>
                         </div>
                         <div className="footer-nav">
                             <div className="row g-4">
@@ -129,6 +131,7 @@ const Footer = () => {
                                 <div className="col-12 col-lg-4 col-md-6 ">
                                     <h5 className="nav-title">Contact & Support</h5>
                                     <ul>
+                                        <li><a href="/about">About</a>"</li>
                                         <li><a href="/contactUs">Contact</a></li>
                                         <li><a href="/support">Support</a></li>
                                         <li><a href="/#">Privacy Policy</a></li>
