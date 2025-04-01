@@ -87,14 +87,27 @@ const Implants = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-12 col-lg-6 col-md-6 order-0 order-lg-1 order-md-1">
-                            <div className="video-section">
+                        <div className="col-12 col-lg-6 col-md-6 order-0 order-lg-1 order-md-1 d-flex justify-content-center align-items-center">
+                        <video
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                id="player"
+                                className="w-100 h-auto"
+                                style={{ maxWidth: "100%", maxHeight: "400px", borderRadius: "10px" }}
+                            >
+                                    <source src="https://d1ytpjko2pk6h2.cloudfront.net/Implant.mp4" type="video/mp4" />
+                                    <source src="https://d1ytpjko2pk6h2.cloudfront.net/Implant.webm" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            {/* <div className="video-section">
                                 <video autoPlay loop muted playsInline id="player" className="video-crop-cad">
                                     <source src="https://d1ytpjko2pk6h2.cloudfront.net/Implant.mp4" type="video/mp4" />
                                     <source src="https://d1ytpjko2pk6h2.cloudfront.net/Implant.webm" />
                                     Your browser does not support the video tag.
                                 </video>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

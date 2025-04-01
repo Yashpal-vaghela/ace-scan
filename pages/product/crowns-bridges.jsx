@@ -65,7 +65,7 @@ const CrownsBridges = () => {
 
     return (
         <>
-        <section className="bradcrumb-product" style={{ marginTop: "80px" }}>
+            <section className="bradcrumb-product" style={{ marginTop: "80px" }}>
                 <div className="container h-100">
                     <div className=" d-flex justify-content-end align-items-start flex-column inner-bread" >
                         <div className="breadcrumbTitle">
@@ -100,14 +100,28 @@ const CrownsBridges = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-12 col-lg-6 col-md-6 order-0 order-lg-1 order-md-1">
-                            <div className="video-section">
+                        <div className="col-12 col-lg-6 col-md-6 order-0 order-lg-1 order-md-1 d-flex justify-content-center align-items-center">
+                        <video
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                id="player"
+                                className="w-100 h-auto"
+                                style={{ maxWidth: "100%", maxHeight: "400px", borderRadius: "10px" }}
+                            >
+                                <source src="https://d1ytpjko2pk6h2.cloudfront.net/Crown.mp4" type="video/mp4" />
+                                <source src="https://d1ytpjko2pk6h2.cloudfront.net/Crown.webm" type="video/webm" />
+                                Your browser does not support the video tag.
+                            </video>
+
+                            {/* <div className="video-section">
                                 <video autoPlay loop muted playsInline id="player" className="video-crop-cad">
                                     <source src="https://d1ytpjko2pk6h2.cloudfront.net/Crown.mp4" type="video/mp4" />
                                     <source src="https://d1ytpjko2pk6h2.cloudfront.net/Crown.webm" type="video/webm" />
                                     Your browser does not support the video tag.
                                 </video>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
@@ -116,7 +130,7 @@ const CrownsBridges = () => {
                 <div className="container">
                     <div className="row for-rlative">
 
-                      
+
                         <div className="col-12 col-lg-6 ">
                             <div className="product-before-after-images">
                                 <Image
@@ -147,68 +161,68 @@ const CrownsBridges = () => {
             <section className="implant-card-section">
                 <div className="container">
                     {/* <div className="row"> */}
-                        <Swiper ref={swiperRef}
-                            slidesPerView={1}
-                            spaceBetween={50}
-                            centeredSlides={true}
-                            autoplay={{
-                                delay: 3000,
-                                disableOnInteraction: false,
-                            }}
-                            loop={true}
-                            pagination={{
-                                clickable: true,
-                            }}
-                            navigation={true}
-                            modules={[Autoplay, Pagination, Navigation]}
-                            breakpoints={{
-                                576: {
-                                    slidesPerView: 1,
-                                    spaceBetween: 60,
-                                },
-                                768: {
-                                    slidesPerView: 2,
-                                    spaceBetween: 50,
-                                },
-                                991: {
-                                    slidesPerView: 2,
-                                    spaceBetween: 50,
-                                },
-                                1080: {
-                                    slidesPerView: 3,
-                                    spaceBetween: 50,
-                                },
-                            }}
-                            className="product-card-swiper"
-                        >
-                            {
-                                productCard?.map((item, index) => {
-                                    return (
-                                        <SwiperSlide key={index}>
-                                            <div className="col-12 col-md-6 col-lg-12">
-                                                <div className="implant-card">
-                                                    <img src="/images/card-bg.png" className="card-bg" />
-                                                    <div className="implant-card-header">
-                                                        <h2> {item?.title} </h2>
-                                                    </div>
-                                                    <div className="implant-image-container">
-                                                        <Image src={item?.img} alt="product-card-img" width={467} height={197}></Image>
-                                                        {/* <img src="/images/PFM-POST.png" alt="Implant Full Mouth" /> */}
-                                                    </div>
-                                                    <div className="implant-card-body p-2 text-justify">
-                                                        <p className="mb-0">
-                                                            {item?.discription}
-                                                        </p>
-                                                    </div>
+                    <Swiper ref={swiperRef}
+                        slidesPerView={1}
+                        spaceBetween={50}
+                        centeredSlides={true}
+                        autoplay={{
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        }}
+                        loop={true}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        navigation={true}
+                        modules={[Autoplay, Pagination, Navigation]}
+                        breakpoints={{
+                            576: {
+                                slidesPerView: 1,
+                                spaceBetween: 60,
+                            },
+                            768: {
+                                slidesPerView: 2,
+                                spaceBetween: 50,
+                            },
+                            991: {
+                                slidesPerView: 2,
+                                spaceBetween: 50,
+                            },
+                            1080: {
+                                slidesPerView: 3,
+                                spaceBetween: 50,
+                            },
+                        }}
+                        className="product-card-swiper"
+                    >
+                        {
+                            productCard?.map((item, index) => {
+                                return (
+                                    <SwiperSlide key={index}>
+                                        <div className="col-12 col-md-6 col-lg-12">
+                                            <div className="implant-card">
+                                                <img src="/images/card-bg.png" className="card-bg" />
+                                                <div className="implant-card-header">
+                                                    <h2> {item?.title} </h2>
+                                                </div>
+                                                <div className="implant-image-container">
+                                                    <Image src={item?.img} alt="product-card-img" width={467} height={197}></Image>
+                                                    {/* <img src="/images/PFM-POST.png" alt="Implant Full Mouth" /> */}
+                                                </div>
+                                                <div className="implant-card-body p-2 text-justify">
+                                                    <p className="mb-0">
+                                                        {item?.discription}
+                                                    </p>
                                                 </div>
                                             </div>
-                                        </SwiperSlide>
-                                    )
-                                })
-                            }
+                                        </div>
+                                    </SwiperSlide>
+                                )
+                            })
+                        }
 
-                        </Swiper>
-                        {/* <div className="col-12 col-md-6 col-lg-4">
+                    </Swiper>
+                    {/* <div className="col-12 col-md-6 col-lg-4">
                             <div className="implant-card">
                                 <img src="/images/card-bg.png" className="card-bg" />
                                 <div className="implant-card-header">
@@ -282,7 +296,7 @@ const CrownsBridges = () => {
             </section>
             <section className="quality-section">
                 <video autoPlay loop muted playsInline id="player" className="background-video" >
-                <source src="/videos/crown-bg.mp4" type="video/mp4" />
+                    <source src="/videos/crown-bg.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <div className="container d-flex justify-content-center align-items-center " >
