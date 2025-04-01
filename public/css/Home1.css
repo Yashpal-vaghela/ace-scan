@@ -415,6 +415,12 @@
 .swiper {
     padding: 20px 40px !important;
 }
+
+@media (max-width: 575px) {
+    .swiper {
+        padding: 0px 00px !important;
+    }
+}
 .mySwiper  .swiper-slide{
     display: flex;
     justify-content: center;
@@ -428,6 +434,7 @@
     0 4px 6px rgba(0, 0, 0, 0.1),  
     0 1px 3px rgba(0, 0, 0, 0.06);
 }
+
 .custom_quote {
     margin-bottom: 2rem;
 }

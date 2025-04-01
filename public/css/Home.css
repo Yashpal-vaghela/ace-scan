@@ -495,6 +495,12 @@
     .testimonial_card{
       margin-top: 1.5rem !important;
     }
+
+    .testnomial_text{
+      font-size: 1.1rem;
+      line-height: 1.5;
+      transform: skewX(0deg);
+    }
   }
   
   
