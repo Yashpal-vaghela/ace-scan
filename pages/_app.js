@@ -2,15 +2,15 @@ import "@/styles/globals.css";
 import "../public/css/common.css";
 import Header from "@/component/header";
 import Footer from "@/component/footer";
-import { Router, useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "../public/css/Home1.css";
+import "../public/css/about.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function App({ Component, pageProps }) {
-  const router = useRouter();
-  const [state, setstate] = useState(false);
+  // const router = useRouter();
+  // const [state, setstate] = useState(false);
   // const [loader, setloader] = useState(false);
 
   useEffect(() => {
@@ -28,21 +28,13 @@ export default function App({ Component, pageProps }) {
   }, []);
   return (
     <>
-        {state ? (
-            <> site under deployment</>
-          ) : (
-            <>
-              <Header />
-              <Component {...pageProps} />
-              <Footer />
-            </>
-          )}
-      {/* {loader ? (
-        <>loader</>
-      ) : (
+      {
         <>
+          <Header />
+          <Component {...pageProps} />
+          <Footer />
         </>
-      )} */}
+      }
     </>
   );
 }
