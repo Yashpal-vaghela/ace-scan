@@ -57,18 +57,25 @@ const Implants = () => {
 
     return (
         <>
-        {/* <section className="Breadcrumbs-section">
-      <div className="container">
-        <nav aria-label="breadcrumb" >
-          <ol className="breadcrumb">
-            <li className="breadcrumb-item">
-                <Link href={router.pathname}>Implant</Link>
-            </li>
-            
-          </ol>
-        </nav>
-      </div>
-    </section> */}
+
+<section className="bradcrumb-product" style={{ marginTop: "80px" }}>
+                <div className="container h-100">
+                    <div className=" d-flex justify-content-end align-items-start flex-column inner-bread" >
+                        <div className="breadcrumbTitle">
+                            Implants
+                        </div>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb text-sm breadcrumbNav">
+                                <li class="breadcrumb-item active"><a href="/">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Products</li>
+                                <li class="breadcrumb-item ">Implants</li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                </div>
+            </section>
+      
             <section className="DW-home" >
                 <div className="container">
                     <div className="row d-flex justify-content-center align-items-center ">

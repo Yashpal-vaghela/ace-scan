@@ -65,6 +65,23 @@ const CrownsBridges = () => {
 
     return (
         <>
+        <section className="bradcrumb-product" style={{ marginTop: "80px" }}>
+                <div className="container h-100">
+                    <div className=" d-flex justify-content-end align-items-start flex-column inner-bread" >
+                        <div className="breadcrumbTitle">
+                            Crowns & Bridges
+                        </div>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb text-sm breadcrumbNav">
+                                <li class="breadcrumb-item active"><a href="/">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Products</li>
+                                <li class="breadcrumb-item ">Crowns & Bridges</li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                </div>
+            </section>
             <section className="DW-home" >
                 <div className="container">
                     <div className="row d-flex justify-content-center align-items-center">

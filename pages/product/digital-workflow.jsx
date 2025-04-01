@@ -7,6 +7,23 @@ const DigitalWorkflow = () => {
 
     return (
         <>
+            <section className="bradcrumb-product" style={{ marginTop: "80px" }}>
+                <div className="container h-100">
+                    <div className=" d-flex justify-content-end align-items-start flex-column inner-bread" >
+                        <div className="breadcrumbTitle">
+                            Digital Workflow
+                        </div>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb text-sm breadcrumbNav">
+                                <li class="breadcrumb-item active"><a href="/">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Products</li>
+                                <li class="breadcrumb-item ">Digital Workflow</li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                </div>
+            </section>
             <section className="DW-home" >
                 <div className="container">
                     <div className="row d-flex justify-content-center align-items-center">
@@ -31,7 +48,7 @@ const DigitalWorkflow = () => {
                                     <source src="https://d1ytpjko2pk6h2.cloudfront.net/Digital-Dental.webm" type="video/webm" />
                                     Your browser does not support the video tag.
                                 </video>
-                            </div>  
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -67,7 +84,7 @@ const DigitalWorkflow = () => {
                                 <div className="card-body-content card1">
                                     <h3>01</h3>
                                     <p className="card-hed">Incoming Orders</p>
-                                    
+
                                     <div className="card-txt">We ensure that all incoming orders are carefully inspected to ensure that they meet our high standards before they enter the construction phase.
                                     </div>
                                 </div>
@@ -91,7 +108,7 @@ const DigitalWorkflow = () => {
                                 <div className="card-body-content card3">
                                     <h3>03</h3>
                                     <p className="card-hed">Quality Control</p>
-                                    
+
                                     <div className="card-txt">Quality is at the heart of everything we do. Rest assured that you can rely on us to provide you with dependable and superior dental laboratory services.</div>
                                 </div>
 
@@ -103,7 +120,7 @@ const DigitalWorkflow = () => {
                                 <div className="card-body-content card4">
                                     <h3>04</h3>
                                     <p className="card-hed">Returns</p>
-                                    
+
                                     <div className="card-txt">At ADDL, we recognize the importance of timely deliveries and hassle-free returns. Rely on us for all your dental lab work requirements.
                                     </div>
                                 </div>

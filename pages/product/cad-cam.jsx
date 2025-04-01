@@ -57,6 +57,23 @@ const CadCamMilling = () => {
 
     return (
         <>
+        <section className="bradcrumb-product" style={{ marginTop: "80px" }}>
+                <div className="container h-100">
+                    <div className=" d-flex justify-content-end align-items-start flex-column inner-bread" >
+                        <div className="breadcrumbTitle">
+                           CAD/CAM Milling
+                        </div>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb text-sm breadcrumbNav">
+                                <li class="breadcrumb-item active"><a href="/">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Products</li>
+                                <li class="breadcrumb-item ">CAD/CAM Milling</li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                </div>
+            </section>
             <section className="DW-home" >
                 <div className="container">
                     <div className="row d-flex justify-content-center align-items-center">
@@ -86,9 +103,9 @@ const CadCamMilling = () => {
 
             <section className="cadcamintro">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-12 col-md-6">
-                            <div className="cadcam-head">
+                    <div className="row g-2">
+                        <div className="col-12 col-md-6 d-flex justify-content-center  flex-column order-md-1 order-lg-1 order-0 p-4">
+                            <div className="cadcam-head mb-4">
                                 Seamless, natural-looking restorations designed for precision and beauty.
                             </div>
 
@@ -98,7 +115,7 @@ const CadCamMilling = () => {
 
 
                         </div>
-                        <div className="col-12 col-md-6 ">
+                        <div className="col-12 col-md-6 p-4 order-lg-0  order-md-0 order-1">
                             <Image src="/images/cad-cam.png" className="img-fluid" alt="cad-cam-image" width={546} height={399}></Image>
                             {/* <img src="/images/cad-cam.png" className="img-fluid"></img> */}
                         </div>
