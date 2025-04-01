@@ -41,7 +41,7 @@ const DigitalWorkflow = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-12 col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
+                        <div className="col-12 col-lg-6 col-md-6 d-flex justify-content-center order-0 order-lg-1 order-md-1 align-items-center">
                             <video
                                 autoPlay
                                 loop
