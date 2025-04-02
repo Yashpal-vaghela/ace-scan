@@ -90,8 +90,8 @@ const contactUs = () => {
                     className="h-full w-full background-video background-video1"
                     id="player"
                   >
-                    <source src="https://ace-dental.s3.ap-south-1.amazonaws.com/ADVANCE+DENTAL+EXPORT.webm" type="video/webm" />
-                    <source src="https://ace-dental.s3.ap-south-1.amazonaws.com/DMLS+Printing.mp4" type="video/mp4" />
+                    <source src="https://d1ytpjko2pk6h2.cloudfront.net/Advance+Dental+Export+Milling+2.mp4" type="video/webm" />
+                    <source src="https://d1ytpjko2pk6h2.cloudfront.net/Advance+Dental+Export+Milling+2.webm" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                   <div
@@ -118,9 +118,9 @@ const contactUs = () => {
           >
             <div className="col-12 col-xl-5 col-lg-6 col-md-7 col-sm-10 d-flex flex-column justify-content-center">
               <h2 className="alt-font text-white line-height-65px font-weight-500 letter-spacing-minus-1px margin-65px-bottom sm-line-height-50px sm-margin-25px-bottom">
-                <span className="text-gradient-light-purple-light-orange font-weight-900 d-inline-block">
+                {/* <span className="text-gradient-light-purple-light-orange font-weight-900 d-inline-block"> */}
                  Contact US
-                </span>{" "}
+                {/* </span>{" "} */}
               </h2>
               <div className="alt-font text-large font-weight-500 text-uppercase letter-spacing-2px d-flex">
                 <span className="flex-shrink-0 w-40px h-1px bg-white opacity-6 align-self-center margin-25px-right"></span>

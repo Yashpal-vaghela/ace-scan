@@ -33,7 +33,7 @@
     object-fit: cover;
     border-radius: 12px;
     position:relative;
-    background-color: #015e8a;
+    background : linear-gradient(135deg, rgb(0, 71, 138,0.7), rgb(0, 129, 138,0.7));
     padding: 10px;
     border-radius: 20px;
 }

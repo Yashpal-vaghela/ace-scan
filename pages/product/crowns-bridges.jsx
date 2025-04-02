@@ -97,7 +97,7 @@ const CrownsBridges = () => {
                             </div>
                         </div>
                         <div className="col-12 col-lg-6 col-md-6 order-0 order-lg-1 order-md-1 d-flex justify-content-center align-items-center">
-                        <video
+                            <video
                                 autoPlay
                                 loop
                                 muted
@@ -130,7 +130,7 @@ const CrownsBridges = () => {
                         <div className="col-12 col-lg-6 ">
                             <div className="product-before-after-images">
                                 <Image
-                                    src="/images/crgallery.jpg"
+                                    src="/images/crown-gallery.png"
                                     alt="about"
                                     width={550}
                                     height={400}
@@ -300,7 +300,7 @@ const CrownsBridges = () => {
 
                         To ensure exceptional results, ADDL provides premium dental lab solutions that prioritize precision, craftsmanship, and advanced technology for superior dental restorations. <br />
 
-                        <a href="/contactUs" class="btn">Get In Touch</a>
+                        <a href="/contactUs" class="btn ">Get In Touch</a>
                     </div>
                 </div>
 

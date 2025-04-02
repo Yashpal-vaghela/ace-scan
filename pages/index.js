@@ -1,12 +1,11 @@
 import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
+// import { Geist, Geist_Mono } from "next/font/google";
 import Home1 from "@/component/Home1";
 
 export default function Home() {
 
   return (
     <>
-    {/* <title>ACE - Digital Dental Lab</title> */}
       <section className="p-0 parallax overlap-height">
         <div className="lqd-vbg-wrap">
           <div className="lqd-vbg-inner">
@@ -50,8 +49,8 @@ export default function Home() {
                     className="h-full w-full background-video background-video1"
                     id="player"
                   >
-                    <source src="https://ace-dental.s3.ap-south-1.amazonaws.com/ADVANCE+DENTAL+EXPORT.webm" type="video/webm" />
-                    <source src="https://ace-dental.s3.ap-south-1.amazonaws.com/DMLS+Printing.mp4" type="video/mp4" />
+                    <source src="https://d1ytpjko2pk6h2.cloudfront.net/ADVANCE+DENTAL+EXPORT.webm" type="video/webm" />
+                    <source src="https://d1ytpjko2pk6h2.cloudfront.net/ADVANCE+DENTAL+EXPORT.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                   <div
@@ -78,10 +77,7 @@ export default function Home() {
           >
             <div className="col-12 col-xl-5 col-lg-6 col-md-7 col-sm-10 d-flex flex-column justify-content-center">
               <h2 className="alt-font text-white line-height-65px font-weight-500 letter-spacing-minus-1px margin-65px-bottom sm-line-height-50px sm-margin-25px-bottom">
-                <span className="text-gradient-light-purple-light-orange font-weight-900 d-inline-block">
-                  Unparalleled Quality
-                </span>{" "}
-                in dental lab solutions!
+                Unparalleled Quality in dental lab solutions!
               </h2>
               <div className="alt-font text-large font-weight-500 text-uppercase letter-spacing-2px d-flex">
                 <span className="flex-shrink-0 w-40px h-1px bg-white opacity-6 align-self-center margin-25px-right"></span>
@@ -120,9 +116,10 @@ export default function Home() {
                   <Image
                     src="/images/about-icon11.png"
                     className="img-box mb-4"
-                    width={45}
-                    height={45}
-                    alt=" "
+                    width={50}
+                    height={50}
+                    alt="dental-technicians"
+                    style={{ padding: "5px", borderRadius: "10px", }}
                   ></Image>
                   <p className="fw-bold mb-2" style={{ color: "#00478a" }}>
                     Dental Technicians
@@ -139,6 +136,7 @@ export default function Home() {
                     width={45}
                     height={45}
                     alt="about-icon2"
+                    style={{ padding: "5px", borderRadius: "10px", }}
                   ></Image>
                   <p className="fw-bold mb-2" style={{ color: "#00818a" }}>
                     The Highest Quality Products.
@@ -184,6 +182,7 @@ export default function Home() {
                 width={500}
                 height={200}
                 alt="digital-image"
+                style={{ borderRadius: "10px", }}
               ></Image>
             </div>
           </div>
@@ -193,12 +192,12 @@ export default function Home() {
         <div className="container d-flex">
           <div className=" services_grid g-4 card-container row position-relative  mt-2 mb-0">
             <h2 className="services-title home-title heading1 mb-2 mt-0">
-              ADDL at a <b className="highlight-text1">glance</b>
+              ADDL at a <span className="highlight-text1">glance</span>
             </h2>
             <div className="col-12 col-lg-6 d-flex justify-content-center align-items-center">
               <div className="intro__item">
                 <Image
-                  src="/images/Ce.png"
+                  src="/images/professional.png"
                   className="img-fluid "
                   width={40}
                   height={50}
@@ -219,7 +218,7 @@ export default function Home() {
             <div className="col-12 col-lg-6">
               <div className="intro__item">
                 <Image
-                  src="/images/Ft.png"
+                  src="/images/time.png"
                   className="img-fluid "
                   width={40}
                   height={50}
@@ -240,7 +239,7 @@ export default function Home() {
             <div className="col-12 col-lg-6">
               <div className="intro__item">
                 <Image
-                  src="/images/Pe.png"
+                  src="/images/cartificate.png"
                   className="img-fluid "
                   width={40}
                   height={50}
@@ -262,7 +261,7 @@ export default function Home() {
             <div className="col-12 col-lg-6">
               <div className="intro__item">
                 <Image
-                  src="/images/Rc.png"
+                  src="/images/cost.png"
                   className="img-fluid "
                   width={40}
                   height={50}

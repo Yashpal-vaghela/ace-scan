@@ -27,7 +27,7 @@ const DigitalWorkflow = () => {
             <section className="DW-home" >
                 <div className="container">
                     <div className="row d-flex justify-content-center align-items-center">
-                        <div className="col-12 col-lg-6 col-md-6">
+                        <div className="col-12 col-lg-6 col-md-6 order-1 order-lg-0 order-md-0">
                             <div className="product-text p-3">
                                 <h2 className="double-heading">Seamless <span className="highlight-text">Digital Interaction</span></h2>
                                 <p>

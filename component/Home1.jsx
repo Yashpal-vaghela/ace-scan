@@ -1,6 +1,7 @@
 import { useEffect, useState, React, useRef } from "react";
 import Testimonial from "./Testimonial";
 import Image from "next/image";
+import Link from "next/link";
 
 const Home1 = () => {
   const counters = [
@@ -427,7 +428,7 @@ const Home1 = () => {
             <div className="col-12 col-lg-6 col-md-6 ">
               <div className="card shadow-none border-0 d-flex justify-content-center align-items-center h-100 bg-transparent">
                 <Image
-                  src="/images/steps.png"
+                  src="/images/computer_mockup.png"
                   alt="Example Image"
                   width={400}
                   height={550}
@@ -447,8 +448,8 @@ const Home1 = () => {
           className="h-full w-full background-video"
           id="player"
         >
-          <source src="https://ace-dental.s3.ap-south-1.amazonaws.com/masterpiece.webm" type="video/webm" />
-          <source src="https://ace-dental.s3.ap-south-1.amazonaws.com/masterpiece.mp4" type="video/mp4" />
+          <source src="https://d1ytpjko2pk6h2.cloudfront.net/new-masterpiece.webm" type="video/webm" />
+          <source src="https://d1ytpjko2pk6h2.cloudfront.netm/new-masterpiece.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -512,24 +513,26 @@ const Home1 = () => {
       </section>
       <section
         className="pricing-plans space-section"
-        // style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem" }}
       >
         <div className="container text-center position-relative">
           <h2 className="heading1 mb-4 text-center"> Our Most Premium Product</h2>
           <div className="row g-4 ">
-            <div className="col-12 col-lg-4 col-md-6 product-row position-relative">
+            <Link href="/product/digital-workflow/" className="text-decoration-none col-12 col-lg-4 col-md-6">
+              <div className=" product-row position-relative">
+                <Image
+                  src="/images/E-max-hm.png"
+                  alt="Example Image"
+                  width={306}
+                  height={190}
+                  className=""
+                />
+                <span className="product-row-label">E-max CAD</span>
+              </div>
+            </Link>
+            <Link href="/product/crowns-bridges/" className="text-decoration-none col-12 col-lg-4 col-md-6">
+            <div className="img-middil product-row">
               <Image
-                src="/images/pro3.png"
-                alt="Example Image"
-                width={306}
-                height={190}
-                className=""
-              />
-              <span className="product-row-label">E-max CAD</span>
-            </div>
-            <div className="col-12 col-lg-4 col-md-6 img-middil product-row">
-              <Image
-                src="/images/pro1.png"
+                src="/images/crown-hm.png"
                 alt="Example Image"
                 width={306}
                 height={190}
@@ -537,9 +540,11 @@ const Home1 = () => {
               />
               <span className="product-row-label">Crown & Bridges</span>
             </div>
-            <div className="col-12 col-lg-4 col-md-6 product-row">
+            </Link>
+            <Link href="/product/implants/" className="text-decoration-none col-12 col-lg-4 col-md-6">
+            <div className="product-row">
               <Image
-                src="/images/pro2.png"
+                src="/images/implant-hm.png"
                 alt="Example Image"
                 width={306}
                 height={190}
@@ -547,6 +552,7 @@ const Home1 = () => {
               />
               <span className="product-row-label">Implant</span>
             </div>
+            </Link>
           </div>
           <Image
             src="/images/dot.png"
