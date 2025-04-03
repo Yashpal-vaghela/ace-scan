@@ -386,13 +386,13 @@ const Home1 = () => {
           height={200}
           className="line-vec"
         />
-        <div className="container mt-5 text-center">
+        <div className="container mt-lg-5 mt-md-5 text-center">
           <div className="hero-subheading">Truly easy sendings</div>
           <h2 className="heading1 text-center">
             {" "}
             <b>Free up your clinical time</b> <br />
-            Submitting your orders to ACE Digital Dental Laboratry is
-            hassle-free.
+            <span className="subheadingTxt">Submitting your orders to ACE Digital Dental Laboratry is
+            hassle-free.</span>
           </h2>
           <p className="subHeading1 text-center">
             Simply press on the “Place an Order” button located at the top of
@@ -530,7 +530,7 @@ const Home1 = () => {
               </div>
             </Link>
             <Link href="/product/crowns-bridges/" className="text-decoration-none col-12 col-lg-4 col-md-6">
-            <div className="img-middil product-row">
+            <div className="img-middil product-row position-relative">
               <Image
                 src="/images/crown-hm.png"
                 alt="Example Image"

@@ -291,7 +291,7 @@
 @media(max-width:576px){
      /* feature section css */
      .feature-section{
-        padding: 0px 0px 40px;
+        padding: 40px 0px 0px;
      }
      .title-small{
         font-size: 20px;
@@ -312,7 +312,7 @@
     padding: 50px 0px 15px;
 }
 .services-title{
-    font-size: 32px;
+    font-size: 1.3rem;
     text-align: center;
     font-weight: 600;
 }   
@@ -460,9 +460,6 @@
 @media(max-width:576px){
     .services-section{
         padding: 30px 0px;
-    }
-    .services-title{
-        font-size: 20px;
     }
     .intro__item-title{
         font-size: 15px;

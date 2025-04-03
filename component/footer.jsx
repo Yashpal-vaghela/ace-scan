@@ -112,8 +112,8 @@ const Footer = () => {
                             <div className="footer-desc">
                                 Ace Digital Dental Laboratory pioneers innovation, precision, and artistry to set new standards in modern dentistry, delivering excellence in every restoration.
                             </div>
-                            <div className="simplebtn">
-                                <a href="/contactUs">Get Started</a>
+                            <div className="simplebtn w-100 text-center">
+                                <a href="/contactUs" className="text-center">Get Started</a>
                             </div>
                         </div>
                         <div className="footer-nav">
@@ -149,9 +149,9 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-            <div className="container mt-4 pb-4">
+            <div className="container mt-3 pb-4">
                 <div className="row justify-content-center align-items-center text-center">
-                    <div className="col-12 d-flex justify-content-between align-items-center gap-5">
+                    <div className="col-12 d-flex justify-content-between align-items-center gap-5 footer-wrapper">
                         <Link className="navbar-brand me-auto" href="/">
                             <Image src="/images/ACE-logo.png" alt="Logo" width={150} height={50} />
                         </Link>

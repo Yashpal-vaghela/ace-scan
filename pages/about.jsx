@@ -29,7 +29,7 @@ const About = () => {
   }, []);
   return (
     <>
-     <section className="p-0 parallax overlap-height">
+      <section className="p-0 parallax overlap-height">
         <div className="lqd-vbg-wrap">
           <div className="lqd-vbg-inner">
             <span className="lqd-vbg-loader"></span>
@@ -76,7 +76,7 @@ const About = () => {
                     <source src="https://d1ytpjko2pk6h2.cloudfront.net/DMLS+Printing.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
-                 
+
                   <div
                     className="YTPOverlay"
                     style={{
@@ -102,13 +102,13 @@ const About = () => {
             <div className="col-12 col-xl-5 col-lg-6 col-md-7 col-sm-10 d-flex flex-column justify-content-center">
               <h2 className="alt-font text-white line-height-65px font-weight-500 letter-spacing-minus-1px margin-65px-bottom sm-line-height-50px sm-margin-25px-bottom">
                 {/* <span className="text-gradient-light-purple-light-orange font-weight-900 d-inline-block"> */}
-                  About Us
+                About Us
                 {/* </span> */}
               </h2>
               <div className="alt-font text-large font-weight-500 text-uppercase letter-spacing-2px d-flex">
                 <span className="flex-shrink-0 w-40px h-1px bg-white opacity-6 align-self-center margin-25px-right"></span>
                 <span className="flex-grow-1 text-white opacity-6">
-                What we are? know more about us.
+                  What we are? know more about us.
                 </span>
               </div>
             </div>
@@ -143,7 +143,7 @@ const About = () => {
 
             <div className="col-12 col-md-6 col-lg-6">
               <div className="about-text">
-                <h2 className="main-heading-with-double-color mt-0" style={{width:"69%"}}>
+                <h2 className="main-heading-with-double-color mt-0 mb-2 heading1" style={{ width: "69%" }}>
                   Your Trusted{" "}
                   <span className="highlight-text1"> Dental Lab </span> for All
                   Your Clinical Needs
@@ -190,9 +190,9 @@ const About = () => {
                 />
               </div>
             </div>
-            <div className="col-md-5 col-12">
+            <div className="col-md-5 col-12 mt-1 mt-sm-0">
               <div className="about-text">
-                <h2 className="main-heading-with-double-color">
+                <h2 className="main-heading-with-double-color heading1 mb-2">
                   Delivering Excellence In{" "}
                   <span className="highlight-text1"> Across The USA </span>
                 </h2>
@@ -211,11 +211,11 @@ const About = () => {
       </section>
 
       <section className="working-with-the-best">
-        <div className="container about-section py-5">
+        <div className="container about-section">
           <div className="row">
             <div className="col-12 col-lg-6 about-left">
               <div className="about-text w-40 ps-0" >
-                <h2 class="main-heading-with-double-color mt-0">
+                <h2 class="main-heading-with-double-color mt-0 mb-0 heading1">
                   Working Only With{" "}
                   <span className="highlight-text1">The Best</span>
                 </h2>
@@ -227,7 +227,16 @@ const About = () => {
                 height={200}
                 className="about-vector-image"
               />
-              <div className="about-content0">
+              <div className="about-text about-content0">
+                <p>Our laboratories utilize a diverse range of modern dental
+                  materials, including Zirconia, Titanium, and high-quality
+                  non-precious metal alloys, ensuring optimal strength,
+                  aesthetics, and biocompatibility. Whether crafting single
+                  crowns, full-arch rehabilitations, or complex implant
+                  restorations, we deliver precision-engineered solutions with a
+                  perfect fit and exceptional quality.</p>
+              </div>
+              {/* <div className="about-content0">
                 Our laboratories utilize a diverse range of modern dental
                 materials, including Zirconia, Titanium, and high-quality
                 non-precious metal alloys, ensuring optimal strength,
@@ -235,11 +244,11 @@ const About = () => {
                 crowns, full-arch rehabilitations, or complex implant
                 restorations, we deliver precision-engineered solutions with a
                 perfect fit and exceptional quality.
-              </div>
+              </div> */}
             </div>
             <div className="col-12 col-lg-6 d-flex flex-column">
               <div className="about-content col-12 order-2 order-sm-2 order-lg-0">
-                <p >
+                <p style={{ marginTop: '10px' }}>
                   At ADDL, we collaborate with a team of certified, highly
                   skilled, and experienced dental technicians who have undergone
                   extensive training in the design and fabrication of all types
@@ -274,7 +283,7 @@ const About = () => {
         <div className="container">
           <div className="about-section d-flex align-items-center">
             <div class="row" style={{ margin: "0px" }}>
-              <div class="col-lg-7  col-12  card-wop  position-relative d-flex justify-content-center text-aligns-center py-4">
+              <div class="col-lg-7  col-12  card-wop  position-relative d-flex justify-content-center text-aligns-center pt-2 pb-3">
                 <Image
                   src="/images/Boss.JPG"
                   alt="Lab Technician Working"
@@ -287,7 +296,7 @@ const About = () => {
 
               <div class="col-lg-5  col-12 card-wop right-card">
                 <div className="about-text">
-                  <h2 className="main-heading-with-double-color" style={{width:"85%"}}>
+                  <h2 className="main-heading-with-double-color heading1 mb-0" style={{ width: "85%" }}>
                     <span className="highlight-text1">
                       Uncompromising Precision{" "}
                     </span>
@@ -296,38 +305,50 @@ const About = () => {
                   </h2>
                 </div>
                 {/* <h2 className="about-text">Uncompromising Precision and Excellence in Dental Restorations</h2> */}
-                <p className="about-content my-5" style={{width:"85%"}}>
-                  At ADDL, we blend precision, craftsmanship, and premium
-                  materials to create restorations with exceptional aesthetics
-                  and a perfect fit. Our expert clinicians conduct rigorous
-                  evaluations and quality checks across partnered labs, ensuring
-                  superior quality and reliability. This dedication to
-                  excellence guarantees restorations that meet the highest
-                  clinical and aesthetic standards.
-                </p>
+                <div class="about-text">
+                  <p className="about-content my-5" style={{ width: "85%" }}>
+                    At ADDL, we blend precision, craftsmanship, and premium
+                    materials to create restorations with exceptional aesthetics
+                    and a perfect fit. Our expert clinicians conduct rigorous
+                    evaluations and quality checks across partnered labs, ensuring
+                    superior quality and reliability. This dedication to
+                    excellence guarantees restorations that meet the highest
+                    clinical and aesthetic standards.
+                  </p>
+                </div>
+
               </div>
             </div>
           </div>
         </div>
       </section>
 
-     
+
 
       <section className="standard-work pt-2 pt-sm-5">
-      <Image src="/images/linevec.svg" className="d-none d-md-block ab-vector1 img-fluid" width={1772} height={827}></Image>
+        <Image src="/images/linevec.svg" className="d-none d-md-block ab-vector1 img-fluid" width={1772} height={827}></Image>
         <div className="container text-center">
-          
-        <h2 className="main-heading-with-double-color text-start ps-2 text-sm-center w-100">
-                  Committed to the Highest{" "}
-                  <span className="highlight-text1">
-                    Standards of Excellence
-                  </span>
-                </h2>
+
+          <h2 className="main-heading-with-double-color heading1 mb-0  text-start ps-2 text-sm-center w-100" style={{marginTop:'30px'}}>
+            Committed to the Highest{" "}
+            <span className="highlight-text1">
+              Standards of Excellence
+            </span>
+          </h2>
           <div className="row align-items-stretch position-relative">
             <div className="col-lg-6  d-flex flex-column justify-content-center h-90 order-md-0 order-0 pb-3">
-              <div className="about-text" style={{width:"100%"}}>
-                
-                <p className="about-text-p" >
+              <div className="about-text" style={{ width: "100%" }}>
+                {/* <div className="about-text p-0">
+                  <p> At ADDL, we uphold the highest industry standards by offering
+                  a comprehensive range of dental lab solutions, from single
+                  crowns to complex restorations. Crafted in FDA-verified and
+                  ISO-certified laboratories, our products ensure superior
+                  precision, durability, and aesthetics while adhering to the
+                  strictest global regulations. Each restoration comes with a
+                  Quality Certificate and Guarantee, providing confidence and
+                  peace of mind.</p>
+                </div> */}
+                <p className="about-text-p mb-0" >
                   At ADDL, we uphold the highest industry standards by offering
                   a comprehensive range of dental lab solutions, from single
                   crowns to complex restorations. Crafted in FDA-verified and

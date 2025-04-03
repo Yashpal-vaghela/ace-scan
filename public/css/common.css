@@ -1,23 +1,24 @@
 .about-text h2 {
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
     line-height: 1.55;
     z-index: 3;
 }
-@media(max-width:991px){
+/* @media(max-width:991px){
     .about-text h2{
         font-size: 2rem;
     }
-}
+} */
 @media(max-width:768px){
     .about-container .about-text h2{
        width: 100% !important;
        margin-top: 60px !important; 
-       font-size: 1.9rem;
+       /* text-align: center; */
+       /* font-size: 1.9rem; */
      }
 }
 @media(max-width:576px){
     .about-text h2{
-        font-size: 1.7rem;
+        /* font-size: 1.7rem; */
         margin-top: 20px;
     }
 }
