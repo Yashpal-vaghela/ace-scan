@@ -144,7 +144,7 @@ const Home1 = () => {
       >
         <div className="container">
           <h2 className="heading1 mt-1  text-center">
-            Why <b className="highlight-text1">ACE</b> Digital Dental Laboratry
+            Why <span className="highlight-text1">ACE</span> Digital Dental Laboratry
           </h2>
 
           <div className="row g-4">
@@ -515,7 +515,7 @@ const Home1 = () => {
         className="pricing-plans space-section"
       >
         <div className="container text-center position-relative">
-          <h2 className="heading1 mb-4 text-center"> Our Most Premium Product</h2>
+          <h2 className="heading1 mb-4 text-center"> Our Most <span className="highlight-text1">Premium Product</span></h2>
           <div className="row g-4 ">
             <Link href="/product/digital-workflow/" className="text-decoration-none col-12 col-lg-4 col-md-6">
               <div className=" product-row position-relative">

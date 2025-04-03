@@ -202,7 +202,7 @@ const support = () => {
             </div>
             <div className="col-lg-4 col-md-5 col-sm-12 col-12 order-1 order-md-0 position-relative">
               <Image className="img-fluid experience-vector1" src="/images/vector-img.png" width={2350} height={3155} alt="experience-vector"></Image>
-              <Image src="/images/inceh.jpg" className="img-fluid" alt="experience-img" width={467} height={637}></Image>
+              <Image src="/images/inches.jpg" className="img-fluid" alt="experience-img" width={467} height={637}></Image>
               <div className="addl-content">
                 <ul>
                   <li>ADDL</li>
@@ -240,7 +240,7 @@ const support = () => {
               </p>
               <Image src="/images/support-6.png" className="d-block d-md-none go-off-track-img img-fluid" width={648} height={648} alt="go-off-track-img"></Image>
               <div className="support-img-wrapper">
-                <Image src="/images/support5.png" alt="support-5" className="support-img img-fluid" width={580} height={265}></Image>
+                <Image src="/images/support5.jpg" alt="support-5" className="support-img img-fluid" width={580} height={265}></Image>
               </div>
             </div>
           </div>

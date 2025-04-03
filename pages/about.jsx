@@ -1,6 +1,7 @@
 import { useEffect, useState, React, useRef } from "react";
 // import "../public/css/about.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
   const videoRef = useRef(null);
@@ -172,6 +173,10 @@ const About = () => {
                 receive restorations that meet the latest industry standards
                 while maintaining superior precision and reliability.
               </div>
+              <Link href="/contactUs">
+                <button className="btn btn-getInTouch">Get In Touch</button>
+              </Link>
+              
             </div>
           </div>
         </div>

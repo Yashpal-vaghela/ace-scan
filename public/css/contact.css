@@ -60,19 +60,10 @@
     line-height:50px;
     max-width: 85%;
 } */
-.highlight-text1{
-    color: #00478a;
-}
+
 /* .highlight-text2{
     color:#00818a;
 } */
-.about-img3{
-    position: absolute;
-    top:12%;
-    /* top:18%; */
-    right:0%;
-    width: 28%;
-}
 .about-img-wrapper{
     width: 30%;
     padding: 0px 15px;
@@ -112,16 +103,6 @@
     letter-spacing: 1px;
 }
 @media(max-width:1200px){
-    .about-img1{
-        width:55% !important;
-        height: 68% !important;
-    }
-    .about-img2{
-        top: 38%;
-        right: 16%;
-        width: 55% !important;
-        height: 68% !important;
-    }
     .about-icon1{
         top: 15%;
         right: 20.35%;
@@ -133,15 +114,9 @@
         line-height: 40px;
         max-width: 85%;
     } */
-    .about-img3{
-        top: 13%;
-    }
-    .about-img5{
+    /* .about-img5{
         top:53%;
         left:8%;
-    }
-    /* .gap-5{
-        gap:1rem !important
     } */
     .about-img-wrapper {
         width:38%;
@@ -172,9 +147,6 @@
         gap:1rem !important;
         width:95% !important;
     }
-    .about-img3 {
-        top: 13.5%;
-    }
     .about-img-wrapper p{
         font-size: 12px;
     }
@@ -190,23 +162,6 @@
     }
 }
 @media(max-width:768px){
-    .about-img1 {
-        width: 82% !important;
-        height: 90% !important;
-    }
-    .about-img2 {
-        top: 50%;
-        right: 5%;
-        width: 62% !important;
-        height: 90% !important;
-    }
-    /* .about-img2 {
-        top: -23%;
-        right: -33%;
-        width: 62% !important;
-        height: 48% !important;
-        position: relative;
-    } */
     .about-icon1{
         top: 15.2%;
         right: 15.7%;
@@ -217,10 +172,6 @@
         width:110px;
         right: 11%;
     }
-    .about-img3{
-        top:55%;
-        width:35%;
-    }
     .About-section .row .col-xl-7{
         /* padding-top: 160px; */
     }
@@ -228,10 +179,10 @@
         top:41%;
         left:12.8%;
     } */
-    .about-img5{
+    /* .about-img5{
         top:75%;
         left:12%;
-    }
+    } */
 }
 @media(max-width:576px){
     .about-icon1{
@@ -244,10 +195,6 @@
         width: 21%;
         right: 12%;
         top:12%;
-    }
-    .about-img3{
-        top:50%;
-        width:50%;
     }
     /* .text-title{
         font-size: 15px;

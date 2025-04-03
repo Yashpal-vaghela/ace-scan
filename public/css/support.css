@@ -137,8 +137,8 @@
 .go-off-track-img {
   margin-top: 10px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0,0.15);
-  border-top-right-radius: 150px;
-  border-bottom-left-radius: 150px;
+  /* border-top-right-radius: 150px;
+  border-bottom-left-radius: 150px; */
 }
 .support-vector1{
   position: absolute;
