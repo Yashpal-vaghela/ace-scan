@@ -488,9 +488,9 @@
       margin-bottom: 30px;
     } */
 
-    .subheadingTxt {
+    /* .subheadingTxt {
       font-size: 1rem;
-    }
+    } */
     /* .heading1{
       font-size: 1.6rem;
       font-weight: bold;
@@ -498,9 +498,9 @@
     } */
     }
 
-    .subheadingTxt {
+    /* .subheadingTxt {
       font-size: 1rem;
-    }
+    } */
     /* testimonial section */
     /* .testimonial_card{
       margin-top: 1.5rem !important;
@@ -519,7 +519,7 @@
       line-height: 1.5;
       transform: skewX(0deg);
     } */
-  }
+  /* } */
   
   
   /* Pricing plan */
