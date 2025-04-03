@@ -116,7 +116,7 @@ const CadCamMilling = () => {
             <section className="cadcamintro">
                 <div className="container">
                     <div className="row g-2">
-                        <div className="col-12 col-md-6 d-flex justify-content-center  flex-column order-md-1 order-lg-1 order-0 p-4">
+                        <div className="col-12 col-md-6 d-flex justify-content-center  flex-column order-md-1 order-lg-1 order-1 p-4">
                             <div className="cadcam-head mb-4">
                                 Seamless, natural-looking restorations designed for precision and beauty.
                             </div>
@@ -127,7 +127,7 @@ const CadCamMilling = () => {
 
 
                         </div>
-                        <div className="col-12 col-md-6 p-4 order-lg-0  order-md-0 order-1">
+                        <div className="col-12 col-md-6 p-4 order-lg-0  order-md-0 order-0">
                             <Image src="/images/cad-cam.png" className="img-fluid" alt="cad-cam-image" width={546} height={399}></Image>
                             {/* <img src="/images/cad-cam.png" className="img-fluid"></img> */}
                         </div>

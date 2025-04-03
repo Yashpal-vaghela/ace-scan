@@ -218,9 +218,10 @@ const support = () => {
         </div>
       </section>
       <section className="go-off-track-section">
+      <Image src="/images/vector-support3.png" className="d-none d-md-block support-vector1 img-fluid" width={1772} height={827}></Image>
+      <Image src="/images/vector-support4.png" className="d-block d-md-none support-vector1 img-fluid" width={279} height={678} alt="support-vector1"></Image>
         <div className="container">
-          <Image src="/images/vector-support3.png" className="d-none d-md-block support-vector1 img-fluid" width={1772} height={827}></Image>
-          <Image src="/images/vector-support4.png" className="d-block d-md-none support-vector1 img-fluid" width={279} height={678} alt="support-vector1"></Image>
+          
           <div className="row justify-content-center">
             <div className="col-lg-5 col-md-6 col-10 order-2 order-md-0">
               <Image src="/images/support-6.png" className="d-none d-md-block go-off-track-img img-fluid" alt="support-4" width={648} height={648}></Image>
@@ -238,7 +239,7 @@ const support = () => {
                 efficient solutions that meet your expectations, all while
                 maintaining the highest quality standards.
               </p>
-              <Image src="/images/support-6.png" className="d-block d-md-none go-off-track-img img-fluid" width={648} height={648} alt="go-off-track-img"></Image>
+              <Image src="/images/support-7.png" className="d-block d-md-none go-off-track-img img-fluid" width={648} height={648} alt="go-off-track-img"></Image>
               <div className="support-img-wrapper">
                 <Image src="/images/support5.jpg" alt="support-5" className="support-img img-fluid" width={580} height={265}></Image>
               </div>

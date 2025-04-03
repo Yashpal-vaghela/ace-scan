@@ -92,9 +92,9 @@ export default function Home() {
       <section className="About-section position-relative space-section">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-11 col-xl-5 col-md-7 col-lg-6 mt-5 position-relative d-flex justify-content-center align-items-center">
+            <div className="col-11 col-xl-5 col-md-7 col-lg-6 mt-lg-5 mt-md-5 mt-2 position-relative d-flex justify-content-center align-items-center">
               <Image
-                src="/images/section12.jpg"
+                src="/images/MONA.png"
                 className="img-fluid about-img1"
                 width={500}
                 height={100}
@@ -103,7 +103,7 @@ export default function Home() {
             </div>
             <div className="col-11 col-xl-7 col-md-5 col-lg-6 ">
               <div className="text-left">
-                <div className="hero-subheading mt-5">Dental Technicians</div>
+                <div className="hero-subheading mt-lg-5 mt-md-5 mt-2">Dental Technicians</div>
                 <h2 className="double-heading heading1">
                   At ADDL, We Believe Crafting Perfect Smiles with{" "}
                   <span className="highlight-text1 ">Digital Precision</span>{" "}

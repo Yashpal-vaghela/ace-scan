@@ -255,7 +255,7 @@
     padding: 15px 10px;
   }
   .addl-content span{
-    font-size: 14px;
+    font-size: 12px;
   }
   /* last support section */
   .go-off-track-section .row{
@@ -364,7 +364,7 @@
     ;
   }
   .support-vector1{
-    left: 7%;
+    left: 0%;
     height:100%;
     width: 70%;
   }

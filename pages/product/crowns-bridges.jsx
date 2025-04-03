@@ -146,7 +146,7 @@ const CrownsBridges = () => {
 
                                 <div className="product-before-after-heading1 d-flex flex-column  justify-content-center">
                                     <h2 className="before-after-contains subhead">Bridging Gaps, Crown­ing Confidence!</h2>
-                                    <h3 className="before-after-contains mb-5">Crafting Realistic, High-Quality Crowns and Bridges with Premium Materials</h3>
+                                    <h3 className="before-after-contains mb-lg-5 mb-2">Crafting Realistic, High-Quality Crowns and Bridges with Premium Materials</h3>
                                 </div>
                                 We specialize in crafting custom crowns and bridges that combine durability with aesthetic appeal, ensuring a natural and seamless fit. Utilizing advanced technology and high-quality materials, we deliver restorations designed to enhance both function and appearance. Our expert team provides comprehensive guidance throughout the process, offering you a solution that restores your smile’s beauty and functionality, while delivering long-lasting results for optimal comfort and confidence.
                             </div>

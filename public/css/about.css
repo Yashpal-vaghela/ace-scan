@@ -510,6 +510,10 @@
   }
 } */
 
+.bossimagestxt {
+  display: none;
+}
+
 @media(max-width:576px){
   .about-text h2{
     /* font-size: 1.7rem; */
@@ -596,6 +600,16 @@
   .about-vector-image{
     top:112%;
   }
+  .bossimage {
+    display: none;
+  }
+  .bossimagestxt {
+    display: block;
+  }
+  .bosstxt {
+    display: none;
+  }
+  
 }
 @media(min-width:1400px){
   .custom-image-radius{

@@ -21,7 +21,7 @@
 .product-text p {
   font-size: 16px;
   color: #555;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .highlight-text {
@@ -165,18 +165,19 @@
 }
 
 .card1 {
-  bottom: -30%;
+  bottom: -28%;
 }
 .card2{ 
   bottom: -40%;
+}
+.card3 {
+  bottom: -35%;
 }
 .card4 {
   bottom: -30%;
 }
 
-.card3 {
-  bottom: -35%;
-}
+
 .c1::before {
   background: url("../images/step1.png") center/150% no-repeat;
 }
@@ -279,7 +280,9 @@
   background: rgba(0, 0, 0, 0.5);
   bottom: 20px;
 }
-
+.quality-section .background-video{
+  padding-top: 0px;
+}
 .background-video {
   position: absolute;
   /* top: 50%;
@@ -289,6 +292,15 @@
   object-fit: cover;
   /* transform: translate(-50%, -50%); */
   z-index: -1;
+}
+
+@media (max-width: 575px) {
+  .background-video {
+
+    object-fit: contain;
+
+  }
+  
 }
 
 .quality-content {
@@ -328,6 +340,20 @@
   padding-bottom: 40px 0px;
 }
 
+@media(max-width:1200px){
+  .card1{
+    bottom: -30%;
+  }
+  .card2{
+    bottom: -50%;
+  }
+  .card3{
+    bottom: -30%;
+  }
+  .card4{
+    bottom: -24%;
+  }
+}
 
 @media (max-width: 991px) {
   .DW-home {
@@ -336,6 +362,15 @@
   .steps { 
     margin-bottom: 50px;
     padding-bottom: 40px 0px;
+  }
+  .card1{
+    bottom: -30%;
+  }
+  .card2{
+    bottom: -36%;
+  }
+  .card4{
+    bottom: -30%;
   }
 }
 
@@ -365,6 +400,20 @@
 
 }
 
+@media(max-width:768px){
+  .card1{
+    bottom: -24%;
+  }
+  .card2{
+    bottom: -30%;
+  }
+  .card3{
+    bottom:-25%
+  }
+  .card4{
+    bottom:-25%;
+  }
+}
 @media (max-width: 575px) {
   .quality-content {
     width: 100%;
@@ -373,7 +422,7 @@
   }
 
   .DW-home {
-    padding-top: 100px;
+    padding-top: 50px;
   }
 
 
@@ -396,6 +445,9 @@
   .steps { 
     margin-bottom: 30px;
     padding-bottom: 40px 0px;
+  }
+  .card2{
+    bottom: -30%;
   }
 }
 
@@ -602,7 +654,7 @@
   }
 
   .product-before-after-content {
-    padding-top: 100px;
+    padding-top: 0px;
     text-align: center;
     position: relative;
   }
@@ -641,7 +693,7 @@
 @media (max-width: 775px) {
 
   .product-before-after-content {
-    padding-top: 100px;
+    padding-top: 10px;
     text-align: center;
     position: relative;
   }
@@ -669,7 +721,7 @@
     display: block;
   }
   .product-before-after-content {
-    padding-top: 110px;
+    padding-top: 10px;
     text-align: left;
     position: relative;
     padding-left: 20px;

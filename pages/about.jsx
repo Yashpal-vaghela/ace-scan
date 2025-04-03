@@ -285,6 +285,14 @@ const About = () => {
       </section>
 
       <section className="boss-work">
+      
+      <Image
+                  src="/images/bosswithtxt.jpg"
+                  alt="Lab Technician Working"
+                  width={800}
+                  height={600}
+                  className="img-fluid bossimagestxt"
+                />
         <div className="container">
           <div className="about-section d-flex align-items-center">
             <div class="row" style={{ margin: "0px" }}>
@@ -294,14 +302,14 @@ const About = () => {
                   alt="Lab Technician Working"
                   width={800}
                   height={600}
-                  className="img-fluid"
+                  className="img-fluid bossimage"
                 />
                 <div className=" top-0 start-0 w-100 h-100 overlays-img"></div>
               </div>
 
               <div class="col-lg-5  col-12 card-wop right-card">
                 <div className="about-text">
-                  <h2 className="main-heading-with-double-color heading1 mb-0" style={{ width: "85%" }}>
+                  <h2 className="main-heading-with-double-color heading1 mb-0 bosstxt" style={{ width: "85%" }}>
                     <span className="highlight-text1">
                       Uncompromising Precision{" "}
                     </span>
@@ -365,7 +373,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-6  align-items-stretch order-md-1 order-1">
+            <div className="col-lg-6  align-items-stretch order-md-1 order-1 mb-4">
               <Image
                 src="/images/abBefore.jpg"
                 alt="New Shared Image"
@@ -374,7 +382,7 @@ const About = () => {
                 className="img-fluid w-95 h-95 object-fit-cover custom-image-radius"
               />
             </div>
-            <div className="col-lg-6 pe-sm-0 align-items-stretch order-lg-2 order-3 mb-5">
+            <div className="col-lg-6 pe-sm-0 align-items-stretch order-lg-2 order-md-2 order-0 mb-lg-5 mb-md-3 mb-2 mt-4">
               <Image
                 src="/images/abAfter.jpg"
                 alt="New Shared Image"
