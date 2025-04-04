@@ -117,9 +117,7 @@
 .lqd-vbg-video .YTPOverlay, .lqd-vbg-video .mb_YTPBar, .lqd-vbg-video .inlinePlayButton, .lqd-vbg-video .mejs__overlay-play, .lqd-vbg-video .mejs-controls, .lqd-vbg-video .mejs__controls {
     display: none !important;
 }
-.background-video1{
-    top:10% !important;
-}
+ 
 .inlinePlayButton {
     font-size: 45px;
     color: #fff;
@@ -161,14 +159,6 @@
     height:600px !important
 } */
 
-@media(min-width:1400px) and (max-width:1649px){
-    .background-video1{
-        top:10% !important;
-    }
-    .parallax.md-landscape-h-600px{
-        height:800px !important
-    }
-}
 /* ---------------------- About section --------------------- */
 .about-img1{
     width: 88% !important;
