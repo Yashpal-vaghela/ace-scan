@@ -3,11 +3,6 @@
     line-height: 1.55;
     z-index: 3;
 }
-/* @media(max-width:991px){
-    .about-text h2{
-        font-size: 2rem;
-    }
-} */
 @media(max-width:768px){
     .about-container .about-text h2{
        width: 100% !important;
@@ -38,7 +33,7 @@
 @media(max-width:768px){
     .double-heading{
        width: 100% !important;
-       margin-top: 20px !important; 
+       /* margin-top: 20px !important;  */
        font-size: 1.9rem;
      }
 }

@@ -8,7 +8,7 @@
 }
 
 .DW-home {
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 .product-text {
@@ -224,14 +224,13 @@
   height: 100%;
 }
 
+
 .step h3,
 .step p {
   position: relative;
   z-index: 2;
   transition: opacity 0.3s ease-in-out;
 }
-
-
 
 .step h3 {
   font-size: 80px;
@@ -262,6 +261,7 @@
 .step:hover .overlay {
   opacity: 1;
 }
+
 
 .overlay span {
   font-size: 14px;
@@ -294,14 +294,11 @@
   z-index: -1;
 }
 
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
   .background-video {
-
     object-fit: contain;
-
   }
-  
-}
+} */
 
 .quality-content {
   /* background: rgba(0, 0, 0, 0.7); */
@@ -357,7 +354,7 @@
 
 @media (max-width: 991px) {
   .DW-home {
-    padding-top: 70px;
+    padding-top: 25px;
   }
   .steps { 
     margin-bottom: 50px;
@@ -367,7 +364,7 @@
     bottom: -30%;
   }
   .card2{
-    bottom: -36%;
+    bottom: -42%;
   }
   .card4{
     bottom: -30%;
@@ -401,7 +398,7 @@
 }
 
 @media(max-width:768px){
-  .card1{
+  /* .card1{
     bottom: -24%;
   }
   .card2{
@@ -412,6 +409,15 @@
   }
   .card4{
     bottom:-25%;
+  } */
+  .step::before{
+    height: 100%;
+  }
+  .card-txt{
+    opacity: 1;
+  }
+  .card1,.card2,.card3,.card4{
+    bottom: 0%;
   }
 }
 @media (max-width: 575px) {
@@ -446,9 +452,10 @@
     margin-bottom: 30px;
     padding-bottom: 40px 0px;
   }
-  .card2{
+ 
+  /* .card2{
     bottom: -30%;
-  }
+  } */
 }
 
 /*================================ Crown-Bridge start ====================*/

@@ -8,7 +8,7 @@ const DigitalWorkflow = () => {
     return (
         <>
             <section className="bradcrumb-product" style={{ marginTop: "80px" }}>
-                <div className="container h-100">
+                <div className="container  px-sm-3 h-100">
                     <div className=" d-flex justify-content-end align-items-start flex-column inner-bread" >
                         <div className="breadcrumbTitle">
                             Digital Workflow
@@ -28,8 +28,9 @@ const DigitalWorkflow = () => {
                 <div className="container">
                     <div className="row d-flex justify-content-center align-items-center">
                         <div className="col-12 col-lg-6 col-md-6 order-1 order-lg-0 order-md-0">
-                            <div className="product-text p-3">
-                                <h2 className="double-heading">Seamless <span className="highlight-text">Digital Interaction</span></h2>
+                            <div className="product-text  p-sm-3">
+                                <h2 className="double-heading heading1 mt-3 mb-2 ">Seamless <span className="highlight-text">Digital Interaction</span></h2>
+                                
                                 <p>
                                     The transition to a fully digital workflow in dentistry is rapidly advancing,
                                     with intraoral scanners revolutionizing modern dental practices. While traditionally
@@ -61,19 +62,19 @@ const DigitalWorkflow = () => {
                 </div>
             </section>
 
-            <section className="steps mt-4" >
+            <section className="steps mt-3 mt-sm-4">
                 <div className="container">
                     {/* <div className="order-process-content"> */}
-                    <div className="row p-2 mt-4">
+                    <div className="row  p-sm-2 mt-4">
                         <div className="col-12 col-lg-6 col-md-6">
                             <div className="order-process-text">
-                                <h2 className="double-heading">Free up your clinical time</h2>
-                                <p>Submitting your orders to ADDL is hassle-free.</p>
+                                <h2 className="double-heading heading1 mt-0 mb-1">Free up your clinical time</h2>
+                                <p className="mb-sm-2">Submitting your orders to ADDL is hassle-free.</p>
                             </div>
                         </div>
                         <div className="col-12 col-lg-6 col-md-6">
                             <div className="order-process-details">
-                                <p>
+                                <p className="mb-sm-0">
                                     Simply press on the “Place an Order” button located at the top right of our website,
                                     and fill in the necessary fields. We offer a complementary courier collection service
                                     for your convenience.
@@ -84,8 +85,8 @@ const DigitalWorkflow = () => {
 
                     </div>
 
-                    <div className="row" style={{ paddingTop: "20px" }}>
-                        <div className="col-12 col-lg-3 col-md-6 p-1">
+                    <div className="row gap-3 gap-sm-0  pb-4 " style={{ paddingTop: "20px" }}>
+                        <div className="col-12 col-lg-3 col-md-6 px-4 p-sm-2  ">
                             <div className="step c1 ">
                                 <div className="fulloverlay"></div>
                                 <div className="card-body-content card1">
@@ -98,7 +99,7 @@ const DigitalWorkflow = () => {
                             </div>
                         </div>
 
-                        <div className="col-12 col-lg-3 col-md-6 p-1 ">
+                        <div className="col-12 col-lg-3 col-md-6 px-4 p-sm-2">
                             <div className="step c2 " >
                                 <div className="fulloverlay"></div>
                                 <div className="card-body-content card2">
@@ -109,7 +110,7 @@ const DigitalWorkflow = () => {
 
                             </div>
                         </div>
-                        <div className="col-12 col-lg-3 col-md-6 p-1">
+                        <div className="col-12 col-lg-3 col-md-6 px-4 p-sm-2">
                             <div className="step c3 ">
                                 <div className="fulloverlay"></div>
                                 <div className="card-body-content card3">
@@ -121,7 +122,7 @@ const DigitalWorkflow = () => {
 
                             </div>
                         </div>
-                        <div className="col-12 col-lg-3 col-md-6 p-1">
+                        <div className="col-12 col-lg-3 col-md-6 px-4 p-sm-2">
                             <div className="step c4 ">
                                 <div className="fulloverlay"></div>
                                 <div className="card-body-content card4">
@@ -139,7 +140,7 @@ const DigitalWorkflow = () => {
             </section>
 
 
-            <section className="quality-section">
+            <section className="quality-section mb-0 mb-sm-4">
                 <video autoPlay loop muted playsInline id="player" className="background-video" >
                     <source src="/videos/veneer.mp4" type="video/mp4" />
                     <source src="/videos/veneer.webm" type="video/webm" />
