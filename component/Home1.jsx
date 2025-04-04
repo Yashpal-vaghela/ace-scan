@@ -104,7 +104,7 @@ const Home1 = () => {
   const startCounter = (index) => {
     let start = 0;
     const { finalCount, duration } = counters[index];
-    const step = finalCount / (duration / 50);
+    const step = finalCount / (duration / 10);
 
     const animate = () => {
       start += step;
@@ -392,7 +392,7 @@ const Home1 = () => {
             {" "}
             <b>Free up your clinical time</b> <br />
             <span className="subheadingTxt">Submitting your orders to ACE Digital Dental Laboratry is
-            hassle-free.</span>
+              hassle-free.</span>
           </h2>
           <p className="subHeading1 text-center">
             Simply press on the “Place an Order” button located at the top of
@@ -439,7 +439,7 @@ const Home1 = () => {
           </div>
         </div>
       </section>
-      <section className="lets-walk-togeather" style={{margin:"40px 0px 0px"}}>
+      <section className="lets-walk-togeather" style={{ margin: "40px 0px 0px" }}>
         <video
           autoPlay
           loop
@@ -469,19 +469,19 @@ const Home1 = () => {
             patient satisfaction even further.
           </p>
           <div className="simplebtn">
-          <a href="/contactUs">Start New Project</a>
+            <a href="/contactUs">Start New Project</a>
           </div>
         </div>
       </section>
       <Testimonial></Testimonial>
       <section
         className="ADDL-numbers space-section"
-        // style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem" }}
+      // style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem" }}
       >
         <div className="container text-center ">
           <div
             className="addl_numbers space-section"
-            // style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem" }}
+          // style={{ paddingBottom: "3.4rem", paddingTop: "3.4rem" }}
           >
             <h2 className="heading2 text-center text-white">
               {" "}
@@ -494,9 +494,11 @@ const Home1 = () => {
                     ref={(el) => (cardRefs.current[index] = el)}
                     className="counter-card"
                   >
-                    <div className="Abovetext text-white">{noteAbove}</div>{" "}
+                    <div className="Abovetext text-white" data-aos="fade-up"
+                      data-aos-duration="2000">{noteAbove}</div>{" "}
                     {/* Added noteAbove here */}
-                    <div className="social-proof__value">
+                    <div className="social-proof__value" data-aos="fade-up"
+                      data-aos-duration="2000">
                       <div className="social-proof__count text-white">
                         {counts[index]}
                       </div>
@@ -530,28 +532,28 @@ const Home1 = () => {
               </div>
             </Link>
             <Link href="/product/crowns-bridges/" className="text-decoration-none col-12 col-lg-4 col-md-6">
-            <div className="img-middil product-row position-relative">
-              <Image
-                src="/images/crown-hm.png"
-                alt="Example Image"
-                width={306}
-                height={190}
-                className=""
-              />
-              <span className="product-row-label">Crown & Bridges</span>
-            </div>
+              <div className="img-middil product-row position-relative">
+                <Image
+                  src="/images/crown-hm.png"
+                  alt="Example Image"
+                  width={306}
+                  height={190}
+                  className=""
+                />
+                <span className="product-row-label">Crown & Bridges</span>
+              </div>
             </Link>
             <Link href="/product/implants/" className="text-decoration-none col-12 col-lg-4 col-md-6">
-            <div className="product-row">
-              <Image
-                src="/images/implant-hm1.png"
-                alt="Example Image"
-                width={306}
-                height={190}
-                className=""
-              />
-              <span className="product-row-label">Implant</span>
-            </div>
+              <div className="product-row">
+                <Image
+                  src="/images/implant-hm1.png"
+                  alt="Example Image"
+                  width={306}
+                  height={190}
+                  className=""
+                />
+                <span className="product-row-label">Implant</span>
+              </div>
             </Link>
           </div>
           <Image

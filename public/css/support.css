@@ -107,13 +107,7 @@
   font-weight: 700;
   transition: all 0.3s ease-in-out;
 }
-@media(min-width:992px){
-  .first-section .col-lg-5{
-    width: 39% !important;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-  }
-}
+
 /* support */
 .go-off-track-section{
   position: relative;
@@ -137,8 +131,8 @@
 .go-off-track-img {
   margin-top: 10px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0,0.15);
-  /* border-top-right-radius: 150px;
-  border-bottom-left-radius: 150px; */
+  width: 90%;
+  border-radius: 20px;
 }
 .support-vector1{
   position: absolute;
@@ -156,8 +150,7 @@
 }
 .support-img{
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0,0.09);
-  border-top-right-radius: 80px;
-  border-bottom-left-radius: 80px;
+  border-radius: 20px;
 }
 /* responsive css */
 @media(max-width:1200px){
@@ -204,6 +197,9 @@
   .go-off-track-section{
     margin: 100px 0px;
   }
+  .go-off-track-img{
+    width: 100%;
+  }
   .go-off-track-section h2{
     margin-bottom: 10px;
     margin-top: 20px;
@@ -218,12 +214,14 @@
     margin-top: 20px;
   }
 }
+@media(min-width:992px){
+  .first-section .col-lg-5{
+    width: 39% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
 @media(max-width:991px){
-  /* first section */
-  /* .first-section .dots-wid,.first-section .dots-vector{
-    background: none;
-    transform: rotate(0deg);
-  } */
   .experience-vector1 {
     right: -30%;
     top: -36%;
@@ -262,8 +260,8 @@
     padding: 20px 0px;
   }
   .go-off-track-section p{
-    line-height: 1.85;
-    font-size: 14px;
+    line-height: 1.5;
+    font-size: 13px;
     width: 106%;
   }
   .go-off-track-section h2{
@@ -312,11 +310,15 @@
     .go-off-track-section .row{
       padding: 0px;
     }
+    .go-off-track-img{
+      width: 95%;
+    }
     .go-off-track-section h2{
       margin-top: 0px;
     }
     .go-off-track-section p{
       width: 100%;
+      line-height: 1.5;
       font-size: 16px;
     }
     .support-img-wrapper{
@@ -350,18 +352,8 @@
     right: 1.5%;
   }
   /* support last section */
-  .go-off-track-img{
-    border-top-right-radius: 120px;
-    border-bottom-left-radius: 120px;
-  }
   .go-off-track-section {
     margin: 40px 0;
-  }
-  .support-img{
-    border-top-right-radius: 66px;
-    border-bottom-left-radius: 65px;
-    /* box-shadow: 0px 0px 12px #000 */
-    ;
   }
   .support-vector1{
     left: 0%;

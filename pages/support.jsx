@@ -224,7 +224,7 @@ const support = () => {
           
           <div className="row justify-content-center">
             <div className="col-lg-5 col-md-6 col-10 order-2 order-md-0">
-              <Image src="/images/support-6.png" className="d-none d-md-block go-off-track-img img-fluid" alt="support-4" width={648} height={648}></Image>
+              <Image src="/images/support-7.png" className="d-none d-md-block go-off-track-img img-fluid" alt="support-4" width={648} height={648}></Image>
             </div>
             <div className="col-lg-6 col-md-6 col-10 order-1 order-md-0">
               <h2>Did Something Go Off Track?</h2>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 // import { Geist, Geist_Mono } from "next/font/google";
 import Home1 from "@/component/Home1";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -138,30 +139,35 @@ export default function Home() {
                         technicians. Trust our expertise for flawless results!
                       </p>
                     </div>
-                 
                   </div>
                 </div>
                 <div className="col-12 col-md-6 col-lg-6">
                   <div className="d-flex d-md-block gap-3 align-items-center">
                     <Image
-                        src="/images/about-icon22.png"
-                        className="img-box mb-4"
-                        width={45}
-                        height={45}
-                        alt="about-icon2"
-                        style={{ padding: "5px", borderRadius: "10px" }}
-                      ></Image>
-                      <div className="d-block d-md-block">
-                    <p className="fw-bold mb-2" style={{ color: "#00818a" }}>
-                      The Highest Quality Products.
-                    </p>
-                    <p className="hero-txt">
-                      With years of excellence our professional team delivering
-                      top-quality dental care.
-                    </p>
-                  </div>  
+                      src="/images/about-icon22.png"
+                      className="img-box mb-4"
+                      width={45}
+                      height={45}
+                      alt="about-icon2"
+                      style={{ padding: "5px", borderRadius: "10px" }}
+                    ></Image>
+                    <div className="d-block d-md-block">
+                      <p className="fw-bold mb-2" style={{ color: "#00818a" }}>
+                        The Highest Quality Products.
+                      </p>
+                      <p className="hero-txt">
+                        With years of excellence our professional team delivering
+                        top-quality dental care.
+                      </p>
+                    </div>
                   </div>
-                  
+                </div>
+                <div className="col-12 text-left mt-3">
+                  <Link href="/about">
+                    <button className="btn btn-primary" style={{ backgroundColor: "#00478a", border: "none" }}>
+                      Read More
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -246,7 +252,7 @@ export default function Home() {
                 </h2>
                 <div className="line"></div>
                 <p className="intro__item-desc">
-                  At Cerameus, your satisfaction is our priority! We deliver
+                  At ADDL, your satisfaction is our priority! We deliver
                   top-quality results with fast turnaround times, ensuring
                   excellence is always achieved effortlessly. We believe great
                   results should be both quick and seamless for you.
@@ -391,11 +397,9 @@ export default function Home() {
                 Uncompromising Quality Assurance
               </h2>
               <p className="process-subtitle">
-                At ACE-SCAN, we are committed to the highest standards of
+                At ADDL, we are committed to the highest standards of
                 quality by utilizing cutting-edge technology and premium
-                materials to meet your exact specifications. We partner
-                exclusively with ISO 9001:2015-certified laboratories, ensuring
-                precision, reliability, and excellence in every restoration.
+                materials to meet your exact specifications.
               </p>
             </div>
           </div>

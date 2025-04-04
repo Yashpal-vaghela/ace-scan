@@ -4,7 +4,7 @@
 }
 .heading1 {
     margin-bottom: 2rem;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     font-weight: 500;
     line-height:1.55;
 }
@@ -171,10 +171,8 @@
 }
 /* ---------------------- About section --------------------- */
 .about-img1{
-    width: 100% !important;
-    height:100% !important;
+    width: 88% !important;
     border-radius: 15px;
-    /* padding: 50px; */
 }
 .about-icon1{
     position: absolute;
@@ -340,8 +338,8 @@
 
 @media(max-width:1200px){
     .about-img1{
-        width:55% !important;
-        height: 68% !important;
+        width: 70% !important;
+        height: 70% !important;
     }
     .about-icon1{
         top: 15%;
@@ -832,7 +830,6 @@
     }
     .about-img1{
         width: 90% !important;
-        
     }
 }
 @media(max-width:768px){
