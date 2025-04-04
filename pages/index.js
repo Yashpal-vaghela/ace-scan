@@ -3,7 +3,6 @@ import Image from "next/image";
 import Home1 from "@/component/Home1";
 
 export default function Home() {
-
   return (
     <>
       <section className="p-0 parallax overlap-height">
@@ -49,8 +48,14 @@ export default function Home() {
                     className="h-full w-full background-video background-video1"
                     id="player"
                   >
-                    <source src="https://d1ytpjko2pk6h2.cloudfront.net/ADVANCE+DENTAL+EXPORT.webm" type="video/webm" />
-                    <source src="https://d1ytpjko2pk6h2.cloudfront.net/ADVANCE+DENTAL+EXPORT.mp4" type="video/mp4" />
+                    <source
+                      src="https://d1ytpjko2pk6h2.cloudfront.net/ADVANCE+DENTAL+EXPORT.webm"
+                      type="video/webm"
+                    />
+                    <source
+                      src="https://d1ytpjko2pk6h2.cloudfront.net/ADVANCE+DENTAL+EXPORT.mp4"
+                      type="video/mp4"
+                    />
                     Your browser does not support the video tag.
                   </video>
                   <div
@@ -101,9 +106,11 @@ export default function Home() {
                 alt=" "
               ></Image>
             </div>
-            <div className="col-11 col-xl-7 col-md-5 col-lg-6 ">
+            <div className="col-11 col-xl-7 col-md-5 col-lg-6 mt-3">
               <div className="text-left">
-                <div className="hero-subheading mt-lg-5 mt-md-5 mt-2">Dental Technicians</div>
+                <div className="hero-subheading mt-lg-5 mt-md-5 mt-2">
+                  Dental Technicians
+                </div>
                 <h2 className="double-heading heading1">
                   At ADDL, We Believe Crafting Perfect Smiles with{" "}
                   <span className="highlight-text1 ">Digital Precision</span>{" "}
@@ -111,40 +118,50 @@ export default function Home() {
                   <span className="highlight-text2 ">Flawless Integrity</span>
                 </h2>
               </div>
-              <div className="row  mt-4 g-3">
+              <div className="row mt-4 g-3">
                 <div className="col-12 col-md-6 col-lg-6">
-                  <Image
-                    src="/images/about-icon11.png"
-                    className="img-box mb-4"
-                    width={50}
-                    height={50}
-                    alt="dental-technicians"
-                    style={{ padding: "5px", borderRadius: "10px", }}
-                  ></Image>
-                  <p className="fw-bold mb-2" style={{ color: "#00478a" }}>
-                    Dental Technicians
-                  </p>
-                  <p className="hero-txt">
-                    Countless smiles enhanced by our skilled dental technicians.
-                    Trust our expertise for flawless results!
-                  </p>
+                  <div className="d-flex d-md-block gap-3 align-items-center">
+                    <Image
+                      src="/images/about-icon11.png"
+                      className="img-box mb-4"
+                      width={50}
+                      height={50}
+                      alt="dental-technicians"
+                      style={{ padding: "5px", borderRadius: "10px" }}
+                    ></Image>
+                    <div className="d-block d-md-block">
+                      <p className="fw-bold mb-2" style={{ color: "#00478a" }}>
+                        Dental Technicians
+                      </p>
+                      <p className="hero-txt">
+                        Countless smiles enhanced by our skilled dental
+                        technicians. Trust our expertise for flawless results!
+                      </p>
+                    </div>
+                 
+                  </div>
                 </div>
                 <div className="col-12 col-md-6 col-lg-6">
-                  <Image
-                    src="/images/about-icon22.png"
-                    className="img-box mb-4"
-                    width={45}
-                    height={45}
-                    alt="about-icon2"
-                    style={{ padding: "5px", borderRadius: "10px", }}
-                  ></Image>
-                  <p className="fw-bold mb-2" style={{ color: "#00818a" }}>
-                    The Highest Quality Products.
-                  </p>
-                  <p className="hero-txt">
-                    With years of excellence our professional team delivering
-                    top-quality dental care.
-                  </p>
+                  <div className="d-flex d-md-block gap-3 align-items-center">
+                    <Image
+                        src="/images/about-icon22.png"
+                        className="img-box mb-4"
+                        width={45}
+                        height={45}
+                        alt="about-icon2"
+                        style={{ padding: "5px", borderRadius: "10px" }}
+                      ></Image>
+                      <div className="d-block d-md-block">
+                    <p className="fw-bold mb-2" style={{ color: "#00818a" }}>
+                      The Highest Quality Products.
+                    </p>
+                    <p className="hero-txt">
+                      With years of excellence our professional team delivering
+                      top-quality dental care.
+                    </p>
+                  </div>  
+                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -182,7 +199,7 @@ export default function Home() {
                 width={500}
                 height={200}
                 alt="digital-image"
-                style={{ borderRadius: "10px", }}
+                style={{ borderRadius: "10px" }}
               ></Image>
             </div>
           </div>

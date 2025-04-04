@@ -544,7 +544,7 @@ const Home1 = () => {
             <Link href="/product/implants/" className="text-decoration-none col-12 col-lg-4 col-md-6">
             <div className="product-row">
               <Image
-                src="/images/implant-hm.png"
+                src="/images/implant-hm1.png"
                 alt="Example Image"
                 width={306}
                 height={190}

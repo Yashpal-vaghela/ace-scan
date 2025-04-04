@@ -756,7 +756,6 @@
     font-weight: 600;
     width: 80%;
 }
-
 /* ------------------ Process section ----------------- */
 .process-section{
     padding: 15px 0px 50px;
@@ -831,6 +830,10 @@
     .process-subtitle{
         font-size: 14px;
     }
+    .about-img1{
+        width: 90% !important;
+        
+    }
 }
 @media(max-width:768px){
     .process-img{
@@ -847,8 +850,8 @@
         font-size: 25px;
     }
     .about-img1 {
-        width: 90% !important;
-        height: 100% !important;
+        width: 100% !important;
+        height: auto !important;
     }
 }
 @media(max-width:576px){
