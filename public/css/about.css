@@ -115,7 +115,8 @@
 }
 .certification-section {
   position: relative;
-  background: url("/images/about-main.jpg") no-repeat center center;
+  background: url("/images/about-main.jpg") no-repeat ;
+  background-position: right;
   background-size: cover;
   padding: 40px 0px;
   display: flex;
@@ -124,6 +125,8 @@
   min-height: 550px;
   /* bottom: 30px; */
 }
+
+
 
 .certification-section::before {
   content: "";
@@ -157,13 +160,14 @@
 
   .certification-section {
     position: relative;
-    background: url("/images/about-main.jpg") no-repeat center center;
+    background: url("/images/about-main.jpg") no-repeat right;
     background-size: cover;
     padding: 0px 10%;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 200px;
+    background-position: right !important;
     /* bottom: 30px; */
   }
 
