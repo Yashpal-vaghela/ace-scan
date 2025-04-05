@@ -139,7 +139,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="col-12 text-center text-md-left mt-3">
+                <div className="col-12 text-center text-md-start mt-3">
                   <Link href="/about">
                     <button className="btn btn-primary" style={{ backgroundColor: "#00478a", border: "none" }}>
                       Read More

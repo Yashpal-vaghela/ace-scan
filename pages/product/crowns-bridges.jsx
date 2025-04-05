@@ -293,6 +293,7 @@ const CrownsBridges = () => {
             <section className="quality-section">
                 <video autoPlay loop muted playsInline id="player" className="background-video product" >
                     <source src="/videos/crown-bg.mp4" type="video/mp4" />
+                    <source src ="/videos/crown-bg.webm" type="video/webm" />
                     Your browser does not support the video tag.
                 </video>
                 <div className="container d-flex justify-content-center align-items-center " >

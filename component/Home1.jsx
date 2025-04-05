@@ -104,7 +104,7 @@ const Home1 = () => {
   const startCounter = (index) => {
     let start = 0;
     const { finalCount, duration } = counters[index];
-    const step = finalCount / (duration / 10);
+    const step = finalCount / (duration / 30);
 
     const animate = () => {
       start += step;
