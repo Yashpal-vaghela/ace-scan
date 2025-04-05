@@ -39,57 +39,45 @@ const About = () => {
               style={{ position: "relative", maxWidth: "100%" }}
             >
               <div
-                className="lqd-vbg-video mb_YTPlayer isMuted"
-                data-video-bg="true"
-                data-youtube-options='{"videoURL":"https://www.youtube.com/embed/Fv4YYSRsRUg"}'
-                id="YTP_1742270005228"
+                id="wrapper_YTP_1742270005228"
+                className="mbYTP_wrapper"
                 style={{
-                  position: "relative",
+                  position: "absolute",
+                  zIndex: 0,
+                  minWidth: "100%",
+                  minHeight: "100%",
+                  left: "0px",
+                  top: "0px",
                   overflow: "hidden",
-                  height: "0px",
+                  opacity: 1,
+                  backgroundImage: "none",
+                  transitionDuration: "1000ms",
                 }}
               >
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="h-full w-full background-video background-video1"
+                  id="player"
+                >
+                  <source src="https://d1ytpjko2pk6h2.cloudfront.net/DMLS+Printing.webm" type="video/webm" />
+                  <source src="https://d1ytpjko2pk6h2.cloudfront.net/DMLS+Printing.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+
                 <div
-                  id="wrapper_YTP_1742270005228"
-                  className="mbYTP_wrapper"
+                  className="YTPOverlay"
                   style={{
                     position: "absolute",
-                    zIndex: 0,
-                    minWidth: "100%",
-                    minHeight: "100%",
-                    left: "0px",
                     top: "0px",
-                    overflow: "hidden",
-                    opacity: 1,
-                    backgroundImage: "none",
-                    transitionDuration: "1000ms",
+                    left: "0px",
+                    width: "100%",
+                    height: "100%",
+                    cursor: "pointer",
                   }}
-                >
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="h-full w-full background-video background-video1"
-                    id="player"
-                  >
-                    <source src="https://d1ytpjko2pk6h2.cloudfront.net/DMLS+Printing.webm" type="video/webm" />
-                    <source src="https://d1ytpjko2pk6h2.cloudfront.net/DMLS+Printing.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-
-                  <div
-                    className="YTPOverlay"
-                    style={{
-                      position: "absolute",
-                      top: "0px",
-                      left: "0px",
-                      width: "100%",
-                      height: "100%",
-                      cursor: "pointer",
-                    }}
-                  ></div>
-                </div>
+                ></div>
               </div>
             </div>
           </div>
@@ -101,14 +89,14 @@ const About = () => {
             style={{ height: "600px" }}
           >
             <div className="col-12 col-xl-5 col-lg-6 col-md-7 col-sm-10 d-flex flex-column justify-content-center">
-              <h2 className="alt-font text-white line-height-65px font-weight-500 letter-spacing-minus-1px margin-65px-bottom sm-line-height-50px sm-margin-25px-bottom">
+            <h2 className="video-title">
                 {/* <span className="text-gradient-light-purple-light-orange font-weight-900 d-inline-block"> */}
                 About Us
                 {/* </span> */}
               </h2>
               <div className="alt-font text-large font-weight-500 text-uppercase letter-spacing-2px d-flex">
                 <span className="flex-shrink-0 w-40px h-1px bg-white opacity-6 align-self-center margin-25px-right"></span>
-                <span className="flex-grow-1 text-white opacity-6">
+                <span className="flex-grow-1 video-desc opacity-6">
                   What we are? know more about us.
                 </span>
               </div>
@@ -176,7 +164,7 @@ const About = () => {
               <Link href="/contactUs">
                 <button className="btn btn-getInTouch">Get In Touch</button>
               </Link>
-              
+
             </div>
           </div>
         </div>
@@ -285,14 +273,14 @@ const About = () => {
       </section>
 
       <section className="boss-work">
-      
-      <Image
-                  src="/images/bosswithtxt.jpg"
-                  alt="Lab Technician Working"
-                  width={800}
-                  height={600}
-                  className="img-fluid bossimagestxt"
-                />
+
+        <Image
+          src="/images/bosswithtxt.jpg"
+          alt="Lab Technician Working"
+          width={800}
+          height={600}
+          className="img-fluid bossimagestxt"
+        />
         <div className="container">
           <div className="about-section d-flex align-items-center">
             <div class="row" style={{ margin: "0px" }}>
@@ -342,7 +330,7 @@ const About = () => {
         <Image src="/images/linevec.svg" className="d-none d-md-block ab-vector1 img-fluid" width={1772} height={827}></Image>
         <div className="container text-center">
 
-          <h2 className="main-heading-with-double-color heading1 mb-0  text-start ps-2 text-sm-center w-100" style={{marginTop:'30px'}}>
+          <h2 className="main-heading-with-double-color heading1 mb-0  text-start ps-2 text-sm-center w-100" style={{ marginTop: '30px' }}>
             Committed to the Highest{" "}
             <span className="highlight-text1">
               Standards of Excellence

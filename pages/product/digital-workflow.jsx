@@ -141,7 +141,7 @@ const DigitalWorkflow = () => {
 
 
             <section className="quality-section mb-0 mb-sm-4">
-                <video autoPlay loop muted playsInline id="player" className="background-video" >
+                <video autoPlay loop muted playsInline id="player" className="background-video product" >
                     <source src="/videos/veneer.mp4" type="video/mp4" />
                     <source src="/videos/veneer.webm" type="video/webm" />
                     Your browser does not support the video tag.

@@ -291,7 +291,7 @@ const CrownsBridges = () => {
                 </div>
             </section>
             <section className="quality-section">
-                <video autoPlay loop muted playsInline id="player" className="background-video" >
+                <video autoPlay loop muted playsInline id="player" className="background-video product" >
                     <source src="/videos/crown-bg.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>

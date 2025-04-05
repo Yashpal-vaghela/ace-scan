@@ -15,62 +15,39 @@ export default function Home() {
               style={{ position: "relative", maxWidth: "100%" }}
             >
               <div
-                className="lqd-vbg-video mb_YTPlayer isMuted"
-                data-video-bg="true"
-                data-youtube-options='{"videoURL":"https://www.youtube.com/embed/Fv4YYSRsRUg"}'
-                id="YTP_1742270005228"
+                id="wrapper_YTP_1742270005228"
+                className="mbYTP_wrapper"
                 style={{
-                  position: "relative",
+                  position: "absolute",
+                  zIndex: 0,
+                  minWidth: "100%",
+                  minHeight: "100%",
+                  left: "0px",
+                  top: "0px",
                   overflow: "hidden",
-                  height: "0px",
+                  opacity: 1,
+                  backgroundImage: "none",
+                  transitionDuration: "1000ms",
                 }}
               >
-                <div
-                  id="wrapper_YTP_1742270005228"
-                  className="mbYTP_wrapper"
-                  style={{
-                    position: "absolute",
-                    zIndex: 0,
-                    minWidth: "100%",
-                    minHeight: "100%",
-                    left: "0px",
-                    top: "0px",
-                    overflow: "hidden",
-                    opacity: 1,
-                    backgroundImage: "none",
-                    transitionDuration: "1000ms",
-                  }}
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="h-full w-full background-video background-video1"
+                  id="player"
                 >
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="h-full w-full background-video background-video1"
-                    id="player"
-                  >
-                    <source
-                      src="https://d1ytpjko2pk6h2.cloudfront.net/ADVANCE+DENTAL+EXPORT.webm"
-                      type="video/webm"
-                    />
-                    <source
-                      src="https://d1ytpjko2pk6h2.cloudfront.net/ADVANCE+DENTAL+EXPORT.mp4"
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
-                  <div
-                    className="YTPOverlay"
-                    style={{
-                      position: "absolute",
-                      top: "0px",
-                      left: "0px",
-                      width: "100%",
-                      height: "100%",
-                      cursor: "pointer",
-                    }}
-                  ></div>
-                </div>
+                  <source
+                    src="https://d1ytpjko2pk6h2.cloudfront.net/ADVANCE+DENTAL+EXPORT.webm"
+                    type="video/webm"
+                  />
+                  <source
+                    src="https://d1ytpjko2pk6h2.cloudfront.net/ADVANCE+DENTAL+EXPORT.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </div>
@@ -82,12 +59,12 @@ export default function Home() {
             style={{ height: "600px" }}
           >
             <div className="col-12 col-xl-5 col-lg-6 col-md-7 col-sm-10 d-flex flex-column justify-content-center">
-              <h2 className="alt-font text-white line-height-65px font-weight-500 letter-spacing-minus-1px margin-65px-bottom sm-line-height-50px sm-margin-25px-bottom">
+              <h2 className="video-title">
                 Unparalleled Quality in dental lab solutions!
               </h2>
-              <div className="alt-font text-large font-weight-500 text-uppercase letter-spacing-2px d-flex">
+              <div className="text-large font-weight-500 text-uppercase d-flex">
                 <span className="flex-shrink-0 w-40px h-1px bg-white opacity-6 align-self-center margin-25px-right"></span>
-                <span className="flex-grow-1 text-white opacity-6">
+                <span className="flex-grow-1 opacity-6 video-desc">
                   Our only vision is to put endless smiles on every Face
                 </span>
               </div>
@@ -162,7 +139,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="col-12 text-left mt-3">
+                <div className="col-12 text-center text-md-left mt-3">
                   <Link href="/about">
                     <button className="btn btn-primary" style={{ backgroundColor: "#00478a", border: "none" }}>
                       Read More

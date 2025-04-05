@@ -143,14 +143,14 @@
 .inlinePlayButton, .mb_YTPBar .ytpicon {
     font-family: ytpregular;
 }
-.opacity-full {
+/* .opacity-full {
     position: absolute;
     height: 100%;
     width: 100%;
     opacity: 0.7;
     top: 0;
     left: 0;
-}
+} */
 .bg-gradient-fast-blue-purple {
     background: linear-gradient(135deg, #00478a, #00818a);
     /* background-image: linear-gradient(330deg, rgba(0, 132, 181, 0.41) 0.484713375796178%, #391266 50.94585987261146%); */
@@ -445,7 +445,13 @@
         object-fit: cover;
         top: 40%;
     }
-
+    .earth-vec {
+        width: 100% !important;
+        height: 100%;
+        position: absolute;
+        top: -10%;
+        right: -10%;
+    }
     
 }
 
@@ -503,7 +509,40 @@
         /* padding-top: 34px; */
     }
     .lets-walk-togeather .background-video{
-        padding-top: 0px;
+       top: 5%;
+       object-fit: contain;
+    }
+    .gradientBG{
+        font-size: 12px;
+        margin-bottom: 6px !important ;
+        top: -4%;
+        position: relative;
+    }
+    .lets-walk-togeather .container{
+        top: -4%;
+    }
+    .lets-walk-togeather{
+        padding: 0px;
+        margin: 0px !important;
+    }
+    .lets-walk-togeather .video-overlay{
+        height: 90%;
+        top: 10%;
+    }
+    .lets-walk-togeather .heading1{
+        font-size: 0.9rem;
+        margin-top: 5px;
+    }
+    .lets-walk-togeather .subHeading1{
+        font-size: 0.75rem;
+    }
+    .simplebtn{
+        padding: 4px 8px;
+        margin-top: 7px;
+        margin-bottom: 13px;
+    }
+    .simplebtn a{
+        font-size: 10px;
     }
 }
 /* --------------------- Testimonial Section --------------------- */

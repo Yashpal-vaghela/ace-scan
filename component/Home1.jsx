@@ -400,7 +400,7 @@ const Home1 = () => {
             complementary courier collection service for your convenience.
           </p>
           <div className="row g-4">
-            <div className="col-12 col-lg-6 col-md-6 p-4 text-start">
+            <div className="col-12 col-lg-6 col-md-6 p-4 pb-0 pb-sm-4 text-start">
               <ul className="timeline list-unstyled">
                 {faqData.map((step, index) => (
                   <li
@@ -425,7 +425,7 @@ const Home1 = () => {
               </ul>
             </div>
 
-            <div className="col-12 col-lg-6 col-md-6 ">
+            <div className="col-12 col-lg-6 col-md-6 d-none d-sm-block">
               <div className="card shadow-none border-0 d-flex justify-content-center align-items-center h-100 bg-transparent">
                 <Image
                   src="/images/computer_mockup.png"
@@ -454,15 +454,15 @@ const Home1 = () => {
         </video>
 
         <div className="video-overlay"></div>
-        <div className="container mt-4 text-center">
-          <div className="gradientBG mb-4">Let's work together</div>
-          <h2 className="heading1 mb-3  text-center text-white">
+        <div className="container mt-5 text-center">
+          <div className="gradientBG mb-2 mb-sm-4">Let's work together</div>
+          <h2 className="heading1 mb-2 mb-sm-3 text-center text-white">
             {" "}
             <b>
               making every effort <br />a masterpiece of happiness
             </b>{" "}
           </h2>
-          <p className="subHeading1 text-center mb-4 px-4 text-white">
+          <p className="subHeading1 text-center mb-0 mb-sm-4 px-4 text-white">
             {" "}
             Your passion turns care into comfort, making every effort a work of
             heart.. Choosing a dental lab with exceptional artistry enhances

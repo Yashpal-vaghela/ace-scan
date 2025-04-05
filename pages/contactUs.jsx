@@ -17,17 +17,17 @@ const contactUs = () => {
   const onSubmit = async (data) => {
     setLoading(true);
     setMessage("");
-  
+
     try {
       const response = await fetch("/api/sendMail", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-  
+
       const result = await response.json();
       console.log("Response:", result);
-  
+
       if (response.ok) {
         setMessage("Email sent successfully!");
         setSubmitted(true);
@@ -39,9 +39,9 @@ const contactUs = () => {
       console.error("Error sending email:", error);
       setMessage("An error occurred. Please try again.");
     }
-  
+
     setLoading(false);
-  };  
+  };
   return (
     <React.Fragment>
       {/* <Breadcrumbs></Breadcrumbs> */}
@@ -54,58 +54,44 @@ const contactUs = () => {
               style={{ position: "relative", maxWidth: "100%" }}
             >
               <div
-                className="lqd-vbg-video mb_YTPlayer isMuted"
-                data-video-bg="true"
-                data-youtube-options='{"videoURL":"https://www.youtube.com/embed/Fv4YYSRsRUg"}'
-                id="YTP_1742270005228"
+                id="wrapper_YTP_1742270005228"
+                className="mbYTP_wrapper"
                 style={{
-                  position: "relative",
-                  // paddingBottom: "34.25%",
-                  // paddingTop:"20%",
+                  position: "absolute",
+                  zIndex: 0,
+                  minWidth: "100%",
+                  minHeight: "100%",
+                  left: "0px",
+                  top: "0px",
                   overflow: "hidden",
-                  height: "0px",
+                  opacity: 1,
+                  backgroundImage: "none",
+                  transitionDuration: "1000ms",
                 }}
               >
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="h-full w-full background-video background-video1"
+                  id="player"
+                >
+                  <source src="https://d1ytpjko2pk6h2.cloudfront.net/Advance+Dental+Export+Milling+2.mp4" type="video/webm" />
+                  <source src="https://d1ytpjko2pk6h2.cloudfront.net/Advance+Dental+Export+Milling+2.webm" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
                 <div
-                  id="wrapper_YTP_1742270005228"
-                  className="mbYTP_wrapper"
+                  className="YTPOverlay"
                   style={{
                     position: "absolute",
-                    zIndex: 0,
-                    minWidth: "100%",
-                    minHeight: "100%",
-                    left: "0px",
                     top: "0px",
-                    overflow: "hidden",
-                    opacity: 1,
-                    backgroundImage: "none",
-                    transitionDuration: "1000ms",
+                    left: "0px",
+                    width: "100%",
+                    height: "100%",
+                    cursor: "pointer",
                   }}
-                >
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="h-full w-full background-video background-video1"
-                    id="player"
-                  >
-                    <source src="https://d1ytpjko2pk6h2.cloudfront.net/Advance+Dental+Export+Milling+2.mp4" type="video/webm" />
-                    <source src="https://d1ytpjko2pk6h2.cloudfront.net/Advance+Dental+Export+Milling+2.webm" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <div
-                    className="YTPOverlay"
-                    style={{
-                      position: "absolute",
-                      top: "0px",
-                      left: "0px",
-                      width: "100%",
-                      height: "100%",
-                      cursor: "pointer",
-                    }}
-                  ></div>
-                </div>
+                ></div>
               </div>
             </div>
           </div>
@@ -117,15 +103,15 @@ const contactUs = () => {
             style={{ height: "600px" }}
           >
             <div className="col-12 col-xl-5 col-lg-6 col-md-7 col-sm-10 d-flex flex-column justify-content-center">
-              <h2 className="alt-font text-white line-height-65px font-weight-500 letter-spacing-minus-1px margin-65px-bottom sm-line-height-50px sm-margin-25px-bottom">
+              <h2 className="video-title">
                 {/* <span className="text-gradient-light-purple-light-orange font-weight-900 d-inline-block"> */}
-                 Contact US
+                Contact US
                 {/* </span>{" "} */}
               </h2>
               <div className="alt-font text-large font-weight-500 text-uppercase letter-spacing-2px d-flex">
                 <span className="flex-shrink-0 w-40px h-1px bg-white opacity-6 align-self-center margin-25px-right"></span>
-                <span className="flex-grow-1 text-white opacity-6">
-                for more info, contact us below.
+                <span className="flex-grow-1 video-desc opacity-6">
+                  for more info, contact us below.
                 </span>
               </div>
             </div>
@@ -144,25 +130,25 @@ const contactUs = () => {
                 <div className="overlays-form"></div>
                 <h4 className="sidebar-heading">We are here to help you </h4>
                 <div className="sidebar-cards">
-                <img src="/images/email-icon.svg" className=" slider-icon"></img>
-                <div className="slider-cardbody">
-                  <p className="mb-0 slider-card-heading">Email:</p>
-                  <p style={{wordBreak: "break-word"}}>hr@acedigitaldentallaboratory.com</p>
-                </div>
-                </div>
-                <div className="sidebar-cards">
-                <img src="/images/call.svg" className="slider-icon"></img>
-                <div className="slider-cardbody">
-                  <p className="mb-0 slider-card-heading">Contact:</p>
-                  <p>+1 551-380-0385</p>
-                </div>
+                  <img src="/images/email-icon.svg" className=" slider-icon"></img>
+                  <div className="slider-cardbody">
+                    <p className="mb-0 slider-card-heading">Email:</p>
+                    <p style={{ wordBreak: "break-word" }}>hr@acedigitaldentallaboratory.com</p>
+                  </div>
                 </div>
                 <div className="sidebar-cards">
-                <img src="/images/address.svg" className="slider-icon"></img>
-                <div className="slider-cardbody">
-                  <p className="mb-0 slider-card-heading">Address:</p>
-                  <p>1 Auer Court, 2nd Floor East Brunswick, New Jersey 08816</p>
+                  <img src="/images/call.svg" className="slider-icon"></img>
+                  <div className="slider-cardbody">
+                    <p className="mb-0 slider-card-heading">Contact:</p>
+                    <p>+1 551-380-0385</p>
+                  </div>
                 </div>
+                <div className="sidebar-cards">
+                  <img src="/images/address.svg" className="slider-icon"></img>
+                  <div className="slider-cardbody">
+                    <p className="mb-0 slider-card-heading">Address:</p>
+                    <p>1 Auer Court, 2nd Floor East Brunswick, New Jersey 08816</p>
+                  </div>
                 </div>
               </div>
 
@@ -218,7 +204,7 @@ const contactUs = () => {
                     </button>
                   </div>
                 </form>
-                {message && <p className="mt-3">{message}</p>} 
+                {message && <p className="mt-3">{message}</p>}
               </div>
             </div>
           </div>

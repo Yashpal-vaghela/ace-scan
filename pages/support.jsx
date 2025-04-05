@@ -7,7 +7,7 @@ import Link from "next/link";
 const support = () => {
   return (
     <>
-     <section className="p-0 parallax overlap-height">
+      <section className="p-0 parallax overlap-height">
         <div className="lqd-vbg-wrap">
           <div className="lqd-vbg-inner">
             <span className="lqd-vbg-loader"></span>
@@ -16,58 +16,33 @@ const support = () => {
               style={{ position: "relative", maxWidth: "100%" }}
             >
               <div
-                className="lqd-vbg-video mb_YTPlayer isMuted"
-                data-video-bg="true"
-                data-youtube-options='{"videoURL":"https://www.youtube.com/embed/Fv4YYSRsRUg"}'
-                id="YTP_1742270005228"
+                id="wrapper_YTP_1742270005228"
+                className="mbYTP_wrapper"
                 style={{
-                  position: "relative",
-                  // paddingBottom: "34.25%",
-                  // paddingTop:"20%",
+                  position: "absolute",
+                  zIndex: 0,
+                  minWidth: "100%",
+                  minHeight: "100%",
+                  left: "0px",
+                  top: "0px",
                   overflow: "hidden",
-                  height: "0px",
+                  opacity: 1,
+                  backgroundImage: "none",
+                  transitionDuration: "1000ms",
                 }}
               >
-                <div
-                  id="wrapper_YTP_1742270005228"
-                  className="mbYTP_wrapper"
-                  style={{
-                    position: "absolute",
-                    zIndex: 0,
-                    minWidth: "100%",
-                    minHeight: "100%",
-                    left: "0px",
-                    top: "0px",
-                    overflow: "hidden",
-                    opacity: 1,
-                    backgroundImage: "none",
-                    transitionDuration: "1000ms",
-                  }}
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="h-full w-full background-video background-video1"
+                  id="player"
                 >
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="h-full w-full background-video background-video1"
-                    id="player"
-                  >
-                    <source src="https://d1ytpjko2pk6h2.cloudfront.net/Abutment+Milling.webm" type="video/webm" />
-                    <source src="https://d1ytpjko2pk6h2.cloudfront.net/Abutment+Milling.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <div
-                    className="YTPOverlay"
-                    style={{
-                      position: "absolute",
-                      top: "0px",
-                      left: "0px",
-                      width: "100%",
-                      height: "100%",
-                      cursor: "pointer",
-                    }}
-                  ></div>
-                </div>
+                  <source src="https://d1ytpjko2pk6h2.cloudfront.net/Abutment+Milling.webm" type="video/webm" />
+                  <source src="https://d1ytpjko2pk6h2.cloudfront.net/Abutment+Milling.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </div>
@@ -79,16 +54,16 @@ const support = () => {
             style={{ height: "600px" }}
           >
             <div className="col-12 col-xl-5 col-lg-6 col-md-7 col-sm-10 d-flex flex-column justify-content-center">
-              <h2 className="alt-font text-white line-height-65px font-weight-500 letter-spacing-minus-1px margin-65px-bottom sm-line-height-50px sm-margin-25px-bottom">
+            <h2 className="video-title">
                 {/* <span className="text-gradient-light-purple-light-orange font-weight-900 d-inline-block"> */}
-                  Support
+                Support
                 {/* </span> */}
               </h2>
               <div className="alt-font text-large font-weight-500 text-uppercase letter-spacing-2px d-flex">
                 <span className="flex-shrink-0 w-40px h-1px bg-white opacity-6 align-self-center margin-25px-right"></span>
-                  <span className="flex-grow-1 text-white opacity-6">
-                    Need Support? We Are with you.
-                  </span>
+                <span className="flex-grow-1 video-desc opacity-6">
+                  Need Support? We Are with you.
+                </span>
               </div>
             </div>
           </div>
@@ -134,9 +109,9 @@ const support = () => {
           <Image src="/images/vector-support6.png" className="img-fluid vector-support6" alt="vector-support6" width={100} height={100}></Image>
           <div className="row mb-5 justify-content-center align-items-lg-start" >
             <div className="support1-wrapper">
-              <h2 className="support-text" style={{color:"#005e8a"}}>In a hurry? We've got you covered.</h2>
+              <h2 className="support-text" style={{ color: "#005e8a" }}>In a hurry? We've got you covered.</h2>
             </div>
-            
+
             <div className="col-lg-6 col-md-6 col-sm-10 col-11">
               <Image src="/images/support-team-img10.jpg" className="support-team-img6 img-fluid" alt="support-team" width={344} height={250}></Image>
               {/* <img
@@ -218,15 +193,15 @@ const support = () => {
         </div>
       </section>
       <section className="go-off-track-section">
-      <Image src="/images/vector-support3.png" className="d-none d-md-block support-vector1 img-fluid" width={1772} height={827}></Image>
-      <Image src="/images/vector-support4.png" className="d-block d-md-none support-vector1 img-fluid" width={279} height={678} alt="support-vector1"></Image>
+        <Image src="/images/vector-support3.png" className="d-none d-md-block support-vector1 img-fluid" width={1772} height={827}></Image>
+        <Image src="/images/vector-support4.png" className="d-block d-md-none support-vector1 img-fluid" width={279} height={678} alt="support-vector1"></Image>
         <div className="container">
-          
+
           <div className="row justify-content-center">
             <div className="col-lg-5 col-md-6 col-10 order-2 order-md-0">
               <Image src="/images/support-7.png" className="d-none d-md-block go-off-track-img img-fluid" alt="support-4" width={648} height={648}></Image>
             </div>
-            <div className="col-lg-6 col-md-6 col-10 order-1 order-md-0">
+            <div className="col-lg-6 col-md-6 col-11 order-1 order-md-0">
               <h2>Did Something Go Off Track?</h2>
               <p>
                 Our support team is always ready to assist with any changes or
