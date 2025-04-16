@@ -58,7 +58,7 @@ const Materials = () => {
               <div className="alt-font text-large font-weight-500 text-uppercase letter-spacing-2px d-flex">
                 <span className="flex-shrink-0 w-40px h-1px bg-white opacity-6 align-self-center margin-25px-right"></span>
                 <span className="flex-grow-1 video-desc opacity-6">
-                  Need Support? We Are with you.
+                    Materials That Make Every Smile Matter.
                 </span>
               </div>
             </div>

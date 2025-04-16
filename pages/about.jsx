@@ -186,7 +186,7 @@ const About = () => {
             <div className="col-md-5 col-12 mt-1 mt-sm-0">
               <div className="about-text">
                 <h2 className="main-heading-with-double-color heading1 mb-2">
-                  Delivering Excellence In{" "}
+                  Delivering Excellence {" "}
                   <span className="highlight-text1"> Across The USA </span>
                 </h2>
                 <p>
