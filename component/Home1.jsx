@@ -178,7 +178,7 @@ const Home1 = () => {
                         data-bs-parent="#faqAccordion"
                       >
                         <div className="accordion-body ">
-                          ADDL (Advanced Dental Design Laboratories) is
+                          ADDL (Ace Digital Dental Laboratory) is
                           dedicated to fast, reliable turnaround times without
                           compromising quality. Using advanced technology and
                           efficient workflows, we deliver products quickly.. Our
