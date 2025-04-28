@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-
 import Image from "next/image";
 
 const ErrorPage = () => {
@@ -10,11 +9,12 @@ const ErrorPage = () => {
         <div className="container text-center" style={{ paddingTop: "2rem", paddingBottom: "2rem" }}>
           <div className=" fzf-block">
             <p className="numberfour left">4</p>
-            <img
+            <Image src="/images/teeth.webp" class="img-fluid teethimage" alt="about" width={270} height={270}></Image>
+            {/* <img
               src="/images/teeth.png"
               alt="about"
               className="img-fluid teethimage"
-            />
+            /> */}
             <p className="numberfour right">4</p>
           </div>
 

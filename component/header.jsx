@@ -31,7 +31,7 @@ const Header = () => {
           <nav className="navbar navbar-expand-lg">
             <div className="container-fluid ">
                 <Link href="/" className="Logo">
-                    <Image src="/images/ACE-logo.png" alt="Logo" className="img-fluid" width={150} height={50}></Image>
+                    <Image src="/images/ACE-logo.webp" alt="Logo" className="img-fluid" width={150} height={50}></Image>
                 </Link>
                 <button
                     className="navbar-toggler"
@@ -54,7 +54,7 @@ const Header = () => {
                 
                     <h5 className="offcanvas-title" id="offcanvasExampleLabel">
                         <Link href="/" className="Logo" onClick={handleOffcanvas}>
-                            <Image src="/images/ACE-logo.png" className="img-fluid" alt="LOGO" width={150} height={50}></Image>
+                            <Image src="/images/ACE-logo.webp" className="img-fluid" alt="LOGO" width={150} height={50}></Image>
                         </Link>
                     </h5>
                     <button

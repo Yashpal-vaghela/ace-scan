@@ -36,25 +36,25 @@ const CrownsBridges = () => {
         {
             id: 1,
             title: "Aesthetic porcelain",
-            img: "/images/PFM-POST.png",
+            img: "/images/PFM-POST.webp",
             discription: "Our PFM (Porcelain-Fused-to-Metal) crowns and bridges combine strength and aesthetics, enhanced by cutting-edge digital technology. Using advanced CAD/CAM software and precision milling techniques, we create restorations with exceptional fit and natural appearance. This fusion of digital design and traditional materials ensures long-lasting, functional, and highly aesthetic results."
         },
         {
             id: 2,
             title: "Zirconia crowns",
-            img: "/images/zir-conia.jpg",
+            img: "/images/zir-conia.webp",
             discription: "At ADDL, we specialize in high-quality zirconia crowns and bridges, providing exceptional strength and aesthetics. Our advanced digital CAD/CAM workflow and precision milling guarantee a perfect fit and natural look. Using state-of-the-art digital sintering techniques, we create durable, lifelike restorations with unmatched accuracy, longevity, and reliability."
         },
         {
             id: 3,
             title: "Layered zirconia crowns",
-            img: "/images/lzc.png",
+            img: "/images/lzc.webp",
             discription: "Our layered zirconia crowns and bridges combine strength with natural aesthetics, thanks to advanced digital workflows and CAD/CAM technology. Precision layering ensures lifelike shading and a perfect fit, creating durable, biocompatible restorations ideal for single crowns, bridges, and implants."
         },
         {
             id: 4,
             title: "PMMA Temporaries",
-            img: "/images/PMMA.png",
+            img: "/images/PMMA.webp",
             discription: "PMMA temporary crowns and bridges are crafted using advanced digital design for a precise fit and natural look. They offer strength, comfort, and esthetics, allowing patients to confidently preview their final smile. Ideal for both short-term and long-term use."
         }
     ]
@@ -130,7 +130,7 @@ const CrownsBridges = () => {
                         <div className="col-12 col-lg-6 ">
                             <div className="product-before-after-images">
                                 <Image
-                                    src="/images/crown-gallery.png"
+                                    src="/images/crown-gallery.webp"
                                     alt="about"
                                     width={550}
                                     height={400}
@@ -197,7 +197,8 @@ const CrownsBridges = () => {
                                     <SwiperSlide key={index}>
                                         <div className="col-12 col-md-6 col-lg-12">
                                             <div className="implant-card">
-                                                <img src="/images/card-bg.png" className="card-bg" />
+                                                <Image src="/images/card-bg.webp" className="card-bg" alt="card-bg" width={311} height={599}></Image>
+                                                {/* <img src="/images/card-bg.webp" className="card-bg" /> */}
                                                 <div className="implant-card-header">
                                                     <h2> {item?.title} </h2>
                                                 </div>

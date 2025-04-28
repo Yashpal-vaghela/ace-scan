@@ -86,7 +86,7 @@ const support = () => {
                 <p>{`At ADDL, we believe in quality production, digital technology,and an efficient workflow. That's why our support team is always available to assist you whether it's about your order, product inquiries, pricing, or any business-related questions. We are here whenever you need us.`}</p>
                 <div className="support-img-card">
                   <Image
-                    src="/images/sup1.jpg"
+                    src="/images/sup1.webp"
                     className="img-fluid support-inner-image"
                     width={250}
                     height={500}
@@ -106,14 +106,14 @@ const support = () => {
       </section>
       <section className="third-section" style={{ paddingTop: "120px" }}>
         <div className="container position-relative pb-5">
-          <Image src="/images/vector-support6.png" className="img-fluid vector-support6" alt="vector-support6" width={100} height={100}></Image>
+          <Image src="/images/vector-support6.webp" className="img-fluid vector-support6" alt="vector-support6" width={100} height={100}></Image>
           <div className="row mb-5 justify-content-center align-items-lg-start" >
             <div className="support1-wrapper">
               <h2 className="support-text" style={{ color: "#005e8a" }}>In a hurry? We've got you covered.</h2>
             </div>
 
             <div className="col-lg-6 col-md-6 col-sm-10 col-11">
-              <Image src="/images/support-team-img10.jpg" className="support-team-img6 img-fluid" alt="support-team" width={344} height={250}></Image>
+              <Image src="/images/support-team-img10.webp" className="support-team-img6 img-fluid" alt="support-team" width={344} height={250}></Image>
               {/* <img
                 src="https://i.pinimg.com/736x/c0/dd/57/c0dd57783ed27510197f61ec2b3bdace.jpg"
                 className="support-team-img6 img-fluid"
@@ -138,7 +138,7 @@ const support = () => {
         </div>
       </section>
       <section className="experience-section position-relative">
-        <Image src="/images/vector-img.png" className="img-fluid experience-vector" width={2350} height={100} alt="experience-vector"></Image>
+        <Image src="/images/vector-img.webp" className="img-fluid experience-vector" width={2350} height={100} alt="experience-vector"></Image>
         <div className="container">
           <div className="row align-items-center mb-5 justify-content-center">
             <div className="col-lg-7 col-md-7 col-sm-12 col-12 ">
@@ -176,8 +176,8 @@ const support = () => {
               </p>
             </div>
             <div className="col-lg-4 col-md-5 col-sm-12 col-12 order-1 order-md-0 position-relative">
-              <Image className="img-fluid experience-vector1" src="/images/vector-img.png" width={2350} height={3155} alt="experience-vector"></Image>
-              <Image src="/images/inches.jpg" className="img-fluid" alt="experience-img" width={467} height={637}></Image>
+              <Image className="img-fluid experience-vector1" src="/images/vector-img.webp" width={2350} height={3155} alt="experience-vector"></Image>
+              <Image src="/images/inches.webp" className="img-fluid" alt="experience-img" width={467} height={637}></Image>
               <div className="addl-content">
                 <ul>
                   <li>ADDL</li>
@@ -193,13 +193,13 @@ const support = () => {
         </div>
       </section>
       <section className="go-off-track-section">
-        <Image src="/images/vector-support3.png" className="d-none d-md-block support-vector1 img-fluid" width={1772} height={827}></Image>
-        <Image src="/images/vector-support4.png" className="d-block d-md-none support-vector1 img-fluid" width={279} height={678} alt="support-vector1"></Image>
+        <Image src="/images/vector-support3.webp" className="d-none d-md-block support-vector1 img-fluid" width={1772} height={827}></Image>
+        <Image src="/images/vector-support4.webp" className="d-block d-md-none support-vector1 img-fluid" width={279} height={678} alt="support-vector1"></Image>
         <div className="container">
 
           <div className="row justify-content-center">
             <div className="col-lg-5 col-md-6 col-10 order-2 order-md-0">
-              <Image src="/images/support-7.png" className="d-none d-md-block go-off-track-img img-fluid" alt="support-4" width={648} height={648}></Image>
+              <Image src="/images/support-7.webp" className="d-none d-md-block go-off-track-img img-fluid" alt="support-4" width={648} height={648}></Image>
             </div>
             <div className="col-lg-6 col-md-6 col-11 order-1 order-md-0">
               <h2>Did Something Go Off Track?</h2>
@@ -214,9 +214,9 @@ const support = () => {
                 efficient solutions that meet your expectations, all while
                 maintaining the highest quality standards.
               </p>
-              <Image src="/images/support-7.png" className="d-block d-md-none go-off-track-img img-fluid" width={648} height={648} alt="go-off-track-img"></Image>
+              <Image src="/images/support-7.webp" className="d-block d-md-none go-off-track-img img-fluid" width={648} height={648} alt="go-off-track-img"></Image>
               <div className="support-img-wrapper">
-                <Image src="/images/support5.jpg" alt="support-5" className="support-img img-fluid" width={580} height={265}></Image>
+                <Image src="/images/support5.webp" alt="support-5" className="support-img img-fluid" width={580} height={265}></Image>
               </div>
             </div>
           </div>

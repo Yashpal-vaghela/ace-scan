@@ -179,16 +179,16 @@
 
 
 .c1::before {
-  background: url("../images/step1.png") center/150% no-repeat;
+  background: url("../images/step1.webp") center/150% no-repeat;
 }
 .c2::before {
-  background: url("../images/step2.png") center/150% no-repeat;
+  background: url("../images/step2.webp") center/150% no-repeat;
 }
 .c3::before {
-  background: url("../images/step-4.png") center/150% no-repeat;
+  background: url("../images/step-4.webp") center/150% no-repeat;
 }
 .c4::before {
-  background: url("../images/step-3.png") center/150% no-repeat;
+  background: url("../images/step-3.webp") center/150% no-repeat;
 }
 .step:hover .card-body-content {
   bottom: 0; 
@@ -768,7 +768,7 @@
 /* ================================================================ end CAD/CAM=============================================== */
 /* ================================================================ start Product=============================================== */
 .bradcrumb-product {
-  background-image: url("../images/breadcrumb.png");
+  background-image: url("../images/breadcrumb.webp");
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;

@@ -1,5 +1,5 @@
 .footer_grid {
-    background-image: url('/images/bgfooter.png');
+    background-image: url('/images/bgfooter.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -124,7 +124,7 @@
         margin-bottom: 10px;
     }
     .footer_grid{
-        background-image: url('/images/bgfooter1.png');
+        background-image: url('/images/bgfooter1.webp');
     }
 }
 

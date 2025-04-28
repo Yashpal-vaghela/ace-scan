@@ -111,7 +111,7 @@ const About = () => {
               <div className="images-home-section">
                 <div className="image-top text-center">
                   <Image
-                    src="/images/about-ace.jpg"
+                    src="/images/about-ace.webp"
                     alt="about"
                     width={310}
                     height={200}
@@ -120,7 +120,7 @@ const About = () => {
                 </div>
                 <div className="image-bottom">
                   <Image
-                    src="/images/dental-ace.jpg"
+                    src="/images/dental-ace.webp"
                     alt="about1"
                     width={300}
                     height={200}
@@ -175,7 +175,7 @@ const About = () => {
             <div className="col-md-7 col-12">
               <div className="about-images">
                 <Image
-                  src="/images/map.png"
+                  src="/images/map.webp"
                   alt="about"
                   width={550}
                   height={400}
@@ -214,7 +214,7 @@ const About = () => {
                 </h2>
               </div>
               <Image
-                src="/images/vector.png"
+                src="/images/vector.webp"
                 alt="Dental Vector"
                 width={300}
                 height={200}
@@ -275,7 +275,7 @@ const About = () => {
       <section className="boss-work">
 
         <Image
-          src="/images/bosswithtxt.jpg"
+          src="/images/bosswithtxt.webp"
           alt="Lab Technician Working"
           width={800}
           height={600}
@@ -363,7 +363,7 @@ const About = () => {
             </div>
             <div className="col-lg-6  align-items-stretch order-md-1 order-1 mb-4">
               <Image
-                src="/images/abBefore.jpg"
+                src="/images/abBefore.webp"
                 alt="New Shared Image"
                 width={550}
                 height={600}
@@ -372,7 +372,7 @@ const About = () => {
             </div>
             <div className="col-lg-6 pe-sm-0 align-items-stretch order-lg-2 order-md-2 order-0 mb-lg-5 mb-md-3 mb-2 mt-4">
               <Image
-                src="/images/abAfter.jpg"
+                src="/images/abAfter.webp"
                 alt="New Shared Image"
                 width={550}
                 height={600}

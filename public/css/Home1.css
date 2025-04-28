@@ -789,7 +789,7 @@
     gap:3rem;
 }
 .process-img{
-    background: url('/images/33.jpg') no-repeat center;
+    background: url('/images/33.webp') no-repeat center;
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -1,6 +1,7 @@
 // "use client";
 import { useForm } from "react-hook-form";
 import React, { useState } from "react";
+import Image from "next/image";
 
 const contactUs = () => {
   const {
@@ -130,29 +131,30 @@ const contactUs = () => {
                 <div className="overlays-form"></div>
                 <h4 className="sidebar-heading">We are here to help you </h4>
                 <div className="sidebar-cards">
-                  <img src="/images/email-icon.svg" className=" slider-icon"></img>
+                  <Image src="/images/email-icon.svg" className="slider-icon" alt="email-icon" width={49} height={50}></Image>
+                  {/* <img src="/images/email-icon.svg" className=" slider-icon"></img> */}
                   <div className="slider-cardbody">
                     <p className="mb-0 slider-card-heading">Email:</p>
                     <p style={{ wordBreak: "break-word" }}>hr@acedigitaldentallaboratory.com</p>
                   </div>
                 </div>
                 <div className="sidebar-cards">
-                  <img src="/images/call.svg" className="slider-icon"></img>
+                <Image src="/images/call.svg" className="slider-icon" alt="call-icon" width={49} height={50}></Image>
+                  {/* <img src="/images/call.svg" className="slider-icon"></img> */}
                   <div className="slider-cardbody">
                     <p className="mb-0 slider-card-heading">Contact:</p>
                     <p>+1 551-380-0385</p>
                   </div>
                 </div>
                 <div className="sidebar-cards">
-                  <img src="/images/address.svg" className="slider-icon"></img>
+                <Image src="/images/address.svg" className="slider-icon" alt="address-icon" width={49} height={50}></Image>
+                  {/* <img src="/images/address.svg" className="slider-icon"></img> */}
                   <div className="slider-cardbody">
                     <p className="mb-0 slider-card-heading">Address:</p>
                     <p>1 Auer Court, 2nd Floor East Brunswick, New Jersey 08816</p>
                   </div>
                 </div>
               </div>
-
-
             </div>
             <div className="col-lg-8 col-12 p-0 contact-form1-wrapper">
               <div className="contact-form1">
@@ -238,7 +240,6 @@ const contactUs = () => {
           </div>
         </div>
       </div>
-
     </React.Fragment>
   );
 };

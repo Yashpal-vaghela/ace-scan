@@ -77,7 +77,7 @@ export default function Home() {
           <div className="row justify-content-center">
             <div className="col-11 col-xl-5 col-md-7 col-lg-6 mt-lg-5 mt-md-5 mt-2 position-relative d-flex justify-content-center align-items-center">
               <Image
-                src="/images/MONA.png"
+                src="/images/MONA1.webp"
                 className="img-fluid about-img1"
                 width={500}
                 height={100}
@@ -100,7 +100,7 @@ export default function Home() {
                 <div className="col-12 col-md-6 col-lg-6">
                   <div className="d-flex d-md-block gap-3 align-items-center">
                     <Image
-                      src="/images/about-icon11.png"
+                      src="/images/about-icon11.webp"
                       className="img-box mb-4"
                       width={50}
                       height={50}
@@ -121,7 +121,7 @@ export default function Home() {
                 <div className="col-12 col-md-6 col-lg-6">
                   <div className="d-flex d-md-block gap-3 align-items-center">
                     <Image
-                      src="/images/about-icon22.png"
+                      src="/images/about-icon22.webp"
                       className="img-box mb-4"
                       width={45}
                       height={45}
@@ -177,7 +177,7 @@ export default function Home() {
             </div>
             <div className="col-11 col-xl-6 col-lg-6">
               <Image
-                src="/images/section2.jpg"
+                src="/images/section2.webp"
                 className="m-auto d-flex img-fluid"
                 width={500}
                 height={200}

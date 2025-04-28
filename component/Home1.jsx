@@ -125,15 +125,15 @@ const Home1 = () => {
   const [cardImage, setcardImage] = useState([]);
   const handleChangeImage = (e, cardName) => {
     if (cardName === "card1") {
-      setcardImage({ imgUrl: "/images/f1111.png" });
+      setcardImage({ imgUrl: "/images/f1111.webp" });
     } else if (cardName === "card2") {
-      setcardImage({ imgUrl: "/images/f2.png" });
+      setcardImage({ imgUrl: "/images/f2.webp" });
     } else if (cardName === "card3") {
-      setcardImage({ imgUrl: "/images/f3.png" });
+      setcardImage({ imgUrl: "/images/f3.webp" });
     } else if (cardName === "card4") {
-      setcardImage({ imgUrl: "/images/f4.png" });
+      setcardImage({ imgUrl: "/images/f4.webp" });
     } else {
-      setcardImage({ imgUrl: "/images/f5.png" });
+      setcardImage({ imgUrl: "/images/f5.webp" });
     }
   };
 
@@ -343,7 +343,7 @@ const Home1 = () => {
                   <>
                     {/* <img src="/images/f1.png" className="custom-acc-image timelineimg img-fluid" alt="Example Image"></img> */}
                     <Image
-                      src="/images/f1111.png"
+                      src="/images/f1111.webp"
                       alt="Example Image"
                       width={295}
                       // width={300}
@@ -428,7 +428,7 @@ const Home1 = () => {
             <div className="col-12 col-lg-6 col-md-6 d-none d-sm-block">
               <div className="card shadow-none border-0 d-flex justify-content-center align-items-center h-100 bg-transparent">
                 <Image
-                  src="/images/computer_mockup.png"
+                  src="/images/computer_mockup.webp"
                   alt="Example Image"
                   width={400}
                   height={550}
@@ -522,7 +522,7 @@ const Home1 = () => {
             <Link href="/product/digital-workflow/" className="text-decoration-none col-12 col-lg-4 col-md-6">
               <div className=" product-row position-relative">
                 <Image
-                  src="/images/E-max-hm.png"
+                  src="/images/E-max-hm.webp"
                   alt="Example Image"
                   width={306}
                   height={190}
@@ -534,7 +534,7 @@ const Home1 = () => {
             <Link href="/product/crowns-bridges/" className="text-decoration-none col-12 col-lg-4 col-md-6">
               <div className="img-middil product-row position-relative">
                 <Image
-                  src="/images/crown-hm.png"
+                  src="/images/crown-hm.webp"
                   alt="Example Image"
                   width={306}
                   height={190}
@@ -546,7 +546,7 @@ const Home1 = () => {
             <Link href="/product/implants/" className="text-decoration-none col-12 col-lg-4 col-md-6">
               <div className="product-row">
                 <Image
-                  src="/images/implant-hm1.png"
+                  src="/images/implant-hm1.webp"
                   alt="Example Image"
                   width={306}
                   height={190}
@@ -557,14 +557,14 @@ const Home1 = () => {
             </Link>
           </div>
           <Image
-            src="/images/dot.png"
+            src="/images/dot.webp"
             alt="Example Image"
             width={300}
             height={450}
             className="pvector1"
           />
           <Image
-            src="/images/dot.png"
+            src="/images/dot.webp"
             alt="Example Image"
             width={300}
             height={450}

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Materials = () => {
     return (
@@ -102,7 +103,8 @@ const Materials = () => {
                             </div>
                         </div>
                         <div className='col-lg-4 d-flex justify-content-center align-items-center  order-lg-1 order-0 ImageName'>
-                            <img src="/images/zir12.png" className='img-fluid' alt="zirconia-product"></img>
+                            <Image src="/images/zir12.webp" class="img-fluid" alt="zirconia-product"  width={300} height={247}></Image>
+                            {/* <img src="/images/zir12.png" className='img-fluid' alt="zirconia-product"></img> */}
                         </div>
                         <div className='col-lg-4 order-lg-2 order-2 m-details-right'>
                             <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
@@ -178,7 +180,8 @@ const Materials = () => {
                             </div>
                         </div>
                         <div className='col-lg-4 d-flex justify-content-center align-items-center  order-lg-1 order-0 ImageName'>
-                            <img src="/images/zirconia-layered.png" className='img-fluid' alt="zirconia-product"></img>
+                            <Image src="/images/zirconia-layered.webp" className='img-fluid' alt="zirconia-product" width={300} height={170}></Image>
+                            {/* <img src="/images/zirconia-layered.png" className='img-fluid' alt="zirconia-product"></img> */}
                         </div>
                         <div className='col-lg-4    order-lg-2 order-2 m-details-right'>
                             <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
@@ -254,7 +257,8 @@ const Materials = () => {
                             </div>
                         </div>
                         <div className='col-lg-4 d-flex justify-content-center align-items-center  order-lg-1 order-0 ImageName'>
-                            <img src="/images/cad-max-new.png" className='img-fluid' alt="zirconia-product"></img>
+                            <Image src="/images/cad-max-new.webp" className='img-fluid' alt="zirconia-product" width={300} height={179}></Image>
+                            {/* <img src="/images/cad-max-new.webp" className='img-fluid' alt="zirconia-product"></img> */}
                         </div>
                         <div className='col-lg-4    order-lg-2 order-2 m-details-right'>
                             <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
@@ -330,7 +334,8 @@ const Materials = () => {
                             </div>
                         </div>
                         <div className='col-lg-4 d-flex justify-content-center align-items-center  order-lg-1 order-0 ImageName'>
-                            <img src="/images/emax-pressed.png" className='img-fluid' alt="zirconia-product"></img>
+                            <Image src="/images/emax-pressed.webp" className='img-fluid' alt="zirconia-product" width={300} height={183}></Image>
+                            {/* <img src="/images/emax-pressed.webp" className='img-fluid' alt="zirconia-product"></img> */}
                         </div>
                         <div className='col-lg-4    order-lg-2 order-2 m-details-right'>
                             <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>

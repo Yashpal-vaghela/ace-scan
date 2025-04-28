@@ -153,7 +153,7 @@ const Footer = () => {
                 <div className="row justify-content-center align-items-center text-center">
                     <div className="col-12 d-flex justify-content-between align-items-center gap-5 footer-wrapper">
                         <Link className="navbar-brand me-auto" href="/">
-                            <Image src="/images/ACE-logo.png" alt="Logo" width={150} height={50} />
+                            <Image src="/images/ACE-logo.webp" alt="Logo" width={150} height={50} />
                         </Link>
                         <div className="bg-white"><p >
                             &copy; 2025 <span><Link href="https://advancedentalexport.com/" className="copyright">Advance Dental Export</Link></span>. All Rights Reserved

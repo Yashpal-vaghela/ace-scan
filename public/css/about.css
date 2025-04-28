@@ -115,7 +115,7 @@
 }
 .certification-section {
   position: relative;
-  background: url("/images/about-main.jpg") no-repeat ;
+  background: url("/images/about-main.webp") no-repeat ;
   background-position: right;
   background-size: cover;
   padding: 40px 0px;
@@ -160,7 +160,7 @@
 
   .certification-section {
     position: relative;
-    background: url("/images/about-main.jpg") no-repeat right;
+    background: url("/images/about-main.webp") no-repeat right;
     background-size: cover;
     padding: 0px 10%;
     display: flex;

@@ -30,7 +30,7 @@ export default function Document() {
           crossorigin="anonymous"
           referrerpolicy="no-referrer"
         />
-        <link rel="icon" type="image/png" href="/images/fav-icon1.png" />
+        <link rel="icon" type="image/png" href="/images/fav-icon1.webp" />
       </Head>
       <body>
      
