@@ -78,8 +78,8 @@ const contactUs = () => {
                   className="h-full w-full background-video background-video1"
                   id="player"
                 >
-                  <source src="https://d1ytpjko2pk6h2.cloudfront.net/Advance+Dental+Export+Milling+2.mp4" type="video/webm" />
-                  <source src="https://d1ytpjko2pk6h2.cloudfront.net/Advance+Dental+Export+Milling+2.webm" type="video/mp4" />
+                  <source src="https://d1ytpjko2pk6h2.cloudfront.net/Advance+Dental+Export+Milling+2.mp4" type="video/mp4" />
+                  {/* <source src="https://d1ytpjko2pk6h2.cloudfront.net/Advance+Dental+Export+Milling+2.webm" type="video/mp4" /> */}
                   Your browser does not support the video tag.
                 </video>
                 <div
