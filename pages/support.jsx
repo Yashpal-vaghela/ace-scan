@@ -1,12 +1,28 @@
 import { React } from "react";
-// import "../public/css/support.css";
-// import "../public/css/styles.css";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 const support = () => {
   return (
     <>
+      <Head>
+        <title>Support & Assistance | Ace Digital Dental Laboratory</title>
+        <meta name="description" content="Need help with your dental lab cases or services? ADDL's support team is here to assist you with case tracking, submissions, and technical questions. Contact us today!"/>
+        <link rel="canonical" href="https://acedigitaldentallaboratory.com/support/" /> 
+        <meta property="og:locale" content="en_US"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Support & Assistance | Ace Digital Dental Laboratory" />
+        <meta name="description" content="Need help with your dental lab cases or services? ADDL's support team is here to assist you with case tracking, submissions, and technical questions. Contact us today!"/>
+        <meta property="og:url" content="https://acedigitaldentallaboratory.com/support/" />
+        <meta property="og:site_name" content="Ace Digital Dental Lab" />
+        <meta name="og:image" content="/images/feature-ADDL.webp" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+      </Head>
       <section className="p-0 parallax overlap-height">
         <div className="lqd-vbg-wrap">
           <div className="lqd-vbg-inner">
@@ -54,11 +70,11 @@ const support = () => {
             style={{ height: "600px" }}
           >
             <div className="col-12 col-xl-5 col-lg-6 col-md-7 col-sm-10 d-flex flex-column justify-content-center">
-            <h2 className="video-title">
+            <h1 className="video-title">
                 {/* <span className="text-gradient-light-purple-light-orange font-weight-900 d-inline-block"> */}
                 Support
                 {/* </span> */}
-              </h2>
+              </h1>
               <div className="alt-font text-large font-weight-500 text-uppercase letter-spacing-2px d-flex">
                 <span className="flex-shrink-0 w-40px h-1px bg-white opacity-6 align-self-center margin-25px-right"></span>
                 <span className="flex-grow-1 video-desc opacity-6">
@@ -78,7 +94,7 @@ const support = () => {
           <div className="row gap-lg-3 gap-md-0 gap-sm-0 gap-2 justify-content-center justify-content-sm-center">
             <div className="col-lg-5 col-md-6 col-sm-5 col-11 d-flex flex-column justify-content-end">
               <div className="support1-wrapper">
-                <h2>{`ADDL Support Team Is Always There For You, Whenever You Need Us.`}</h2>
+                <h2>ADDL Support Team Is Always There For You, Whenever You Need Us.</h2>
               </div>
             </div>
             <div className="col-lg-5 col-md-6 col-sm-7 col-11">
@@ -130,7 +146,7 @@ const support = () => {
                 every step is handled with care, so you can rely on fast and
                 efficient results without compromising on quality.
               </p>
-              <Link href="/contactUs">
+              <Link href="/contact-us/">
                 <button className="btn btn-getInTouch">Get In Touch</button>
               </Link>
             </div>
@@ -146,8 +162,8 @@ const support = () => {
                 <h2 className="txt-black">Deep-Rooted Tradition</h2>
                 <div className="d-flex experience-main-content-wrapper gap-4 gap-md-2  justify-content-between">
                   <div className="d-block">
-                    <h1 className="mb-0 numberborder" >14+</h1>
-                    <h2 className="txt-black">Years experience.</h2>
+                    <span className="mb-0 numberborder" >14+</span>
+                    <div className="txt-black experinece-txt">Years experience.</div>
                   </div>
                   <p className="d-none d-sm-none d-md-block">
                     Our support team brings a wealth of experience and expertise
@@ -182,9 +198,9 @@ const support = () => {
                 <ul>
                   <li>ADDL</li>
                 </ul>
-                <h5>ACE</h5>
+                <p>ACE</p>
                 <span>
-                  Ace Digital <br></br>
+                  Ace Digital <br/>
                   Dental Laboratory
                 </span>
               </div>
@@ -193,7 +209,7 @@ const support = () => {
         </div>
       </section>
       <section className="go-off-track-section">
-        <Image src="/images/vector-support3.webp" className="d-none d-md-block support-vector1 img-fluid" width={1772} height={827}></Image>
+        <Image src="/images/vector-support3.webp" className="d-none d-md-block support-vector1 img-fluid" width={1772} height={827} alt="support-vector3"></Image>
         <Image src="/images/vector-support4.webp" className="d-block d-md-none support-vector1 img-fluid" width={279} height={678} alt="support-vector1"></Image>
         <div className="container">
 

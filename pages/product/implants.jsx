@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
+import Head from "next/head";
 
 const Implants = () => {
   const videoRefP = useRef(null);
@@ -58,10 +59,27 @@ const Implants = () => {
 
   return (  
     <>
+      <Head>
+        <title>Premium Dental Implants | Ace Digital Dental Laboratory</title>
+        <meta name="description" content="Discover high-quality, precision-crafted dental implants made by Ace Digital Dental Laboratory. Engineered for durability, comfort, and natural aesthetics."/>
+        <link rel="canonical" href="https://acedigitaldentallaboratory.com/implants/" /> 
+        <meta property="og:locale" content="en_US"/>  
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Premium Dental Implants | Ace Digital Dental Laboratory" />
+        <meta name="description" content="Discover high-quality, precision-crafted dental implants made by Ace Digital Dental Laboratory. Engineered for durability, comfort, and natural aesthetics."/>
+        <meta property="og:url" content="https://acedigitaldentallaboratory.com/implants/" />
+        <meta property="og:site_name" content="Ace Digital Dental Lab" />
+        <meta name="og:image" content="/images/feature-ADDL.webp" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+      </Head>
       <section className="bradcrumb-product" style={{ marginTop: "80px" }}>
         <div className="container h-100">
           <div className=" d-flex justify-content-end align-items-start flex-column inner-bread">
-            <div className="breadcrumbTitle">Implants</div>
+            <h1 className="breadcrumbTitle">Implants</h1>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb text-sm breadcrumbNav">
                 <li class="breadcrumb-item active">
@@ -153,12 +171,12 @@ const Implants = () => {
             <div className="col-12 col-lg-6  d-flex flex-column align-items-center justify-content-center text-center">
               <div className="product-before-after-content  d-flex flex-column  justify-content-center ">
                 <div className="product-before-after-heading1">
-                  <h2 className="before-after-contains subhead ">
+                  <p className="before-after-contains subhead ">
                     Renew Your Teeth, Renew Your Confidence
-                  </h2>
-                  <h3 className="before-after-contains mb-lg-5 mb-2">
+                  </p>
+                  <h2 className="before-after-contains mb-lg-5 mb-2">
                     Transforming Lives with the Benefits of Dental Implants
-                  </h3>
+                  </h2>
                 </div>
                 We prioritize your comfort and satisfaction, offering tailored
                 solutions that meet your unique needs. With our use of the
@@ -271,7 +289,7 @@ const Implants = () => {
             solutions, but a positive experience that enhances well-being. In
             the end, our expertise and commitment to care deliver a
             life-changing outcome for every patient. <br />
-            <a href="/contactUs" class="btn">
+            <a href="/contact-us" class="btn">
               Get In Touch
             </a>
           </div>

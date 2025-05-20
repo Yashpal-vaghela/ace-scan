@@ -5,11 +5,11 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-      <title>Ace Digital Dental Laboratory</title>
-        <meta
+      {/* <title>Ace Digital Dental Laboratory</title> */}
+        {/* <meta
           name="description"
           content="Ace Digital Dental Laboratory specializes in advanced dentistry, delivering precision-driven, high-quality solutions with cutting-edge technology."
-        />
+        /> */}
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
           rel="stylesheet"
@@ -18,7 +18,7 @@ export default function Document() {
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+        {/* <link rel="stylesheet" href="bower_components/aos/dist/aos.css" /> */}
         <link
           href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet"
@@ -41,7 +41,7 @@ export default function Document() {
           integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
           crossorigin="anonymous"
         ></script>
-        <script src="bower_components/aos/dist/aos.js"></script>
+        {/* <script src="bower_components/aos/dist/aos.js"></script> */}
         {/* <script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-2pOCDj4I22A6blf+jzJFeDnpfH74azXs6F3ICDhLScgGkp4j6hYLI6omzUjqUIvG"

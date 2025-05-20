@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
+import Head from "next/head";
 
 const CadCamMilling = () => {
   const videoRefP = useRef(null);
@@ -58,10 +59,27 @@ const CadCamMilling = () => {
 
   return (
     <>
+      <Head>
+        <title>High-Precision CAD/CAM Dental Solutions | ADDL</title>
+        <meta name="description" content="Discover cutting-edge CAD/CAM dental restorations from ADDl. Achieve superior accuracy, durability, and esthetics with our advanced digital dentistry solutions."/>
+        <link rel="canonical" href="https://acedigitaldentallaboratory.com/cad-cam/" /> 
+        <meta property="og:locale" content="en_US"/>  
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="High-Precision CAD/CAM Dental Solutions | ADDL" />
+        <meta name="description" content="Discover cutting-edge CAD/CAM dental restorations from ADDl. Achieve superior accuracy, durability, and esthetics with our advanced digital dentistry solutions."/>
+        <meta property="og:url" content="https://acedigitaldentallaboratory.com/cad-cam/" />
+        <meta property="og:site_name" content="Ace Digital Dental Lab" />
+        <meta name="og:image" content="/images/feature-ADDL.webp" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+      </Head>
       <section className="bradcrumb-product" style={{ marginTop: "80px" }}>
         <div className="container h-100">
           <div className=" d-flex justify-content-end align-items-start flex-column inner-bread">
-            <div className="breadcrumbTitle">CAD/CAM Milling</div>
+            <h1 className="breadcrumbTitle">CAD/CAM Milling</h1>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb text-sm breadcrumbNav">
                 <li class="breadcrumb-item active">
@@ -138,10 +156,10 @@ const CadCamMilling = () => {
         <div className="container">
           <div className="row g-2">
             <div className="col-12 col-md-6 d-flex justify-content-center  flex-column order-md-1 order-lg-1 order-1 p-4">
-              <div className="cadcam-head mb-4">
+              <h2 className="cadcam-head mb-4">
                 Seamless, natural-looking restorations designed for precision
                 and beauty.
-              </div>
+              </h2>
 
               <p className="subtxtofabout">
                 We’re constantly investing in advanced CAD/CAM technology to
@@ -183,7 +201,7 @@ const CadCamMilling = () => {
             To ensure exceptional results, ADDL provides premium dental lab
             solutions that prioritize precision, craftsmanship, and advanced
             technology for superior dental restorations. <br />
-            <a href="/contactUs" class="btn">
+            <a href="/contact-us/" class="btn">
               Get In Touch
             </a>
           </div>

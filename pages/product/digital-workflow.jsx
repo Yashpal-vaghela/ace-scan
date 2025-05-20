@@ -1,18 +1,33 @@
-import React, { useEffect, useRef } from "react";
-// import "../../public/css/product.css";
-// import "../../public/css/common.css";
+import Head from "next/head";
+import React from "react";
 
 const DigitalWorkflow = () => {
-    const videoRefP = useRef(null);
 
     return (
         <>
+            <Head>
+                <title>Digital Workflow Solutions | Ace Digital Dental Lab</title>
+                <meta name="description" content="Streamline your dentistry with Ace Digital Dental Lab’s cutting-edge digital workflow—precision, speed, and reliability from scan to final restoration."/>
+                <link rel="canonical" href="https://acedigitaldentallaboratory.com/digital-workflow/" /> 
+                <meta property="og:locale" content="en_US"/>
+                <meta property="og:type" content="website"/>
+                <meta property="og:title" content="Digital Workflow Solutions | Ace Digital Dental Lab" />
+                <meta name="description" content="Streamline your dentistry with Ace Digital Dental Lab’s cutting-edge digital workflow—precision, speed, and reliability from scan to final restoration."/>
+                <meta property="og:url" content="https://acedigitaldentallaboratory.com/digital-workflow/" />
+                <meta property="og:site_name" content="Ace Digital Dental Lab" />
+                <meta name="og:image" content="/images/feature-ADDL.webp" />
+                <meta property="og:image:type" content="image/webp" />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="robots" content="index, follow" />
+            </Head>
             <section className="bradcrumb-product" style={{ marginTop: "80px" }}>
                 <div className="container  px-sm-3 h-100">
                     <div className=" d-flex justify-content-end align-items-start flex-column inner-bread" >
-                        <div className="breadcrumbTitle">
+                        <h1 className="breadcrumbTitle">
                             Digital Workflow
-                        </div>
+                        </h1>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb text-sm breadcrumbNav">
                                 <li class="breadcrumb-item active"><a href="/">Home</a></li>
@@ -90,8 +105,8 @@ const DigitalWorkflow = () => {
                             <div className="step c1 ">
                                 <div className="fulloverlay"></div>
                                 <div className="card-body-content card1">
-                                    <h3>01</h3>
-                                    <p className="card-hed">Incoming Orders</p>
+                                    <p>01</p>
+                                    <h3 className="card-hed">Incoming Orders</h3>
 
                                     <div className="card-txt">We ensure that all incoming orders are carefully inspected to ensure that they meet our high standards before they enter the construction phase.
                                     </div>
@@ -103,8 +118,9 @@ const DigitalWorkflow = () => {
                             <div className="step c2 " >
                                 <div className="fulloverlay"></div>
                                 <div className="card-body-content card2">
-                                    <h3>02</h3>
-                                    <p className="card-hed">Design and Construction</p>
+                                    <p>02</p>
+                                    <h3 className="card-hed">Design and Construction</h3>
+
                                     <div className="card-txt">Throughout the design and construction phases, our skilled technicians use only the finest materials and cutting-edge equipment to create custom lab work that is tailored to your specific requirements</div>
                                 </div>
 
@@ -114,8 +130,8 @@ const DigitalWorkflow = () => {
                             <div className="step c3 ">
                                 <div className="fulloverlay"></div>
                                 <div className="card-body-content card3">
-                                    <h3>03</h3>
-                                    <p className="card-hed">Quality Control</p>
+                                    <p>03</p>
+                                    <h3 className="card-hed">Quality Control</h3>
 
                                     <div className="card-txt">Quality is at the heart of everything we do. Rest assured that you can rely on us to provide you with dependable and superior dental laboratory services.</div>
                                 </div>
@@ -126,13 +142,12 @@ const DigitalWorkflow = () => {
                             <div className="step c4 ">
                                 <div className="fulloverlay"></div>
                                 <div className="card-body-content card4">
-                                    <h3>04</h3>
-                                    <p className="card-hed">Returns</p>
-
+                                    <p>04</p>
+                                    <h3 className="card-hed">Returns</h3>
+                                    
                                     <div className="card-txt">At ADDL, we recognize the importance of timely deliveries and hassle-free returns. Rely on us for all your dental lab work requirements.
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -151,14 +166,12 @@ const DigitalWorkflow = () => {
 
                         To ensure exceptional results, ADDL provides premium dental lab solutions that prioritize precision, craftsmanship, and advanced technology for superior dental restorations. <br />
 
-                        <a href="/ContactUs" class="btn">Get In Touch</a>
+                        <a href="/contact-us/" class="btn">Get In Touch</a>
                     </div>
                 </div>
 
             </section>
         </>
-
-
     )
 }
 

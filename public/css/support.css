@@ -62,7 +62,7 @@
   line-height: 1.6;
 }
 
-.experience-main-content-wrapper h1 {
+.experience-main-content-wrapper span {
   font-size: 135px;
   font-weight: 550;
   position: relative;
@@ -70,12 +70,14 @@
   color: #005e8a;
 }
 
-.experience-main-content-wrapper h2 {
+.experinece-txt{
   font-size: 20px;
   margin-left: auto;
   margin-right: 30px;
+  width: 45%;
+  font-weight: 650;
+  line-height: 1.6;
 }
-
 .experience-main-content-wrapper p {
   line-height: 1.8;
   color: #3e3e3e;

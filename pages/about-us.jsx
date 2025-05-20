@@ -1,7 +1,8 @@
-import { useEffect, useState, React, useRef } from "react";
+import { useEffect, React, useRef } from "react";
 // import "../public/css/about.css";
 import Image from "next/image";
 import Link from "next/link";
+import Head from 'next/head';
 
 const About = () => {
   const videoRef = useRef(null);
@@ -30,6 +31,23 @@ const About = () => {
   }, []);
   return (
     <>
+      <Head>
+        <title>About Us | Ace Digital Dental Laboratory</title>
+        <meta name="description" content="Discover the story behind ADDL. With a commitment to innovation, precision, and quality, we partner with dental professionals to deliver exceptional digital dental restorations."/>
+        <link rel="canonical" href="https://acedigitaldentallaboratory.com/about-us/" /> 
+        <meta property="og:locale" content="en_US"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="About Us | Ace Digital Dental Laboratory" />
+        <meta property="og:description" content="Discover the story behind ADDL. With a commitment to innovation, precision, and quality, we partner with dental professionals to deliver exceptional digital dental restorations."/>
+        <meta property="og:url" content="https://acedigitaldentallaboratory.com/about-us/" />
+        <meta property="og:site_name" content="Ace Digital Dental Lab" />
+        <meta name="og:image" content="/images/feature-ADDL.webp" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+      </Head>
       <section className="p-0 parallax overlap-height">
         <div className="lqd-vbg-wrap">
           <div className="lqd-vbg-inner">
@@ -89,11 +107,11 @@ const About = () => {
             style={{ height: "600px" }}
           >
             <div className="col-12 col-xl-5 col-lg-6 col-md-7 col-sm-10 d-flex flex-column justify-content-center">
-            <h2 className="video-title">
+            <h1 className="video-title">
                 {/* <span className="text-gradient-light-purple-light-orange font-weight-900 d-inline-block"> */}
                 About Us
                 {/* </span> */}
-              </h2>
+              </h1>
               <div className="alt-font text-large font-weight-500 text-uppercase letter-spacing-2px d-flex">
                 <span className="flex-shrink-0 w-40px h-1px bg-white opacity-6 align-self-center margin-25px-right"></span>
                 <span className="flex-grow-1 video-desc opacity-6">
@@ -161,7 +179,7 @@ const About = () => {
                 receive restorations that meet the latest industry standards
                 while maintaining superior precision and reliability.
               </div>
-              <Link href="/contactUs">
+              <Link href="/contact-us/">
                 <button className="btn btn-getInTouch">Get In Touch</button>
               </Link>
 
@@ -273,7 +291,6 @@ const About = () => {
       </section>
 
       <section className="boss-work">
-
         <Image
           src="/images/bosswithtxt.webp"
           alt="Lab Technician Working"

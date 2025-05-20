@@ -1,11 +1,28 @@
 import Image from "next/image";
-// import { Geist, Geist_Mono } from "next/font/google";
 import Home1 from "@/component/Home1";
 import Link from "next/link";
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Ace Digital Dental Lab | #1 Dental Lab Services in USA</title>
+        <meta name="description" content="Ace Digital Dental Lab is the best dental laboratory in USA. We craft custom dental prosthesis with advanced technology, digital precision, and expert service."/>
+        <link rel="canonical" href="https://acedigitaldentallaboratory.com/" /> 
+        <meta property="og:locale" content="en_US"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Ace Digital Dental Lab | #1 Dental Lab Services in USA" />
+        <meta property="og:description" content="Ace Digital Dental Lab is the best dental laboratory in USA. We craft custom dental prosthesis with advanced technology, digital precision, and expert service."/>
+        <meta property="og:url" content="https://acedigitaldentallaboratory.com/" />
+        <meta property="og:site_name" content="Ace Digital Dental Lab" />
+        <meta name="og:image" content="/images/feature-ADDL.webp" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+      </Head>
       <section className="p-0 parallax overlap-height">
         <div className="lqd-vbg-wrap">
           <div className="lqd-vbg-inner">
@@ -140,7 +157,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="col-12 text-center text-md-start mt-3">
-                  <Link href="/about">
+                  <Link href="/about-us/">
                     <button className="btn btn-primary" style={{ backgroundColor: "#00478a", border: "none" }}>
                       Read More
                     </button>

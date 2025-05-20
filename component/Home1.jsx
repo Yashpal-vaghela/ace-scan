@@ -469,7 +469,7 @@ const Home1 = () => {
             patient satisfaction even further.
           </p>
           <div className="simplebtn">
-            <a href="/contactUs">Start New Project</a>
+            <a href="/contact-us">Start New Project</a>
           </div>
         </div>
       </section>

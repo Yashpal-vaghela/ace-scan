@@ -165,16 +165,16 @@
 }
 
 .card1 {
-  bottom: -28%;
+  bottom: -30%;
 }
 .card2{ 
-  bottom: -40%;
+  bottom: -42%;
 }
 .card3 {
-  bottom: -35%;
+  bottom: -30%;
 }
 .card4 {
-  bottom: -30%;
+  bottom: -25%;
 }
 
 
@@ -232,14 +232,14 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.step h3 {
+.step p {
   font-size: 80px;
   font-weight: bold;
   color: transparent;
   -webkit-text-stroke: 2px #fff;
 }
 
-.step p {
+.step h3 {
   font-size: 20px;
 }
 
@@ -667,12 +667,13 @@
     display: block;
   }
   .product-before-after-heading1 h2{
-    font-size: 20px;
-    font-weight: 700;
-  }
-  .product-before-after-heading1 h3{
+    
     font-size: 1.5rem;
     line-height: 1.4;
+  }
+  .product-before-after-heading1 p{
+    font-size: 20px;
+    font-weight: 700;
   }
   .implant-card{
     height: 560px;
@@ -703,11 +704,11 @@
     top: 5%;
   }
 
-  .product-before-after-heading1 h2{
+  .product-before-after-heading1 p{
     font-size: 18px;
     font-weight: 700;
   }
-  .product-before-after-heading1 h3{
+  .product-before-after-heading1 h2{
     font-size: 1.6rem;
   }
 }
@@ -733,12 +734,12 @@
     top: 8%;
   }
 
-  .product-before-after-heading1 h2{
+  .product-before-after-heading1 p{
     font-size: 16px;
     font-weight: 700;
     text-align: left;
   }
-  .product-before-after-heading1 h3{
+  .product-before-after-heading1 h2{
     font-size: 1.2rem;
     text-align: left;
   }

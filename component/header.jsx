@@ -70,7 +70,7 @@ const Header = () => {
                             <Link href="/" className={`nav-link  mx-lg-2 ${router.pathname === "/" ? "active" : ""}`}>Home</Link>
                         </li>
                         <li className="nav-item" onClick={handleOffcanvas1}>
-                            <Link className={`nav-link  mx-lg-2 ${router.pathname === "/about" ? "active" : ""}`} href="/about">About US</Link>
+                            <Link className={`nav-link  mx-lg-2 ${router.pathname === "/about-us" ? "active" : ""}`} href="/about-us">About US</Link>
                         </li>
                         <li className="nav-item dropdown">
                         <Link
@@ -128,7 +128,7 @@ const Header = () => {
                             <Link className={`nav-link  mx-lg-2 ${router.pathname === "/materials" ? "active" : ""}`} href="/materials">Materials</Link>
                         </li> 
                         <li className="nav-item" onClick={handleOffcanvas1}>
-                            <Link className={`nav-link  mx-lg-2 ${router.pathname === "/contactUs" ? "active" : ""}`} href="/contactUs">Contact US</Link>
+                            <Link className={`nav-link  mx-lg-2 ${router.pathname === "/contact-us" ? "active" : ""}`} href="/contact-us">Contact US</Link>
                         </li>
                     </ul>
                     </div>

@@ -2,6 +2,7 @@
 import { useForm } from "react-hook-form";
 import React, { useState } from "react";
 import Image from "next/image";
+import Head from "next/head";
 
 const contactUs = () => {
   const {
@@ -46,6 +47,23 @@ const contactUs = () => {
   return (
     <React.Fragment>
       {/* <Breadcrumbs></Breadcrumbs> */}
+      <Head>
+        <title>Contact Us | Ace Digital Dental Laboratory</title>
+        <meta name="description" content="Discover the story behind ADDL. With a commitment to innovation, precision, and quality, we partner with dental professionals to deliver exceptional digital dental restorations."/>
+        <link rel="canonical" href="https://acedigitaldentallaboratory.com/contact-us/" /> 
+        <meta property="og:locale" content="en_US"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Contact Us | Ace Digital Dental Laboratory" />
+        <meta name="description" content="Discover the story behind ADDL. With a commitment to innovation, precision, and quality, we partner with dental professionals to deliver exceptional digital dental restorations."/>
+        <meta property="og:url" content="https://acedigitaldentallaboratory.com/contact-us/" />
+        <meta property="og:site_name" content="Ace Digital Dental Lab" />
+        <meta name="og:image" content="/images/feature-ADDL.webp" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+      </Head>
       <section className="p-0 parallax overlap-height">
         <div className="lqd-vbg-wrap">
           <div className="lqd-vbg-inner">
@@ -104,11 +122,11 @@ const contactUs = () => {
             style={{ height: "600px" }}
           >
             <div className="col-12 col-xl-5 col-lg-6 col-md-7 col-sm-10 d-flex flex-column justify-content-center">
-              <h2 className="video-title">
+              <h1 className="video-title">
                 {/* <span className="text-gradient-light-purple-light-orange font-weight-900 d-inline-block"> */}
                 Contact US
                 {/* </span>{" "} */}
-              </h2>
+              </h1>
               <div className="alt-font text-large font-weight-500 text-uppercase letter-spacing-2px d-flex">
                 <span className="flex-shrink-0 w-40px h-1px bg-white opacity-6 align-self-center margin-25px-right"></span>
                 <span className="flex-grow-1 video-desc opacity-6">
@@ -124,12 +142,12 @@ const contactUs = () => {
         style={{ paddingTop: "80px", paddingBottom: "30px" }}
       >
         <div className="container position-relative ">
-          <h3 className="mb-4 main-contact-title">How Can We Help?</h3>
+          <h2 className="mb-4 main-contact-title">How Can We Help?</h2>
           <div className="row position-relative">
             <div className="col-lg-4 col-12 ">
               <div className="con-left">
                 <div className="overlays-form"></div>
-                <h4 className="sidebar-heading">We are here to help you </h4>
+                <h3 className="sidebar-heading">We are here to help you </h3>
                 <div className="sidebar-cards">
                   <Image src="/images/email-icon.svg" className="slider-icon" alt="email-icon" width={49} height={50}></Image>
                   {/* <img src="/images/email-icon.svg" className=" slider-icon"></img> */}

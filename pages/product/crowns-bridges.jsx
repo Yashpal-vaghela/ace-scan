@@ -5,6 +5,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import Head from "next/head";
 
 const CrownsBridges = () => {
     const videoRefP = useRef(null);
@@ -61,12 +62,29 @@ const CrownsBridges = () => {
 
     return (
         <>
+            <Head>
+                <title>Premium Dental Crowns & Bridges | Ace Digital Dental Lab</title>
+                <meta name="description" content="Get high-quality, custom-made dental crowns and bridges from ADDl. Crafted with precision, designed for durability, and trusted by dental professionals."/>
+                <link rel="canonical" href="https://acedigitaldentallaboratory.com/crowns-bridges/" /> 
+                <meta property="og:locale" content="en_US"/>  
+                <meta property="og:type" content="website"/>
+                <meta property="og:title" content="Premium Dental Crowns & Bridges | Ace Digital Dental Lab" />
+                <meta name="description" content="Get high-quality, custom-made dental crowns and bridges from ADDl. Crafted with precision, designed for durability, and trusted by dental professionals."/>
+                <meta property="og:url" content="https://acedigitaldentallaboratory.com/crowns-bridges/" />
+                <meta property="og:site_name" content="Ace Digital Dental Lab" />
+                <meta name="og:image" content="/images/feature-ADDL.webp" />
+                <meta property="og:image:type" content="image/webp" />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="robots" content="index, follow" />
+            </Head>
             <section className="bradcrumb-product" style={{ marginTop: "80px" }}>
                 <div className="container h-100">
                     <div className=" d-flex justify-content-end align-items-start flex-column inner-bread" >
-                        <div className="breadcrumbTitle">
+                        <h1 className="breadcrumbTitle">
                             Crowns & Bridges
-                        </div>
+                        </h1>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb text-sm breadcrumbNav">
                                 <li class="breadcrumb-item active"><a href="/">Home</a></li>
@@ -85,8 +103,7 @@ const CrownsBridges = () => {
 
                         <div className="col-12 col-lg-6 col-md-6 order-1 order-lg-0 order-md-0">
                             <div className="product-text p-3">
-                                <h2 className="double-heading">We Blend <span className="highlight-text">Craftsmanship </span>with <span className="highlight-text">Artistic Precision </span>in Restorations.
-                                </h2>
+                                <h2 className="double-heading">We Blend <span className="highlight-text">Craftsmanship </span>with <span className="highlight-text">Artistic Precision </span>in Restorations.</h2>
                                 <p>
                                     We combine skilled craftsmanship with digital artistry to create dental restorations
                                     that are not only functional but also natural in appearance and feel, ensuring a seamless
@@ -302,7 +319,7 @@ const CrownsBridges = () => {
 
                         To ensure exceptional results, ADDL provides premium dental lab solutions that prioritize precision, craftsmanship, and advanced technology for superior dental restorations. <br />
 
-                        <a href="/contactUs" class="btn ">Get In Touch</a>
+                        <a href="/contact-us/" class="btn ">Get In Touch</a>
                     </div>
                 </div>
 
