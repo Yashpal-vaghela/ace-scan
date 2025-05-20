@@ -4,6 +4,30 @@ import Link from "next/link";
 import Head from 'next/head';
 
 export default function Home() {
+  const websiteSchema = {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "name": "Ace Digital Dental Lab",
+    "url": "https://acedigitaldentallaboratory.com/",
+  };
+  const localSchema ={
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Ace Digital Dental Lab",
+    "image": "https://acedigitaldentallaboratory.com/images/ACE-logo.webp",
+    "@id": "",
+    "url": "https://acedigitaldentallaboratory.com/",
+    "telephone": "+1 551-380-0385",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1 Auer Court, 2nd Floor East",
+      "addressLocality": "Brunswick",
+      "addressRegion": "NJ",
+      "postalCode": "08816",
+      "addressCountry": "US"
+    }  
+
+  }
   return (
     <>
       <Head>
@@ -22,6 +46,14 @@ export default function Home() {
         <meta property="og:image:height" content="630" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localSchema) }}
+        />
       </Head>
       <section className="p-0 parallax overlap-height">
         <div className="lqd-vbg-wrap">
@@ -76,9 +108,9 @@ export default function Home() {
             style={{ height: "600px" }}
           >
             <div className="col-12 col-xl-5 col-lg-6 col-md-7 col-sm-10 d-flex flex-column justify-content-center">
-              <h2 className="video-title">
+              <h1 className="video-title">
                 Unparalleled Quality in dental lab solutions!
-              </h2>
+              </h1>
               <div className="text-large font-weight-500 text-uppercase d-flex">
                 <span className="flex-shrink-0 w-40px h-1px bg-white opacity-6 align-self-center margin-25px-right"></span>
                 <span className="flex-grow-1 opacity-6 video-desc">
@@ -125,9 +157,9 @@ export default function Home() {
                       style={{ padding: "5px", borderRadius: "10px" }}
                     ></Image>
                     <div className="d-block d-md-block">
-                      <p className="fw-bold mb-2" style={{ color: "#00478a" }}>
+                      <h3 className="fw-bold mb-2" style={{ color: "#00478a", fontSize: "16px !important" }}>
                         Dental Technicians
-                      </p>
+                      </h3>
                       <p className="hero-txt">
                         Countless smiles enhanced by our skilled dental
                         technicians. Trust our expertise for flawless results!
@@ -146,9 +178,9 @@ export default function Home() {
                       style={{ padding: "5px", borderRadius: "10px" }}
                     ></Image>
                     <div className="d-block d-md-block">
-                      <p className="fw-bold mb-2" style={{ color: "#00818a" }}>
+                      <h3 className="fw-bold mb-2" style={{ color: "#00818a", fontSize: "16px !important" }}>
                         The Highest Quality Products.
-                      </p>
+                      </h3>
                       <p className="hero-txt">
                         With years of excellence our professional team delivering
                         top-quality dental care.
@@ -220,9 +252,9 @@ export default function Home() {
                   height={50}
                   alt=" "
                 ></Image>
-                <h2 className="intro__item-title my-2 my-sm-3">
+                <h3 className="intro__item-title my-2 my-sm-3">
                   Professional expert clinical advice
-                </h2>
+                </h3>
                 <div className="line"></div>
                 <p className="intro__item-desc">
                   Our Clinical Advisors provide personalized guidance with
@@ -239,11 +271,11 @@ export default function Home() {
                   className="img-fluid "
                   width={40}
                   height={50}
-                  alt=" "
+                  alt=""
                 ></Image>
-                <h2 className="intro__item-title my-2 my-sm-3">
+                <h3 className="intro__item-title my-2 my-sm-3">
                   Fast turnaround times
-                </h2>
+                </h3>
                 <div className="line"></div>
                 <p className="intro__item-desc">
                   At ADDL, your satisfaction is our priority! We deliver
@@ -260,11 +292,11 @@ export default function Home() {
                   className="img-fluid "
                   width={40}
                   height={50}
-                  alt=" "
+                  alt=""
                 ></Image>
-                <h2 className="intro__item-title my-2 my-sm-3">
+                <h3 className="intro__item-title my-2 my-sm-3">
                   Certification
-                </h2>
+                </h3>
                 <div className="line"></div>
                 <p className="intro__item-desc">
                   All our lab work is designed and completed in Europe, adhering
@@ -284,9 +316,9 @@ export default function Home() {
                   height={50}
                   alt=" "
                 ></Image>
-                <h2 className="intro__item-title my-2 my-sm-3">
+                <h3 className="intro__item-title my-2 my-sm-3">
                   Reduced costs
-                </h2>
+                </h3>
                 <p className="line"></p>
                 <p className="intro__item-desc">
                   At ADDL, we focus on providing exceptional quality with
@@ -305,9 +337,9 @@ export default function Home() {
           <div className="row  d-flex flex-row justify-content-center align-items-center">
             <div className="col-12 col-lg-6 ss-header">
               <div className="hero-subheading">Smile-Saving Support</div>
-              <div className="step_heading">
+              <h2 className="step_heading">
                 Our After-Sales Services for Your Dental Lab Needs
-              </div>
+              </h2>
             </div>
             <div className="col-12 col-lg-6 ss-header">
               <div className="w-40">
@@ -324,10 +356,10 @@ export default function Home() {
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-10 order-1 order-sm-0 col-lg-3 col-sm-3">
-              <h1 className="process-img n1">01</h1>
+              <span className="process-img n1">01</span>
             </div>
             <div className="col-10 order-2 order-lg-0 col-sm-8">
-              <h2 className="process-title ">Expert Consultation & Advisory</h2>
+              <h3 className="process-title ">Expert Consultation & Advisory</h3>
               <p className="process-subtitle">
                 Our team of experienced professionals is dedicated to providing
                 expert guidance on our extensive range of materials, products,
@@ -338,9 +370,9 @@ export default function Home() {
               </p>
             </div>
             <div className="col-10 order-4 order-lg-0 col-sm-8">
-              <h2 className="process-title text-sm-start text-lg-end">
+              <h3 className="process-title text-sm-start text-lg-end">
                 Tailored Customization
-              </h2>
+              </h3>
               <p className="process-subtitle text-sm-start text-lg-end">
                 We understand that every patient is unique, which is why we
                 offer fully customized dental solutions designed to meet the
@@ -351,13 +383,13 @@ export default function Home() {
             </div>
             <div className="col-10 order-3 order-lg-0 col-sm-3">
               {/* images2 */}
-              <h1 className="process-img text-sm-start text-lg-end n2">02</h1>
+              <span className="process-img text-sm-start text-lg-end n2">02</span>
             </div>
             <div className="col-10 col-sm-3 order-lg-0 order-5">
-              <h1 className="process-img n3">03</h1>
+              <span className="process-img n3">03</span>
             </div>
             <div className="col-10 col-sm-8 order-lg-0 order-6">
-              <h2 className="process-title">Expert Clinical Guidance</h2>
+              <h3 className="process-title">Expert Clinical Guidance</h3>
               <p className="process-subtitle">
                 Complex clinical cases require precision and expertise. Our team
                 of highly skilled clinical advisors, with extensive knowledge in
@@ -369,9 +401,9 @@ export default function Home() {
               </p>
             </div>
             <div className="col-10 col-sm-8 order-lg-0 order-8">
-              <h2 className="process-title text-sm-start text-lg-end">
+              <h3 className="process-title text-sm-start text-lg-end">
                 Rapid Turnaround Times
-              </h2>
+              </h3>
               <p className="process-subtitle text-sm-start text-lg-end">
                 We recognize the importance of efficiency in patient care, which
                 is why we prioritize fast and reliable turnaround times for all
@@ -381,15 +413,15 @@ export default function Home() {
               </p>
             </div>
             <div className="col-10 col-sm-3 order-lg-0 order-7">
-              <h1 className="process-img text-sm-start text-lg-end n4">04</h1>
+              <span className="process-img text-sm-start text-lg-end n4">04</span>
             </div>
             <div className="col-10 col-sm-3 order-lg-0 order-9">
-              <h1 className="process-img n5 ">05</h1>
+              <span className="process-img n5 ">05</span>
             </div>
             <div className="col-10 col-sm-8 order-lg-0 order-10">
-              <h2 className="process-title">
+              <h3 className="process-title">
                 Uncompromising Quality Assurance
-              </h2>
+              </h3>
               <p className="process-subtitle">
                 At ADDL, we are committed to the highest standards of
                 quality by utilizing cutting-edge technology and premium

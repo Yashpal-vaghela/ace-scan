@@ -3,7 +3,7 @@ import Testimonial from "./Testimonial";
 import Image from "next/image";
 import Link from "next/link";
 
-const Home1 = () => {
+const  Home1 = () => {
   const counters = [
     {
       finalCount: 100,
@@ -157,7 +157,7 @@ const Home1 = () => {
                 >
                   <div className="accordion text-left " id="faqAccordion">
                     <div className="accordion-item border-0 ">
-                      <h2 className="accordion-header" id="headingOne">
+                      <h3 className="accordion-header" id="headingOne">
                         <button
                           className="accordion-button collapsed"
                           type="button"
@@ -170,7 +170,7 @@ const Home1 = () => {
                           ADDL’s Fast and Reliable Turnaround Times: What Sets
                           Us Apart
                         </button>
-                      </h2>
+                      </h3>
                       <div
                         id="collapseOne"
                         className="accordion-collapse collapse"
@@ -192,7 +192,7 @@ const Home1 = () => {
                     <hr className="m-0 custom-hr" />
 
                     <div className="accordion-item border-0">
-                      <h2 className="accordion-header" id="headingTwo">
+                      <h3 className="accordion-header" id="headingTwo">
                         <button
                           className="accordion-button collapsed"
                           type="button"
@@ -204,7 +204,7 @@ const Home1 = () => {
                         >
                           ADDL is the Future
                         </button>
-                      </h2>
+                      </h3>
                       <div
                         id="collapseTwo"
                         className="accordion-collapse collapse"
@@ -228,7 +228,7 @@ const Home1 = () => {
                     <hr className="m-0 custom-hr" />
 
                     <div className="accordion-item border-0">
-                      <h2 className="accordion-header" id="headingThree">
+                      <h3 className="accordion-header" id="headingThree">
                         <button
                           className="accordion-button collapsed"
                           type="button"
@@ -240,7 +240,7 @@ const Home1 = () => {
                         >
                           Sustainability and Eco-Friendliness at ADDL
                         </button>
-                      </h2>
+                      </h3>
                       <div
                         id="collapseThree"
                         className="accordion-collapse collapse"
@@ -263,7 +263,7 @@ const Home1 = () => {
                     <hr className="m-0 custom-hr" />
 
                     <div className="accordion-item border-0">
-                      <h2 className="accordion-header" id="headingFour">
+                      <h3 className="accordion-header" id="headingFour">
                         <button
                           className="accordion-button collapsed"
                           type="button"
@@ -275,7 +275,7 @@ const Home1 = () => {
                         >
                           ADDL: Precision & Excellence in Dental Lab Solutions
                         </button>
-                      </h2>
+                      </h3>
                       <div
                         id="collapseFour"
                         className="accordion-collapse collapse"
@@ -298,7 +298,7 @@ const Home1 = () => {
                     <hr className="m-0 custom-hr" />
 
                     <div className="accordion-item border-0">
-                      <h2 className="accordion-header" id="headingFive">
+                      <h3 className="accordion-header" id="headingFive">
                         <button
                           className="accordion-button collapsed"
                           type="button"
@@ -311,7 +311,7 @@ const Home1 = () => {
                           Easy online ordering and seamless communication with
                           your lab.
                         </button>
-                      </h2>
+                      </h3>
                       <div
                         id="collapseFive"
                         className="accordion-collapse collapse"
@@ -414,7 +414,7 @@ const Home1 = () => {
 
                     {/* Timeline Content */}
                     <div className="timeline-content ms-3">
-                      <p className="timeline-heading fw-bold">{step.title}</p>
+                      <h3 className="timeline-heading fw-bold">{step.title}</h3>
                       <p className="timeline-subheading">{step.description}</p>
                     </div>
 

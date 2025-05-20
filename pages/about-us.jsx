@@ -29,6 +29,13 @@ const About = () => {
       };
     }
   }, []);
+  const aboutSchema ={
+     "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About Us | Ace Digital Dental Laboratory",
+      "url": "https://acedigitaldentallaboratory.com/about-us/",
+      "description": "Discover the story behind ADDL. With a commitment to innovation, precision, and quality, we partner with dental professionals to deliver exceptional digital dental restorations.."
+  }  
   return (
     <>
       <Head>
@@ -47,6 +54,10 @@ const About = () => {
         <meta property="og:image:height" content="630" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
+         <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
+        />
       </Head>
       <section className="p-0 parallax overlap-height">
         <div className="lqd-vbg-wrap">

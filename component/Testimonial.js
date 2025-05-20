@@ -1,4 +1,4 @@
-import {useEffect,useState,useRef} from "react";
+import {useRef} from "react";
 import Image from "next/image";
 import {Swiper,SwiperSlide} from "swiper/react";
 import {Autoplay,Pagination,Navigation} from "swiper/modules"
@@ -104,11 +104,11 @@ const Testimonial = () =>{
                             height={70}
                             className="custom_quote"
                         />
-                        <h6 className="testnomial_text">
+                        <p className="testnomial_text">
                             “One of the best dental labs...!! The advanced lab provides
                             excellent aesthetic, well contoured, precise fitting for all work
                             whether its metal/pfm/all ceramic ya implant work!!“{" "}
-                        </h6>
+                        </p>
                         <hr className="custom_hr" />
                         <p className="drname"> Dr. Hardik Prajapati</p>
                         <p className="star-rating">★ ★ ★ ★ ★</p>

@@ -31,6 +31,34 @@ export default function Document() {
           referrerpolicy="no-referrer"
         />
         <link rel="icon" type="image/png" href="/images/fav-icon1.webp" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Ace Digital Dental Lab",
+              "alternateName": "Ace Digital Dental Lab | Best Dental Lab In USA",
+              "url": "https://acedigitaldentallaboratory.com/",
+              "logo": "https://acedigitaldentallaboratory.com/images/ACE-logo.webp",
+              "description": "Ace Digital Dental Lab delivers high-quality dental prosthetics and custom digital solutions, trusted by dental professionals worldwide.",
+              "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "1 Auer Court, 2nd Floor East Brunswick, New Jersey 08816",
+              "addressLocality": "New Jersey",
+              "postalCode": "08816",
+              "addressCountry": "US"
+              },
+              "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+1 551-380-0385",
+              "contactType": "customer service",
+              "areaServed": ["US"],
+              "availableLanguage": ["English"]
+              }
+          })
+          }}
+        />
       </Head>
       <body>
      
