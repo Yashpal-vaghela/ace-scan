@@ -52,11 +52,11 @@ const Header = () => {
                 >
                     <div className="offcanvas-header">
                 
-                    <h5 className="offcanvas-title" id="offcanvasExampleLabel">
+                    <div className="offcanvas-title" id="offcanvasExampleLabel">
                         <Link href="/" className="Logo" onClick={handleOffcanvas}>
                             <Image src="/images/ACE-logo.webp" className="img-fluid" alt="LOGO" width={150} height={50}></Image>
                         </Link>
-                    </h5>
+                    </div>
                     <button
                         className="btn-close text-reset"
                         data-bs-dismiss="offcanvas"

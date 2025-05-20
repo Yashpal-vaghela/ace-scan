@@ -1,7 +1,6 @@
 import Link from "next/link";
-import React, { useEffect ,useState} from "react";
+import React, { useState} from "react";
 import { useForm } from "react-hook-form";
-// import "../public/css/footer.css"
 import Image from "next/image";
 
 const Footer = () => {
@@ -119,7 +118,7 @@ const Footer = () => {
                         <div className="footer-nav">
                             <div className="row g-4">
                                 <div className="col-12 col-lg-4 col-md-6 ">
-                                    <h5 className="nav-title">Product & Service</h5>
+                                    <p className="nav-title">Product & Service</p>
                                     <ul>
                                         <li><a href="/product/digital-workflow">Digital Flow</a></li>
                                         <li><a href="/product/cad-cam">CAD/CAM</a></li>
@@ -128,16 +127,15 @@ const Footer = () => {
                                     </ul>
                                 </div>
                                 <div className="col-12 col-lg-4 col-md-6 ">
-                                    <h5 className="nav-title">Contact & Support</h5>
+                                    <p className="nav-title">Contact & Support</p>
                                     <ul>
                                         <li><a href="/about-us">About</a>"</li>
                                         <li><a href="/contact-us">Contact</a></li>
                                         <li><a href="/support">Support</a></li>
-                                        <li><a href="/#">Privacy Policy</a></li>
                                     </ul>
                                 </div>
                                 <div className="col-12 col-lg-4 col-md-6 ">
-                                    <h5 className="nav-title">Get In Touch</h5>
+                                    <p className="nav-title">Get In Touch</p>
                                     <ul>
                                         <li><a href="tel:+15513800385">+1 551-380-0385</a></li>
                                         <li><a href="mailto:hr@acedigitaldentallaboratory.com">hr@acedigitaldentallaboratory.com</a></li>

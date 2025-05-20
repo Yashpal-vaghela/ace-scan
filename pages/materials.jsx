@@ -12,7 +12,7 @@ const Materials = () => {
                 <meta property="og:locale" content="en_US"/>
                 <meta property="og:type" content="website"/>
                 <meta property="og:title" content="High-Quality Dental Materials | Ace Digital Dental Laboratory" />
-                <meta name="description" content="Discover premium dental materials for crowns, bridges, implants, and restorations. Ace Digital Dental Lab ensures strength, aesthetics, and precision in every product."/>
+                <meta name="og:description" content="Discover premium dental materials for crowns, bridges, implants, and restorations. Ace Digital Dental Lab ensures strength, aesthetics, and precision in every product."/>
                 <meta property="og:url" content="https://acedigitaldentallaboratory.com/materials/" />
                 <meta property="og:site_name" content="Ace Digital Dental Lab" />
                 <meta name="og:image" content="/images/feature-ADDL.webp" />

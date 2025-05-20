@@ -69,7 +69,7 @@ const CrownsBridges = () => {
                 <meta property="og:locale" content="en_US"/>  
                 <meta property="og:type" content="website"/>
                 <meta property="og:title" content="Premium Dental Crowns & Bridges | Ace Digital Dental Lab" />
-                <meta name="description" content="Get high-quality, custom-made dental crowns and bridges from ADDl. Crafted with precision, designed for durability, and trusted by dental professionals."/>
+                <meta name="og:description" content="Get high-quality, custom-made dental crowns and bridges from ADDl. Crafted with precision, designed for durability, and trusted by dental professionals."/>
                 <meta property="og:url" content="https://acedigitaldentallaboratory.com/crowns-bridges/" />
                 <meta property="og:site_name" content="Ace Digital Dental Lab" />
                 <meta name="og:image" content="/images/feature-ADDL.webp" />

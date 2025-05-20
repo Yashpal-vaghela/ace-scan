@@ -54,7 +54,7 @@ const contactUs = () => {
         <meta property="og:locale" content="en_US"/>
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="Contact Us | Ace Digital Dental Laboratory" />
-        <meta name="description" content="Discover the story behind ADDL. With a commitment to innovation, precision, and quality, we partner with dental professionals to deliver exceptional digital dental restorations."/>
+        <meta name="og:description" content="Discover the story behind ADDL. With a commitment to innovation, precision, and quality, we partner with dental professionals to deliver exceptional digital dental restorations."/>
         <meta property="og:url" content="https://acedigitaldentallaboratory.com/contact-us/" />
         <meta property="og:site_name" content="Ace Digital Dental Lab" />
         <meta name="og:image" content="/images/feature-ADDL.webp" />

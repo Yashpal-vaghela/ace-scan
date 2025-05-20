@@ -13,7 +13,7 @@ const support = () => {
         <meta property="og:locale" content="en_US"/>
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="Support & Assistance | Ace Digital Dental Laboratory" />
-        <meta name="description" content="Need help with your dental lab cases or services? ADDL's support team is here to assist you with case tracking, submissions, and technical questions. Contact us today!"/>
+        <meta name="og:description" content="Need help with your dental lab cases or services? ADDL's support team is here to assist you with case tracking, submissions, and technical questions. Contact us today!"/>
         <meta property="og:url" content="https://acedigitaldentallaboratory.com/support/" />
         <meta property="og:site_name" content="Ace Digital Dental Lab" />
         <meta name="og:image" content="/images/feature-ADDL.webp" />

@@ -12,7 +12,7 @@ const DigitalWorkflow = () => {
                 <meta property="og:locale" content="en_US"/>
                 <meta property="og:type" content="website"/>
                 <meta property="og:title" content="Digital Workflow Solutions | Ace Digital Dental Lab" />
-                <meta name="description" content="Streamline your dentistry with Ace Digital Dental Lab’s cutting-edge digital workflow—precision, speed, and reliability from scan to final restoration."/>
+                <meta name="og:description" content="Streamline your dentistry with Ace Digital Dental Lab’s cutting-edge digital workflow—precision, speed, and reliability from scan to final restoration."/>
                 <meta property="og:url" content="https://acedigitaldentallaboratory.com/digital-workflow/" />
                 <meta property="og:site_name" content="Ace Digital Dental Lab" />
                 <meta name="og:image" content="/images/feature-ADDL.webp" />

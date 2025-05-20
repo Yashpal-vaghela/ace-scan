@@ -66,7 +66,7 @@ const Implants = () => {
         <meta property="og:locale" content="en_US"/>  
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="Premium Dental Implants | Ace Digital Dental Laboratory" />
-        <meta name="description" content="Discover high-quality, precision-crafted dental implants made by Ace Digital Dental Laboratory. Engineered for durability, comfort, and natural aesthetics."/>
+        <meta name="og:description" content="Discover high-quality, precision-crafted dental implants made by Ace Digital Dental Laboratory. Engineered for durability, comfort, and natural aesthetics."/>
         <meta property="og:url" content="https://acedigitaldentallaboratory.com/implants/" />
         <meta property="og:site_name" content="Ace Digital Dental Lab" />
         <meta name="og:image" content="/images/feature-ADDL.webp" />
