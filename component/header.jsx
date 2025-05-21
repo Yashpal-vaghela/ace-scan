@@ -2,8 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import Head from "next/head";
-// import "../public/css/headder.css";
+
 
 const Header = () => {
   const router = useRouter();
@@ -71,7 +70,7 @@ const Header = () => {
                             <Link href="/" className={`nav-link  mx-lg-2 ${router.pathname === "/" ? "active" : ""}`}>Home</Link>
                         </li>
                         <li className="nav-item" onClick={handleOffcanvas1}>
-                            <Link className={`nav-link  mx-lg-2 ${router.pathname === "/about-us" ? "active" : ""}`} href="/about-us">About US</Link>
+                            <Link className={`nav-link  mx-lg-2 ${router.pathname === "/about-us" ? "active" : ""}`} href="/about-us">About</Link>
                         </li>
                         <li className="nav-item dropdown">
                         <Link
@@ -101,7 +100,7 @@ const Header = () => {
                                 href="/product/cad-cam"
                                 className="dropdown-item"
                             >
-                                CAD / CAM milling
+                                CAD / CAM Restoration
                             </Link>
                             </li>
                             <li onClick={handleOffcanvas1}>
@@ -129,7 +128,7 @@ const Header = () => {
                             <Link className={`nav-link  mx-lg-2 ${router.pathname === "/materials" ? "active" : ""}`} href="/materials">Materials</Link>
                         </li> 
                         <li className="nav-item" onClick={handleOffcanvas1}>
-                            <Link className={`nav-link  mx-lg-2 ${router.pathname === "/contact-us" ? "active" : ""}`} href="/contact-us">Contact US</Link>
+                            <Link className={`nav-link  mx-lg-2 ${router.pathname === "/contact-us" ? "active" : ""}`} href="/contact-us">Contact</Link>
                         </li>
                     </ul>
                     </div>

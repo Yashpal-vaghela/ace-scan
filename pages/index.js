@@ -108,13 +108,14 @@ export default function Home() {
             style={{ height: "600px" }}
           >
             <div className="col-12 col-xl-5 col-lg-6 col-md-7 col-sm-10 d-flex flex-column justify-content-center">
-              <h1 className="video-title">
-                Unparalleled Quality in Digital Dental Lab Solutions!
+              <span style={{ color: "white" }}>Welcome to</span>
+              <h1 className="video-title ">
+                Ace Digital Dental Lab
               </h1>
-              <div className="text-large font-weight-500 text-uppercase d-flex">
+              <div className="text-large font-weight-500 d-flex">
                 <span className="flex-shrink-0 w-40px h-1px bg-white opacity-6 align-self-center margin-25px-right"></span>
                 <span className="flex-grow-1 opacity-6 video-desc">
-                  Our only vision is to put endless smiles on every Face
+                  Your Premier Partner for Precision Digital Dental Solutions in USA
                 </span>
               </div>
             </div>
@@ -136,13 +137,13 @@ export default function Home() {
             <div className="col-11 col-xl-7 col-md-5 col-lg-6 mt-3">
               <div className="text-left">
                 <div className="hero-subheading mt-lg-5 mt-md-5 mt-2">
-                  Dental Technicians
+                  DNA of Our Modern Dental Laboratory
                 </div>
                 <h2 className="double-heading heading1">
-                  At ADDL, We Believe Crafting Perfect Smiles with{" "}
+                  Harnessing{" "}
                   <span className="highlight-text1 ">Digital Precision</span>{" "}
-                  and{" "}
-                  <span className="highlight-text2 ">Flawless Integrity</span>
+                  & Extreme Care for Every{" "}
+                  <span className="highlight-text2 ">Dental Restoration</span>
                 </h2>
               </div>
               <div className="row mt-4 g-3">
@@ -158,11 +159,11 @@ export default function Home() {
                     ></Image>
                     <div className="d-block d-md-block">
                       <h3 className="fw-bold mb-2" style={{ color: "#00478a", fontSize: "16px !important" }}>
-                        Dental Technicians
+                        Expert Dental Technicians
                       </h3>
                       <p className="hero-txt">
-                        Countless smiles enhanced by our skilled dental
-                        technicians. Trust our expertise for flawless results!
+                        Who leverage advanced digital technology to create precise, customized dental 
+                        restorations tailored to each patient’s needs.
                       </p>
                     </div>
                   </div>
@@ -179,11 +180,10 @@ export default function Home() {
                     ></Image>
                     <div className="d-block d-md-block">
                       <h3 className="fw-bold mb-2" style={{ color: "#00818a", fontSize: "16px !important" }}>
-                        The Highest Quality Products
+                        Premium Quality Products
                       </h3>
                       <p className="hero-txt">
-                        With years of excellence our professional team delivering
-                        top-quality dental care.
+                        Manufactured using state-of-the-art digital processes, ensuring durability, accuracy, and natural aesthetics.
                       </p>
                     </div>
                   </div>
@@ -191,7 +191,7 @@ export default function Home() {
                 <div className="col-12 text-center text-md-start mt-3">
                   <Link href="/about-us/">
                     <button className="btn btn-primary" style={{ backgroundColor: "#00478a", border: "none" }}>
-                      Read More
+                      Discover Our Story
                     </button>
                   </Link>
                 </div>
@@ -206,21 +206,22 @@ export default function Home() {
             <div className="col-11 col-xl-5 col-lg-5 order-1 order-lg-0">
               <div className="text-left">
                 <h2 className="pt-4 heading1">
-                  Optimize Your Workflow with{" "}
+                  Committed to Excellence as a Fully{" "}
                   <span className="highlight-text1">
-                    Innovative, Advanced and Premium{" "}
+                    Digital Dental Lab{" "}
                   </span>{" "}
-                  Dental Lab Solutions
+                  in USA
                 </h2>
               </div>
               <div className="feature-box-left text-left order-0 order-lg-1">
                 <p className="pt-2">
-                  ADDL delivers precision, innovation, and reliability in every
-                  restoration, ensuring superior results for your practice.
+                  We are dedicated to delivering unparalleled precision and quality in every restoration. 
+                  Our commitment to excellence positions us as a trusted partner for dental professionals & 
+                  dentist labs across USA.
                 </p>
                 <p>
-                  With ADDL as your dedicated lab partner, you can focus on
-                  patient care while we handle the rest.
+                  Utilizing cutting-edge digital technologies, we ensure that each prosthetic is crafted to 
+                  meet the highest standards of fit and aesthetics.
                 </p>
               </div>
             </div>
@@ -241,7 +242,7 @@ export default function Home() {
         <div className="container d-flex">
           <div className=" services_grid g-4 card-container row position-relative  mt-2 mb-0">
             <h2 className="services-title home-title heading1 mb-2 mt-0">
-              ADDL at a <span className="highlight-text1">glance</span>
+              Why USA Dentists Choose Our <span className="highlight-text1">Digital Dental Services?</span>
             </h2>
             <div className="col-12 col-lg-6 d-flex justify-content-center align-items-center">
               <div className="intro__item">
@@ -253,14 +254,12 @@ export default function Home() {
                   alt="ADDL at a glance"
                 ></Image>
                 <h3 className="intro__item-title my-2 my-sm-3">
-                  Professional expert clinical advice
+                  Certified Lab Standards
                 </h3>
                 <div className="line"></div>
                 <p className="intro__item-desc">
-                  Our Clinical Advisors provide personalized guidance with
-                  extensive clinical and lab expertise. They help you select the
-                  best materials and designs for complex cases, ensuring optimal
-                  results. Wherever you are, they're just a call away.
+                  Our laboratory maintains ISO and FDA certified, as well each product is CE-marked for 
+                  material excellence and is compliant with all applicable US quality regulations.
                 </p>
               </div>
             </div>
@@ -274,14 +273,12 @@ export default function Home() {
                   alt=""
                 ></Image>
                 <h3 className="intro__item-title my-2 my-sm-3">
-                  Fast turnaround times
+                  Fast Turnaround Time
                 </h3>
                 <div className="line"></div>
                 <p className="intro__item-desc">
-                  At ADDL, your satisfaction is our priority! We deliver
-                  top-quality results with fast turnaround times, ensuring
-                  excellence is always achieved effortlessly. We believe great
-                  results should be both quick and seamless for you.
+                  Thanks to our streamlined digital workflows, dental restorations are delivered quickly, 
+                  helping you reduce patient wait times and keep your schedule on track.
                 </p>
               </div>
             </div>
@@ -295,14 +292,12 @@ export default function Home() {
                   alt=""
                 ></Image>
                 <h3 className="intro__item-title my-2 my-sm-3">
-                  Certification
+                  Professional Clinical Advice
                 </h3>
                 <div className="line"></div>
                 <p className="intro__item-desc">
-                  All our lab work is designed and completed in Europe, adhering
-                  to the highest industry standards. We are ISO and FDA
-                  certified, ensuring exceptional quality and compliance. Each
-                  product is CE-marked for material excellence.
+                  Our team of specialist dental technicians assists you in selecting optimal materials 
+                  and designs for even the most complex cases, ensuring superior clinical outcomes.
                 </p>
               </div>
             </div>
@@ -317,14 +312,11 @@ export default function Home() {
                   alt=" "
                 ></Image>
                 <h3 className="intro__item-title my-2 my-sm-3">
-                  Reduced costs
+                  Cost-Effective Solutions
                 </h3>
                 <p className="line"></p>
                 <p className="intro__item-desc">
-                  At ADDL, we focus on providing exceptional quality with
-                  cost-effective solutions, enhancing your clinical efficiency
-                  while maintaining excellence. Our goal is to optimize your
-                  outcomes without compromising on performance or value.
+                  By leveraging automated design and nesting, we minimize material waste and reduce labor costs, delivering premium restorations at highly competitive rates.
                 </p>
               </div>
             </div>
@@ -343,9 +335,7 @@ export default function Home() {
             </div>
             <div className="col-12 col-lg-6 ss-header">
               <div className="w-40">
-                We are committed to providing exceptional after-sale services to
-                meet all your dental lab needs. We offer five ways to ensure you
-                receive the best possible experience with our products:
+                We’re committed to delivering exceptional post-delivery support to meet your clinical expectations. Our comprehensive service model includes five specialized touchpoints to ensure precision, timely communication, and complete satisfaction with every restoration we fabricate.
               </div>
             </div>
           </div>

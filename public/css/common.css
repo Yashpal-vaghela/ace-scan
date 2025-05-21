@@ -177,6 +177,15 @@
     letter-spacing: 1px;
     font-size: 16px;
 }
+/* .gradient-text {
+  background: linear-gradient(135deg, #00478a, #00818a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+} */
+
 @media(min-width:1400px) and (max-width:1649px){
     .background-video1{
         top:10% !important;

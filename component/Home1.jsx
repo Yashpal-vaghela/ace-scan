@@ -32,27 +32,27 @@ const  Home1 = () => {
   const faqData = [
     {
       number: "1",
-      title: "Incoming Orders",
+      title: "Incoming Case Review",
       description:
-        "Each incoming order is carefully inspected to guarantee it meets our high standards before moving into the construction phase.",
+        "Every incoming case is thoroughly reviewed for completeness and accuracy before proceeding to the design and fabrication stage.",
     },
     {
       number: "2",
-      title: "Design and Construction",
+      title: "CAD/CAM Design Fabrication",
       description:
-        "Throughout the design and construction phases, our skilled technicians utilize top-quality materials and advanced equipment to create custom lab solutions designed to meet your unique needs.",
+        "Using advanced CAD/CAM systems, we craft precise restorations tailored to clinical specifications with exceptional materials and expert craftsmanship.",
     },
     {
       number: "3",
-      title: "Quality Control",
+      title: "Precision Quality Check",
       description:
-        "Quality is central to everything we do. You can trust us to deliver reliable and exceptional dental laboratory services.",
+        "Each restoration undergoes a multi-step quality assurance process to ensure optimal fit, function, and aesthetics before final approval.",
     },
     {
       number: "4",
-      title: "Delivery",
+      title: "Reliable Case Delivery",
       description:
-        "At ACE Advance Digital Lab, we ensure timely and secure deliveries. Rely on us for consistent turnaround and dependable dental lab logistics.",
+        "Completed cases are securely packaged and dispatched on time, ensuring dependable delivery and consistent turnaround for your dental practice.",
     },
   ];
 
@@ -129,11 +129,11 @@ const  Home1 = () => {
     } else if (cardName === "card2") {
       setcardImage({ imgUrl: "/images/f2.webp" });
     } else if (cardName === "card3") {
-      setcardImage({ imgUrl: "/images/f3.webp" });
-    } else if (cardName === "card4") {
       setcardImage({ imgUrl: "/images/f4.webp" });
-    } else {
+    } else if (cardName === "card4") {
       setcardImage({ imgUrl: "/images/f5.webp" });
+    } else {
+      setcardImage({ imgUrl: "/images/f3.webp" });
     }
   };
 
@@ -144,7 +144,7 @@ const  Home1 = () => {
       >
         <div className="container">
           <h2 className="heading1 mt-1  text-center">
-            Why <span className="highlight-text1">ACE</span> Digital Dental Laboratry
+            Need Assistance? Start Here
           </h2>
 
           <div className="row g-4">
@@ -167,8 +167,7 @@ const  Home1 = () => {
                           aria-controls="collapseOne"
                           onClick={(e) => handleChangeImage(e, "card1")}
                         >
-                          ADDL’s Fast and Reliable Turnaround Times: What Sets
-                          Us Apart
+                          What sets Ace as the best digital dental lab in the USA?
                         </button>
                       </h3>
                       <div
@@ -178,13 +177,9 @@ const  Home1 = () => {
                         data-bs-parent="#faqAccordion"
                       >
                         <div className="accordion-body ">
-                          ADDL (Ace Digital Dental Laboratory) is
-                          dedicated to fast, reliable turnaround times without
-                          compromising quality. Using advanced technology and
-                          efficient workflows, we deliver products quickly.. Our
-                          skilled team ensures high-quality craftsmanship while
-                          meeting tight deadlines, making us a trusted partner
-                          for dental professionals.
+                          Ace combines an end-to-end digital workflow—powered by CAD/CAM milling and 3D 
+                          printing—with expert clinical advisors, ultra-fast turnaround, and cost-efficient 
+                          processes, all under a commitment to precision, innovation, and reliability.
                         </div>
                       </div>
                     </div>
@@ -202,7 +197,7 @@ const  Home1 = () => {
                           aria-controls="collapseTwo"
                           onClick={(e) => handleChangeImage(e, "card2")}
                         >
-                          ADDL is the Future
+                          What types of dental restorations does Ace Digital Dental Laboratory specialize in?
                         </button>
                       </h3>
                       <div
@@ -212,15 +207,8 @@ const  Home1 = () => {
                         data-bs-parent="#faqAccordion"
                       >
                         <div className="accordion-body">
-                          Switching to a digital lab like ADDL offers faster
-                          turnaround, higher accuracy, and cost savings compared
-                          to traditional labs. Digital technologies like CAD/CAM
-                          and 3D printing reduce errors, improve precision, and
-                          shorten production times, leading to better patient
-                          satisfaction and fewer adjustments. Digital labs also
-                          lower costs by minimizing material waste and labor,
-                          making them more efficient for dental practices and
-                          patients alike.
+                          Ace focuses on CAD / CAM restorations, implant restorations and crowns & bridges, 
+                          offering full-service digital design and fabrication for fixed prosthetics.
                         </div>
                       </div>
                     </div>
@@ -238,7 +226,7 @@ const  Home1 = () => {
                           aria-controls="collapseThree"
                           onClick={(e) => handleChangeImage(e, "card3")}
                         >
-                          Sustainability and Eco-Friendliness at ADDL
+                          Which digital dental technologies does Ace use for dental restorations?
                         </button>
                       </h3>
                       <div
@@ -248,14 +236,8 @@ const  Home1 = () => {
                         data-bs-parent="#faqAccordion"
                       >
                         <div className="accordion-body ">
-                          ADDL is committed to sustainability by using
-                          sustainable materials and reducing waste through
-                          digital technologies like CAD/CAM and 3D printing.
-                          These methods minimize material waste and improve
-                          efficiency, while we also prioritize biodegradable and
-                          recyclable materials. ADDL’s eco-friendly practices
-                          reflect our dedication to a greener future for the
-                          dental industry.
+                          Ace leverages advanced CAD/CAM systems, 3D printing, and seamless digital 
+                          impression workflows to design and mill restorations with micron-level accuracy.
                         </div>
                       </div>
                     </div>
@@ -273,7 +255,7 @@ const  Home1 = () => {
                           aria-controls="collapseFour"
                           onClick={(e) => handleChangeImage(e, "card4")}
                         >
-                          ADDL: Precision & Excellence in Dental Lab Solutions
+                          What makes Ace a trusted partner for U.S. dentists?
                         </button>
                       </h3>
                       <div
@@ -283,14 +265,9 @@ const  Home1 = () => {
                         data-bs-parent="#faqAccordion"
                       >
                         <div className="accordion-body ">
-                          ADDL is committed to delivering dental lab work of the
-                          highest standards. Utilizing advanced digital
-                          technology and expert craftsmanship, we ensure that
-                          each product is precisely engineered and manufactured
-                          to meet the strictest quality requirements. Whether
-                          crowns, bridges, dentures, or other restorations, our
-                          focus on accuracy and consistency guarantees reliable,
-                          top-quality results trusted by dental professionals.
+                          With ISO/FDA-certified processes, dedicated clinical advisors, 
+                          a user-friendly online ordering portal, and consistently fast, reliable turnaround times, 
+                          Ace ensures predictable, high-quality results that dentists can depend on.
                         </div>
                       </div>
                     </div>
@@ -308,8 +285,7 @@ const  Home1 = () => {
                           aria-controls="collapseFive"
                           onClick={(e) => handleChangeImage(e, "card5")}
                         >
-                          Easy online ordering and seamless communication with
-                          your lab.
+                          What certifications or standards does Ace comply with?
                         </button>
                       </h3>
                       <div
@@ -319,16 +295,8 @@ const  Home1 = () => {
                         data-bs-parent="#faqAccordion"
                       >
                         <div className="accordion-body">
-                          Addl offers an effortless online ordering system that
-                          ensures a smooth and efficient process for all your
-                          dental needs. With our user-friendly website, you can
-                          place orders quickly and easily, saving your time and
-                          effort. Additionally, our seamless communication
-                          system allows you to stay connected with our lab at
-                          all times, ensuring that you receive timely updates,
-                          support, and high-quality service. Whether you're a
-                          dental professional or a patient, Addl makes your
-                          experience simple and hassle-free.
+                          All lab work is designed and finished in Europe according to ISO and FDA regulations, 
+                          and materials are CE-marked to guarantee top-tier safety and performance.
                         </div>
                       </div>
                     </div>
@@ -387,17 +355,16 @@ const  Home1 = () => {
           className="line-vec"
         />
         <div className="container mt-lg-5 mt-md-5 text-center">
-          <div className="hero-subheading">Truly easy sendings</div>
+          <div className="hero-subheading">Streamlined Digital Workflow</div>
           <h2 className="heading1 text-center">
             {" "}
-            <b>Free up your clinical time</b> <br />
-            <span className="subheadingTxt">Submitting your orders to ACE Digital Dental Laboratry is
-              hassle-free.</span>
+            <strong>Hassle-Free Order Submission with Ace Dental Lab</strong> <br />
+            {/* <span className="subheadingTxt">Submitting your orders to ACE Digital Dental Laboratry is
+              hassle-free.</span> */}
           </h2>
           <p className="subHeading1 text-center">
-            Simply press on the “Place an Order” button located at the top of
-            right of our website, and fill in the necessary fields. We offer a
-            complementary courier collection service for your convenience.
+            Get started in seconds. Click the “Place Order” button to experience a seamless, professional, 
+            and fully digital workflow for your dental restoration needs.
           </p>
           <div className="row g-4">
             <div className="col-12 col-lg-6 col-md-6 p-4 pb-0 pb-sm-4 text-start">
@@ -455,21 +422,22 @@ const  Home1 = () => {
 
         <div className="video-overlay"></div>
         <div className="container mt-5 text-center">
-          <div className="gradientBG mb-2 mb-sm-4">Let's work together</div>
+          <div className="gradientBG mb-2 mb-sm-4">Let's Work Together</div>
           <h2 className="heading1 mb-2 mb-sm-3 text-center text-white">
             {" "}
             <b>
-              Making Every Effort <br />a Masterpiece of Happiness
+              Reach Out Us for Custom Dental Lab Solutions
             </b>{" "}
           </h2>
+          <h3 className="heading1 mb-2 mb-sm-3 text-center text-white">
+              <strong>For Exceptional Patient Care</strong>
+          </h3>
           <p className="subHeading1 text-center mb-0 mb-sm-4 px-4 text-white">
             {" "}
-            Your passion turns care into comfort, making every effort a work of
-            heart.. Choosing a dental lab with exceptional artistry enhances
-            patient satisfaction even further.
+            Partner with us for precise, reliable dental lab solutions designed to meet your unique clinical needs and enhance patient outcomes.
           </p>
           <div className="simplebtn">
-            <a href="/contact-us">Start New Project</a>
+            <a href="/contact-us/">Get In Touch</a>
           </div>
         </div>
       </section>
@@ -485,7 +453,7 @@ const  Home1 = () => {
           >
             <h2 className="heading2 text-center text-white">
               {" "}
-              ADDL in numbers{" "}
+              Excellence in Dental Lab Metrics{" "}
             </h2>
             <div className="row innere_adl_numbers g-4 ">
               {counters.map(({ suffix, noteAbove, noteBelow }, index) => (
