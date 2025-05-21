@@ -120,18 +120,18 @@ const Footer = () => {
                                 <div className="col-12 col-lg-4 col-md-6 ">
                                     <p className="nav-title">Product & Service</p>
                                     <ul>
-                                        <li><a href="/product/digital-workflow">Digital Flow</a></li>
-                                        <li><a href="/product/cad-cam">CAD/CAM</a></li>
-                                        <li><a href="/product/implants">Implant</a></li>
-                                        <li><a href="/product/crowns-bridges">Crown & Bridges</a></li>
+                                        <li><a href="/product/digital-workflow/">Digital Flow</a></li>
+                                        <li><a href="/product/cad-cam/">CAD/CAM</a></li>
+                                        <li><a href="/product/implants/">Implant</a></li>
+                                        <li><a href="/product/crowns-bridges/">Crown & Bridges</a></li>
                                     </ul>
                                 </div>
                                 <div className="col-12 col-lg-4 col-md-6 ">
                                     <p className="nav-title">Contact & Support</p>
                                     <ul>
-                                        <li><a href="/about-us">About</a>"</li>
-                                        <li><a href="/contact-us">Contact</a></li>
-                                        <li><a href="/support">Support</a></li>
+                                        <li><a href="/about-us/">About</a>"</li>
+                                        <li><a href="/contact-us/">Contact</a></li>
+                                        <li><a href="/support/">Support</a></li>
                                     </ul>
                                 </div>
                                 <div className="col-12 col-lg-4 col-md-6 ">

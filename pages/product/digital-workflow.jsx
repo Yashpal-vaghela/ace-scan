@@ -143,9 +143,9 @@ const DigitalWorkflow = () => {
                                 <div className="fulloverlay"></div>
                                 <div className="card-body-content card4">
                                     <p>04</p>
-                                    <h3 className="card-hed">Returns</h3>
+                                    <h3 className="card-hed">Delivery</h3>
                                     
-                                    <div className="card-txt">At ADDL, we recognize the importance of timely deliveries and hassle-free returns. Rely on us for all your dental lab work requirements.
+                                    <div className="card-txt">At ACE Advance Digital Lab, we ensure timely and secure deliveries. Rely on us for consistent turnaround and dependable dental lab logistics.
                                     </div>
                                 </div>
                             </div>

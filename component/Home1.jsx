@@ -50,9 +50,9 @@ const  Home1 = () => {
     },
     {
       number: "4",
-      title: "Returns",
+      title: "Delivery",
       description:
-        "At ACE Advance Digital Lab, we understand the importance of on-time deliveries and easy returns. Count on us for all your dental lab work needs.",
+        "At ACE Advance Digital Lab, we ensure timely and secure deliveries. Rely on us for consistent turnaround and dependable dental lab logistics.",
     },
   ];
 
@@ -459,7 +459,7 @@ const  Home1 = () => {
           <h2 className="heading1 mb-2 mb-sm-3 text-center text-white">
             {" "}
             <b>
-              making every effort <br />a masterpiece of happiness
+              Making Every Effort <br />a Masterpiece of Happiness
             </b>{" "}
           </h2>
           <p className="subHeading1 text-center mb-0 mb-sm-4 px-4 text-white">

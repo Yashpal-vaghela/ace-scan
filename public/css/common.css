@@ -165,7 +165,7 @@
 }
 .video-title{
     color: white;
-    line-height: 1.9;
+    line-height: 1.8 !important;
     font-size: 30px;
     font-weight: 600;
     letter-spacing: -1px;

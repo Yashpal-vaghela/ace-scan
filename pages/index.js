@@ -109,7 +109,7 @@ export default function Home() {
           >
             <div className="col-12 col-xl-5 col-lg-6 col-md-7 col-sm-10 d-flex flex-column justify-content-center">
               <h1 className="video-title">
-                Unparalleled Quality in dental lab solutions!
+                Unparalleled Quality in Digital Dental Lab Solutions!
               </h1>
               <div className="text-large font-weight-500 text-uppercase d-flex">
                 <span className="flex-shrink-0 w-40px h-1px bg-white opacity-6 align-self-center margin-25px-right"></span>
@@ -130,7 +130,7 @@ export default function Home() {
                 className="img-fluid about-img1"
                 width={500}
                 height={100}
-                alt=" "
+                alt="Digital Dental Lab Services in USA for Dental Restoration "
               ></Image>
             </div>
             <div className="col-11 col-xl-7 col-md-5 col-lg-6 mt-3">
@@ -179,7 +179,7 @@ export default function Home() {
                     ></Image>
                     <div className="d-block d-md-block">
                       <h3 className="fw-bold mb-2" style={{ color: "#00818a", fontSize: "16px !important" }}>
-                        The Highest Quality Products.
+                        The Highest Quality Products
                       </h3>
                       <p className="hero-txt">
                         With years of excellence our professional team delivering
@@ -250,7 +250,7 @@ export default function Home() {
                   className="img-fluid "
                   width={40}
                   height={50}
-                  alt=" "
+                  alt="ADDL at a glance"
                 ></Image>
                 <h3 className="intro__item-title my-2 my-sm-3">
                   Professional expert clinical advice
