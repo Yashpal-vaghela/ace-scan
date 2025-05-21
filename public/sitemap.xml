@@ -2,47 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>http://localhost:3000/</loc>
+            <loc>https://acedigitaldentallaboratory.com/</loc>
             <changefreq>daily</changefreq>
             <priority>1</priority>
-        </url>,
+        </url>
         <url>
-            <loc>http://localhost:3000/about-us</loc>
+            <loc>https://acedigitaldentallaboratory.com/about-us/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
-        </url>,
+        </url>
         <url>
-            <loc>http://localhost:3000/contact-us</loc>
+            <loc>https://acedigitaldentallaboratory.com/contact-us/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
-        </url>,
+        </url>
         <url>
-            <loc>http://localhost:3000/support</loc>
+            <loc>https://acedigitaldentallaboratory.com/support/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
-        </url>,
+        </url>
         <url>
-            <loc>http://localhost:3000/materials</loc>
+            <loc>https://acedigitaldentallaboratory.com/materials/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
-        </url>,
+        </url>
         <url>
-            <loc>http://localhost:3000/product/digital-workflow</loc>
+            <loc>https://acedigitaldentallaboratory.com/product/digital-workflow/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
-        </url>,
+        </url>
         <url>
-            <loc>http://localhost:3000/product/cad-cam</loc>
+            <loc>https://acedigitaldentallaboratory.com/product/cad-cam/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
-        </url>,
+        </url>
         <url>
-            <loc>http://localhost:3000/product/implants</loc>
+            <loc>https://acedigitaldentallaboratory.com/product/implants/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
-        </url>,
+        </url>
         <url>
-            <loc>http://localhost:3000/product/crowns-bridges</loc>
+            <loc>https://acedigitaldentallaboratory.com/product/crowns-bridges/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
         </url>

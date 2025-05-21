@@ -1,19 +1,18 @@
 import fs from "fs";
-import { url } from "inspector";
 import path from "path";
 
-const baseUrl = "https://acedigitaldentallaboratory.com/"
+const baseUrl = "https://acedigitaldentallaboratory.com"
 
 const staticPage = [
     {url: "", changefreq: "daily", priority: 1.0},
-    {url: "about-us", changefreq: "weekly", priority: 0.8},
-    {url: "contact-us", changefreq: "weekly", priority: 0.8},
-    {url: "support", changefreq: "weekly", priority: 0.8},
-    {url: "materials", changefreq: "weekly", priority: 0.8},
-    {url: "product/digital-workflow", changefreq: "weekly", priority: 0.8},
-    {url: "product/cad-cam", changefreq: "weekly", priority: 0.8},
-    {url: "product/implants", changefreq: "weekly", priority: 0.8},
-    {url: "product/crowns-bridges", changefreq: "weekly", priority: 0.8}
+    {url: "about-us/", changefreq: "weekly", priority: 0.8},
+    {url: "contact-us/", changefreq: "weekly", priority: 0.8},
+    {url: "support/", changefreq: "weekly", priority: 0.8},
+    {url: "materials/", changefreq: "weekly", priority: 0.8},
+    {url: "product/digital-workflow/", changefreq: "weekly", priority: 0.8},
+    {url: "product/cad-cam/", changefreq: "weekly", priority: 0.8},
+    {url: "product/implants/", changefreq: "weekly", priority: 0.8},
+    {url: "product/crowns-bridges/", changefreq: "weekly", priority: 0.8}
 ]
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -27,7 +26,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
             <priority>${priority}</priority>
         </url>`        
         )
-    }
+    .join("")}
 </urlset>`;
 
 const filepath = path.resolve("public","sitemap.xml");
