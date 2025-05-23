@@ -3,6 +3,32 @@ import Image from "next/image";
 import Head from "next/head";
 
 const Implants = () => {
+  const webPageSchema = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Premium Dental Implants | Ace Digital Dental Laboratory",
+        "url": "https://acedigitaldentallaboratory.com/implants/",
+        "description": "Discover high-quality, precision-crafted dental implants made by Ace Digital Dental Laboratory. Engineered for durability, comfort, and natural esthetics.",
+        "inLanguage": "en"
+    }
+      const breadcrumsSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://acedigitaldentallaboratory.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Implants",
+          "item": "https://acedigitaldentallaboratory.com/implants/"
+        }
+      ]
+  }
   const videoRefP = useRef(null);
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -61,12 +87,12 @@ const Implants = () => {
     <>
       <Head>
         <title>Premium Dental Implants | Ace Digital Dental Laboratory</title>
-        <meta name="description" content="Discover high-quality, precision-crafted dental implants made by Ace Digital Dental Laboratory. Engineered for durability, comfort, and natural aesthetics."/>
+        <meta name="description" content="Discover high-quality, precision-crafted dental implants made by Ace Digital Dental Laboratory. Engineered for durability, comfort, and natural esthetics."/>
         <link rel="canonical" href="https://acedigitaldentallaboratory.com/implants/" /> 
         <meta property="og:locale" content="en_US"/>  
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="Premium Dental Implants | Ace Digital Dental Laboratory" />
-        <meta name="og:description" content="Discover high-quality, precision-crafted dental implants made by Ace Digital Dental Laboratory. Engineered for durability, comfort, and natural aesthetics."/>
+        <meta name="og:description" content="Discover high-quality, precision-crafted dental implants made by Ace Digital Dental Laboratory. Engineered for durability, comfort, and natural esthetics."/>
         <meta property="og:url" content="https://acedigitaldentallaboratory.com/implants/" />
         <meta property="og:site_name" content="Ace Digital Dental Lab" />
         <meta name="og:image" content="/images/feature-ADDL.webp" />

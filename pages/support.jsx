@@ -4,6 +4,32 @@ import Link from "next/link";
 import Head from "next/head";
 
 const support = () => {
+  const webPageSchema = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Support & Assistance | Ace Digital Dental Laboratory",
+        "url": "https://acedigitaldentallaboratory.com/support/",
+        "description": "Need help with your dental lab cases or services? ADDL's support team is here to assist you with case tracking, submissions, and technical questions. Contact us today!",
+        "inLanguage": "en"
+    }
+      const breadcrumsSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://acedigitaldentallaboratory.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Support",
+          "item": "https://acedigitaldentallaboratory.com/support/"
+        }
+      ]
+  }
   return (
     <>
       <Head>
@@ -22,6 +48,14 @@ const support = () => {
         <meta property="og:image:height" content="630" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumsSchema) }}
+        />
       </Head>
       <section className="p-0 parallax overlap-height">
         <div className="lqd-vbg-wrap">

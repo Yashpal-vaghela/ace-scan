@@ -92,7 +92,7 @@ const Header = () => {
                                 href="/product/digital-workflow"
                                 className="dropdown-item"
                             >
-                                Digital workflow
+                                Digital Workflow
                             </Link>
                             </li>
                             <li onClick={handleOffcanvas1}>

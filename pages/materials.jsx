@@ -3,6 +3,32 @@ import Image from 'next/image';
 import Head from 'next/head';
 
 const Materials = () => {
+    const webPageSchema = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "High-Quality Dental Materials | Ace Digital Dental Laboratory",
+        "url": "https://acedigitaldentallaboratory.com/materials/",
+        "description": "Discover premium dental materials for crowns, bridges, implants, and restorations. Ace Digital Dental Lab ensures strength, aesthetics, and precision in every product.",
+        "inLanguage": "en"
+    }
+      const breadcrumsSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://acedigitaldentallaboratory.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Materials",
+          "item": "https://acedigitaldentallaboratory.com/materials/"
+        }
+      ]
+  }
     return (
         <>
             <Head>
@@ -21,6 +47,14 @@ const Materials = () => {
                 <meta property="og:image:height" content="630" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="robots" content="index, follow" />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumsSchema) }}
+                />
             </Head>
             <div className="Style-module__VUE6IW__main">
                 <section className="p-0 parallax overlap-height">
@@ -92,19 +126,19 @@ const Materials = () => {
                             <h2 className='material-product-title text-center'>Zirconia (Full contour)</h2>
                             <div className='col-lg-4 order-lg-0 order-1 m-details-left'>
                             <div className='w-100 ' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title'>Material</h3>
+                                    <span className='material-title'>Material</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>Monolithic super translucent zirconia</p>
                                 </div>
 
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Method of manufacture</h3>
+                                    <span className='material-title pt-3'>Method of manufacture</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>Digitally designed & manufactured</p>
                                 </div>
 
                                 <div className='w-100' style={{maxWidth: "500px",  margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Aesthetics</h3>
+                                    <span className='material-title pt-3'>Aesthetics</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>
                                         <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
@@ -116,7 +150,7 @@ const Materials = () => {
                                 </div>
 
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Shades </h3>
+                                    <span className='material-title pt-3'>Shades </span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>No internal effects standard shades</p>
                                 </div>
@@ -127,19 +161,19 @@ const Materials = () => {
                             </div>
                             <div className='col-lg-4 order-lg-2 order-2 m-details-right'>
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title'>Add-on options</h3>
+                                    <span className='material-title'>Add-on options</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>Fit to denture</p>
                                 </div>
 
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Benefits</h3>
+                                    <span className='material-title pt-3'>Benefits</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>	High durability extreme strength metal-free, exceptional accuracy</p>
                                 </div>
 
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Strength</h3>
+                                    <span className='material-title pt-3'>Strength</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>
                                         <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
@@ -151,7 +185,7 @@ const Materials = () => {
                                 </div>
 
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Recommended use </h3>
+                                    <span className='material-title pt-3'>Recommended use </span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>Full mouth, single crowns</p>
                                 </div>
@@ -169,19 +203,19 @@ const Materials = () => {
                             <h2 className='material-product-title text-center'>Zirconia (Layered)</h2>
                             <div className='col-lg-4 order-lg-0 order-1 m-details-left'>
                             <div className='w-100 ' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title'>Material</h3>
+                                    <span className='material-title'>Material</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>Zirconia (layered) coping with porcelain overlay</p>
                                 </div>
 
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Method of manufacture</h3>
+                                    <span className='material-title pt-3'>Method of manufacture</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>Digitally designed & manufactured (Framework) & built up by hand</p>
                                 </div>
 
                                 <div className='w-100' style={{maxWidth: "500px",  margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Aesthetics</h3>
+                                    <span className='material-title pt-3'>Aesthetics</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>
                                         <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
@@ -193,7 +227,7 @@ const Materials = () => {
                                 </div>
 
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Shades </h3>
+                                    <span className='material-title pt-3'>Shades </span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>No internal effects standard shades</p>
                                 </div>
@@ -204,19 +238,19 @@ const Materials = () => {
                             </div>
                             <div className='col-lg-4    order-lg-2 order-2 m-details-right'>
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title'>Add-on options</h3>
+                                    <span className='material-title'>Add-on options</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>Fit to denture, rests and ledges </p>
                                 </div>
 
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Benefits</h3>
+                                    <span className='material-title pt-3'>Benefits</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>Good fit metal-free</p>
                                 </div>
 
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Strength</h3>
+                                    <span className='material-title pt-3'>Strength</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>
                                         <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
@@ -228,7 +262,7 @@ const Materials = () => {
                                 </div>
 
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Recommended use </h3>
+                                    <span className='material-title pt-3'>Recommended use </span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>Full mouth, crowns & bridges</p>
                                 </div>
@@ -246,19 +280,19 @@ const Materials = () => {
                             <h2 className='material-product-title text-center'>E.max CAD</h2>
                             <div className='col-lg-4 order-lg-0 order-1 m-details-left'>
                             <div className='w-100 ' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title'>Material</h3>
+                                    <span className='material-title'>Material</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>Ivoclar™ e.max lithium disilicate</p>
                                 </div>
 
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Method of manufacture</h3>
+                                    <span className='material-title pt-3'>Method of manufacture</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>Digitally designed and manufactured</p>
                                 </div>
 
                                 <div className='w-100' style={{maxWidth: "500px",  margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Aesthetics</h3>
+                                    <span className='material-title pt-3'>Aesthetics</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>
                                         <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
@@ -270,7 +304,7 @@ const Materials = () => {
                                 </div>
 
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Shades </h3>
+                                    <span className='material-title pt-3'>Shades </span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>Customised shading</p>
                                 </div>
@@ -281,19 +315,19 @@ const Materials = () => {
                             </div>
                             <div className='col-lg-4    order-lg-2 order-2 m-details-right'>
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title'>Add-on options</h3>
+                                    <span className='material-title'>Add-on options</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>x </p>
                                 </div>
 
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Benefits</h3>
+                                    <span className='material-title pt-3'>Benefits</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>Premium aesthetics excellent fit metal-free</p>
                                 </div>
 
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Strength</h3>
+                                    <span className='material-title pt-3'>Strength</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>
                                         <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
@@ -305,7 +339,7 @@ const Materials = () => {
                                 </div>
 
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Recommended use </h3>
+                                    <span className='material-title pt-3'>Recommended use </span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>Full mouth, crowns, inlays/onlays veneers, 3/4 crowns</p>
                                 </div>
@@ -323,19 +357,19 @@ const Materials = () => {
                             <h2 className='material-product-title text-center'>Pressed E.max</h2>
                             <div className='col-lg-4 order-lg-0 order-1 m-details-left'>
                             <div className='w-100 ' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title'>Material</h3>
+                                    <span className='material-title'>Material</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>Ivoclar™ e.max lithium disilicate</p>
                                 </div>
 
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Method of manufacture</h3>
+                                    <span className='material-title pt-3'>Method of manufacture</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>Waxed & pressed by hand</p>
                                 </div>
 
                                 <div className='w-100' style={{maxWidth: "500px",  margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Aesthetics</h3>
+                                    <span className='material-title pt-3'>Aesthetics</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>
                                         <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
@@ -347,7 +381,7 @@ const Materials = () => {
                                 </div>
 
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Shades </h3>
+                                    <span className='material-title pt-3'>Shades </span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>Customised shading</p>
                                 </div>
@@ -358,19 +392,19 @@ const Materials = () => {
                             </div>
                             <div className='col-lg-4    order-lg-2 order-2 m-details-right'>
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title'>Add-on options</h3>
+                                    <span className='material-title'>Add-on options</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>x </p>
                                 </div>
 
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Benefits</h3>
+                                    <span className='material-title pt-3'>Benefits</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>Premium aesthetics metal-free</p>
                                 </div>
 
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Strength</h3>
+                                    <span className='material-title pt-3'>Strength</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>
                                         <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
@@ -382,7 +416,7 @@ const Materials = () => {
                                 </div>
 
                                 <div className='w-100' style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                    <h3 className='material-title pt-3'>Recommended use </h3>
+                                    <span className='material-title pt-3'>Recommended use </span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>Full mouth, crowns, inlays/onlays veneers, 3/4 crowns</p>
                                 </div>

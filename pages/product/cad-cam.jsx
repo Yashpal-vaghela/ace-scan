@@ -3,6 +3,32 @@ import Image from "next/image";
 import Head from "next/head";
 
 const CadCamMilling = () => {
+  const webPageSchema = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "High-Precision CAD/CAM Dental Solutions | ADDL",
+        "url": "https://acedigitaldentallaboratory.com/cad-cam/",
+        "description": "Discover cutting-edge CAD/CAM dental restorations from ADDl. Achieve superior accuracy, durability, and esthetics with our advanced digital dentistry solutions.",
+        "inLanguage": "en"
+    }
+      const breadcrumsSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://acedigitaldentallaboratory.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "CAD/CAM Milling",
+          "item": "https://acedigitaldentallaboratory.com/cad-cam/"
+        }
+      ]
+  }
   const videoRefP = useRef(null);
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -75,6 +101,14 @@ const CadCamMilling = () => {
         <meta property="og:image:height" content="630" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumsSchema) }}
+        />
       </Head>
       <section className="bradcrumb-product" style={{ marginTop: "80px" }}>
         <div className="container h-100">

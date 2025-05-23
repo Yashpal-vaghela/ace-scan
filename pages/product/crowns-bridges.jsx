@@ -8,6 +8,32 @@ import "swiper/css/navigation";
 import Head from "next/head";
 
 const CrownsBridges = () => {
+    const webPageSchema = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Premium Dental Crowns & Bridges | Ace Digital Dental Lab",
+        "url": "https://acedigitaldentallaboratory.com/crowns-bridges/",
+        "description": "Get high-quality, custom-made dental crowns and bridges from ADDl. Crafted with precision, designed for durability, and trusted by dental professionals.",
+        "inLanguage": "en"
+    }
+      const breadcrumsSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://acedigitaldentallaboratory.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Crowns & Bridges",
+          "item": "https://acedigitaldentallaboratory.com/crowns-bridges/"
+        }
+      ]
+  }
     const videoRefP = useRef(null);
     useEffect(() => {
         if (typeof window !== "undefined") {
@@ -78,6 +104,8 @@ const CrownsBridges = () => {
                 <meta property="og:image:height" content="630" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="robots" content="index, follow" />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumsSchema) }} />
             </Head>
             <section className="bradcrumb-product" style={{ marginTop: "80px" }}>
                 <div className="container h-100">

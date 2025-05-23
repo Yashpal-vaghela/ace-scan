@@ -5,6 +5,32 @@ import Image from "next/image";
 import Head from "next/head";
 
 const contactUs = () => {
+  const webPageSchema = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Contact Us | Ace Digital Dental Laboratory",
+        "url": "https://acedigitaldentallaboratory.com/contact-us/",
+        "description": "Discover the story behind ADDL. With a commitment to innovation, precision, and quality, we partner with dental professionals to deliver exceptional digital dental restorations.",
+        "inLanguage": "en"
+    }
+      const breadcrumsSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://acedigitaldentallaboratory.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contact US",
+          "item": "https://acedigitaldentallaboratory.com/contact-us/"
+        }
+      ]
+  }
   const {
     register,
     handleSubmit,
@@ -28,7 +54,6 @@ const contactUs = () => {
       });
 
       const result = await response.json();
-      console.log("Response:", result);
 
       if (response.ok) {
         setMessage("Email sent successfully!");
@@ -63,6 +88,14 @@ const contactUs = () => {
         <meta property="og:image:height" content="630" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumsSchema) }}
+        />
       </Head>
       <section className="p-0 parallax overlap-height">
         <div className="lqd-vbg-wrap">

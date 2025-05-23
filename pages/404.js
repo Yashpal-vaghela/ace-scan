@@ -21,7 +21,7 @@ const ErrorPage = () => {
           <p className="oops">OOPS!!</p>
 
           <p className="texts">Nothing found here, but no worries, <br /> We can fix it!</p>
-          <Link href="/" className="simplebtn errorbtn">Backs Home</Link>
+          <Link href="/" className="simplebtn errorbtn">Back to Home</Link>
         </div>
 
       </div>

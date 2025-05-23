@@ -2,7 +2,32 @@ import Head from "next/head";
 import React from "react";
 
 const DigitalWorkflow = () => {
-
+    const webPageSchema = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Digital Workflow Solutions | Ace Digital Dental Lab",
+        "url": "https://acedigitaldentallaboratory.com/digital-workflow/",
+        "description": "Streamline your dentistry with Ace Digital Dental Lab’s cutting-edge digital workflow—precision, speed, and reliability from scan to final restoration.",
+        "inLanguage": "en"
+    }
+      const breadcrumsSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://acedigitaldentallaboratory.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Digital Workflow",
+          "item": "https://acedigitaldentallaboratory.com/digital-workflow/"
+        }
+      ]
+  }
     return (
         <>
             <Head>
@@ -21,6 +46,8 @@ const DigitalWorkflow = () => {
                 <meta property="og:image:height" content="630" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="robots" content="index, follow" />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumsSchema) }} />
             </Head>
             <section className="bradcrumb-product" style={{ marginTop: "80px" }}>
                 <div className="container  px-sm-3 h-100">

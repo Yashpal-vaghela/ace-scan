@@ -35,6 +35,24 @@ const About = () => {
       "name": "About Us | Ace Digital Dental Laboratory",
       "url": "https://acedigitaldentallaboratory.com/about-us/",
       "description": "Discover the story behind ADDL. With a commitment to innovation, precision, and quality, we partner with dental professionals to deliver exceptional digital dental restorations.."
+  }
+  const breadcrumsSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://acedigitaldentallaboratory.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About Us",
+          "item": "https://acedigitaldentallaboratory.com/about-us/"
+        }
+      ]
   }  
   return (
     <>
@@ -54,9 +72,13 @@ const About = () => {
         <meta property="og:image:height" content="630" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
-         <script
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumsSchema) }}
         />
       </Head>
       <section className="p-0 parallax overlap-height">

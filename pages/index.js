@@ -26,8 +26,8 @@ export default function Home() {
       "postalCode": "08816",
       "addressCountry": "US"
     }  
-
   }
+
   return (
     <>
       <Head>
@@ -142,7 +142,7 @@ export default function Home() {
                 <h2 className="double-heading heading1">
                   Harnessing{" "}
                   <span className="highlight-text1 ">Digital Precision</span>{" "}
-                  & Extreme Care for Every{" "}
+                  <br />& Extreme Care for Every{" "}<br/>
                   <span className="highlight-text2 ">Dental Restoration</span>
                 </h2>
               </div>
@@ -236,6 +236,65 @@ export default function Home() {
               ></Image>
             </div>
           </div>
+        </div>
+      </section>
+      <section
+        className="pricing-plans space-section"
+      >
+        <div className="container text-center position-relative">
+          <h2 className="heading1 mb-4 text-center"> Our Most <span className="highlight-text1">Premium Product</span></h2>
+          <div className="row g-4 ">
+            <Link href="/product/digital-workflow/" className="text-decoration-none col-12 col-lg-4 col-md-6">
+              <div className=" product-row position-relative">
+                <Image
+                  src="/images/E-max-hm.webp"
+                  alt="Example Image"
+                  width={306}
+                  height={190}
+                  className=""
+                />
+                <span className="product-row-label">E-max CAD</span>
+              </div>
+            </Link>
+            <Link href="/product/crowns-bridges/" className="text-decoration-none col-12 col-lg-4 col-md-6">
+              <div className="img-middil product-row position-relative">
+                <Image
+                  src="/images/crown-hm.webp"
+                  alt="Example Image"
+                  width={306}
+                  height={190}
+                  className=""
+                />
+                <span className="product-row-label">Crown & Bridges</span>
+              </div>
+            </Link>
+            <Link href="/product/implants/" className="text-decoration-none col-12 col-lg-4 col-md-6">
+              <div className="product-row">
+                <Image
+                  src="/images/implant-hm1.webp"
+                  alt="Example Image"
+                  width={306}
+                  height={190}
+                  className=""
+                />
+                <span className="product-row-label">Implant</span>
+              </div>
+            </Link>
+          </div>
+          <Image
+            src="/images/dot.webp"
+            alt="Example Image"
+            width={300}
+            height={450}
+            className="pvector1"
+          />
+          <Image
+            src="/images/dot.webp"
+            alt="Example Image"
+            width={300}
+            height={450}
+            className="pvector2"
+          />
         </div>
       </section>
       <section className="services-section space-section">

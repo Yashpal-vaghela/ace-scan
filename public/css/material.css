@@ -19,7 +19,11 @@
     font-weight: 600;
     margin-top: 40px;
 }
-
+.material-title{
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 34px;
+}
 .ImageName {
     padding: 40px;
 }
