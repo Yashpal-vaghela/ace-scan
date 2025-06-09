@@ -7,7 +7,7 @@ const CadCamMilling = () => {
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "High-Precision CAD/CAM Dental Solutions | ADDL",
-        "url": "https://acedigitaldentallaboratory.com/cad-cam/",
+        "url": "https://acedigitaldentallaboratory.com/product/cad-cam/",
         "description": "Discover cutting-edge CAD/CAM dental restorations from ADDl. Achieve superior accuracy, durability, and esthetics with our advanced digital dentistry solutions.",
         "inLanguage": "en"
     }
@@ -25,7 +25,7 @@ const CadCamMilling = () => {
           "@type": "ListItem",
           "position": 2,
           "name": "CAD/CAM Milling",
-          "item": "https://acedigitaldentallaboratory.com/cad-cam/"
+          "item": "https://acedigitaldentallaboratory.com/product/cad-cam/"
         }
       ]
   }
@@ -88,12 +88,12 @@ const CadCamMilling = () => {
       <Head>
         <title>High-Precision CAD/CAM Dental Solutions | ADDL</title>
         <meta name="description" content="Discover cutting-edge CAD/CAM dental restorations from ADDl. Achieve superior accuracy, durability, and esthetics with our advanced digital dentistry solutions."/>
-        <link rel="canonical" href="https://acedigitaldentallaboratory.com/cad-cam/" /> 
+        <link rel="canonical" href="https://acedigitaldentallaboratory.com/product/cad-cam/" /> 
         <meta property="og:locale" content="en_US"/>  
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="High-Precision CAD/CAM Dental Solutions | ADDL" />
         <meta name="og:description" content="Discover cutting-edge CAD/CAM dental restorations from ADDl. Achieve superior accuracy, durability, and esthetics with our advanced digital dentistry solutions."/>
-        <meta property="og:url" content="https://acedigitaldentallaboratory.com/cad-cam/" />
+        <meta property="og:url" content="https://acedigitaldentallaboratory.com/product/cad-cam/" />
         <meta property="og:site_name" content="Ace Digital Dental Lab" />
         <meta name="og:image" content="/images/feature-ADDL.webp" />
         <meta property="og:image:type" content="image/webp" />

@@ -7,7 +7,7 @@ const Implants = () => {
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "Premium Dental Implants | Ace Digital Dental Laboratory",
-        "url": "https://acedigitaldentallaboratory.com/implants/",
+        "url": "https://acedigitaldentallaboratory.com/product/implants/",
         "description": "Discover high-quality, precision-crafted dental implants made by Ace Digital Dental Laboratory. Engineered for durability, comfort, and natural esthetics.",
         "inLanguage": "en"
     }
@@ -25,7 +25,7 @@ const Implants = () => {
           "@type": "ListItem",
           "position": 2,
           "name": "Implants",
-          "item": "https://acedigitaldentallaboratory.com/implants/"
+          "item": "https://acedigitaldentallaboratory.com/product/implants/"
         }
       ]
   }
@@ -88,12 +88,12 @@ const Implants = () => {
       <Head>
         <title>Premium Dental Implants | Ace Digital Dental Laboratory</title>
         <meta name="description" content="Discover high-quality, precision-crafted dental implants made by Ace Digital Dental Laboratory. Engineered for durability, comfort, and natural esthetics."/>
-        <link rel="canonical" href="https://acedigitaldentallaboratory.com/implants/" /> 
+        <link rel="canonical" href="https://acedigitaldentallaboratory.com/product/implants/" /> 
         <meta property="og:locale" content="en_US"/>  
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="Premium Dental Implants | Ace Digital Dental Laboratory" />
         <meta name="og:description" content="Discover high-quality, precision-crafted dental implants made by Ace Digital Dental Laboratory. Engineered for durability, comfort, and natural esthetics."/>
-        <meta property="og:url" content="https://acedigitaldentallaboratory.com/implants/" />
+        <meta property="og:url" content="https://acedigitaldentallaboratory.com/product/implants/" />
         <meta property="og:site_name" content="Ace Digital Dental Lab" />
         <meta name="og:image" content="/images/feature-ADDL.webp" />
         <meta property="og:image:type" content="image/webp" />

@@ -12,7 +12,7 @@ const CrownsBridges = () => {
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "Premium Dental Crowns & Bridges | Ace Digital Dental Lab",
-        "url": "https://acedigitaldentallaboratory.com/crowns-bridges/",
+        "url": "https://acedigitaldentallaboratory.com/product/crowns-bridges/",
         "description": "Get high-quality, custom-made dental crowns and bridges from ADDl. Crafted with precision, designed for durability, and trusted by dental professionals.",
         "inLanguage": "en"
     }
@@ -30,7 +30,7 @@ const CrownsBridges = () => {
           "@type": "ListItem",
           "position": 2,
           "name": "Crowns & Bridges",
-          "item": "https://acedigitaldentallaboratory.com/crowns-bridges/"
+          "item": "https://acedigitaldentallaboratory.com/product/crowns-bridges/"
         }
       ]
   }
@@ -91,12 +91,12 @@ const CrownsBridges = () => {
             <Head>
                 <title>Premium Dental Crowns & Bridges | Ace Digital Dental Lab</title>
                 <meta name="description" content="Get high-quality, custom-made dental crowns and bridges from ADDl. Crafted with precision, designed for durability, and trusted by dental professionals."/>
-                <link rel="canonical" href="https://acedigitaldentallaboratory.com/crowns-bridges/" /> 
+                <link rel="canonical" href="https://acedigitaldentallaboratory.com/product/crowns-bridges/" /> 
                 <meta property="og:locale" content="en_US"/>  
                 <meta property="og:type" content="website"/>
                 <meta property="og:title" content="Premium Dental Crowns & Bridges | Ace Digital Dental Lab" />
                 <meta name="og:description" content="Get high-quality, custom-made dental crowns and bridges from ADDl. Crafted with precision, designed for durability, and trusted by dental professionals."/>
-                <meta property="og:url" content="https://acedigitaldentallaboratory.com/crowns-bridges/" />
+                <meta property="og:url" content="https://acedigitaldentallaboratory.com/product/crowns-bridges/" />
                 <meta property="og:site_name" content="Ace Digital Dental Lab" />
                 <meta name="og:image" content="/images/feature-ADDL.webp" />
                 <meta property="og:image:type" content="image/webp" />

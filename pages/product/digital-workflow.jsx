@@ -6,7 +6,7 @@ const DigitalWorkflow = () => {
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "Digital Workflow Solutions | Ace Digital Dental Lab",
-        "url": "https://acedigitaldentallaboratory.com/digital-workflow/",
+        "url": "https://acedigitaldentallaboratory.com/product/digital-workflow/",
         "description": "Streamline your dentistry with Ace Digital Dental Lab’s cutting-edge digital workflow—precision, speed, and reliability from scan to final restoration.",
         "inLanguage": "en"
     }
@@ -24,7 +24,7 @@ const DigitalWorkflow = () => {
           "@type": "ListItem",
           "position": 2,
           "name": "Digital Workflow",
-          "item": "https://acedigitaldentallaboratory.com/digital-workflow/"
+          "item": "https://acedigitaldentallaboratory.com/product/digital-workflow/"
         }
       ]
   }
@@ -33,12 +33,12 @@ const DigitalWorkflow = () => {
             <Head>
                 <title>Digital Workflow Solutions | Ace Digital Dental Lab</title>
                 <meta name="description" content="Streamline your dentistry with Ace Digital Dental Lab’s cutting-edge digital workflow—precision, speed, and reliability from scan to final restoration."/>
-                <link rel="canonical" href="https://acedigitaldentallaboratory.com/digital-workflow/" /> 
+                <link rel="canonical" href="https://acedigitaldentallaboratory.com/product/digital-workflow/" /> 
                 <meta property="og:locale" content="en_US"/>
                 <meta property="og:type" content="website"/>
                 <meta property="og:title" content="Digital Workflow Solutions | Ace Digital Dental Lab" />
                 <meta name="og:description" content="Streamline your dentistry with Ace Digital Dental Lab’s cutting-edge digital workflow—precision, speed, and reliability from scan to final restoration."/>
-                <meta property="og:url" content="https://acedigitaldentallaboratory.com/digital-workflow/" />
+                <meta property="og:url" content="https://acedigitaldentallaboratory.com/product/digital-workflow/" />
                 <meta property="og:site_name" content="Ace Digital Dental Lab" />
                 <meta name="og:image" content="/images/feature-ADDL.webp" />
                 <meta property="og:image:type" content="image/webp" />
