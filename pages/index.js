@@ -31,13 +31,13 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ace Digital Dental Lab | #1 Dental Lab Services in USA</title>
-        <meta name="description" content="Ace Digital Dental Lab is the best dental laboratory in USA. We craft custom dental prosthesis with advanced technology, digital precision, and expert service."/>
+        <title>Ace Digital Dental Lab | Best Dental Lab Services in USA</title>
+        <meta name="description" content="Ace Digital Dental Lab is one of the best dental lab in USA, For designing high quality dental prosthesis using digital technologies with advanced precision."/>
         <link rel="canonical" href="https://acedigitaldentallaboratory.com/" /> 
         <meta property="og:locale" content="en_US"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Ace Digital Dental Lab | #1 Dental Lab Services in USA" />
-        <meta property="og:description" content="Ace Digital Dental Lab is the best dental laboratory in USA. We craft custom dental prosthesis with advanced technology, digital precision, and expert service."/>
+        <meta property="og:title" content="Ace Digital Dental Lab | Best Dental Lab Services in USA" />
+        <meta property="og:description" content="Ace Digital Dental Lab is one of the best dental lab in USA, For designing high quality dental prosthesis using digital technologies with advanced precision."/>
         <meta property="og:url" content="https://acedigitaldentallaboratory.com/" />
         <meta property="og:site_name" content="Ace Digital Dental Lab" />
         <meta name="og:image" content="/images/feature-ADDL.webp" />
