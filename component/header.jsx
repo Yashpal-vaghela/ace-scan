@@ -112,6 +112,11 @@ const Header = () => {
                             </Link>
                             </li>
                             <li onClick={handleOffcanvas1}>
+                                <Link href="/product/emax" className="dropdown-item">
+                                Emax
+                                </Link>
+                            </li>
+                            <li onClick={handleOffcanvas1}>
                             <Link
                                 href="/product/crowns-bridges"
                                 className="dropdown-item"
