@@ -6,24 +6,19 @@
   background-color: #f9f9f9;
   border-radius: 10px;
 }
-
-.DW-home {
-  padding-top: 40px;
-}
-
 .product-text {
   width: 90%;
   padding-right: 20px;
 }
-
-
-
+.ziconia-crown-img{
+  position: relative;
+  z-index: 1;
+}
 .product-text p {
   font-size: 16px;
   color: #555;
   line-height: 1.8;
 }
-
 .highlight-text {
   color: #00478a;
 }

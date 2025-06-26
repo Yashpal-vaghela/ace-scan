@@ -153,7 +153,7 @@ const Footer = () => {
                         <Link className="navbar-brand me-auto" href="/">
                             <Image src="/images/ACE-logo.webp" alt="Logo" width={150} height={50} />
                         </Link>
-                        <div className="bg-white"><p >
+                        <div className="bg-default"><p>
                             &copy; 2025 <span><Link href="https://advancedentalexport.com/" className="copyright">Advance Dental Export</Link></span>. All Rights Reserved
                         </p></div>
                     </div>

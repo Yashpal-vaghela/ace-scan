@@ -22,22 +22,18 @@ import "../public/css/privacypolicy.css";
 import "../styles/admin/login.css"
 import { useRouter } from "next/router";
 // import { AdminLayout } from "@/component/admin/AdminLayout";
-// import ThemeCustomization from "@/component/admin/themes";
+import ThemeCustomization from "@/component/admin/themes";
 
 export default function App({ Component, pageProps }) {
-  // const router = useRouter();
-  // const isAdminRoute = router.pathname.startsWith("/admin");
-  // const isLoggedIn = 
+  const router = useRouter();
+  const isAdminRoute = router.pathname.startsWith("/admin");
   useEffect(() => {
     AOS.init();
   }, []);
 
   return (
     <>
-     <Header />
-          <Component {...pageProps} />
-          <Footer />
-    {/* {
+    {
       isAdminRoute ? (
           <ThemeCustomization>
             <Component {...pageProps} />
@@ -49,7 +45,7 @@ export default function App({ Component, pageProps }) {
           <Footer />
         </>
       )
-    } */}
+    }
     </>
   );
 }
