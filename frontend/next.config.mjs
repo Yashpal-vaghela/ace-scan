@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // output: "export",
+  output: "export",
   trailingSlash: true,
   images: {
     unoptimized: true, 
@@ -13,6 +13,7 @@ const nextConfig = {
         destination: '/contact-us',
         permanent: true
       },
+            
        {
         source: '/about',
         destination: '/about-us',
