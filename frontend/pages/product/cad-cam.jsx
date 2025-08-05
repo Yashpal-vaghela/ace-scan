@@ -115,14 +115,14 @@ const CadCamMilling = () => {
           <div className=" d-flex justify-content-end align-items-start flex-column inner-bread">
             <h1 className="breadcrumbTitle">CAD/CAM Milling</h1>
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb text-sm breadcrumbNav">
-                <li class="breadcrumb-item active">
+              <ol className="breadcrumb text-sm breadcrumbNav">
+                <li className="breadcrumb-item active">
                   <a href="/">Home</a>
                 </li>
-                <li class="breadcrumb-item active" aria-current="page">
+                <li className="breadcrumb-item active" aria-current="page">
                   Products
                 </li>
-                <li class="breadcrumb-item ">CAD/CAM Milling</li>
+                <li className="breadcrumb-item ">CAD/CAM Milling</li>
               </ol>
             </nav>
           </div>
@@ -235,7 +235,7 @@ const CadCamMilling = () => {
             To ensure exceptional results, ADDL provides premium dental lab
             solutions that prioritize precision, craftsmanship, and advanced
             technology for superior dental restorations. <br />
-            <a href="/contact-us/" class="btn">
+            <a href="/contact-us/" className="btn">
               Get In Touch
             </a>
           </div>

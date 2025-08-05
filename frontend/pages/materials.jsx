@@ -141,11 +141,11 @@ const Materials = () => {
                                     <span className='material-title pt-3'>Aesthetics</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
                                     </p>
                                 </div>
 
@@ -156,7 +156,7 @@ const Materials = () => {
                                 </div>
                             </div>
                             <div className='col-lg-4 d-flex justify-content-center align-items-center  order-lg-1 order-0 ImageName'>
-                                <Image src="/images/zir12.webp" class="img-fluid" alt="zirconia-product"  width={300} height={247}></Image>
+                                <Image src="/images/zir12.webp" className="img-fluid" alt="zirconia-product"  width={300} height={247}></Image>
                                 {/* <img src="/images/zir12.png" className='img-fluid' alt="zirconia-product"></img> */}
                             </div>
                             <div className='col-lg-4 order-lg-2 order-2 m-details-right'>
@@ -176,11 +176,11 @@ const Materials = () => {
                                     <span className='material-title pt-3'>Strength</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
                                     </p>
                                 </div>
 
@@ -218,11 +218,11 @@ const Materials = () => {
                                     <span className='material-title pt-3'>Aesthetics</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
                                     </p>
                                 </div>
 
@@ -253,11 +253,11 @@ const Materials = () => {
                                     <span className='material-title pt-3'>Strength</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-regular fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-regular fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
                                     </p>
                                 </div>
 
@@ -295,11 +295,11 @@ const Materials = () => {
                                     <span className='material-title pt-3'>Aesthetics</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
                                     </p>
                                 </div>
 
@@ -330,11 +330,11 @@ const Materials = () => {
                                     <span className='material-title pt-3'>Strength</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
                                     </p>
                                 </div>
 
@@ -372,11 +372,11 @@ const Materials = () => {
                                     <span className='material-title pt-3'>Aesthetics</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
                                     </p>
                                 </div>
 
@@ -407,11 +407,11 @@ const Materials = () => {
                                     <span className='material-title pt-3'>Strength</span>
                                     <div style={{ borderTop: "1.5px dashed #00798a", margin: "10px 0" }}></div>
                                     <p>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
-                                        <i class="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
+                                        <i className="fa-solid fa-star" style={{ color: "#fcd73f", marginRight: "4px" }}></i>
                                     </p>
                                 </div>
 

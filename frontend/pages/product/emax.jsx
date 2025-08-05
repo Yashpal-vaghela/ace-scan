@@ -9,14 +9,14 @@ const Emax = () => {
           <div className=" d-flex justify-content-end align-items-start flex-column inner-bread">
             <h1 className="breadcrumbTitle">Emax</h1>
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb text-sm breadcrumbNav">
-                <li class="breadcrumb-item active">
+              <ol className="breadcrumb text-sm breadcrumbNav">
+                <li className="breadcrumb-item active">
                   <a href="/">Home</a>
                 </li>
-                <li class="breadcrumb-item active" aria-current="page">
+                <li className="breadcrumb-item active" aria-current="page">
                   Products
                 </li>
-                <li class="breadcrumb-item ">Emax</li>
+                <li className="breadcrumb-item ">Emax</li>
               </ol>
             </nav>
           </div>

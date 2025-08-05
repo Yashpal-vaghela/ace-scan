@@ -123,14 +123,14 @@ const Implants = () => {
           <div className=" d-flex justify-content-end align-items-start flex-column inner-bread">
             <h1 className="breadcrumbTitle">Implants</h1>
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb text-sm breadcrumbNav">
-                <li class="breadcrumb-item active">
+              <ol className="breadcrumb text-sm breadcrumbNav">
+                <li className="breadcrumb-item active">
                   <a href="/">Home</a>
                 </li>
-                <li class="breadcrumb-item active" aria-current="page">
+                <li className="breadcrumb-item active" aria-current="page">
                   Products
                 </li>
-                <li class="breadcrumb-item ">Implants</li>
+                <li className="breadcrumb-item ">Implants</li>
               </ol>
             </nav>
           </div>
@@ -542,7 +542,7 @@ export default Implants;
 //       solutions, but a positive experience that enhances well-being. In
 //       the end, our expertise and commitment to care deliver a
 //       life-changing outcome for every patient. <br />
-//       <a href="/contact-us" class="btn">
+//       <a href="/contact-us" className="btn">
 //         Get In Touch
 //       </a>
 //     </div>

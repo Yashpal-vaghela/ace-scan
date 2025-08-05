@@ -8,8 +8,8 @@ const db = require("./db");
 app.use(cors());
 app.use(express.json());
 
-app.listen(3000, () => {
-  console.log("Successfully Connected on port 3000.");
+app.listen(4000, () => {
+  console.log("Successfully Connected on port 4000.");
 });
 
 // get blog data

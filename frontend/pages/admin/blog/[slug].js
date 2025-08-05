@@ -232,7 +232,7 @@ function blogForm({slug,blog}) {
               />
             <div className="d-flex justify-content-between">
               <Button variant="contained"  sx={{mt:3,backgroundColor:'red !important'}}>Delete</Button>
-              <div class="d-flex gap-3">
+              <div className="d-flex gap-3">
                 <Button type="submit"  variant="contained" color="primary" sx={{ mt: 3 }}> 
                     Save and add another
                 </Button>

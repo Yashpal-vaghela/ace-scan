@@ -62,7 +62,7 @@ const Footer = () => {
 
             <input className="chat-menu hidden" id="offchat-menu" type="checkbox" />
             <div className="sticky-button" id="sticky-button">
-                <label for="offchat-menu">
+                <label htmlFor="offchat-menu">
                     <i className="fa fa-solid fa-message chat-icon"></i>
                     <i className="fa-solid fa-xmark close-icon"></i>
                 </label>
@@ -75,26 +75,26 @@ const Footer = () => {
                     </div>
                     <div className="chat-text">
                         <form className="form row " onSubmit={handleSubmit(onSubmit)} >
-                            <div class="mb-3 col-12">
-                                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                            <div className="mb-3 col-12">
+                                <label htmlFor="exampleFormControlInput1" className="form-label">Name</label>
                                 <input
                                     {...register("name", { required: "Name is required", minLength: { value: 3, message: "Name must be at least 3 characters" } })}
-                                    type="text" class="form-control custom-input" id="exampleFormControlInput1" placeholder="Enter Your Name" />
+                                    type="text" className="form-control custom-input" id="exampleFormControlInput1" placeholder="Enter Your Name" />
                                 {errors.name && <p className="error text-danger m-0">{errors.name.message}</p>}
                             </div>
 
-                            <div class="mb-3 col-12">
-                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <div className="mb-3 col-12">
+                                <label htmlFor="exampleFormControlInput1" className="form-label">Email address</label>
                                 <input
                                     {...register("email", {
                                         required: "Email is required",
                                         pattern: { value: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/, message: "Invalid email format" },
                                     })}
-                                    type="email" class="form-control custom-input" id="exampleFormControlInput1" placeholder="name@example.com" />
+                                    type="email" className="form-control custom-input" id="exampleFormControlInput1" placeholder="name@example.com" />
                                 {errors.email && <p className="error text-danger">{errors.email.message}</p>}
                             </div>
 
-                            <button class="mt-2 btn longbtn col-12" type="submit " disabled={loading}>
+                            <button className="mt-2 btn longbtn col-12" type="submit " disabled={loading}>
                             {loading ? "Sending..." : "Submit"}
                             </button>
                         </form>

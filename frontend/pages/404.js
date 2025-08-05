@@ -9,7 +9,7 @@ const ErrorPage = () => {
         <div className="container text-center" style={{ paddingTop: "2rem", paddingBottom: "2rem" }}>
           <div className=" fzf-block">
             <p className="numberfour left">4</p>
-            <Image src="/images/teeth.webp" class="img-fluid teethimage" alt="about" width={270} height={270}></Image>
+            <Image src="/images/teeth.webp" className="img-fluid teethimage" alt="about" width={270} height={270}></Image>
             {/* <img
               src="/images/teeth.png"
               alt="about"

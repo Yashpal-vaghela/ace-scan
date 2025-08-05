@@ -259,7 +259,7 @@ const About = () => {
           <div className="row">
             <div className="col-12 col-lg-6 about-left">
               <div className="about-text w-40 ps-0" >
-                <h2 class="main-heading-with-double-color mt-0 mb-0 heading1">
+                <h2 className="main-heading-with-double-color mt-0 mb-0 heading1">
                   Working Only With{" "}
                   <span className="highlight-text1">The Best</span>
                 </h2>
@@ -333,8 +333,8 @@ const About = () => {
         />
         <div className="container">
           <div className="about-section d-flex align-items-center">
-            <div class="row" style={{ margin: "0px" }}>
-              <div class="col-lg-7  col-12  card-wop  position-relative d-flex justify-content-center text-aligns-center pt-2 pb-3">
+            <div className="row" style={{ margin: "0px" }}>
+              <div className="col-lg-7  col-12  card-wop  position-relative d-flex justify-content-center text-aligns-center pt-2 pb-3">
                 <Image
                   src="/images/Boss.JPG"
                   alt="Lab Technician Working"
@@ -345,7 +345,7 @@ const About = () => {
                 <div className=" top-0 start-0 w-100 h-100 overlays-img"></div>
               </div>
 
-              <div class="col-lg-5  col-12 card-wop right-card">
+              <div className="col-lg-5  col-12 card-wop right-card">
                 <div className="about-text">
                   <h2 className="main-heading-with-double-color heading1 mb-0 bosstxt" style={{ width: "85%" }}>
                     <span className="highlight-text1">
@@ -356,7 +356,7 @@ const About = () => {
                   </h2>
                 </div>
                 {/* <h2 className="about-text">Uncompromising Precision and Excellence in Dental Restorations</h2> */}
-                <div class="about-text">
+                <div className="about-text">
                   <p className="about-content my-5" style={{ width: "85%" }}>
                     At ADDL, we blend precision, craftsmanship, and premium
                     materials to create restorations with exceptional aesthetics

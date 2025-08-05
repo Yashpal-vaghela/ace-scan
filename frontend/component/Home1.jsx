@@ -3,6 +3,8 @@ import Testimonial from "./Testimonial";
 import Image from "next/image";
 import Link from "next/link";
 
+const isClient = typeof window !== undefined;
+
 const  Home1 = () => {
   const counters = [
     {
@@ -57,8 +59,10 @@ const  Home1 = () => {
   ];
 
   const videoRef = useRef(null);
-  useEffect(() => {
-    if (typeof window !== "undefined" && videoRef.current) {
+  const [isClient, setIsClient] = useState(false);
+  useEffect(() => { 
+    setIsClient(true);
+    if (isClient && videoRef.current) {
       const player = new Plyr(videoRef.current, {
         autoplay: true, // Ensures autoplay
         muted: true, // Required for autoplay to work in modern browsers
@@ -305,7 +309,7 @@ const  Home1 = () => {
               </div>
             </div>
 
-            <div className="col-12 col-lg-6  ">
+            <div className="col-12 col-lg-6">
               <div className="card shadow-none m-auto border-0 d-flex justify-content-center align-items-center h-100 w-50 bg-transparent">
                 {cardImage.length === 0 ? (
                   <>

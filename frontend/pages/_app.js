@@ -19,10 +19,11 @@ import "../public/css/support.css";
 import "../public/css/contact.css";
 import "../public/css/material.css";
 import "../public/css/privacypolicy.css";
-import "../styles/admin/login.css"
+import "../styles/admin/login.css";
 import { useRouter } from "next/router";
 // import { AdminLayout } from "@/component/admin/AdminLayout";
 import ThemeCustomization from "@/component/admin/themes";
+import ErrorBoundary from "@/component/ErrorBoundary";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
@@ -33,19 +34,19 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-    {
-      isAdminRoute ? (
-          <ThemeCustomization>
-            <Component {...pageProps} />
-          </ThemeCustomization>
-      ):(
-        <>
-          <Header />
+      {isAdminRoute ? (
+        <ThemeCustomization>
           <Component {...pageProps} />
-          <Footer />
+        </ThemeCustomization>
+      ) : (
+        <>
+          <ErrorBoundary>
+            <Header />
+            <Component {...pageProps} />
+            <Footer />
+          </ErrorBoundary>
         </>
-      )
-    }
+      )}
     </>
   );
 }

@@ -36,7 +36,7 @@ import { handleApiError } from "@/component/functions";
 
 export async function getServerSideProps(context) {
   try {
-    const res = await axios.get("http://localhost:3000/api/blog");
+    const res = await axios.get("http://localhost:4000/api/blog");
     const data =  res.data;
     return {
       props: {
