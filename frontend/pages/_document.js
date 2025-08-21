@@ -30,7 +30,7 @@ export default function Document() {
           crossorigin="anonymous"
           referrerpolicy="no-referrer"
         />
-        <link rel="icon" type="image/png" href="/images/fav-icon1.webp" />
+        <link rel="icon" type="image/webp" href="/images/fav-icon1.webp" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

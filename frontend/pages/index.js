@@ -3,6 +3,7 @@ import Home1 from "@/component/Home1";
 import Link from "next/link";
 import Head from 'next/head';
 
+
 export default function Home() {
   const websiteSchema = {
     "@context": "https://schema.org/",

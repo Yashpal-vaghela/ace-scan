@@ -2,7 +2,13 @@
   :root {
     --body-bg: #121212;
     --hairline-color: #272727;
+    --bg-blue:rgba(0, 102, 153, 1);
   }
+}
+/* common css */
+.bg-blue{
+    background-color: var(--bg-blue) !important;
+    color:#fff
 }
 .admin-login-page{
     background-color: #212121;
@@ -135,4 +141,103 @@ body {
 }
 .css-1fb6jpa-MuiCardContent-root:last-child {
     padding-bottom: 16px !important;
+}
+.image-group{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    /* display: block; */
+}
+.jodit-react-container{
+    margin: 5px auto 10px;
+}
+.form-control-label,.css-fk5owp-MuiFormLabel-root-MuiInputLabel-root{
+    color: rgba(0, 102, 153, 1);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    background-color: #fafafb;
+    padding: 0px 10px 0px 3px;
+    /* width: 10%; */
+}
+.css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutlinec,
+.css-lqwr9g-MuiPickersOutlinedInput-notchedOutline{
+    border-width: 1.5px;
+    border-color: rgba(0, 102, 153, 0.3) !important;
+}
+fieldset{
+    border-width: 1.5px !important;
+    border-color: rgba(0, 102, 153, 0.3) !important;
+}
+/* .css-7xl0p-MuiInputBase-root-MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline, */
+/* .css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline, */
+.css-7xl0p-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline,
+.css-h2s8ty-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline,
+.css-1tgopf7-MuiPickersInputBase-root-MuiPickersOutlinedInput-root.Mui-focused:not(.Mui-error) .MuiPickersOutlinedInput-notchedOutline,
+.css-1no194y-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+    border-color: rgba(0, 102, 153, 1) !important;
+    border-width: 2px !important;
+}
+.css-fk5owp-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{    
+    color: rgba(0, 102, 153, 1);
+}
+/* .css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline:hover,
+.css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline:focus,
+.css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline:active{
+    border-color: rgba(0, 102, 153, 1);
+} */
+.section-main-title{
+    color: rgba(0, 102, 153, 1);
+}
+.section-main-subtitle{
+    color: rgba(0, 0, 0,0.5);
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    gap:8px;
+    font-size: 14px;
+}
+.section-main-subtitle b{
+    font-weight: 700;
+    font-size: 16px;
+    /* font-size: 18px; */
+    color:rgba(0, 102, 153, 1)
+}
+.suggestionBox{
+    position:absolute;
+    top:70px;
+    left: 12px;
+    width:83%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px -2px 10px rgba(0, 102, 153, 0.25);
+    z-index: 99;
+    /* padding: 20px; */
+}
+.suggestionBox a:first-child{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.suggestionBox a{
+    display: inline-block;
+    width:100%;
+    padding: 10px 20px;
+    /* border-radius: 8px; */
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 102, 153, 1);
+}
+.suggestionBox a:hover{
+    background-color: rgba(0, 102, 153,1);
+    color:#fff;
+    font-weight: bold;
+}
+.suggestionBox a:last-child{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom: none !important;
+}
+.suggestionBox p{
+    padding: 10px 20px;
 }

@@ -6,8 +6,7 @@ import Palette from "./palette";
 import Typography from "./typography";
 import CustomShadows from "./shadows";
 import ErrorBoundary from "@/component/ErrorBoundary";
-import { StyledEngineProvider } from '@mui/material/styles';
-
+import { StyledEngineProvider } from "@mui/material/styles";
 
 // ==============================|| DEFAULT THEME - MAIN ||============================== //
 export default function ThemeCustomization({ children }) {
@@ -58,6 +57,20 @@ export default function ThemeCustomization({ children }) {
             },
           },
         },
+        MuiDataGrid: {
+          styleOverrides: {
+            root: {
+              border: "1px solid #ddd",
+            },
+            columnHeaders: {
+              backgroundColor: "#f0f0f0",
+              fontWeight: "bold",
+            },
+            cell: {
+              fontSize: "14px",
+            },
+          },
+        },
       },
     }),
     [theme, themeTypography, themeCustomShadows]
@@ -70,8 +83,8 @@ export default function ThemeCustomization({ children }) {
     <ErrorBoundary>
       <StyledEngineProvider injectFirst>
         <ThemeProvider theme={themes}>
-        <CssBaseline enableColorScheme />
-        {children}
+          <CssBaseline enableColorScheme />
+          {children}
         </ThemeProvider>
       </StyledEngineProvider>
     </ErrorBoundary>

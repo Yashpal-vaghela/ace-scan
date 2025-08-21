@@ -8,6 +8,8 @@ import Image from "next/image";
 import Head from "next/head";
 import { ProductQuality } from "@/component/ProductQuality";
 
+// const isClient = typeof window !== undefined;
+
 const CrownsBridges = () => {
   const webPageSchema = {
     "@context": "https://schema.org",
@@ -37,8 +39,11 @@ const CrownsBridges = () => {
     ],
   };
   const videoRefP = useRef(null);
+  const [isClient,setIsClient] = useState(false);
+
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    setIsClient(true)
+    if (isClient) {
       // Handle Video Player Setup
       if (videoRefP.current) {
         const player = new Plyr(videoRefP.current, {
@@ -61,34 +66,34 @@ const CrownsBridges = () => {
       }
     }
   }, []);
-  // const swiperRef = useRef(null);
+  const swiperRef = useRef(null);
 
-  // const productCard = [
-  //     {
-  //         id: 1,
-  //         title: "Aesthetic porcelain",
-  //         img: "/images/PFM-POST.webp",
-  //         discription: "Our PFM (Porcelain-Fused-to-Metal) crowns and bridges combine strength and aesthetics, enhanced by cutting-edge digital technology. Using advanced CAD/CAM software and precision milling techniques, we create restorations with exceptional fit and natural appearance. This fusion of digital design and traditional materials ensures long-lasting, functional, and highly aesthetic results."
-  //     },
-  //     {
-  //         id: 2,
-  //         title: "Zirconia crowns",
-  //         img: "/images/zir-conia.webp",
-  //         discription: "At ADDL, we specialize in high-quality zirconia crowns and bridges, providing exceptional strength and aesthetics. Our advanced digital CAD/CAM workflow and precision milling guarantee a perfect fit and natural look. Using state-of-the-art digital sintering techniques, we create durable, lifelike restorations with unmatched accuracy, longevity, and reliability."
-  //     },
-  //     {
-  //         id: 3,
-  //         title: "Layered zirconia crowns",
-  //         img: "/images/lzc.webp",
-  //         discription: "Our layered zirconia crowns and bridges combine strength with natural aesthetics, thanks to advanced digital workflows and CAD/CAM technology. Precision layering ensures lifelike shading and a perfect fit, creating durable, biocompatible restorations ideal for single crowns, bridges, and implants."
-  //     },
-  //     {
-  //         id: 4,
-  //         title: "PMMA Temporaries",
-  //         img: "/images/PMMA.webp",
-  //         discription: "PMMA temporary crowns and bridges are crafted using advanced digital design for a precise fit and natural look. They offer strength, comfort, and esthetics, allowing patients to confidently preview their final smile. Ideal for both short-term and long-term use."
-  //     }
-  // ]
+  const productCard = [
+      {
+          id: 1,
+          title: "Aesthetic porcelain",
+          img: "/images/PFM-POST.webp",
+          discription: "Our PFM (Porcelain-Fused-to-Metal) crowns and bridges combine strength and aesthetics, enhanced by cutting-edge digital technology. Using advanced CAD/CAM software and precision milling techniques, we create restorations with exceptional fit and natural appearance. This fusion of digital design and traditional materials ensures long-lasting, functional, and highly aesthetic results."
+      },
+      {
+          id: 2,
+          title: "Zirconia crowns",
+          img: "/images/zir-conia.webp",
+          discription: "At ADDL, we specialize in high-quality zirconia crowns and bridges, providing exceptional strength and aesthetics. Our advanced digital CAD/CAM workflow and precision milling guarantee a perfect fit and natural look. Using state-of-the-art digital sintering techniques, we create durable, lifelike restorations with unmatched accuracy, longevity, and reliability."
+      },
+      {
+          id: 3,
+          title: "Layered zirconia crowns",
+          img: "/images/lzc.webp",
+          discription: "Our layered zirconia crowns and bridges combine strength with natural aesthetics, thanks to advanced digital workflows and CAD/CAM technology. Precision layering ensures lifelike shading and a perfect fit, creating durable, biocompatible restorations ideal for single crowns, bridges, and implants."
+      },
+      {
+          id: 4,
+          title: "PMMA Temporaries",
+          img: "/images/PMMA.webp",
+          discription: "PMMA temporary crowns and bridges are crafted using advanced digital design for a precise fit and natural look. They offer strength, comfort, and esthetics, allowing patients to confidently preview their final smile. Ideal for both short-term and long-term use."
+      }
+  ]
 
   return (
     <>

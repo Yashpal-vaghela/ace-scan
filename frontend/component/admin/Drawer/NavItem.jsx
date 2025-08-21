@@ -66,7 +66,7 @@ export default function NavItem({
           selected={isSelected}
           sx={(theme) => ({
             zIndex: 1201,
-            pl: drawerOpen ? `${level * 28}px` : 1.5,
+            pl: drawerOpen ? `${level * 18}px` : 1.5,
             py: !drawerOpen && level === 1 ? 1.25 : 1,
             ...(drawerOpen && {
               "&:hover": {
@@ -135,7 +135,9 @@ export default function NavItem({
               primary={
                 <Typography
                   variant="h6"
-                  sx={{ color: isSelected ? iconSelectedColor : textColor }}
+                  sx={{
+                    color: isSelected ? iconSelectedColor : textColor,
+                  }}
                 >
                   {item.title}
                 </Typography>

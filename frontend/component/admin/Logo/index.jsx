@@ -5,25 +5,26 @@ import Image from "next/image";
 // ==============================|| MAIN LOGO ||============================== //
 export default function LogoSection({ isIcon }) {
   return (
-      <Link href="/admin" className="Logo">
-        {isIcon ? (
-          <Image
-            src="/images/fav-icon1.webp"
-            alt="Logo"
-            className="img-fluid"
-            width={45}
-            height={45}
-          ></Image>
-        ) : (
-          <Image
-            src="/images/ACE-logo.webp"
-            alt="Logo"
-            className="img-fluid"
-            width={100}
-            height={100}
-          ></Image>
-        )}
-      </Link>
+    <Link href="/" className="Logo">
+      {isIcon ? (
+        <Image
+          src="/images/fav-icon1.webp"
+          width={45}
+          height={58}
+          className="img-fluid"
+          alt="Logo"
+          style={{height:'auto'}}
+        ></Image>
+      ) : (
+        <Image
+          src="/images/ACE-logo.webp"
+          alt="Logo"
+          className="img-fluid"
+          width={180}
+          height={180}
+        ></Image>
+      )}
+    </Link>
   );
 }
 

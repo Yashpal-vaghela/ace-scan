@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Head from "next/head";
 
+// const isClient = typeof window !== undefined;
+
 const Implants = () => {
   const webPageSchema = {
     "@context": "https://schema.org",
@@ -31,8 +33,10 @@ const Implants = () => {
     ],
   };
   const videoRefP = useRef(null);
+  const [isClient,setIsClient] = useState(false);
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    setIsClient(true);
+    if (isClient) {
       // Handle Video Player Setup
       if (videoRefP.current) {
         const player = new Plyr(videoRefP.current, {

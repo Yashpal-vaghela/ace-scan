@@ -23,6 +23,8 @@ import IconButton from "../../component/admin/@extended/IconButton";
 import EyeOutlined from "@ant-design/icons/EyeOutlined";
 import EyeInvisibleOutlined from "@ant-design/icons/EyeInvisibleOutlined";
 import Footer from "@/component/admin/Footer";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 const Login = () => {
   const router = useRouter();
@@ -53,11 +55,34 @@ const Login = () => {
       password: "",
     },
     validationSchema: SignupSchema,
-    onSubmit: (values) => {
+    onSubmit: async  (values) => {
       // console.log("Form Data:", values);
       if (values.email && values.password) {
-        router.push("/admin");
-        localStorage.setItem("user", JSON.stringify(values));
+        try{
+          const res = await axios.post("http://localhost:4000/api/login",values);
+          console.log("res",res);
+        }catch(err){
+          console.error("error:",err)
+          setTimeout(()=>{
+            router.push("/admin/register");
+          },2500)
+          toast.error(`${err.response.data.message}`)
+        }
+
+        // axios.post("http://localhost:4000/api/login",values)
+        // .then((res)=>{
+        // //  console.log("res",res.data) 
+        //   if(res.data.message){
+        //     // toast.error(`${res.data.message}`);
+        //     toast.error(`${res.data.message}`)
+        //   }else{
+        //     router.push("/admin");
+        //     localStorage.setItem("user", JSON.stringify(values));
+        //   }
+        // })
+        // .then((err)=>{
+        //   toast.error(`${res.data.message}`);
+        //   console.log("err",err)})
       }
     },
   });

@@ -11,6 +11,7 @@ import IconButton from "@/component/admin/@extended/IconButton";
 import EyeOutlined from '@ant-design/icons/EyeOutlined';
 import EyeInvisibleOutlined from '@ant-design/icons/EyeInvisibleOutlined';
 import { useRouter } from "next/router";
+import axios from "axios";
 
 
 const Register = () => {
@@ -24,8 +25,8 @@ const Register = () => {
   };
 
   const registerSchema = Yup.object().shape({
-    firstname: Yup.string().max(255).required("First Name is required"),
-    lastname: Yup.string().max(255).required("Last Name is required"),
+    first_name: Yup.string().max(255).required("First Name is required"),
+    last_name: Yup.string().max(255).required("Last Name is required"),
     email: Yup.string()
       .email("Must be a valid email")
       .required("Email is required"),
@@ -40,18 +41,24 @@ const Register = () => {
   });
   const formik = useFormik({
     initialValues: {
-      firstname: "",
-      lastname: "",
+      first_name: "",
+      last_name: "",
       email: "",
       password: "",
     },
     validationSchema: registerSchema,
     onSubmit: (values) => {
       if (
-        (values.firstname && values.lastname && values.email, values.password)
+        (values.first_name && values.last_name && values.email, values.password)
       ) {
-        router.push("/admin/login");
-        localStorage.setItem("regiteruser", JSON.stringify(values));
+        console.log("values",values)
+        axios.post("http://localhost:4000/api/register",values)
+        .then((res)=>{
+           console.log("res")
+           router.push("/admin/login");
+           localStorage.setItem("regiteruser", JSON.stringify(values));
+        })
+        .then((err)=>console.log("err",err));
       }
     },
   });
@@ -89,19 +96,19 @@ const Register = () => {
                     <OutlinedInput
                       id="firstname-login"
                       type="text"
-                      value={formik.values.firstname}
-                      name="firstname"
+                      value={formik.values.first_name}
+                      name="first_name"
                       onBlur={formik.handleBlur}
                       onChange={formik.handleChange}
                       placeholder="Enter first name"
                       fullWidth
-                      error={Boolean(formik.touched.firstname && formik.errors.firstname)}
+                      error={Boolean(formik.touched.first_name && formik.errors.first_name)}
                       className="login-form-input"
                     />
                   </Stack>
-                  {formik.touched.firstname && formik.errors.firstname && (
+                  {formik.touched.first_name && formik.errors.first_name && (
                   <FormHelperText error id="helper-text-firstname-signup">
-                    {formik.errors.firstname}
+                    {formik.errors.first_name}
                   </FormHelperText>
                 )}
                 </Grid>
@@ -110,20 +117,20 @@ const Register = () => {
                       <InputLabel htmlFor="lastname-signup">Last Name*</InputLabel>
                       <OutlinedInput
                           fullWidth
-                          error={Boolean(formik.touched.lastname && formik.errors.lastname)}
+                          error={Boolean(formik.touched.last_name && formik.errors.last_name)}
                           id="lastname-signup"
                           type="text"
-                          value={formik.values.lastname}
-                          name="lastname"
+                          value={formik.values.last_name}
+                          name="last_name"
                           onBlur={formik.handleBlur}
                           onChange={formik.handleChange}
                           placeholder="Enter last name"
                           className="login-form-input"
                       />
                     </Stack>
-                    {formik.touched.lastname && formik.errors.lastname && (
+                    {formik.touched.last_name && formik.errors.last_name && (
                       <FormHelperText error id="helper-text-lastname-signup">
-                          {formik.errors.lastname}
+                          {formik.errors.last_name}
                       </FormHelperText>
                     )}
                 </Grid>
