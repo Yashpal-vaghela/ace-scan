@@ -26,9 +26,7 @@ import ThemeCustomization from "@/component/admin/themes";
 import ErrorBoundary from "@/component/ErrorBoundary";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Loader from "@/component/Loader";
-// import { hydrateRoot } from "react-dom/client";
-// import ReactLoading from 'react-loading';
+// import ReactLoading from "react-loading";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
@@ -52,13 +50,28 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       {isAdminRoute ? (
-        <ThemeCustomization>
-          <Component {...pageProps} />
-          <ToastContainer
-            position="top-right"
-            autoClose={2500}
-          ></ToastContainer>
-        </ThemeCustomization>
+        <>
+          {/* {loading ? (
+            <ReactLoading
+              type="spinningBubbles"
+              color="#000"
+              height={50}
+              width={50}
+            />
+          ) : (
+            <>
+            </>
+          )} */}
+          <ErrorBoundary>
+            <ThemeCustomization>
+              <Component {...pageProps} />
+              <ToastContainer
+                position="top-right"
+                autoClose={2500}
+              ></ToastContainer>
+            </ThemeCustomization>
+          </ErrorBoundary>
+        </>
       ) : (
         <>
           <ErrorBoundary>

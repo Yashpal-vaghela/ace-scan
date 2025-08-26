@@ -135,7 +135,7 @@ const CadCamMilling = () => {
       </section>
       <section className="DW-home">
         <div className="container">
-          <div className="row d-flex justify-content-center align-items-center">
+          <div className="row d-flex justify-content-center mt-3 align-items-center">
             <div className="col-12 col-lg-6 col-md-6 order-1 order-lg-0 order-md-0">
               <div className="product-text p-3">
                 <h2 className="double-heading">

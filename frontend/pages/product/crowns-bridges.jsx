@@ -1,4 +1,4 @@
-import React, { useEffect, useRef,useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import { Autoplay, Pagination, Navigation } from "swiper/modules";
@@ -39,10 +39,10 @@ const CrownsBridges = () => {
     ],
   };
   const videoRefP = useRef(null);
-  const [isClient,setIsClient] = useState(false);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    setIsClient(true)
+    setIsClient(true);
     if (isClient) {
       // Handle Video Player Setup
       if (videoRefP.current) {
@@ -69,31 +69,35 @@ const CrownsBridges = () => {
   const swiperRef = useRef(null);
 
   const productCard = [
-      {
-          id: 1,
-          title: "Aesthetic porcelain",
-          img: "/images/PFM-POST.webp",
-          discription: "Our PFM (Porcelain-Fused-to-Metal) crowns and bridges combine strength and aesthetics, enhanced by cutting-edge digital technology. Using advanced CAD/CAM software and precision milling techniques, we create restorations with exceptional fit and natural appearance. This fusion of digital design and traditional materials ensures long-lasting, functional, and highly aesthetic results."
-      },
-      {
-          id: 2,
-          title: "Zirconia crowns",
-          img: "/images/zir-conia.webp",
-          discription: "At ADDL, we specialize in high-quality zirconia crowns and bridges, providing exceptional strength and aesthetics. Our advanced digital CAD/CAM workflow and precision milling guarantee a perfect fit and natural look. Using state-of-the-art digital sintering techniques, we create durable, lifelike restorations with unmatched accuracy, longevity, and reliability."
-      },
-      {
-          id: 3,
-          title: "Layered zirconia crowns",
-          img: "/images/lzc.webp",
-          discription: "Our layered zirconia crowns and bridges combine strength with natural aesthetics, thanks to advanced digital workflows and CAD/CAM technology. Precision layering ensures lifelike shading and a perfect fit, creating durable, biocompatible restorations ideal for single crowns, bridges, and implants."
-      },
-      {
-          id: 4,
-          title: "PMMA Temporaries",
-          img: "/images/PMMA.webp",
-          discription: "PMMA temporary crowns and bridges are crafted using advanced digital design for a precise fit and natural look. They offer strength, comfort, and esthetics, allowing patients to confidently preview their final smile. Ideal for both short-term and long-term use."
-      }
-  ]
+    {
+      id: 1,
+      title: "Aesthetic porcelain",
+      img: "/images/PFM-POST.webp",
+      discription:
+        "Our PFM (Porcelain-Fused-to-Metal) crowns and bridges combine strength and aesthetics, enhanced by cutting-edge digital technology. Using advanced CAD/CAM software and precision milling techniques, we create restorations with exceptional fit and natural appearance. This fusion of digital design and traditional materials ensures long-lasting, functional, and highly aesthetic results.",
+    },
+    {
+      id: 2,
+      title: "Zirconia crowns",
+      img: "/images/zir-conia.webp",
+      discription:
+        "At ADDL, we specialize in high-quality zirconia crowns and bridges, providing exceptional strength and aesthetics. Our advanced digital CAD/CAM workflow and precision milling guarantee a perfect fit and natural look. Using state-of-the-art digital sintering techniques, we create durable, lifelike restorations with unmatched accuracy, longevity, and reliability.",
+    },
+    {
+      id: 3,
+      title: "Layered zirconia crowns",
+      img: "/images/lzc.webp",
+      discription:
+        "Our layered zirconia crowns and bridges combine strength with natural aesthetics, thanks to advanced digital workflows and CAD/CAM technology. Precision layering ensures lifelike shading and a perfect fit, creating durable, biocompatible restorations ideal for single crowns, bridges, and implants.",
+    },
+    {
+      id: 4,
+      title: "PMMA Temporaries",
+      img: "/images/PMMA.webp",
+      discription:
+        "PMMA temporary crowns and bridges are crafted using advanced digital design for a precise fit and natural look. They offer strength, comfort, and esthetics, allowing patients to confidently preview their final smile. Ideal for both short-term and long-term use.",
+    },
+  ];
 
   return (
     <>
@@ -161,8 +165,7 @@ const CrownsBridges = () => {
           src="/images/product-vector.png"
           className="product-vector img-fluid"
         ></img>
-        <div
-          className="container mt-4 mt-lg-5 mb-sm-4 mb-xl-5 z-1 mb-4 pt-xl-3 position-relative">
+        <div className="container mt-4 mt-lg-5 mb-sm-4 mb-xl-5 z-1 mb-4 pt-xl-3 position-relative">
           <img
             src="/images/product-vector.png"
             className="product-vector1 d-none img-fluid"
@@ -301,7 +304,103 @@ const CrownsBridges = () => {
           </div>
         </div>
       </section>
-      <section className="product-section3 pt-md-1 pt-xl-3 crown-bridge-premier ">
+      <section
+        className="product-section4 product-quality-section pt-2 pt-sm-0"
+        id="product-quality-section"
+      >
+        <img
+          src="/images/qty-sec-vector.png"
+          class="qty-sec-vector img-fluid"
+        />
+        <div className="container pt-md-0 pt-lg-1">
+          <div
+            className="text-section pt-md-5 pt-0 pb-md-4 pb-4 pb-sm-4"
+            id="text1"
+            // data-scroll-speed="0.5"
+          >
+            <h2 className="product-title quality-section-title">
+              Precision Quality Crowns & Bridges: Ace Promise
+            </h2>
+            <p className="quality-section-description">
+              Our promise is simple: every crown tooth and bridge restoration we
+              deliver showcases pinpoint precision, unbeatable durability, and
+              outstanding esthetic appeal. We’re dedicated to providing
+              restorations that consistently meet the highest standards of fit,
+              function, and beauty.
+            </p>
+          </div>
+          <div className="row justify-content-md-between  justify-content-center  cards-container">
+            <div className="col-lg-4 col-md-6 col-sm-8 col-10 ">
+              <div className="card " id="card1">
+                <div className="card-header">
+                  <img src="/images/01.svg" className="img-fluid"></img>
+                </div>
+                <div className="card-body">
+                  Designed for resilience, our crowns and bridges deliver
+                  unwavering strength and reliability dentists rely every time.
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-8 col-10">
+              <div className="card" id="card2">
+                <div className="card-header">
+                  <img src="/images/02.svg" className="img-fluid"></img>
+                </div>
+                <div className="card-body">
+                  Restorations we produce offer seamless esthetics and natural
+                  harmony with adjacent teeth, enhancing patient confidence.
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-8 col-10 sticky-card">
+              <div className="card" id="card3">
+                <div className="card-header">
+                  <img src="/images/03.svg" className="img-fluid"></img>
+                </div>
+                <div className="card-body">
+                  Our metal-free, biocompatible crowns bridges ensure patient
+                  safety and reduce allergy risks for healthier smiles.
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-8 col-10 sticky-card">
+              <div className="card" id="card4">
+                <div className="card-header">
+                  <img src="/images/04.svg" className="img-fluid"></img>
+                </div>
+                <div className="card-body">
+                  Precision restorations with exact margins improve outcomes,
+                  reduce chairside adjustments, streamline treatment workflow.
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-8 col-10 sticky-card">
+              <div className="card" id="card5">
+                <div className="card-header">
+                  <img src="/images/05.svg" className="img-fluid"></img>
+                </div>
+                <div className="card-body">
+                  Our versatile restorations cover single crowns to multi-unit
+                  bridges, delivering custom solutions for all requirements.
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-8 col-10 sticky-card">
+              <div className="card" id="card6">
+                <div className="card-header">
+                  <img src="/images/06.svg" className="img-fluid"></img>
+                </div>
+                <div className="card-body">
+                  In our lab, every crown and bridge gets quality checks,
+                  ensuring precise fit, lasting durability, and lifelike
+                  esthetics.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="product-section3 mt-4 pt-md-1 pt-xl-3 crown-bridge-premier">
         <div className="container">
           <h2 className="product-title mb-sm-1 mb-md-1">
             Our Premier <span>Crown & Bridge</span> Solutions
@@ -320,10 +419,6 @@ const CrownsBridges = () => {
                   height={765}
                   className="product-card-bg-img img-fluid"
                 ></Image>
-                {/* <img
-                  src="/images/product-card-img.png"
-                  className="product-card-bg-img img-fluid"
-                ></img> */}
                 <div className="product-card-header">
                   <h2 className="mb-0">Zirconia Crown & Bridge</h2>
                 </div>
@@ -335,10 +430,6 @@ const CrownsBridges = () => {
                     alt="zirconia-crown-img"
                     className="zirconia-crown-img z-1 position-relative img-fluid"
                   ></Image>
-                  {/* <img
-                    src="/images/zirconia-crown-img.png"
-                    className="ziconia-crown-img img-fluid"
-                  ></img> */}
                 </div>
                 <div className="product-card-description position-relative mb-2">
                   <p className="text-center mb-0">
@@ -359,10 +450,6 @@ const CrownsBridges = () => {
                   height={765}
                   className="product-card-bg-img img-fluid"
                 ></Image>
-                {/* <img
-                  src="/images/product-card-img.png"
-                  className="product-card-bg-img img-fluid"
-                ></img> */}
                 <div className="product-card-header">
                   <h2 className="mb-0">PMMA Temporaries Crown & Bridge</h2>
                 </div>
@@ -374,10 +461,6 @@ const CrownsBridges = () => {
                     className="zirconia-crown-img z-1 position-relative img-fluid"
                     alt="zirconia-crown-img"
                   ></Image>
-                  {/* <img
-                    src="/images/pmma-crown-img.png"
-                    className="ziconia-crown-img img-fluid"
-                  ></img> */}
                 </div>
                 <div className="product-card-description position-relative mb-2">
                   <p className="text-center mb-0">

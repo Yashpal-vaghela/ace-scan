@@ -1,4 +1,4 @@
-import React, { useEffect, useRef,useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Head from "next/head";
 
@@ -33,7 +33,7 @@ const Implants = () => {
     ],
   };
   const videoRefP = useRef(null);
-  const [isClient,setIsClient] = useState(false);
+  const [isClient, setIsClient] = useState(false);
   useEffect(() => {
     setIsClient(true);
     if (isClient) {
@@ -281,7 +281,105 @@ const Implants = () => {
           </div>
         </div>
       </section>
-      <section className="product-section3 Implant-solution-section  pt-lg-2 pt-xl-0">
+      <section
+        className="product-section4 product-quality-section"
+        id="product-quality-section"
+      >
+        {/* <Image src="/images/qty-sec-vector.png" className="qty-sec-vector img-fluid"></Image> */}
+        <img
+          src="/images/qty-sec-vector.png"
+          class="qty-sec-vector img-fluid"
+        />
+        <div className="container pt-md-0 pt-lg-5">
+          <div
+            className="text-section pt-md-5 pt-0 pb-md-5 pb-4 pb-sm-4"
+            id="text1"
+          >
+            <h2 className="product-title quality-section-title">
+              Commitment to Perfection in Implant Restorations
+            </h2>
+            <p className="quality-section-description">
+              At Ace Digital Dental Laboratory, perfection isn’t just a goal,
+              it’s our standard. Every implant restoration we produce undergoes
+              strict quality checks and is crafted with precision technology and
+              premium materials.
+            </p>
+          </div>
+          <div className="row justify-content-md-between justify-content-center cards-container">
+            <div className="col-lg-4 col-md-6 col-sm-8 col-10 sticky-card">
+              <div className="card" id="card1">
+                <div className="card-header">
+                  <img src="/images/01.svg" className="img-fluid"></img>
+                </div>
+                <div className="card-body">
+                  At Ace, every implant case is carefully reviewed to ensure
+                  ideal fit, long-term function, and seamless clinical
+                  integration.
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-8 col-10 sticky-card">
+              <div className="card" id="card2">
+                <div className="card-header">
+                  <img src="/images/02.svg" className="img-fluid"></img>
+                </div>
+                <div className="card-body">
+                  Our precision-driven CAD/CAM workflows deliver consistent,
+                  custom-fit restorations with speed, accuracy, and digital
+                  reliability.
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-8 col-10 sticky-card">
+              <div className="card" id="card3">
+                <div className="card-header">
+                  <img src="/images/03.svg" className="img-fluid"></img>
+                </div>
+                <div className="card-body">
+                  We use only FDA-approved, biocompatible materials—trusted for
+                  safety, durability, and natural integration with oral tissues.
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 co-sm-8 col-10 sticky-card">
+              <div className="card" id="card4">
+                <div className="card-header">
+                  <img src="/images/04.svg" className="img-fluid"></img>
+                </div>
+                <div className="card-body">
+                  Each implant restoration undergoes micron-level margin checks
+                  to ensure flawless fit and eliminate chairside adjustments.
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-8 col-10 sticky-card">
+              <div className="card" id="card5">
+                <div className="card-header">
+                  <img src="/images/05.svg" className="img-fluid"></img>
+                </div>
+                <div className="card-body">
+                  Ace technicians personally inspect every case to guarantee
+                  precision, function, and esthetics meet our perfection
+                  standards.
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-8 col-10 sticky-card">
+              <div className="card" id="card6">
+                <div className="card-header">
+                  <img src="/images/06.svg" className="img-fluid"></img>
+                </div>
+                <div className="card-body">
+                  All restorations are crafted under ISO-certified systems,
+                  reflecting our commitment to global-quality benchmarks and
+                  clinical reliability.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="product-section3 Implant-solution-section  pt-lg-2 pt-xl-0 mt-4">
         <div className="container pt-xl-3">
           <h2 className="product-title mb-sm-1 mb-md-1">
             Precision Smart Dental Implant Solutions By
