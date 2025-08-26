@@ -43,7 +43,11 @@ const closedMixin = (theme) => ({
   borderRight: "none",
   overflowX: "hidden",
   '& .MuiDrawer-paper': {
-    width: "5%",
+    width:{
+      xl:"1%",
+      lg:"5%"
+    },
+    // width: "5%",
     borderRight: "none",
     overflowX: "hidden",
   },

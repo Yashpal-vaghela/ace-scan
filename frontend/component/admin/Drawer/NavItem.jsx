@@ -24,7 +24,7 @@ export default function NavItem({
   const drawerOpen =
     menuMaster !== undefined ? menuMaster.isDashboardDrawerOpened : null;
 
-  const downLG = useMediaQuery((theme) => theme.breakpoints.down("lg"));
+  const downLG = useMediaQuery((theme) => theme.breakpoints.down("md"));
 
   let itemTarget = "_self";
   if (item.target) {
@@ -67,7 +67,7 @@ export default function NavItem({
           sx={(theme) => ({
             zIndex: 1201,
             pl: drawerOpen ? `${level * 18}px` : 1.5,
-            py: !drawerOpen && level === 1 ? 1.25 : 1,
+            py: drawerOpen && level === 1 ? 1.25 : 1,
             ...(drawerOpen && {
               "&:hover": {
                 bgcolor: "primary.lighter",

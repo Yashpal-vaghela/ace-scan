@@ -13,12 +13,19 @@ import {
 } from "@ant-design/icons";
 import { Typography, Box } from "@mui/material";
 import NavGroup from "./NavGroup";
-
+import {
+  Article,
+  GridView,
+  Login,
+  AppRegistration,
+  AccountCircle,
+} from "@mui/icons-material";
 
 // ==============================|| DRAWER CONTENT ||============================== //
 export default function DrawerContent() {
   const { menuMaster } = useGetMenuMaster();
-  const drawerOpen = menuMaster !==  undefined ? menuMaster.isDashboardDrawerOpened : null;
+  const drawerOpen =
+    menuMaster !== undefined ? menuMaster.isDashboardDrawerOpened : null;
   const icons = {
     DashboardOutlined,
     LoginOutlined,
@@ -55,7 +62,7 @@ export default function DrawerContent() {
         title: "Login",
         type: "item",
         url: "/admin/login",
-        icon: icons.LoginOutlined,
+        icon: Login,
         target: true,
       },
       {
@@ -63,8 +70,15 @@ export default function DrawerContent() {
         title: "Register",
         type: "item",
         url: "/admin/register",
-        icon: icons.ProfileOutlined,
+        icon: AppRegistration,
         target: true,
+      },
+      {
+        id: "user",
+        title: "User",
+        type: "item",
+        url: "/admin/auth/user",
+        icon: AccountCircle,
       },
     ],
   };
@@ -78,12 +92,19 @@ export default function DrawerContent() {
         title: "Blog",
         type: "item",
         url: "/admin/blog",
-        icon: icons.DashboardOutlined,
+        icon: Article,
+      },
+      {
+        id: "category",
+        title: "Category",
+        type: "item",
+        url: "/admin/blog/category",
+        icon: GridView,
       },
     ],
-  }
+  };
 
-  const menuItems = { items: [dashboard, pages,blogs] };
+  const menuItems = { items: [dashboard, pages, blogs] };
 
   return (
     <>

@@ -16,7 +16,7 @@ export default function MainDrawer({ window }) {
   const theme = useTheme();
   const { menuMaster } = useGetMenuMaster();
   const drawerOpen = menuMaster !== undefined ?  menuMaster.isDashboardDrawerOpened : null;
-  const downLG = useMediaQuery(theme.breakpoints.down('lg'));
+  const downLG = useMediaQuery(theme.breakpoints.down('md'));
   
   // responsive drawer container
   const container = window !== undefined ? () => window().document.body : undefined;
@@ -40,7 +40,7 @@ export default function MainDrawer({ window }) {
           onClose={() => handlerDrawerOpen(!drawerOpen)}
           ModalProps={{ keepMounted: true }}
           sx={{
-            display: { xs: drawerOpen ? 'block' : 'none', lg: 'none' },
+            display: { xs: drawerOpen ? 'block' : 'none', md: 'none' },
             '&.MuiDrawer-paper': {
               boxSizing: 'border-box',
               width: DRAWER_WIDTH,

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef,useState } from "react";
 import Image from "next/image";
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import { Autoplay, Pagination, Navigation } from "swiper/modules";
