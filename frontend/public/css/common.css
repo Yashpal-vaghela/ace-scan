@@ -52,11 +52,10 @@
     color:#00818a;
   }
 
-#__next{
+/* #__next{
     overflow:hidden !important;
-}
+} */
 /* background video section */
-
 .parallax {
     overflow: hidden;
     transition-duration: 0s;
@@ -170,6 +169,7 @@
     font-weight: 600;
     letter-spacing: -1px;
     margin-bottom: 64px;
+    letter-spacing: 0.5px;
 }
 .video-desc{
     color: white;

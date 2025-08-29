@@ -20,49 +20,65 @@ import "../public/css/contact.css";
 import "../public/css/material.css";
 import "../public/css/privacypolicy.css";
 import "../styles/admin/login.css";
+import "../public/css/blog.css";
 import { useRouter } from "next/router";
-// import { AdminLayout } from "@/component/admin/AdminLayout";
 import ThemeCustomization from "@/component/admin/themes";
 import ErrorBoundary from "@/component/ErrorBoundary";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import ReactLoading from "react-loading";
+import LoadingOverlay from "react-loading-overlay-ts";
+
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
-  // const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const isAdminRoute = router.pathname.startsWith("/admin");
 
-  // useEffect(() => {
-  //   AOS.init();
-  //   router.events.on("routeChangeStart", (url) => {
-  //     setLoading(true);
-  //   });
-  //   router.events.on("routeChangeComplete", (url) => {
-  //     setLoading(false);
-  //   });
-  //   router.events.on("routeChangeError", (url) => {
-  //     setLoading(false);
-  //   });
-  // }, []);
-
+  useEffect(() => {
+    AOS.init();
+    console.log("router",router)
+     if(router.pathname == "/product/emax" || router.pathname == "/product/implants" || router.pathname == "/product/cad-cam" ){   
+        const a = document.getElementById("__next");
+        a.classList.add("overflow-visible");
+        a.classList.remove("overflow-hidden");
+      }else{
+        const a = document.getElementById("__next");
+        a.classList.remove("overflow-visible");
+        a.classList.add("overflow-hidden");
+      }
+    router.events.on("routeChangeStart", (url) => {
+      setLoading(true);
+    });
+    router.events.on("routeChangeComplete", (url) => {
+      setLoading(false);
+    });
+    router.events.on("routeChangeError", (url) => {
+      setLoading(false);
+    });
+  }, [router]);
+// 
   return (
     <>
       {isAdminRoute ? (
         <>
-          {/* {loading ? (
-            <ReactLoading
-              type="spinningBubbles"
-              color="#000"
-              height={50}
-              width={50}
-            />
-          ) : (
-            <>
-            </>
-          )} */}
-          <ErrorBoundary>
+          <LoadingOverlay
+            active={loading}
+            spinner
+            styles={{
+              content: {
+                height: "auto",
+                width: "100%",
+              },
+              spinner: (base) => ({
+                ...base,
+                position: "fixed",
+                height: "100%",
+                left: "42%",
+                right: "42%",
+              }),
+            }}
+          >
             <ThemeCustomization>
               <Component {...pageProps} />
               <ToastContainer
@@ -70,7 +86,7 @@ export default function App({ Component, pageProps }) {
                 autoClose={2500}
               ></ToastContainer>
             </ThemeCustomization>
-          </ErrorBoundary>
+          </LoadingOverlay>
         </>
       ) : (
         <>

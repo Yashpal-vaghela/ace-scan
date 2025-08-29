@@ -12,6 +12,7 @@
   font-weight: 550;
   line-height: 1.9;
   letter-spacing: 0.5px;
+  font-size: 16px;
 }
 /* -------------------------- Product section 1 --------------------------- */
 .product-section1 .product-vector {
@@ -80,6 +81,7 @@
   font-weight: 550;
   letter-spacing: 0.2;
 }
+
 /* -------------------------- Product section 3 --------------------------- */
 .product-card {
   padding: 20px;
@@ -117,7 +119,7 @@
   z-index: 1;
   padding: 22px;
   border-radius: 20px;
-  height: 27%;
+  height: 24%;
 }
 .product-card-description p {
   font-weight: 550;
@@ -150,20 +152,25 @@
 .product-quality-section .text-section {
   width: 80%;
   text-align: center;
-  margin: auto;
+  /* margin: auto; */
+  margin: 0px auto 0px 0px;
 }
 .product-quality-section .quality-section-title {
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.9;
   letter-spacing: 0.2px;
   font-size: 2.2rem;
   margin-bottom: 10px;
+  text-align: left;
 }
 .product-quality-section .quality-section-description {
-  width: 84%;
-  margin: auto;
+  width: 100%;
+  margin: 0px auto 0px 0px;
   font-weight: 500;
   letter-spacing: 0.5px;
+  font-size:16px;
+  line-height: 1.8;
+  text-align: left;
 }
 .product-quality-section .card {
   background-color: #fff !important;
@@ -189,7 +196,7 @@
 .product-quality-section .card .card-body {
   text-align: left;
   letter-spacing: 0.3px;
-  line-height: 1.6;
+  line-height: 1.8;
   height: 150px;
   display: flex;
   align-items: end;
@@ -212,10 +219,12 @@
     top: 0% !important;
   }
   .product-quality-section .quality-section-title {
-    font-size: 1.7rem;
+    font-size: 24px;
+    /* line-height: 1.6; */
   }
   .product-quality-section .quality-section-description {
-    width: 90%;
+    width: 100%;
+    font-size: 14px;
   }
   .product-quality-section .row {
     margin-top: 0px;
@@ -229,8 +238,53 @@
   }
 }
 @media (max-width: 768px) {
-  .cards-container {
+  .product-quality-section .qty-sec-vector {
+    top: 5% !important;
+  }
+  .product-quality-section .row {
+    flex-direction: column;
+    margin: auto;
     position: relative;
+  }
+  .product-quality-section .row .col-10 {
+    margin: auto;
+    position: sticky;
+  }
+  /* .cards-container .sticky-card{
+    position:sticky;
+    display: flex;
+  } */
+  .cards-container #card1{
+    top:90px;
+  }
+  .cards-container #card2{
+    top:110px;
+  }
+  .cards-container #card3{
+    top:130px;
+  }
+  .cards-container #card4{
+    top:150px;
+  }
+  .cards-container #card5{
+    top:170px;
+  }
+  .cards-container #card6{
+    top:190px;
+  }
+  /* #__next {
+    overflow: visible !important;
+  } */
+  .product-quality-section .quality-section-title {
+    line-height: 1.6;
+    font-size: 22px;
+  }
+  .product-quality-section .qty-sec-vector{
+    z-index: -1;
+  }
+  .product-quality-section .quality-section-description {
+    width: 100%;
+    font-size: 14px;
   }
   /* .cards-container .col-lg-4 {
     position: sticky;
@@ -243,15 +297,10 @@
     position: sticky;
     top: 90px;
   } */
-  .product-quality-section .quality-section-title {
-    line-height: 1.6;
-  }
 }
 @media (max-width: 576px) {
-  .cards-container .sticky{
-    position: sticky;
-    top:50px;
-    /* height: 100%; */
+  .product-quality-section .qty-sec-vector {
+    top: 1% !important;
   }
   .product-quality-section .quality-section-title {
     font-size: 20px;
@@ -264,6 +313,113 @@
   .emax-solution-section .container {
     padding-top: 25px;
   }
+  .cards-container > div {
+    display: block; /* override bootstrap flex basis for stickiness */
+  }
+  /* .product-quality-section .sticky-card {
+    position: sticky;
+    top: 100px; 
+    align-self: flex-start; 
+  } */
+  /* .quality-cards-container {
+    position: relative;
+    grid-row-gap: 15px;
+    display: flex;
+    flex-flow: column;
+  }
+  .quality-cards-container .card {
+    grid-row-gap: 84px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 43.04%;
+    grid-auto-columns: 1fr;
+    box-shadow: 0 0 3px 0 rgb(27 137 118 / 0.6);
+    border-bottom: 2px solid #1b8976;
+    border-radius: 8px;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    position: sticky;
+    background-color: #fff;
+  }
+  .quality-cards-container #card1 {
+    top: 80px;
+  }
+  .quality-cards-container #card2 {
+    top: 100px;
+  }
+  .quality-cards-container #card3 {
+    top: 120px;
+  } */
+  /* #__next {
+    overflow: visible !important;
+  } */
+  /* .zirconia-wrapper {
+    padding: 30px 0 0;
+    display: block;
+  }
+  .zirconia-wrapper .container {
+    --bs-gutter-x: 5.8rem;
+  }
+  .zirconia-wrapper .line-2 {
+    display: none;
+  }
+  .zirconia-wrapper-title {
+    font-size: 22px;
+    color: #1b8976;
+    width: 100%;
+    text-align: center;
+    padding-top: 25px !important;
+  }
+  .zirconia-content-wrapper {
+    grid-row-gap: 35px;
+    flex-flow: column;
+    display: block;
+    position: relative;
+  }
+  .zirconia-content-item {
+    grid-row-gap: 84px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 43.04%;
+    grid-auto-columns: 1fr;
+    box-shadow: 0 0 3px 0 rgb(27 137 118 / 0.6);
+    border-bottom: 2px solid #1b8976;
+    border-radius: 8px;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    position: sticky;
+    background-color: #fff;
+  }
+  .zirconia-content-item._1 {
+    top: 80px;
+  }
+  .zirconia-content-item._2 {
+    top: 100px;
+  }
+  .zirconia-content-item._3 {
+    top: 120px;
+  }
+  .zirconia-content-item span {
+    padding: 0 10px;
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    color: rgb(27 137 118 / 0.3);
+    font-weight: 750;
+  }
+  .zirconia-content-item h3 {
+    font-size: 16px;
+    color: #1b8976;
+    font-weight: 700;
+    line-height: 1.7;
+    text-align: center;
+    padding: 0 30px;
+  }
+  .zirconia-content-item p {
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.7;
+  } */
 }
 
 /* ----------------------- Product section 5(contact) --------------------- */
@@ -301,12 +457,15 @@
 .product-contact-content .btn-contact {
   background-color: #fff;
   color: #000;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 .product-contact-content .btn-contact:hover {
   background-color: #fff;
+  color: #000;
 }
-
+.product-contact-content .btn-contact:focus{
+  border: none ;
+}
 /*--------------------------- Implant  page -------------------------- */
 .product-section1.Implant .product-vector {
   top: 15%;
@@ -366,14 +525,72 @@
     display: none;
   }
 }
-@media (min-width: 1400px) {
-  .product-sub-title,
+/* @media (min-width: 1400px) {
+  .product-section2-ul li h3{
+    font-size: 20px;
+  }
+  .Implant-ul{
+    padding-left: 1rem;
+  }
+  .product-sub-title{
+    font-size: 20px;
+    letter-spacing: 0.8px;
+  }
+  
   .product-card-description p,
   .product-section2-ul li h3 span {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.8;
+    letter-spacing: 0.8px;
   }
-}
+  .product-quality-section .text-section{
+    width:90%
+  }
+  .product-quality-section .quality-section-description{
+    font-size: 20px;
+    line-height: 1.8;
+    font-weight: 550;
+    letter-spacing: 0.8px;
+  }
+  .product-quality-section .card{
+    padding: 18px 12px;
+  }
+  .product-quality-section .card .card-body{
+    font-size: 18px;
+    line-height: 1.8;
+    letter-spacing: 0.8px;
+    height: 200px;
+    font-weight: 550;
+  }
+  .product-card-header h2{
+    font-size: 20px;
+  }
+  .product-contact-content p{
+    font-size: 20px;
+    line-height: 1.9;
+    letter-spacing: 0.8px;
+  }
+  .product-contact-content .btn-contact{
+    font-size: 20px;
+  }
+  .product-section1 .product-title{
+    width:90%;
+  }
+  .product-section1.Implant p{
+    line-height: 2;
+    letter-spacing: 0.8px;
+    padding-right: 30px;
+  }
+} */
+/* @media(min-width:1300px){
+  .product-section2-ul li h3{
+    font-size: 20px;
+  }
+  .product-section2-ul li h3 span{
+    font-size: 18px;
+    letter-spacing: 0.8px;
+  }
+} */
 /* max-width */
 @media (max-width: 1200px) {
   /* .crown-bridges .product-text,
@@ -422,6 +639,9 @@
   .product-section1 .product-vector {
     top: 10%;
   }
+  .product-section1.Implant .product-vector{
+    top:10%;
+  }
   .product-section1.crown-bridges p {
     font-size: 13px;
   }
@@ -456,9 +676,14 @@
   /* implant page */
   .product-section1.Implant .product-title {
     padding-right: 0px;
+    font-size: 22px;
   }
   .product-section1.Implant p {
     padding-right: 20px;
+    font-size: 14px;
+  }
+  .product-sub-title{
+    font-size: 14px;
   }
   .product-section3.Implant .product-title {
     width: 100%;
@@ -488,6 +713,9 @@
   }
   .product-section1 .product-vector {
     top: 20%;
+  }
+  .product-section1.Implant .product-vector{
+    top:20%
   }
   /* contact section */
   .product-contact {
@@ -529,5 +757,8 @@
   }
   .product-section2-ul li h3 span {
     letter-spacing: 0.5px;
+  }
+  .product-section1.Implant .product-vector{
+    top:26%;
   }
 }

@@ -6,7 +6,6 @@ import Image from "next/image";
 // import "swiper/css/pagination";
 // import "swiper/css/navigation";
 import Head from "next/head";
-import { ProductQuality } from "@/component/ProductQuality";
 
 // const isClient = typeof window !== undefined;
 
@@ -161,15 +160,23 @@ const CrownsBridges = () => {
       </section>
       <section className="DW-home product-section1 crown-bridges position-relative">
         {/* <Image src="/images/product-vector.png" className="product-vector img-fluid" alt="product-vector" width={1920} height={568}></Image> */}
-        <img
-          src="/images/product-vector.png"
+        <Image
+          src="/images/product-vector.webp"
           className="product-vector img-fluid"
-        ></img>
+          width="1920"
+          height="568"
+          alt="Product-vector"
+          loading="eager"
+        ></Image>
         <div className="container mt-4 mt-lg-5 mb-sm-4 mb-xl-5 z-1 mb-4 pt-xl-3 position-relative">
-          <img
-            src="/images/product-vector.png"
+          <Image
+            src="/images/product-vector.webp"
             className="product-vector1 d-none img-fluid"
-          ></img>
+            width="1920"
+            height="568"
+            alt="Product-vector"
+            loading="eager"
+          ></Image>
           <div className="row justify-content-between align-items-center">
             <div className="col-lg-6 col-md-6 p-md-0 px-xl-3 col-xl-5 order-lg-1 order-md-1 order-2">
               <h2 className="product-title mb-lg-3 mb-2 mb-sm-1 ">
@@ -227,11 +234,12 @@ const CrownsBridges = () => {
           <div className="row justify-content-between align-items-center mb-4 mb-sm-4 mb-md-4 mb-xl-4">
             <div className="col-lg-6 col-md-12 mt-1 mt-sm-1 mt-lg-0 mt-xl-0">
               <Image
-                src="/images/crown-bridges-new.png"
+                src="/images/crown-bridges-new.webp"
                 className="crown-bridges-solution-img img-fluid"
                 width={642}
                 height={642}
                 alt="crown-bridges-solution-img"
+                loading="eager"
               ></Image>
               {/* <img
                 src="/images/crown-bridges-new.png"
@@ -308,18 +316,25 @@ const CrownsBridges = () => {
         className="product-section4 product-quality-section pt-2 pt-sm-0"
         id="product-quality-section"
       >
-        <img
+        <Image
+          src="/images/qty-sec-vector.webp"
+          className="qty-sec-vector img-fluid"
+          width="1920"
+          height="568"
+          alt="qty-sec-vector"
+          loading="eager"
+        ></Image>
+        {/* <img
           src="/images/qty-sec-vector.png"
-          class="qty-sec-vector img-fluid"
-        />
-        <div className="container pt-md-0 pt-lg-1">
+          className="qty-sec-vector img-fluid"
+        /> */}
+        <div className="container pt-md-0 pt-lg-1 pb-xl-3">
           <div
             className="text-section pt-md-5 pt-0 pb-md-4 pb-4 pb-sm-4"
             id="text1"
-            // data-scroll-speed="0.5"
           >
             <h2 className="product-title quality-section-title">
-              Precision Quality Crowns & Bridges: Ace Promise
+              Precision Quality <span>Crowns & Bridges:</span> Ace Promise
             </h2>
             <p className="quality-section-description">
               Our promise is simple: every crown tooth and bridge restoration we
@@ -330,10 +345,19 @@ const CrownsBridges = () => {
             </p>
           </div>
           <div className="row justify-content-md-between  justify-content-center  cards-container">
-            <div className="col-lg-4 col-md-6 col-sm-8 col-10 ">
-              <div className="card " id="card1">
+            <div
+              className="col-lg-4 col-md-6 col-sm-10 col-10 sticky-card"
+              id="card1"
+            >
+              <div className="card">
                 <div className="card-header">
-                  <img src="/images/01.svg" className="img-fluid"></img>
+                  <Image
+                    src="/images/01.svg"
+                    className="img-fluid"
+                    width="63"
+                    height="30"
+                    alt="number-01"
+                  ></Image>
                 </div>
                 <div className="card-body">
                   Designed for resilience, our crowns and bridges deliver
@@ -341,10 +365,19 @@ const CrownsBridges = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 col-sm-8 col-10">
-              <div className="card" id="card2">
+            <div
+              className="col-lg-4 col-md-6 col-sm-10 col-10 sticky-card"
+              id="card2"
+            >
+              <div className="card">
                 <div className="card-header">
-                  <img src="/images/02.svg" className="img-fluid"></img>
+                  <Image
+                    src="/images/02.svg"
+                    className="img-fluid"
+                    width="63"
+                    height="30"
+                    alt="number-02"
+                  ></Image>
                 </div>
                 <div className="card-body">
                   Restorations we produce offer seamless esthetics and natural
@@ -352,10 +385,19 @@ const CrownsBridges = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 col-sm-8 col-10 sticky-card">
-              <div className="card" id="card3">
+            <div
+              className="col-lg-4 col-md-6 col-sm-10 col-10 sticky-card"
+              id="card3"
+            >
+              <div className="card">
                 <div className="card-header">
-                  <img src="/images/03.svg" className="img-fluid"></img>
+                  <Image
+                    src="/images/03.svg"
+                    className="img-fluid"
+                    width="63"
+                    height="30"
+                    alt="number-03"
+                  ></Image>
                 </div>
                 <div className="card-body">
                   Our metal-free, biocompatible crowns bridges ensure patient
@@ -363,10 +405,19 @@ const CrownsBridges = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 col-sm-8 col-10 sticky-card">
-              <div className="card" id="card4">
+            <div
+              className="col-lg-4 col-md-6 col-sm-10 col-10 sticky-card"
+              id="card4"
+            >
+              <div className="card">
                 <div className="card-header">
-                  <img src="/images/04.svg" className="img-fluid"></img>
+                  <Image
+                    src="/images/04.svg"
+                    className="img-fluid"
+                    width="63"
+                    height="30"
+                    alt="number-04"
+                  ></Image>
                 </div>
                 <div className="card-body">
                   Precision restorations with exact margins improve outcomes,
@@ -374,10 +425,19 @@ const CrownsBridges = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 col-sm-8 col-10 sticky-card">
-              <div className="card" id="card5">
+            <div
+              className="col-lg-4 col-md-6 col-sm-10 col-10 sticky-card"
+              id="card5"
+            >
+              <div className="card">
                 <div className="card-header">
-                  <img src="/images/05.svg" className="img-fluid"></img>
+                  <Image
+                    src="/images/05.svg"
+                    className="img-fluid"
+                    width="63"
+                    height="30"
+                    alt="number-05"
+                  ></Image>
                 </div>
                 <div className="card-body">
                   Our versatile restorations cover single crowns to multi-unit
@@ -385,10 +445,19 @@ const CrownsBridges = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 col-sm-8 col-10 sticky-card">
-              <div className="card" id="card6">
+            <div
+              className="col-lg-4 col-md-6 col-sm-10 col-10 sticky-card"
+              id="card6"
+            >
+              <div className="card">
                 <div className="card-header">
-                  <img src="/images/06.svg" className="img-fluid"></img>
+                  <Image
+                    src="/images/06.svg"
+                    className="img-fluid"
+                    width="63"
+                    height="30"
+                    alt="number-06"
+                  ></Image>
                 </div>
                 <div className="card-body">
                   In our lab, every crown and bridge gets quality checks,
@@ -413,22 +482,24 @@ const CrownsBridges = () => {
             <div className="col-lg-5 col-md-10 p-md-0">
               <div className="product-card">
                 <Image
-                  src="/images/product-card-img.png"
+                  src="/images/product-card-img.webp"
                   alt="product-card-bg-img"
                   width={613}
                   height={765}
                   className="product-card-bg-img img-fluid"
+                  loading="eager"
                 ></Image>
                 <div className="product-card-header">
                   <h2 className="mb-0">Zirconia Crown & Bridge</h2>
                 </div>
                 <div className="product-card-img">
                   <Image
-                    src="/images/zirconia-crown-img.png"
+                    src="/images/zirconia-crown-img.webp"
                     width={553}
                     height={325}
                     alt="zirconia-crown-img"
                     className="zirconia-crown-img z-1 position-relative img-fluid"
+                    loading="eager"
                   ></Image>
                 </div>
                 <div className="product-card-description position-relative mb-2">
@@ -444,22 +515,24 @@ const CrownsBridges = () => {
             <div className="col-lg-5 col-md-10 p-md-0">
               <div className="product-card">
                 <Image
-                  src="/images/product-card-img.png"
+                  src="/images/product-card-img.webp"
                   alt="product-card-bg-img"
                   width={613}
                   height={765}
                   className="product-card-bg-img img-fluid"
+                  loading="eager"
                 ></Image>
                 <div className="product-card-header">
                   <h2 className="mb-0">PMMA Temporaries Crown & Bridge</h2>
                 </div>
                 <div className="product-card-img">
                   <Image
-                    src="/images/pmma-crown-img.png"
+                    src="/images/pmma-crown-img.webp"
                     width={553}
                     height={325}
                     className="zirconia-crown-img z-1 position-relative img-fluid"
                     alt="zirconia-crown-img"
+                    loading="eager"
                   ></Image>
                 </div>
                 <div className="product-card-description position-relative mb-2">
@@ -475,7 +548,6 @@ const CrownsBridges = () => {
           </div>
         </div>
       </section>
-      {/* <ProductQuality/> */}
       <section className="crown-bridge-contact product-contact my-5">
         <video
           autoPlay

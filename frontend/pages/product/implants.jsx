@@ -141,21 +141,35 @@ const Implants = () => {
         </div>
       </section>
       <section className="DW-home product-section1 Implant position-relative">
-        <img
-          src="/images/product-vector.png"
+        <Image
+          src="/images/product-vector.webp"
           className="product-vector img-fluid"
-        ></img>
+          width="1920"
+          height="568"
+          alt="Product-vector"
+        ></Image>
+        {/* <img
+          src="/images/product-vector.webp"
+          className="product-vector img-fluid"
+        ></img> */}
         <div
           className="container mt-4 mt-lg-5 mb-sm-4 mb-xl-5  mb-4 position-relative"
           style={{ zIndex: 1 }}
         >
-          <img
-            src="/images/product-vector.png"
+          <Image
+            src="/images/product-vector.webp"
             className="product-vector1 d-none img-fluid"
-          ></img>
+            width="1920"
+            height="568"
+            alt="Product-vector"
+          ></Image>
+          {/* <img
+            src="/images/product-vector.webp"
+            className="product-vector1 d-none img-fluid"
+          ></img> */}
           <div className="row justify-content-between align-items-center">
             <div className="col-lg-6 col-md-6 p-md-0 col-xl-6 order-lg-1 order-md-1 order-2">
-              <h2 className="product-title mb-lg-3 mb-2 mb-sm-2">
+              <h2 className="product-title mb-lg-3 mb-2 mb-sm-2 mb-xl-4">
                 <span>Ace Dental Implant For Teeth:</span> Precision, Speed, And
                 Stunning Esthetics Restorations
               </h2>
@@ -211,7 +225,7 @@ const Implants = () => {
           <div className="row justify-content-between align-items-center mt-4 mb-4 mb-sm-4 mb-md-4 mb-xl-5">
             <div className="col-lg-6 col-md-12 mt-1 mt-sm-0 mt-md-0  mt-lg-0 mt-xl-0">
               <Image
-                src="/images/Implant-img.png"
+                src="/images/Implant-img.webp"
                 className="Implant-img img-fluid"
                 alt="Implant-img"
                 width={651}
@@ -286,17 +300,14 @@ const Implants = () => {
         id="product-quality-section"
       >
         {/* <Image src="/images/qty-sec-vector.png" className="qty-sec-vector img-fluid"></Image> */}
-        <img
-          src="/images/qty-sec-vector.png"
-          class="qty-sec-vector img-fluid"
-        />
-        <div className="container pt-md-0 pt-lg-5">
+        <Image src="/images/qty-sec-vector.webp" className="qty-sec-vector img-fluid" width="1920" height="568" alt="Product-vector"></Image>
+        <div className="container pt-md-0 pt-lg-3 pt-xl-4 pb-xl-3">
           <div
-            className="text-section pt-md-5 pt-0 pb-md-5 pb-4 pb-sm-4"
+            className="text-section pt-md-5 pt-0 pb-md-4 pb-4 pb-sm-4"
             id="text1"
           >
             <h2 className="product-title quality-section-title">
-              Commitment to Perfection in Implant Restorations
+              Commitment to Perfection in <span>Implant Restorations</span>
             </h2>
             <p className="quality-section-description">
               At Ace Digital Dental Laboratory, perfection isn’t just a goal,
@@ -306,10 +317,20 @@ const Implants = () => {
             </p>
           </div>
           <div className="row justify-content-md-between justify-content-center cards-container">
-            <div className="col-lg-4 col-md-6 col-sm-8 col-10 sticky-card">
-              <div className="card" id="card1">
+            <div
+              className="col-lg-4 col-md-6 col-sm-10 col-10 sticky-card"
+              id="card1"
+            >
+              <div className="card">
                 <div className="card-header">
-                  <img src="/images/01.svg" className="img-fluid"></img>
+                  <Image
+                    src="/images/01.svg"
+                    className="img-fluid"
+                    width="63"
+                    height="30"
+                    alt="number-01"
+                  ></Image>
+                  {/* <img src="/images/01.svg" className="img-fluid"></img> */}
                 </div>
                 <div className="card-body">
                   At Ace, every implant case is carefully reviewed to ensure
@@ -318,10 +339,20 @@ const Implants = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 col-sm-8 col-10 sticky-card">
-              <div className="card" id="card2">
+            <div
+              className="col-lg-4 col-md-6 col-sm-10 col-10 sticky-card"
+              id="card2"
+            >
+              <div className="card">
                 <div className="card-header">
-                  <img src="/images/02.svg" className="img-fluid"></img>
+                  <Image
+                    src="/images/02.svg"
+                    className="img-fluid"
+                    width="63"
+                    height="30"
+                    alt="number-02"
+                  ></Image>
+                  {/* <img src="/images/02.svg" className="img-fluid"></img> */}
                 </div>
                 <div className="card-body">
                   Our precision-driven CAD/CAM workflows deliver consistent,
@@ -330,10 +361,20 @@ const Implants = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 col-sm-8 col-10 sticky-card">
-              <div className="card" id="card3">
+            <div
+              className="col-lg-4 col-md-6 col-sm-10 col-10 sticky-card"
+              id="card3"
+            >
+              <div className="card">
                 <div className="card-header">
-                  <img src="/images/03.svg" className="img-fluid"></img>
+                  <Image
+                    src="/images/03.svg"
+                    className="img-fluid"
+                    width="63"
+                    height="30"
+                    alt="number-03"
+                  ></Image>
+                  {/* <img src="/images/03.svg" className="img-fluid"></img> */}
                 </div>
                 <div className="card-body">
                   We use only FDA-approved, biocompatible materials—trusted for
@@ -341,10 +382,20 @@ const Implants = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 co-sm-8 col-10 sticky-card">
-              <div className="card" id="card4">
+            <div
+              className="col-lg-4 col-md-6 col-sm-10 col-10 sticky-card"
+              id="card4"
+            >
+              <div className="card">
                 <div className="card-header">
-                  <img src="/images/04.svg" className="img-fluid"></img>
+                  <Image
+                    src="/images/04.svg"
+                    className="img-fluid"
+                    width="63"
+                    height="30"
+                    alt="number-04"
+                  ></Image>
+                  {/* <img src="/images/04.svg" className="img-fluid"></img> */}
                 </div>
                 <div className="card-body">
                   Each implant restoration undergoes micron-level margin checks
@@ -352,10 +403,20 @@ const Implants = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 col-sm-8 col-10 sticky-card">
-              <div className="card" id="card5">
+            <div
+              className="col-lg-4 col-md-6 col-sm-10 col-10 sticky-card"
+              id="card5"
+            >
+              <div className="card">
                 <div className="card-header">
-                  <img src="/images/05.svg" className="img-fluid"></img>
+                  <Image
+                    src="/images/05.svg"
+                    className="img-fluid"
+                    width="63"
+                    height="30"
+                    alt="number-05"
+                  ></Image>
+                  {/* <img src="/images/05.svg" className="img-fluid"></img> */}
                 </div>
                 <div className="card-body">
                   Ace technicians personally inspect every case to guarantee
@@ -364,10 +425,20 @@ const Implants = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 col-sm-8 col-10 sticky-card">
-              <div className="card" id="card6">
+            <div
+              className="col-lg-4 col-md-6 col-sm-10 col-10 sticky-card"
+              id="card6"
+            >
+              <div className="card">
                 <div className="card-header">
-                  <img src="/images/06.svg" className="img-fluid"></img>
+                  <Image
+                    src="/images/06.svg"
+                    className="img-fluid"
+                    width="63"
+                    height="30"
+                    alt="number-06"
+                  ></Image>
+                  {/* <img src="/images/06.svg" className="img-fluid"></img> */}
                 </div>
                 <div className="card-body">
                   All restorations are crafted under ISO-certified systems,
@@ -394,31 +465,23 @@ const Implants = () => {
             <div className="col-lg-5 col-md-10 p-sm-0">
               <div className="product-card">
                 <Image
-                  src="/images/product-card-img.png"
+                  src="/images/product-card-img.webp"
                   alt="product-card-bg-img"
                   width={613}
                   height={765}
                   className="product-card-bg-img img-fluid"
                 ></Image>
-                {/* <img
-                  src="/images/product-card-img.png"
-                  className="product-card-bg-img img-fluid"
-                ></img> */}
                 <div className="product-card-header">
                   <h2 className="mb-0">Full-Arch Implant Solutions</h2>
                 </div>
                 <div className="product-card-img">
                   <Image
-                    src="/images/full-arch-img.png"
+                    src="/images/full-arch-img.webp"
                     width={553}
                     height={325}
                     className="full-arch-img z-1 position-relative img-fluid"
                     alt="full-arch-img"
                   ></Image>
-                  {/* <img
-                    src="/images/full-arch-img.png"
-                    className="full-arch-img z-1 position-relative img-fluid"
-                  ></img> */}
                 </div>
                 <div className="product-card-description position-relative mb-2">
                   <p className="text-center mb-0">
@@ -433,31 +496,23 @@ const Implants = () => {
             <div className="col-lg-5 col-md-10 p-sm-0">
               <div className="product-card">
                 <Image
-                  src="/images/product-card-img.png"
+                  src="/images/product-card-img.webp"
                   alt="product-card-bg-img"
                   width={613}
                   height={765}
                   className="product-card-bg-img img-fluid"
                 ></Image>
-                {/* <img
-                  src="/images/product-card-img.png"
-                  className="product-card-bg-img img-fluid"
-                ></img> */}
                 <div className="product-card-header">
                   <h2 className="mb-0">Screw-Retained Crowns & Bridges</h2>
                 </div>
                 <div className="product-card-img">
                   <Image
-                    src="/images/crown-bridges2.png"
+                    src="/images/crown-bridges2.webp"
                     width={553}
                     height={325}
                     className="ziconia-crown-img2 z-1 position-relative img-fluid"
                     alt="zirconia-crown-img2"
                   ></Image>
-                  {/* <img
-                    src="/images/crown-bridges2.png"
-                    className="ziconia-crown-img2 z-1 position-relative img-fluid"
-                  ></img> */}
                 </div>
                 <div className="product-card-description d-flex align-items-center  m-auto position-relative mb-2">
                   <p className="text-center mb-0 ">
@@ -503,150 +558,3 @@ const Implants = () => {
 };
 
 export default Implants;
-
-// <section className="product-before-after">
-//   <div className="container">
-//     <div className="row for-rlative">
-//       {/* <div className="product-before-after-heading">
-//                       <h2 className="heading_outer color-white">Renew Your Teeth, Renew Your Confidence.</h2>
-//                       <h3 className="heading_outer color-white">Transforming Lives with the Benefits of Dental Implants.</h3>
-//                   </div> */}
-//       <div className="col-12 col-lg-6 ">
-//         <div className="product-before-after-images ">
-//           <Image
-//             src="/images/imgallery.webp"
-//             alt="about"
-//             width={550}
-//             height={400}
-//             className="img-fluid round-images"
-//           />
-//         </div>
-//       </div>
-//       <div className="col-12 col-lg-6  d-flex flex-column align-items-center justify-content-center text-center">
-//         <div className="product-before-after-content  d-flex flex-column  justify-content-center ">
-//           <div className="product-before-after-heading1">
-//             <p className="before-after-contains subhead ">
-//               Renew Your Teeth, Renew Your Confidence
-//             </p>
-//             <h2 className="before-after-contains mb-lg-5 mb-2">
-//               Transforming Lives with the Benefits of Dental Implants
-//             </h2>
-//           </div>
-//           We prioritize your comfort and satisfaction, offering tailored
-//           solutions that meet your unique needs. With our use of the
-//           latest technology and premium materials, we provide restorations
-//           that look and feel natural, ensuring a perfect fit and
-//           long-lasting results. Our experienced team is dedicated to
-//           guiding you through every step of the process, helping you enjoy
-//           the full benefits of dental implants—restored functionality, a
-//           beautiful smile, and renewed confidence.
-//         </div>
-//       </div>
-//     </div>
-//   </div>
-// </section>
-
-//   <section className="implant-card-section">
-//   <div className="container">
-//     <div className="row">
-//       <div className="col-12 col-md-6 d-flex justify-content-center">
-//         <div className="implant-card imcards">
-//           <Image
-//             src="/images/card-bg.webp"
-//             className="card-bg"
-//             alt="card-bg"
-//             width={449}
-//             height={599}
-//           ></Image>
-//           {/* <img src="/images/card-bg.webp" className="card-bg" /> */}
-//           <div className="implant-card-header">
-//             <h2> Implant full arch </h2>
-//           </div>
-//           <div className="implant-image-container">
-//             <Image
-//               src="/images/fullarch-implant.webp"
-//               alt="Implant Full Mouth"
-//               width={409}
-//               height={173}
-//             ></Image>
-//             {/* <img src="/images/fullarch-implant.webp" alt="Implant Full Mouth" /> */}
-//           </div>
-//           <div className="implant-card-body p-2 text-justify">
-//             <p>
-//               Our expertly crafted implant full arch solutions provide a
-//               stable, permanent restoration for patients with extensive
-//               tooth loss. Digitally designed for precision and comfort,
-//               they offer a natural look and feel. At ADDL, we tailor each
-//               restoration to meet individual needs.
-//             </p>
-//           </div>
-//         </div>
-//       </div>
-
-//       <div className="col-12 col-md-6 d-flex justify-content-center">
-//         <div className="implant-card imcards">
-//           <Image
-//             src="/images/card-bg.webp"
-//             className="card-bg"
-//             alt="card-bg"
-//             width={449}
-//             height={599}
-//           ></Image>
-//           {/* <img src="/images/card-bg.webp" className="card-bg" /> */}
-//           <div className="implant-card-header">
-//             <h2>Implant screw retained </h2>
-//           </div>
-//           <div className="implant-image-container">
-//             <Image
-//               src="/images/screw-retained-implant.webp"
-//               alt="Advanced CAD/CAM"
-//               width={409}
-//               height={173}
-//             ></Image>
-//             {/* <img src="/images/screw-retained-implant.webp" alt="Advanced CAD/CAM" /> */}
-//           </div>
-//           <div className="implant-card-body p-2 text-justify">
-//             <p>
-//               Our precisely crafted implant screw-retained restorations
-//               provide stability and aesthetics. Designed for a secure fit,
-//               they ensure patient comfort and long-term performance. At
-//               ADDL, we offer tailored solutions to meet each patient's
-//               unique dental needs with precision and care.
-//             </p>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   </div>
-// </section>
-
-// <section className="quality-section">
-//   <video
-//     autoPlay
-//     loop
-//     muted
-//     playsInline
-//     id="player"
-//     className="background-video product"
-//   >
-//     <source src="/videos/ADE12.mp4" type="video/mp4" />
-//     <source src="/videos/ADE12.webm" type="video/webm" />
-//     Your browser does not support the video tag.
-//   </video>
-//   <div className="bg-overlay"></div>
-//   <div className="container d-flex justify-content-center align-items-center ">
-//     <div className="quality-content ">
-//       We embrace even the most challenging implant cases with personalized
-//       care and advanced technology, ensuring the best results for each
-//       patient. Throughout the process, we keep our patients informed and
-//       comfortable, helping them regain function and confidence with
-//       natural-looking implants. We believe in providing not just lasting
-//       solutions, but a positive experience that enhances well-being. In
-//       the end, our expertise and commitment to care deliver a
-//       life-changing outcome for every patient. <br />
-//       <a href="/contact-us" className="btn">
-//         Get In Touch
-//       </a>
-//     </div>
-//   </div>
-// </section>
